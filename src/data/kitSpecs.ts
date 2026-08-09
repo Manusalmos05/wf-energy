@@ -51,11 +51,11 @@ const SOLAR_ADMIN_INCLUDES = [
 ];
 
 const SOLAR_EXTRAS: KitSpec["extras"] = [
-  { label: "Batería DEYE 5,12 kWh", price: 900 },
-  { label: "Batería DEYE 16 kWh", price: 2200 },
+  { label: "Batería desde:", price: 900 },
+  { label: "Panel solar adicional desde:", price: 120 },
   { label: "Toma de tierra", price: 250 },
   { label: "Cargador coche eléctrico", price: 1000 },
-  { label: "Casa inteligente solar (domótica)", price: 2000 },
+  { label: "Casa inteligente solar (domótica) desde:", price: 1500 },
 ];
 
 const SOLAR_GUARANTEES: KitSpec["guarantees"] = [
@@ -119,17 +119,17 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     badge: "Promoción",
     titleMain: "Kit solar híbrido",
     titlePower: "3 kW",
-    summary: "Inversor híbrido Hoymiles 3kW, 8 paneles AIKO 610W y batería DEYE 5,12 kWh",
+    summary: "Inversor híbrido Hoymiles 3kW, 4.5kWp en paneles y batería DEYE 5,12 kWh",
     productImage: "images/kits/3kw-producto.webp",
     productImageAlt:
-      "Paneles solares AIKO 610W, inversor híbrido Hoymiles 3kW y batería DEYE 5,12 kWh",
+      "Paneles solares, inversor híbrido Hoymiles 3kW y batería DEYE 5,12 kWh",
     productImageWidth: 726,
     productImageHeight: 535,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
     components: [
-      { icon: "panel", title: "8 Paneles AIKO 610W", body: "Alta eficiencia N-Type ABC" },
+      { icon: "panel", title: "4.5kWp", body: "8-10 paneles" },
       { icon: "inverter", title: "Inversor Híbrido Hoymiles 3kW", body: "Potencia, fiable y eficiente" },
       { icon: "battery", title: "Batería DEYE 5,12 kWh", body: "Almacenamiento seguro y escalable" },
     ],
@@ -144,7 +144,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     ],
     includes: [
       "Inversor híbrido Hoymiles 3kW",
-      "8 paneles AIKO 610W",
+      "8-10 paneles",
       "Batería DEYE 5,12 kWh",
       "Full Back-Up",
       "Tasas y trámites ante la administración",
@@ -155,15 +155,15 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     extras: [
       { label: "Batería DEYE 5,12kWh", price: 900 },
       { label: "Batería DEYE 10kWh", price: 2200 },
-      { label: "Torre de 5kva", price: 250 },
+      { label: "Toma a tierra", price: 250 },
       { label: "Cargador coche eléctrico", price: 1000 },
-      { label: "Casa inteligente solar (domótica)", price: 2000 },
+      { label: "Casa inteligente solar (domótica) desde: ", price: 1500 },
     ],
     guarantees: [
       {
         icon: "shield",
         title: "Instalación profesional",
-        body: "Contamos con la normativa REBT y servicio técnico 24/7 experto.",
+        body: "Contamos con la normativa REBT.",
       },
       {
         icon: "clipboard",
@@ -177,7 +177,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     badge: "Promoción",
     titleMain: "Kit solar",
     titlePower: "6 kW",
-    summary: "Inversor híbrido DEYE 6kW, 10 paneles AIKO 610W y batería DEYE 5,12 kWh",
+    summary: "Inversor híbrido DEYE 6kW, 6 kWp en paneles y batería DEYE 5,12 kWh",
     productImage: "images/kits/6kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 6kW y batería DEYE 5,12 kWh",
@@ -187,7 +187,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
     components: [
-      { icon: "panel", title: "10 Paneles AIKO 610W", body: "Alta eficiencia N-Type ABC" },
+      { icon: "panel", title: "6 kWp", body: "10-12 paneles" },
       { icon: "inverter", title: "Inversor Híbrido DEYE 6kW", body: "Potente, fiable y eficiente" },
       { icon: "battery", title: "Batería DEYE 5,12 kWh", body: "Almacenamiento seguro y escalable" },
     ],
@@ -198,7 +198,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     ],
     includes: [
       "Inversor híbrido DEYE 6kW",
-      "10 paneles AIKO 610W",
+      "10-12 paneles",
       "Batería DEYE 5,12 kWh",
       "Full Back-Up",
       ...SOLAR_ADMIN_INCLUDES,
@@ -211,7 +211,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     badge: "Promoción",
     titleMain: "Kit solar",
     titlePower: "off-grid 6 kW",
-    summary: "Inversor Off-grid Felicity 6kW, 10 paneles AIKO 610W y batería Felicity 16 kWh",
+    summary: "Inversor Off-grid Felicity 6kW, 6kWp en paneles y batería Felicity 16 kWh",
     productImage: "images/kits/6kw-offgrid-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor off-grid Felicity 6kW y batería Felicity 16 kWh",
@@ -221,7 +221,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
     components: [
-      { icon: "panel", title: "10 Paneles AIKO 610W", body: "Alta eficiencia N-Type ABC" },
+      { icon: "panel", title: "6kWp", body: "10-12 paneles" },
       { icon: "inverter", title: "Inversor Off-grid Felicity 6kW", body: "Potente, fiable y eficiente" },
       { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
     ],
@@ -233,7 +233,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     stats: [{ label: "Producción anual estimada", value: "10.340 kWh" }],
     includes: [
       "Inversor Off-grid Felicity 6kW",
-      "10 paneles AIKO 610W",
+      "10-12 paneles ",
       "Batería Felicity 16 kWh",
       "Full Back-Up",
       ...SOLAR_ADMIN_INCLUDES,
@@ -246,7 +246,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     badge: "Promoción",
     titleMain: "Kit solar híbrido",
     titlePower: "8 kW",
-    summary: "Inversor híbrido DEYE 8kW, 16 paneles AIKO 610W y batería Felicity 16 kWh",
+    summary: "Inversor híbrido DEYE 8kW, 9.7 kWp en paneles y batería Felicity 16 kWh",
     productImage: "images/kits/8kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 8kW y batería Felicity 16 kWh",
@@ -256,7 +256,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
     components: [
-      { icon: "panel", title: "16 Paneles AIKO 610W", body: "Alta eficiencia N-Type ABC" },
+      { icon: "panel", title: "9.7 kWp", body: "16-19 paneles" },
       { icon: "inverter", title: "Inversor Híbrido DEYE 8kW", body: "Potente, fiable y eficiente" },
       { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
     ],
@@ -267,7 +267,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     ],
     includes: [
       "Inversor híbrido DEYE 8kW",
-      "16 paneles AIKO 610W",
+      "16-19 paneles",
       "Batería Felicity 16 kWh",
       "Full Back-Up",
       ...SOLAR_ADMIN_INCLUDES,
@@ -280,7 +280,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     badge: "Promoción",
     titleMain: "Kit solar híbrido",
     titlePower: "10 kW",
-    summary: "Inversor híbrido DEYE 10kW, 20 paneles AIKO 610W y batería Felicity 16 kWh",
+    summary: "Inversor híbrido DEYE 10kW,12 kWp en paneles y batería Felicity 16 kWh",
     productImage: "images/kits/10kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 10kW y batería Felicity 16 kWh",
@@ -290,7 +290,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
     components: [
-      { icon: "panel", title: "20 Paneles AIKO 610W", body: "Alta eficiencia N-Type ABC" },
+      { icon: "panel", title: "12 kWp", body: "20-23 paneles" },
       { icon: "inverter", title: "Inversor Híbrido DEYE 10kW", body: "Potente, fiable y eficiente" },
       { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
     ],
@@ -301,7 +301,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     ],
     includes: [
       "Inversor híbrido DEYE 10kW",
-      "20 paneles AIKO 610W",
+      "20-23 paneles",
       "Batería Felicity 16 kWh",
       "Full Back-Up",
       ...SOLAR_ADMIN_INCLUDES,
