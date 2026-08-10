@@ -84,7 +84,7 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
               <Zap size={12} aria-hidden="true" className="fill-accent-deep" />
               {spec.badge}
             </span>
-
+          {/*-----------Título y descripción------------  */}
             <div>
               <h3 className="text-3xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-4xl lg:text-3xl xl:text-4xl">
                 {spec.titleMain}{" "}
@@ -100,8 +100,8 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
             <p className="text-base leading-snug text-primary/85 sm:text-lg lg:text-sm xl:text-base">
               {spec.summary}
             </p>
-
-            <div className="flex flex-col justify-center rounded-2xl bg-accent-deep px-5 py-4 text-center text-accent-deep-foreground lg:flex-1 lg:py-5">
+          {/*-----------Precio------------  */}
+            <div className="flex flex-col justify-center rounded-2xl bg-accent-deep px-5 py-4 text-center text-accent-deep-foreground lg:flex-none lg:w-64 lg:py-2">
               <p className="text-xs font-semibold uppercase tracking-[0.18em]">{spec.priceLabel}</p>
               <p className="my-1 text-4xl font-extrabold tracking-tight lg:my-3 xl:text-5xl">
                 {formatPrice(price)}
@@ -110,21 +110,30 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
                 {spec.taxNote}
               </p>
             </div>
+            {/*-----------Incluye------------  */}
 
-            <ul className="space-y-3 lg:space-y-2.5">
-              {spec.benefits.map((b) => (
-                <li key={b.title} className="flex items-start gap-2.5">
-                  <IconBubble icon={b.icon} className="h-8 w-8 lg:h-7 lg:w-7" />
-                  <span className="min-w-0">
-                    <span className="block text-sm font-bold leading-tight">{b.title}</span>
-                    <span className="block text-sm leading-snug text-muted-foreground lg:text-xs">{b.body}</span>
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-col gap-4 md:col-span-2 md:grid md:grid-cols-2 lg:col-span-1 lg:flex lg:flex-col lg:gap-3">
 
+            {spec.includes && spec.includes.length > 0 && (
+              <Panel title="Incluye">
+                <ul className="grid gap-2 sm:grid-cols-2 md:grid-cols-1 lg:gap-1.5">
+                  {spec.includes.map((item) => (
+                    <li key={item} className="flex items-start gap-1.5">
+                      <Check size={14} strokeWidth={3} aria-hidden="true" className="mt-0.5 shrink-0 text-accent-deep" />
+                      <span className="text-sm leading-snug lg:text-xs">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Panel>
+            )}
+            
+            </div>
+            
+            
           </div>
 
+          
+              {/*-----------Especificaciones------------  */}
           <div className="flex flex-col gap-4 lg:gap-3">
 
             <img
@@ -136,24 +145,7 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
               height={spec.productImageHeight}
               className="h-auto w-full rounded-xl bg-secondary/60"
             />
-
-            {spec.components && spec.components.length > 0 && (
-              <ul
-                className={`grid gap-3 md:grid-cols-1 lg:gap-2 ${
-                  spec.components.length % 3 === 0 ? "sm:grid-cols-3" : "sm:grid-cols-2"
-                }`}
-              >
-                {spec.components.map((c) => (
-                  <li key={c.title} className="flex items-center gap-2.5 sm:flex-col sm:text-center md:flex-row md:text-left">
-                    <IconBubble icon={c.icon} className="h-9 w-9 lg:h-7 lg:w-7" />
-                    <span className="min-w-0">
-                      <span className="block text-sm font-bold leading-tight">{c.title}</span>
-                      <span className="block text-sm leading-snug text-muted-foreground lg:text-xs">{c.body}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
+            {/*-----------autosufuciencia------------  */}
 
             {spec.selfSufficiency && (
               <div className="rounded-xl border-2 border-accent/25 p-4 lg:p-3.5">
@@ -189,6 +181,8 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
               </div>
             )}
 
+          
+
             {spec.highlight && (
               <div className="rounded-xl border-2 border-accent/25 p-4 lg:p-3.5">
                 <div className="flex items-start gap-3">
@@ -207,20 +201,30 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
 
           </div>
 
+          
+
           <div className="flex flex-col gap-4 md:col-span-2 md:grid md:grid-cols-2 lg:col-span-1 lg:flex lg:flex-col lg:gap-3">
 
-            {spec.includes && spec.includes.length > 0 && (
-              <Panel title="Incluye">
-                <ul className="grid gap-2 sm:grid-cols-2 md:grid-cols-1 lg:gap-1.5">
-                  {spec.includes.map((item) => (
-                    <li key={item} className="flex items-start gap-1.5">
-                      <Check size={14} strokeWidth={3} aria-hidden="true" className="mt-0.5 shrink-0 text-accent-deep" />
-                      <span className="text-sm leading-snug lg:text-xs">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Panel>
+            {/*-----------Componentes------------  */}
+            {spec.components && spec.components.length > 0 && (
+              <ul
+                className={`grid gap-3 md:grid-cols-1 lg:gap-2 ${
+                  spec.components.length % 3 === 0 ? "sm:grid-cols-3" : "sm:grid-cols-2"
+                }`}
+              >
+                {spec.components.map((c) => (
+                  <li key={c.title} className="flex items-center gap-2.5 sm:flex-col sm:text-center md:flex-row md:text-left">
+                    <IconBubble icon={c.icon} className="h-9 w-9 lg:h-7 lg:w-7" />
+                    <span className="min-w-0">
+                      <span className="block text-sm font-bold leading-tight">{c.title}</span>
+                      <span className="block text-sm leading-snug text-muted-foreground lg:text-xs">{c.body}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
             )}
+
+            {/*-----------Extras opcionales------------  */}
 
             {spec.extras && spec.extras.length > 0 && (
               <Panel title="Extras opcionales">
@@ -235,8 +239,8 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
                 </ul>
               </Panel>
             )}
-
-            <div className="grid gap-3 rounded-xl bg-secondary/60 p-4 md:col-span-2 md:grid-cols-2 lg:col-span-1 lg:grid-cols-1 lg:gap-2.5 lg:p-3.5">
+            {/*-----------Garantías------------  */}
+            
               {spec.guarantees.map((g) => (
                 <div key={g.title} className="flex items-start gap-2.5">
                   <IconBubble icon={g.icon} className="h-9 w-9 lg:h-8 lg:w-8" />
@@ -246,7 +250,21 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
                   </div>
                 </div>
               ))}
-            </div>
+
+            
+            {/*-----------Beneficios------------  */}
+            <ul className="space-y-3 lg:space-y-2.5">
+              {spec.benefits.map((b) => (
+                <li key={b.title} className="flex items-start gap-2.5">
+                  <IconBubble icon={b.icon} className="h-8 w-8 lg:h-7 lg:w-7" />
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold leading-tight">{b.title}</span>
+                    <span className="block text-sm leading-snug text-muted-foreground lg:text-xs">{b.body}</span>
+                  </span>
+                </li>
+              ))}
+              
+            </ul>
 
           </div>
 

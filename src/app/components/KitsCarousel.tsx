@@ -44,7 +44,7 @@ export default function KitsCarousel() {
   return (
     <div>
 
-      <div className="relative pb-16 lg:pb-12">
+      <div className="relative pb-10 lg:pb-8">
 
         <button
           onClick={scrollPrev}
@@ -102,7 +102,11 @@ export default function KitsCarousel() {
           <ChevronRight aria-hidden="true" className="text-white transition-colors group-hover:text-primary" />
         </button>
 
-        <div aria-label="Elegir kit" className="mt-5 flex justify-center gap-2.5">
+      </div>
+
+      <div className="mt-[-20px] flex flex-col items-center gap-1">
+
+        <div aria-label="Elegir kit" className="flex justify-center gap-2.5">
           {KITS.map((k, i) => (
             <button
               key={k.title}
@@ -116,12 +120,13 @@ export default function KitsCarousel() {
           ))}
         </div>
 
-        <a
-          href="#contacto"
-          className="absolute bottom-0 left-1/2 z-20 inline-flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-xl bg-accent-deep px-6 py-3 font-semibold text-accent-deep-foreground shadow-lg transition hover:bg-accent-deep/90 lg:py-2.5"
+        
+        <a href="#contacto"
+          className="inline-flex items-center gap-2 whitespace-nowrap rounded-xl bg-accent-deep px-6 py-3 font-semibold text-accent-deep-foreground shadow-lg transition hover:bg-accent-deep/90 lg:py-2.5"
         >
           Solicitar presupuesto <ArrowRight size={18} aria-hidden="true" />
         </a>
+
       </div>
 
     </div>

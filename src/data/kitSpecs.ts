@@ -123,8 +123,8 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/3kw-producto.webp",
     productImageAlt:
       "Paneles solares, inversor híbrido Hoymiles 3kW y batería DEYE 5,12 kWh",
-    productImageWidth: 726,
-    productImageHeight: 535,
+    productImageWidth: 700,
+    productImageHeight: 500,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
@@ -152,13 +152,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       "2 Certificados de eficiencia energética",
       "Trámite de ayudas y subvenciones",
     ],
-    extras: [
-      { label: "Batería DEYE 5,12kWh", price: 900 },
-      { label: "Batería DEYE 10kWh", price: 2200 },
-      { label: "Toma a tierra", price: 250 },
-      { label: "Cargador coche eléctrico", price: 1000 },
-      { label: "Casa inteligente solar (domótica) desde: ", price: 1500 },
-    ],
+    extras: SOLAR_EXTRAS,
     guarantees: [
       {
         icon: "shield",
@@ -181,8 +175,8 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/6kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 6kW y batería DEYE 5,12 kWh",
-    productImageWidth: 746,
-    productImageHeight: 510,
+    productImageWidth: 700,
+    productImageHeight: 500,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
@@ -215,8 +209,8 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/6kw-offgrid-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor off-grid Felicity 6kW y batería Felicity 16 kWh",
-    productImageWidth: 780,
-    productImageHeight: 505,
+    productImageWidth: 700,
+    productImageHeight: 500,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
@@ -250,8 +244,8 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/8kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 8kW y batería Felicity 16 kWh",
-    productImageWidth: 630,
-    productImageHeight: 395,
+    productImageWidth: 700,
+    productImageHeight: 500,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
@@ -284,8 +278,8 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/10kw-producto.webp",
     productImageAlt:
       "Paneles solares AIKO 610W, inversor híbrido DEYE 10kW y batería Felicity 16 kWh",
-    productImageWidth: 630,
-    productImageHeight: 395,
+    productImageWidth: 700,
+    productImageHeight: 500,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
     benefits: SOLAR_BENEFITS,
@@ -318,7 +312,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/cargador-producto.webp",
     productImageAlt:
       "Cargador de coche eléctrico AUTEL de pared con cable, conector Tipo 2 y app móvil de control",
-    productImageWidth: 928,
+    productImageWidth: 900,
     productImageHeight: 600,
     priceLabel: "Precio de venta",
     taxNote: "IVA incluido",
@@ -329,12 +323,15 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       { icon: "trending", title: "Control dinámico de cargas", body: "Ajusta automáticamente la potencia de carga según los consumos de tu casa." },
       { icon: "droplet", title: "Diseño resistente", body: "Certificación IP65 para uso en exteriores e interiores." },
     ],
-    components: [
-      { icon: "inverter", title: "7,4 kW monofásico", body: "Corriente máxima 32 A" },
-      { icon: "inverter", title: "11 kW trifásico", body: "Corriente máxima 16 A" },
-      { icon: "plug", title: "Conector Tipo 2", body: "Universal IEC 62196-2" },
-      { icon: "droplet", title: "Protección IP65", body: "Resistente al agua y al polvo" },
+
+    includes: [
+      "Cargador Monofasico 7,4 kW o Trifásico 11 kW",
+      "Conector Tipo 2",
+      "Tasas y trámites ante la administración",
+      "Certificado de instalación eléctrica (Boletín)",
+      "Trámite de ayudas y subvenciones",
     ],
+  
     highlight: {
       icon: "clipboard",
       title: "Incluye documentación y legalización del punto de carga",
