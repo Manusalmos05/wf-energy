@@ -23,7 +23,7 @@ export default function FooterSection({ onCookieSettings }: { onCookieSettings?:
             <span className="font-bold text-base">White Fox Energy</span>
             </div>
             <p className="text-white/60 text-xs leading-relaxed">
-            Empresa instaladora de energía solar fotovoltaica en Alicante, Murcia y Vega Baja del Segura.
+            Empresa de soluciones energéticas y domóticas en Alicante, Murcia y Vega Baja del Segura.
             </p>
         </div>
 

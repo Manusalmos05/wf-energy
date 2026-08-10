@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useState, type FormEvent } from "react";
+import PrivacidadPage from "../pages/legal/PrivacidadPage.tsx";
 
 
 import {
@@ -170,7 +171,7 @@ export default function ContactSection(){
             />
             <span className="text-xs text-muted-foreground leading-relaxed">
                 He leído y acepto la{" "}
-                <a href="#" className="text-accent underline hover:no-underline">Política de Privacidad</a>{" "}
+                <a href="/politica-de-privacidad" className="text-accent underline hover:no-underline">Política de Privacidad</a>{" "}
                 y consiento el tratamiento de mis datos para atender mi consulta. *
             </span>
             </label>
