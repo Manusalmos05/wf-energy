@@ -27,7 +27,7 @@ export const ARTICLES: BlogArticle[] = [
       "Comparativa entre termo eléctrico, calentador de butano, aerotermo híbrido y aerotermo de bomba de calor para ahorrar energía y mejorar el confort.",
     date: "2026-08-12",
     tags: ["acs", "aerotermia", "ahorro energético"],
-    cover: "images/cargador.webp",
+    cover: "images/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/portada.webp", 
     readingMinutes: 9,
   },
   {
