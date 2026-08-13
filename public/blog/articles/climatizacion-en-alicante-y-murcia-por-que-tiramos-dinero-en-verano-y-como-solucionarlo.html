@@ -1,0 +1,346 @@
+<p class="article-lead">Climatización en Alicante y Murcia: ¿Por qué tiramos dinero en verano y cómo solucionarlo?</p>
+
+<p>En la mayor parte de España, el gran enemigo del bolsillo en la factura energética es la calefacción en invierno. Sin embargo, en el Levante peninsular —especialmente en las provincias de Alicante y Murcia— el verdadero reto energético ocurre entre mayo y octubre.</p>
+
+<p>Más del 80% del parque residencial en ambas provincias cuenta con una calificación energética baja (E, F o G). Si a esto le sumamos que cerca del 80% de los hogares levantinos depende del aire acondicionado para sobrevivir a las olas de calor, nos encontramos con un problema estructural: estamos tirando entre un 35% y un 50% de la energía que consumen nuestros equipos de climatización.</p>
+
+<h2>Los 4 "agujeros negros" por donde se escapa el dinero de tu aire acondicionado</h2>
+
+<h3>1. La brecha de los compresores ON/OFF frente a los Inverter</h3>
+<p>En el Levante aún sobreviven miles de equipos de aire acondicionado instalados antes de 2012. Estos sistemas funcionan con tecnología "Todo-Nada" (ON/OFF): arrancan al 100% de potencia, se apagan al alcanzar la temperatura y vuelven a arrancar a máxima potencia minutos después.</p>
+
+<p>Los picos continuos de arranque incrementan la factura eléctrica entre un 30% y un 40% frente a un Inverter moderno con elevado factor SEER (Seasonal Energy Efficiency Ratio).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Generación del Equipo</th>
+      <th>Clasificación</th>
+      <th>SEER Promedio</th>
+      <th>Consumo estimado (3.000 frig/h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antiguo / Todo-Nada (Pre-2012)</td>
+      <td>Clase D / E / F</td>
+      <td>2.5 – 3.2</td>
+      <td>1,20 – 1,40 kW/h</td>
+    </tr>
+    <tr>
+      <td>Inverter Convencional (2012-2018)</td>
+      <td>Clase A+ / A++</td>
+      <td>5.5 – 6.5</td>
+      <td>0,60 – 0,70 kW/h</td>
+    </tr>
+    <tr>
+      <td>Inverter Alta Eficiencia (Actual)</td>
+      <td>Clase A+++</td>
+      <td>8.5 – 10.5</td>
+      <td>0,35 – 0,45 kW/h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2. Pérdidas masivas en los falsos techos (Sistemas por conductos)</h3>
+<p>La climatización centralizada por conductos en falsos techos de baños y pasillos es muy habitual en Alicante y Murcia. Durante los meses estivales, un falso techo bajo forjado o cubierta puede alcanzar los 35 °C a 38 °C.</p>
+
+<p>Si los conductos de fibra de vidrio no están perfectamente aislados o la cinta de unión de las juntas se ha degradado, el aire frío (que sale a unos 12 °C) se calienta antes de llegar a las habitaciones, o se escapa directamente en el plenum, perdiendo hasta un 20% del caudal.</p>
+
+<h3>3. El impacto de la salinidad y la calima</h3>
+<p>La brisa marina en municipios costeros (como Torrevieja, Benidorm o Águilas) unida al polvo en suspensión y la calima frecuente en el interior de Murcia crean una capa abrasiva en las unidades exteriores.</p>
+
+<ul>
+  <li>Condensadores oxidados o sucios: Reducen la capacidad de disipar calor al aire libre, forzando al compresor a trabajar a mayor presión y subiendo el consumo hasta un 25%.</li>
+  <li>Filtros interiores tupidos: Producen congelación parcial del evaporador y hacen que el equipo trabaje ininterrumpidamente.</li>
+</ul>
+
+<h3>4. La falsa creencia del termostato a 18 °C</h3>
+<p>Poner el aire a 18 °C no enfriará la habitación más rápido. El equipo impulsa el aire a la misma temperatura (entorno a los 10 °C–14 °C) sin importar la consigna. Lo único que se consigue al fijar temperaturas extremas es evitar que el compresor pare.</p>
+
+<p>Dato clave: Cada grado que bajes el termostato por debajo de los 24 °C encarece la factura de la luz entre un 7% y un 8%.</p>
+
+<div class="clima-calculator" id="clima-calculator">
+  <style>
+    .clima-calculator {
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(14,116,144,0.06), rgba(255,255,255,0.8));
+      padding: 0.9rem 1rem 1rem;
+      margin: 1rem 0 1.25rem;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+    .clima-cost-compare {
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(15, 118, 110, 0.06), rgba(255,255,255,0.9));
+      padding: 1.1rem 1.1rem 0.9rem;
+      margin: 1rem 0 1.5rem;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+    }
+    .clima-cost-compare__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .clima-cost-compare__eyebrow {
+      margin: 0 0 0.25rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+    .clima-cost-compare__header h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      color: #0f172a;
+    }
+    .clima-cost-compare__header strong {
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #0f172a;
+    }
+    .clima-cost-compare__bar {
+      display: flex;
+      width: 100%;
+      height: 18px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(148, 163, 184, 0.18);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+    .clima-cost-compare__segment {
+      display: block;
+      height: 100%;
+    }
+    .clima-cost-compare__segment--waste {
+      background: linear-gradient(90deg, #f59e0b, #f97316);
+    }
+    .clima-cost-compare__segment--useful {
+      background: linear-gradient(90deg, #0ea5e9, #14b8a6);
+    }
+    .clima-cost-compare__legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: #334155;
+      font-weight: 600;
+    }
+    .clima-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 0.45rem;
+      vertical-align: middle;
+    }
+    .clima-dot--waste {
+      background: #f59e0b;
+    }
+    .clima-dot--useful {
+      background: #14b8a6;
+    }
+    .clima-calculator__title {
+      margin: 0 0 0.2rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .clima-calculator__subtitle {
+      margin: 0 0 0.75rem;
+      color: #475569;
+      font-size: 0.88rem;
+    }
+    .clima-calculator__grid {
+      display: grid;
+      gap: 0.9rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .clima-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .clima-field label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #475569;
+      font-weight: 700;
+    }
+    .clima-field input,
+    .clima-field select {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(255,255,255,0.95);
+      font: inherit;
+      color: #0f172a;
+    }
+    .clima-field input[type="range"] {
+      padding: 0;
+    }
+    .clima-results {
+      margin-top: 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+    }
+    .clima-result {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(148,163,184,0.45);
+      border-radius: 12px;
+      padding: 0.85rem 0.8rem;
+    }
+    .clima-result__label {
+      font-size: 0.68rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+    .clima-result__value {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #0f172a;
+    }
+    .clima-result__value.accent {
+      color: #0f766e;
+    }
+    .clima-result__value.warning {
+      color: #b45309;
+    }
+  </style>
+
+  <h3 class="clima-calculator__title">Calculadora de ineficiencia energética</h3>
+  <p class="clima-calculator__subtitle">Estimación rápida para Alicante y Murcia</p>
+
+  <div class="clima-cost-compare" aria-label="Comparación del gasto mensual de climatización">
+    <div class="clima-cost-compare__header">
+      <div>
+        <p class="clima-cost-compare__eyebrow">Gasto mensual estimado</p>
+        <h3>La mayoría del dinero se pierde en ineficiencias</h3>
+      </div>
+      <strong id="clima-total-gasto">0.00 €</strong>
+    </div>
+
+    <div class="clima-cost-compare__bar" role="img" aria-label="Gasto mensual separado entre desperdicio y consumo útil">
+      <span id="clima-cost-waste" class="clima-cost-compare__segment clima-cost-compare__segment--waste" style="width: 0%;"></span>
+      <span id="clima-cost-useful" class="clima-cost-compare__segment clima-cost-compare__segment--useful" style="width: 100%;"></span>
+    </div>
+
+    <div class="clima-cost-compare__legend">
+      <span id="clima-cost-waste-label"><i class="clima-dot clima-dot--waste"></i> Desperdicio: 0.00 €</span>
+      <span id="clima-cost-useful-label"><i class="clima-dot clima-dot--useful"></i> Uso útil: 0.00 €</span>
+    </div>
+  </div>
+
+  <div class="clima-calculator__grid">
+    <div class="clima-field">
+      <label for="clima-equipo">Tipo de equipo</label>
+      <select id="clima-equipo">
+        <option value="3">Antiguo / Todo-Nada (SEER 3.0)</option>
+        <option value="6">Inverter A+ (SEER 6.0)</option>
+        <option value="9">Inverter A+++ (SEER 9.0)</option>
+      </select>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-horas">Horas diarias</label>
+      <input id="clima-horas" type="number" min="2" max="16" value="8" />
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-temp">Temperatura objetivo</label>
+      <input id="clima-temp" type="range" min="18" max="26" value="21" />
+      <div id="clima-temp-label" style="font-size:0.78rem;color:#475569;">21 °C</div>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-aislamiento">Aislamiento</label>
+      <select id="clima-aislamiento">
+        <option value="1.35">Pobre (Sin aislante)</option>
+        <option value="1">Medio (Doble cristal)</option>
+        <option value="0.8">Alto (SATE)</option>
+      </select>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-precio">Precio del kWh</label>
+      <input id="clima-precio" type="number" min="0.05" max="0.5" step="0.01" value="0.22" />
+    </div>
+  </div>
+
+  <div class="clima-results">
+    <div class="clima-result">
+      <span class="clima-result__label">Consumo mensual</span>
+      <span id="result-kwh" class="clima-result__value">0.0 kWh</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Gasto estimado</span>
+      <span id="result-cost" class="clima-result__value warning">0.00 €</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Ahorro con A+++</span>
+      <span id="result-savings" class="clima-result__value accent">0.00 €</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Desperdicio</span>
+      <span id="result-waste" class="clima-result__value">0%</span>
+    </div>
+  </div>
+</div>
+
+<h2><strong>La Gran Duda: ¿Máquina de conductos zonificada o varios Splits A+++?</strong></h2>
+
+<p>Si estás pensando en reformar o actualizar la climatización de tu vivienda en la zona levantina, este es el dilema más común:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterio</th>
+      <th>Splits Independientes A+++</th>
+      <th>Conductos Zonificados (con Airzone)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inversión inicial</td>
+      <td>Económica: 2.200 € – 3.800 € (para 3-4 equipos)</td>
+      <td>Elevada: 5.500 € – 8.500 € (equipo + rejillas motorizadas)</td>
+    </tr>
+    <tr>
+      <td>Necesidad de obra</td>
+      <td>Mínima (perforación puntual de paredes).</td>
+      <td>Requiere falsos techos y red de fibra/aluminio.</td>
+    </tr>
+    <tr>
+      <td>Eficiencia pura (SEER)</td>
+      <td>Máxima (8.5 a 10.5): Sin pérdidas de conducto.</td>
+      <td>Alta (6.1 a 7.5): Ciertas pérdidas térmicas en plenum.</td>
+    </tr>
+    <tr>
+      <td>Consumo a bajo rendimiento</td>
+      <td>Mínimo (~200 - 300 W/h si solo usas 1 estancia).</td>
+      <td>Moderado (~600 - 900 W/h mínimo de máquina central).</td>
+    </tr>
+    <tr>
+      <td>Estética y confort</td>
+      <td>Unidades vistas en pared; flujo directo.</td>
+      <td>Totalmente invisible, silencioso y difusión homogénea.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Veredicto: ¿Qué opción te conviene en Alicante y Murcia?</h2>
+<p><strong>1. Ahorro rápido y presupuesto ajustado (Gana el Split A+++):</strong> Si no dispones de falso techo o buscas la amortización más rápida, la mejor decisión es instalar Splits independientes de clase A+++ en el salón y dormitorios principales. Al no perder frío por el camino y ofrecer la mayor eficiencia estacional del mercado, lograrás las facturas de luz más bajas posibles.</p>
+
+<p><strong>2. Confort integral y preinstalación existente (Gana Conductos + Airzone):</strong> Si tu piso ya cuenta con la red de conductos en el techo o vas a hacer una reforma integral en una vivienda familiar, la combinación de una máquina central con un sistema de zonificación inteligente (rejillas motorizadas como Airzone) es la mejor opción. Te permitirá controlar la temperatura estancia por estancia desde el móvil, ahorrando hasta un 45% respecto a una máquina de conductos tradicional sin zonificar.</p>
