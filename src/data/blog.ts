@@ -17,7 +17,7 @@ export const ARTICLES: BlogArticle[] = [
       "Descubre dónde se pierde la energía en la climatización de tu vivienda y qué opción de inversión te ayuda a ahorrar real en Alicante y Murcia.",
     date: "2026-08-12",
     tags: ["climatización", "ahorro energético", ],
-    cover: "images/cargador.webp",
+    cover: "images/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/portada.webp",
     readingMinutes: 9,
   },
   {
