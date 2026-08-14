@@ -47,7 +47,7 @@ export const ARTICLES: BlogArticle[] = [
       "Descubre por qué una válvula mezcladora termostática mejora la seguridad, aumenta la autonomía del acumulador y ahorra agua y energía en tu instalación de ACS.",
     date: "2026-08-12",
     tags: ["acs", "ahorro energético", "fontanería"],
-    cover: "images/cargador.webp",
+    cover: "images/blog/el-heroe-invisible-del-acs-la-valvula-mescladora-termostatica/portada.webp",
     readingMinutes: 8,
   },
   {
