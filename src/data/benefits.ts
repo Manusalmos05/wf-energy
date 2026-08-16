@@ -9,7 +9,7 @@ import {
 
 
 export const BENEFITS = [
-  { icon: TrendingDown, label: "Ahorro hasta 80%" },
+  { icon: TrendingDown, label: "Ahorro hasta 90%" },
   { icon: Clock, label: "Instalación rápida" },
   { icon: CreditCard, label: "Subvenciones" },
   { icon: Award, label: "Primeras marcas" },

@@ -14,18 +14,18 @@ export default function ProjectsSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {PROJECTS.map((p, i) => (
+        {PROJECTS.map((p) => (
             <div
             key={p.label}
-            className={`relative group overflow-hidden rounded-2xl bg-secondary ${i === 0 ? "md:col-span-1 md:row-span-2" : ""}`}
-            style={{ height: i === 0 ? undefined : "200px" }}
+            className="relative group overflow-hidden rounded-2xl bg-secondary min-w-0"
+           
             >
             <img
                 src={p.img}
                 alt={p.label}
                 loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                style={{ height: i === 0 ? "420px" : "200px" }}
+                className="w-full h-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+                
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
