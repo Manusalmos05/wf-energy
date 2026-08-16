@@ -9,7 +9,7 @@ export default function ProjectsSection() {
         <p className="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Proyectos realizados</p>
         <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Proyectos en Alicante y Murcia</h2>
         <p className="text-muted-foreground text-base max-w-lg mx-auto">
-            Instalaciones fotovoltaicas residenciales y proyectos de domótica.
+            Instalaciones fotovoltaicas residenciales y más.
         </p>
         </div>
 

@@ -21,7 +21,7 @@ export default function HeroSection() {
             <span className="text-accent">Alicante, Murcia y La Vega Baja</span>
         </h1>
         <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-xl">
-            Reduce hasta un <strong className="text-white">80%</strong> tu factura eléctrica con energía solar, domótica y movilidad eléctrica. Sin compromiso.
+            Reduce hasta un <strong className="text-white">90%</strong> tu factura eléctrica con energía solar, domótica y movilidad eléctrica. Sin compromiso.
         </p>
         <div className="flex flex-wrap gap-3">
             <a

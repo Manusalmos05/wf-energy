@@ -11,7 +11,7 @@ export default function CalculatorSection() {
             <p className="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Calculadora de ahorro</p>
             <h2 className="text-3xl md:text-4xl font-extrabold mb-5">¿Cuánto puedes ahorrar con la energía solar?</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-            Introduce tu gasto mensual en electricidad, tu provincia y el tipo de vivienda. Te mostramos un estimado inmediato.
+            Introduce tu gasto mensual en electricidad y tu provincia. Te mostramos un estimado inmediato.
             <b>Para un cálculo exacto, solicita una cita de valoración.</b>
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">

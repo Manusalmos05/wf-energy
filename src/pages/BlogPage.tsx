@@ -44,7 +44,7 @@ export default function BlogPage() {
 
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-5">
-          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-10">
+          <div className="flex-col md:flex-row md:items-center gap-4 mb-10">
             <div className="relative flex-1 max-w-md">
               <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
               <input
