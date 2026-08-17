@@ -90,6 +90,16 @@ export const ARTICLES: BlogArticle[] = [
     readingMinutes: 7,
   },
   {
+    slug: "cambio-ventanas-aislamiento-cajon-persianas",
+    title: "Cambio de Ventanas y Aislamiento de Persianas: Soluciones Técnicas, Precios y Ahorro Real",
+    excerpt:
+      "Análisis detallado sobre cómo optimizar las ventanas y el cajón de persiana en climas mediterráneos como Murcia y Alicante. Comparativa PVC vs. Aluminio RPT, vidrios de Control Solar y cálculo de retorno de inversión.",
+    date: "2026-08-13",
+    tags: ["Eficiencia Energética", "ventanas"],
+    cover: "images/blog/cambio-ventanas-aislamiento-cajon-persianas/portada.webp",
+    readingMinutes: 8,
+  },
+  {
     slug: "aislamiento-térmico-de-tuberías-de-PPR",
     title: "Aislamiento Térmico de Tuberías de PPR: Ahorro y eficiencia",
     excerpt:
@@ -98,7 +108,18 @@ export const ARTICLES: BlogArticle[] = [
     tags: ["fontanería", "asc", "coquilla"],
     cover: "images/blog/aislamiento-térmico-de-tuberías-de-PPR/portada.webp",
     readingMinutes: 6,
+  },
+  {
+    slug: "soluciones-aislamiento-termico-tejados-cubiertas",
+    title: "Aislar el Tejado o Cubierta: Soluciones Técnicas y Ahorro Real",
+    excerpt:
+      "El tejado concentra hasta el 30% de las pérdidas térmicas de una vivienda. Comparamos numéricamente el retorno de inversión (payback) de soplado, insuflado, trasdosado, cubierta invertida y SATE.",
+    date: "2026-08-17",
+    tags: ["Aislamiento", "Tejados", "Eficiencia Energética"],
+    cover: "images/blog/soluciones-aislamiento-termico-tejados-cubiertas/portada.webp",
+    readingMinutes: 6,
   }
+
 
 ];
 
