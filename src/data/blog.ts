@@ -33,8 +33,7 @@ export const ARTICLES: BlogArticle[] = [
   {
     slug: "como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente",
     title: "Cómo convertir una instalación fotovoltaica en una vivienda inteligente",
-    excerpt:
-      "Descubre cómo la domótica sincroniza la producción solar con el consumo real para ahorrar más, mejorar el confort y hacer la casa más segura.",
+    excerpt: "Descubre cómo la domótica sincroniza la producción solar con el consumo real para ahorrar más, mejorar el confort y hacer la casa más segura.",
     date: "2026-08-12",
     tags: ["domótica", "fotovoltaica", "ahorro energético"],
     cover: "images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/portada.webp",
@@ -51,14 +50,14 @@ export const ARTICLES: BlogArticle[] = [
     readingMinutes: 8,
   },
   {
-    slug: "beneficios-del-coche-electrico-vs-combustion",
-    title: "Beneficios del coche eléctrico frente al de combustión en Alicante y Murcia",
+    slug: "coche-electrico-consumo-real-mantenimiento-ahorro",
+    title: "Coche Eléctrico: Consumo Real, Mantenimiento y Ahorro",
     excerpt:
-      "Descubre cómo un cargador doméstico y unas placas solares reducen el coste real del coche eléctrico frente a un térmico, con cifras para Alicante, Murcia y la Vega Baja del Segura.",
+      "Análisis técnico y financiero del Coste Total de Propiedad (TCO) de un coche eléctrico frente a uno de gasolina: consumo real en red doméstica, mantenimiento, impuestos y amortización del Wallbox.",
     date: "2026-08-12",
-    tags: ["coche eléctrico", "placas solares", "autoconsumo"],
-    cover: "images/cargador.webp",
-    readingMinutes: 8,
+    tags: ["Movilidad Eléctrica"],
+    cover: "images/blog/coche-electrico-consumo-real-mantenimiento-ahorro/portada.webp",
+    readingMinutes: 6,
   },
   {
     slug: "el-mito-del-60-de-descuento-en-el-irpf",
@@ -90,6 +89,17 @@ export const ARTICLES: BlogArticle[] = [
     cover: "images/bateria.webp",
     readingMinutes: 7,
   },
+  {
+    slug: "aislamiento-térmico-de-tuberías-de-PPR",
+    title: "Aislamiento Térmico de Tuberías de PPR: Ahorro y eficiencia",
+    excerpt:
+      "Conoce como un material barato puede ahorrate dinero evitando las perdidas térmicas: La coquilla.",
+    date: "2026-08-17",
+    tags: ["fontanería", "asc", "coquilla"],
+    cover: "images/blog/aislamiento-térmico-de-tuberías-de-PPR/portada.webp",
+    readingMinutes: 6,
+  }
+
 ];
 
 export const sortedArticles = [...ARTICLES].sort((a, b) =>
