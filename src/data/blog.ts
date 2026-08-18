@@ -40,13 +40,13 @@ export const ARTICLES: BlogArticle[] = [
     readingMinutes: 8,
   },
   {
-    slug: "el-heroe-invisible-del-acs-la-valvula-mescladora-termostatica",
+    slug: "el-heroe-invisible-del-acs-la-valvula- mezcladora-termostatica",
     title: "El héroe invisible del ACS: la válvula mezcladora termostática",
     excerpt:
       "Descubre por qué una válvula mezcladora termostática mejora la seguridad, aumenta la autonomía del acumulador y ahorra agua y energía en tu instalación de ACS.",
     date: "2026-08-12",
     tags: ["acs", "ahorro energético", "fontanería"],
-    cover: "images/blog/el-heroe-invisible-del-acs-la-valvula-mescladora-termostatica/portada.webp",
+    cover: "images/blog/el-heroe-invisible-del-acs-la-valvula- mezcladora-termostatica/portada.webp",
     readingMinutes: 8,
   },
   {
@@ -118,7 +118,18 @@ export const ARTICLES: BlogArticle[] = [
     tags: ["Aislamiento", "Tejados", "Eficiencia Energética"],
     cover: "images/blog/soluciones-aislamiento-termico-tejados-cubiertas/portada.webp",
     readingMinutes: 6,
+  },
+  {
+    slug: "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante",
+    title: "Cargar tu Coche Eléctrico en Murcia y Alicante: Sin Fotovoltaica vs. Con Sistema Fotovoltaico WFEnergy",
+    excerpt:
+      "Análisis comparativo real entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico WFEnergy (9,7 kWp + 16 kWh + Batería Virtual). Descubre el ahorro real de ~700 €/año",
+    date: "2026-08-14",
+    tags: ["Movilidad Eléctrica", "autoconsumo"],
+    cover: "images/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/portada.webp",
+    readingMinutes: 8,
   }
+
 
 
 ];
