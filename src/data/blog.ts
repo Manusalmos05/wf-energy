@@ -55,7 +55,7 @@ export const ARTICLES: BlogArticle[] = [
     excerpt:
       "Análisis técnico y financiero del Coste Total de Propiedad (TCO) de un coche eléctrico frente a uno de gasolina: consumo real en red doméstica, mantenimiento, impuestos y amortización del Wallbox.",
     date: "2026-08-12",
-    tags: ["Movilidad Eléctrica"],
+    tags: ["movilidad eléctrica"],
     cover: "images/blog/coche-electrico-consumo-real-mantenimiento-ahorro/portada.webp",
     readingMinutes: 6,
   },
@@ -95,7 +95,7 @@ export const ARTICLES: BlogArticle[] = [
     excerpt:
       "Análisis detallado sobre cómo optimizar las ventanas y el cajón de persiana en climas mediterráneos como Murcia y Alicante. Comparativa PVC vs. Aluminio RPT, vidrios de Control Solar y cálculo de retorno de inversión.",
     date: "2026-08-13",
-    tags: ["Eficiencia Energética", "ventanas"],
+    tags: ["eficiencia energética", "ventanas", "aislamiento"],
     cover: "images/blog/cambio-ventanas-aislamiento-cajon-persianas/portada.webp",
     readingMinutes: 8,
   },
@@ -105,7 +105,7 @@ export const ARTICLES: BlogArticle[] = [
     excerpt:
       "Conoce como un material barato puede ahorrate dinero evitando las perdidas térmicas: La coquilla.",
     date: "2026-08-17",
-    tags: ["fontanería", "asc", "coquilla"],
+    tags: ["fontanería", "acs", "coquilla", "aislamiento"],
     cover: "images/blog/aislamiento-térmico-de-tuberías-de-PPR/portada.webp",
     readingMinutes: 6,
   },
@@ -115,7 +115,7 @@ export const ARTICLES: BlogArticle[] = [
     excerpt:
       "El tejado concentra hasta el 30% de las pérdidas térmicas de una vivienda. Comparamos numéricamente el retorno de inversión (payback) de soplado, insuflado, trasdosado, cubierta invertida y SATE.",
     date: "2026-08-17",
-    tags: ["Aislamiento", "Tejados", "Eficiencia Energética"],
+    tags: ["aislamiento", "tejados", "eficiencia energética"],
     cover: "images/blog/soluciones-aislamiento-termico-tejados-cubiertas/portada.webp",
     readingMinutes: 6,
   },
@@ -125,11 +125,37 @@ export const ARTICLES: BlogArticle[] = [
     excerpt:
       "Análisis comparativo real entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico WFEnergy (9,7 kWp + 16 kWh + Batería Virtual). Descubre el ahorro real de ~700 €/año",
     date: "2026-08-14",
-    tags: ["Movilidad Eléctrica", "autoconsumo"],
+    tags: ["movilidad eléctrica", "autoconsumo"],
     cover: "images/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/portada.webp",
     readingMinutes: 8,
-  }
-
+  },
+  {
+  slug: "uso-agua-estrategia-bioclimatica-fuentes-interior",
+  title: "Uso del agua como estrategia bioclimática en el hogar",
+  excerpt: "Usa fuentes de agua interiores y agua de condensados para climatización pasiva, regulación de humedad y calidad del aire en Alicante y Murcia.",
+  date: "2026-08-14",
+  tags: ["eficiencia energética", "ahorro energético"],
+  cover: "images/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/portada.webp",
+  readingMinutes: 6,
+},
+{
+  slug: "fachadas-vegetales-aislamiento-natural-calor",
+  title: "Fachadas Vegetales: Aislamiento Natural para tu Vivienda",
+  excerpt: "Descubre cómo las fachadas vegetales reducen la temperatura exterior y el gasto en aire acondicionado en climas cálidos como Murcia y Alicante.",
+  date: "2026-08-14",
+  tags: ["eficiencia energética", "arquitectura bioclimática", "aislamiento"],
+  cover: "images/blog/fachadas-vegetales-aislamiento-natural-calor/portada.webp",
+  readingMinutes: 6,
+},
+{
+  slug: "ventajas-aislar-vivienda-sate-insuflado-trasdosado",
+  title: "Aislar una Vivienda Unifamiliar: SATE, Insuflado o Trasdosado",
+  excerpt: "Reduce hasta 450 €/año en el recibo de la luz aislando tu chalet. Comparamos SATE, insuflado y trasdosado con datos reales en Alicante y Murcia.",
+  date: "2026-08-13",
+  tags: ["eficiencia energética", "aislamiento", "ahorro"],
+  cover: "images/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/portada.webp",
+  readingMinutes: 5,
+}
 
 
 ];
