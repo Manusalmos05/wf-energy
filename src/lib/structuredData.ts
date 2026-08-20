@@ -98,12 +98,12 @@ function services(): Node[] {
 
 function products(): Node[] {
   return KITS.map((k) => {
-    const spec = k.slug ? KIT_SPECS[k.slug] : undefined;
+    const spec = KIT_SPECS[k.slug];
     const node: Node = {
       "@type": "Product",
       "@id": kitId(k.title, k.slug),
       name: k.title,
-      image: `${SITE}/${k.img}`,
+      image: `${SITE}/${spec.productImage}`,
       brand: { "@type": "Brand", name: BRAND },
       offers: {
         "@type": "Offer",

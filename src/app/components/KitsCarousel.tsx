@@ -39,8 +39,6 @@ export default function KitsCarousel() {
     };
   }, [emblaApi]);
 
-  const specs = KITS.map((k) => (k.slug ? KIT_SPECS[k.slug] : undefined));
-
   return (
     <div>
 
@@ -63,7 +61,7 @@ export default function KitsCarousel() {
         >
           <div className="flex">
           {KITS.map((k, i) => {
-            const spec = specs[i];
+            const spec = KIT_SPECS[k.slug];
             return (
               <div
                 key={k.title}
@@ -73,21 +71,7 @@ export default function KitsCarousel() {
                 aria-hidden={i !== selected}
                 className="flex-[0_0_100%] px-1 sm:px-4 lg:px-12"
               >
-                {spec ? (
-                  <KitInfographic spec={spec} price={k.price} />
-                ) : (
-                  <div className="h-full overflow-hidden rounded-2xl bg-card shadow-xl">
-                    <div className="flex h-[420px] items-center justify-center sm:h-[550px]">
-                      <img
-                        src={k.img}
-                        alt={k.title}
-                        loading="lazy"
-                        decoding="async"
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                  </div>
-                )}
+                <KitInfographic spec={spec} price={k.price} />
               </div>
             );
           })}
