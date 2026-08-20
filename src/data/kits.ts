@@ -14,7 +14,7 @@ export const KITS: Kit[] = [
   {title: "Kit domótico", price: 2500, slug: "domotico" },
   {title: "Kit domótico pequeño", price: 2000, slug: "domotico-s" },
   {title: "Aerotermo Ariston Nuos Plus S2 110L Wi-Fi", price: 1500, slug: "aerotermo-110" },
-  {title: "Aerotermo Ariston Híbrido 100L Wi-Fi", price: 1500, slug: "aerotermo-100" }
+  {title: "Aerotermo Ariston Híbrido 100L Wi-Fi", price: 850, slug: "aerotermo-100" }
 ]; 
 
 export function formatPrice(value: number): string {
