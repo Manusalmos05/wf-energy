@@ -4,12 +4,12 @@ export default function HeroSection() {
   return (
 
     <section id="inicio" className="relative w-full min-h-screen flex items-center pt-16">
-    {/**
+  
     <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&h=1100&fit=crop&auto=format)` }}
     />
-     */}
+
     <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/20" />
     <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
 
