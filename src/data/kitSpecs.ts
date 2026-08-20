@@ -35,7 +35,7 @@ export type KitSpec = {
   extras?: { label: string; price: number }[];
   guarantees: { icon: IconName; title: string; body: string }[];
 };
-
+/*--------------constantes------------------ */
 const SOLAR_BENEFITS: KitSpec["benefits"] = [
   { icon: "trending", title: "Máxima eficiencia", body: "Ahorra más desde el primer día." },
   { icon: "shield", title: "Energía segura", body: "Suministro garantizado incluso en cortes de luz." },
@@ -56,6 +56,12 @@ const SOLAR_EXTRAS: KitSpec["extras"] = [
   { label: "Toma de tierra", price: 250 },
   { label: "Cargador coche eléctrico", price: 1000 },
   { label: "Casa inteligente solar (domótica) desde:", price: 1500 },
+];
+
+const AEROTERMOS_EXTRAS: KitSpec["extras"] = [
+  { label: "Filtro antical:", price: 32 },
+  { label: "Válvula termostática", price: 50 },
+  { label: "Trípode soporte de carga", price: 70 }
 ];
 
 const SOLAR_GUARANTEES: KitSpec["guarantees"] = [
@@ -114,7 +120,79 @@ const DOMOTICO_BASE = {
   ],
 } satisfies Partial<KitSpec>;
 
+const AEROTERMO_110L = {
+  badge: "Promoción",
+  summary:
+    "Solucion Integral de agua caliente sanitaria- Eficiencia, confort y conectividad para tu hogar",
+  productImageWidth: 550,
+  productImageHeight: 460,
+  priceLabel: "Precio de venta",
+  taxNote: "IVA incluido",
+  benefits: [
+    { icon: "battery", title: "GRAN CAPACIDAD", body: "100 Litros de agua." },
+    { icon: "inverter", title: "TECNOLOGÍA HÍBRIDA i-Memory", body: "Algoritmo inteligente que combina resistencia y bomba de calor paramáxima eficiencia." },
+    { icon: "shield", title: "FUNCION ANTI-LEGIONELA AUTOMÁTICA", body: "Previene enfermedades, seguridad sanitaria periódica" },
+    { icon: "wifi", title: "CONECTIVIDAD WIFI Y APP ARISTON NET", body: "Control total. Programa y mide tu consumo" },
+    { icon: "clipboard", title: "MULTIPLES MODOS", body: "Green, Boost, Program 1&2, i-Memory" },
+    { icon: "house", title: "INSTALACIÓN FLEXIBLE", body: "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
+  ],
+  highlight: {
+    icon: "house",
+    title: "Eficiencia Energética",
+    body: "Aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: Bomba de calor, Gran capacidad y WiFi integrado",
+  },
+  guarantees: [
+    {
+      icon: "shield",
+      title: "Compatible",
+      body: "Perfectamente integrable a sistemas fotovoltaicos y/o domóticos",
+    },
+    {
+      icon: "cloud",
+      title: "Sin cuotas mensuales",
+      body: "Sin suscripciones",
+    }
+  ],
+} satisfies Partial<KitSpec>;
+
+const AEROTERMO_100L = {
+  badge: "Promoción",
+  summary:
+    "Solucion Integral de agua caliente sanitaria- Eficiencia, confort y conectividad para tu hogar",
+  productImageWidth: 550,
+  productImageHeight: 460,
+  priceLabel: "Precio de venta",
+  taxNote: "IVA incluido",
+  benefits: [
+    { icon: "battery", title: "GRAN CAPACIDAD", body: "100 Litros de agua." },
+    { icon: "inverter", title: "TECNOLOGÍA DE BOMBA DE CALOR", body: "Aprovecha el aire para calentar el agua de forma eficiente" },
+    { icon: "shield", title: "FUNCION ANTI-LEGIONELA AUTOMÁTICA", body: "Previene enfermedades, seguridad sanitaria periódica" },
+    { icon: "wifi", title: "CONECTIVIDAD WIFI Y APP ARISTON NET", body: "Control total. Programa y mide tu consumo" },
+    { icon: "clipboard", title: "MULTIPLES MODOS", body: "Green, Boost, Program 1&2, i-Memory" },
+    { icon: "house", title: "INSTALACIÓN FLEXIBLE", body: "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
+  ],
+  highlight: {
+    icon: "house",
+    title: "Eficiencia Energética",
+    body: "Aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: Bomba de calor, Gran capacidad, WiFi integrado y mecanismo silencioso",
+  },
+  guarantees: [
+    {
+      icon: "shield",
+      title: "Compatible",
+      body: "Perfectamente integrable a sistemas fotovoltaicos y/o domóticos",
+    },
+    {
+      icon: "cloud",
+      title: "Sin cuotas mensuales",
+      body: "Sin suscripciones",
+    }
+  ],
+} satisfies Partial<KitSpec>;
+
 export const KIT_SPECS: Record<string, KitSpec> = {
+
+/*--------------paneles------------------ */
   "3kw-hibrido": {
     badge: "Promoción",
     titleMain: "Kit solar híbrido",
@@ -366,7 +444,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       },
     ],
   },
-
+/*--------------domotica------------------ */
   domotico: {
     ...DOMOTICO_BASE,
     titleMain: "Kit",
@@ -401,4 +479,30 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       "3 escenas personalizadas",
     ],
   },
+/*--------------Aerotermos ---------------------*/
+  "aerotermo-110": {
+    ...AEROTERMO_110L,
+    titleMain: "Aerotermo Ariston",
+    titlePower: "Nuos Plus S2 110L Wi-Fi",
+    productImage: "images/kits/aerotermo_110.webp",
+    productImageAlt: "Aerotermo Ariston Nuos Plus S2 110L Wi-Fi",
+    includes: [
+      "Instalación",
+      "Puesta en marcha"
+    ],
+    extras: AEROTERMOS_EXTRAS
+  },
+  "aerotermo-100": {
+      ...AEROTERMO_100L,
+      titleMain: "Aerotermo Ariston",
+      titlePower: "Lydos Hybrid Wi-Fi 100L",
+      productImage: "images/kits/aerotermo_100.webp",
+      productImageAlt: "Aerotermo Ariston Lydos Hybrid Wi-Fi 100L",
+      includes: [
+        "Instalación",
+        "Puesta en marcha"
+      ],
+      extras: AEROTERMOS_EXTRAS
+    }
+
 };
