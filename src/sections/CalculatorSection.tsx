@@ -4,7 +4,7 @@ import Calculator from "../app/components/SavingsCalculator.tsx";
 export default function CalculatorSection() {
     return (
 
-    <section className="py-24">
+    <section id="calculadora" className="py-24">
     <div className="max-w-7xl mx-auto px-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <div>
