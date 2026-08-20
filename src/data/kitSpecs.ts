@@ -143,6 +143,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
     ],
     includes: [
+      "Instalación",
       "Inversor híbrido Hoymiles 3kW",
       "8-10 paneles",
       "Batería DEYE 5,12 kWh",
@@ -191,6 +192,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
     ],
     includes: [
+      "Instalación",
       "Inversor híbrido DEYE 6kW",
       "10-12 paneles",
       "Batería DEYE 5,12 kWh",
@@ -226,6 +228,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     },
     stats: [{ label: "Producción anual estimada", value: "10.340 kWh" }],
     includes: [
+      "Instalación",
       "Inversor Off-grid Felicity 6kW",
       "10-12 paneles ",
       "Batería Felicity 16 kWh",
@@ -260,6 +263,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
     ],
     includes: [
+      "Instalación",
       "Inversor híbrido DEYE 8kW",
       "16-19 paneles",
       "Batería Felicity 16 kWh",
@@ -294,6 +298,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
       { label: "Cobertura del consumo anual", value: "92% - 98%", ringPercent: 95 },
     ],
     includes: [
+      "Instalación",
       "Inversor híbrido DEYE 10kW",
       "20-23 paneles",
       "Batería Felicity 16 kWh",
@@ -325,6 +330,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     ],
 
     includes: [
+      "Instalación",
       "Cargador Monofasico 7,4 kW o Trifásico 11 kW",
       "Conector Tipo 2",
       "Tasas y trámites ante la administración",
@@ -368,6 +374,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/domotico-producto.webp",
     productImageAlt: "Hub Home Assistant Green con su caja, base del kit domótico",
     includes: [
+      "Instalación",
       "7 módulos de iluminación",
       "5 módulos de persianas",
       "2 mandos de clima",
@@ -385,6 +392,7 @@ export const KIT_SPECS: Record<string, KitSpec> = {
     productImage: "images/kits/domotico-s-producto.webp",
     productImageAlt: "Hub Home Assistant Green con su caja, base del kit domótico pequeño",
     includes: [
+      "Instalación",
       "5 módulos de iluminación",
       "3 módulos de persianas",
       "1 mando de clima",

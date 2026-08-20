@@ -101,7 +101,7 @@ export const ARTICLES: BlogArticle[] = [
   },
   {
     slug: "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante",
-    title: "Cargar tu Coche Eléctrico en Murcia y Alicante: Sin Fotovoltaica vs. Con Sistema Fotovoltaico WFEnergy",
+    title: "Cargar tu Coche Eléctrico con Fotovoltaica vs Red",
     excerpt:
       "Análisis comparativo real entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico WFEnergy (9,7 kWp + 16 kWh + Batería Virtual). Descubre el ahorro real de ~700 €/año",
     date: "2026-08-14",
@@ -143,7 +143,7 @@ export const ARTICLES: BlogArticle[] = [
       "Destripamos una instalación de 11.500 € llave en mano en Alicante: qué te llevas, cómo funcionan de verdad las deducciones estatal y autonómica, quién puede aprovecharlas y cómo se compara con un depósito bancario.",
     date: "2026-07-31",
     tags: ["fiscalidad", "autoconsumo"],
-    cover: "images/cargador_chalet.webp",
+    cover: "images/blog/el-mito-del-60-de-descuento-en-el-irpf/portada.webp",
     readingMinutes: 10,
   },
   {
@@ -153,7 +153,7 @@ export const ARTICLES: BlogArticle[] = [
       "Aprende a dimensionar tu instalación fotovoltaica a partir de tu factura: consumo diario, horas de sol pico y una fórmula sencilla con ejemplo real en Murcia.",
     date: "2026-07-28",
     tags: ["placas solares", "autoconsumo", "guías"],
-    cover: "images/placas.webp",
+    cover: "images/blog/cuantas-placas-solares-necesitas/portada.webp",
     readingMinutes: 6,
   },
   {
@@ -163,7 +163,7 @@ export const ARTICLES: BlogArticle[] = [
       "kWh nominales vs. útiles, profundidad de descarga, litio frente a plomo-ácido y la fórmula para calcular cuánta batería necesitas de verdad.",
     date: "2026-07-21",
     tags: ["autoconsumo", "guías"],
-    cover: "images/bateria.webp",
+    cover: "images/blog/baterias-solares-como-elegir-capacidad/portada.webp",
     readingMinutes: 7,
   }
 

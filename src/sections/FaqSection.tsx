@@ -3,7 +3,7 @@ import FaqItem from "../app/components/FaqItem.tsx";
 
 export default function FqaSection(){
     return(
-    <section className="py-24 bg-secondary">
+    <section id ="preguntas" className="py-24 bg-secondary">
     <div className="max-w-4xl mx-auto px-5">
         <div className="text-center mb-12">
         <p className="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Preguntas frecuentes</p>

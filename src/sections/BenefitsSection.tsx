@@ -2,7 +2,7 @@ import { BENEFITS } from "../data/benefits";
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-secondary py-10 border-b border-border">
+    <section id= "benefits" className="bg-secondary py-10 border-b border-border">
     <div className="max-w-7xl mx-auto px-5">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
         {BENEFITS.map(({ icon: Icon, label }) => (
