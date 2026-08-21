@@ -132,3 +132,51 @@
   font-weight: 700;
   color: var(--primary, #0d1b2a);
 }
+/*--------------------tablas--------------------*/
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; 
+  font-size: 12px;
+  color: #333;
+}
+
+/* Distribución de anchos por columna */
+th:nth-child(1), td:nth-child(1) { width: 12%; text-align: center; }   /* Estrategia */
+th:nth-child(2), td:nth-child(2) { width: 12%; text-align: left; }  /* Inversión */
+th:nth-child(3), td:nth-child(3) { width: 17%; text-align: center; } /* Ahorro Costa */
+th:nth-child(4), td:nth-child(4) { width: 15%; text-align: center; } /* Payback Costa */
+th:nth-child(5), td:nth-child(5) { width: 23%; text-align: center; } /* Ahorro Interior */
+th:nth-child(6), td:nth-child(6) { width: 20%; text-align: center; } /* Payback Interior */
+/* Encabezados modernos */
+th {
+ 
+  line-height: 1.3;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Celdas con aire y sutil separación */
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+/* Filas alternas (cebra) para facilitar la lectura */
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Efecto hover para guiar la mirada del usuario */
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
