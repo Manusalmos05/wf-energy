@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { readArticleHtml } from "../../../lib/articleHtml.ts";
+import { readArticleHtml, articleHtmlPath } from "../../../lib/articleHtml.ts";
+import { useLanguage } from "../../../i18n/provider.tsx";
 // @ts-ignore
 import "../../../styles/blog.css";
 
@@ -8,14 +9,15 @@ interface ArticleContentProps {
 }
 
 export default function ArticleContent({ slug }: ArticleContentProps) {
-  const [html, setHtml] = useState<string | null>(() => readArticleHtml(slug));
+  const { t, lang } = useLanguage();
+  const [html, setHtml] = useState<string | null>(() => readArticleHtml(lang, slug));
   const [error, setError] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cancelled = false;
 
-    const seeded = readArticleHtml(slug);
+    const seeded = readArticleHtml(lang, slug);
     if (seeded !== null) {
       setHtml(seeded);
       setError(false);
@@ -25,7 +27,7 @@ export default function ArticleContent({ slug }: ArticleContentProps) {
     setHtml(null);
     setError(false);
 
-    fetch(`${import.meta.env.BASE_URL}blog/articles/${slug}.html`)
+    fetch(`${import.meta.env.BASE_URL}${articleHtmlPath(lang, slug)}`)
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.text();
@@ -40,7 +42,7 @@ export default function ArticleContent({ slug }: ArticleContentProps) {
     return () => {
       cancelled = true;
     };
-  }, [slug]);
+  }, [slug, lang]);
 
   useEffect(() => {
     if (!html || !containerRef.current) return;
@@ -155,7 +157,7 @@ export default function ArticleContent({ slug }: ArticleContentProps) {
   if (error) {
     return (
       <p className="text-center text-muted-foreground py-12">
-        No se pudo cargar el contenido del artículo. Inténtalo de nuevo más tarde.
+        {t("pages.article.notFoundBody")}
       </p>
     );
   }

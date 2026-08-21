@@ -1,21 +1,22 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
 import App from "./app/App.tsx";
-import { ARTICLES } from "./data/blog.ts";
+import { getArticles } from "./data/blog.ts";
 import { seedArticleHtml } from "./lib/articleHtml.ts";
 import { articleGraph, blogGraph, homeGraph } from "./lib/structuredData.ts";
 import {
   SITE,
   BRAND,
   OG_IMAGE,
-  OG_IMAGE_ALT,
-  OG_LOCALE,
   TWITTER_CARD,
   INDEXABLE,
-  BLOG_NAME,
-  BLOG_DESCRIPTION,
-  BUSINESS_DESCRIPTION,
+  getBusinessDescription,
+  getBlogName,
+  getBlogDescription,
+  getOgImageAlt,
+  getOgLocale,
 } from "./lib/site.ts";
+import { LANGS, withLang, translate, LANG_META, DEFAULT_LANG, type Lang } from "./i18n/index.ts";
 
 export interface SiteMeta {
   siteName: string;
@@ -24,11 +25,16 @@ export interface SiteMeta {
 }
 
 export function getSiteMeta(): SiteMeta {
-  return { siteName: BRAND, ogLocale: OG_LOCALE, twitterCard: TWITTER_CARD };
+  return { siteName: BRAND, ogLocale: getOgLocale(DEFAULT_LANG), twitterCard: TWITTER_CARD };
 }
 
 const BRAND_SUFFIX_LIMIT = 45;
 const DESCRIPTION_LIMIT = 155;
+
+export interface HreflangAlternate {
+  hreflang: string;
+  href: string;
+}
 
 export interface PrerenderRoute {
   path: string;
@@ -37,6 +43,9 @@ export interface PrerenderRoute {
   description: string;
   canonical: string | null;
   ogType: string;
+  ogLocale: string;
+  htmlLang: string;
+  lang: Lang;
   image: string;
   imageAlt: string;
   robots: string;
@@ -45,6 +54,7 @@ export interface PrerenderRoute {
   published: string | null;
   sitemap: boolean;
   jsonLd: unknown | null;
+  alternates: HreflangAlternate[];
 }
 
 function withBrand(title: string): string {
@@ -59,104 +69,168 @@ function clamp(text: string, max = DESCRIPTION_LIMIT): string {
   return `${kept.replace(/[\s,;:.…-]+$/, "")}…`;
 }
 
-const LEGAL_PAGES: Array<[string, string, string]> = [
-  ["/aviso-legal", "Aviso legal", "Identificación del titular y condiciones de uso del sitio web de White Fox Energy."],
-  ["/politica-de-privacidad", "Política de privacidad", "Cómo tratamos los datos personales del formulario de contacto y qué derechos tienes."],
-  ["/politica-de-cookies", "Política de cookies", "Qué cookies usa este sitio, para qué sirven y cómo cambiar tu elección."],
-  ["/accesibilidad", "Accesibilidad", "Compromiso de accesibilidad WCAG 2.1 AA y cómo avisarnos de cualquier barrera."],
+function absoluteUrl(lang: Lang, path: string): string {
+  const p = withLang(lang, path);
+  const trimmed = p === "/" ? "/" : `${p.replace(/\/+$/, "")}/`;
+  return `${SITE}${trimmed}`;
+}
+
+function pageOut(lang: Lang, tail: string): string {
+  const prefix = lang === DEFAULT_LANG ? "" : `${lang}/`;
+  return `${prefix}${tail}`;
+}
+
+function alternatesFor(pathTemplate: string, activeLang: Lang, canonicalHref: string | null): HreflangAlternate[] {
+  const alts: HreflangAlternate[] = LANGS.map((l) => ({
+    hreflang: LANG_META[l].htmlLang,
+    href: absoluteUrl(l, pathTemplate),
+  }));
+  if (canonicalHref) {
+    alts.push({ hreflang: "x-default", href: absoluteUrl(DEFAULT_LANG, pathTemplate) });
+  }
+  return alts.filter((a, i, arr) => arr.findIndex((b) => b.hreflang === a.hreflang && b.href === a.href) === i);
+}
+
+interface LegalPageDef { key: string; path: string }
+const LEGAL_PAGES: LegalPageDef[] = [
+  { key: "notice", path: "/aviso-legal" },
+  { key: "privacy", path: "/politica-de-privacidad" },
+  { key: "cookies", path: "/politica-de-cookies" },
+  { key: "accessibility", path: "/accesibilidad" },
 ];
 
-const articleStamp = (a: (typeof ARTICLES)[number]) =>
-  a.updated && a.updated > a.date ? a.updated : a.date;
-
-const newestArticleDate = ARTICLES.reduce(
-  (latest, a) => (articleStamp(a) > latest ? articleStamp(a) : latest),
-  ARTICLES[0] ? articleStamp(ARTICLES[0]) : "",
-);
+function articleStamp(a: { date: string; updated?: string }): string {
+  return a.updated && a.updated > a.date ? a.updated : a.date;
+}
 
 export function getRoutes(): PrerenderRoute[] {
-  return [
-    {
-      path: "/",
-      out: "index.html",
-      title: `Placas Solares en Alicante y Murcia | ${BRAND}`,
-      description: BUSINESS_DESCRIPTION,
-      canonical: `${SITE}/`,
+  const routes: PrerenderRoute[] = [];
+
+  for (const lang of LANGS) {
+    const articles = getArticles(lang);
+    const newest = articles.reduce((latest, a) => (articleStamp(a) > latest ? articleStamp(a) : latest), articles[0] ? articleStamp(articles[0]) : "");
+    const homeCanonical = absoluteUrl(lang, "/");
+    const blogCanonical = absoluteUrl(lang, "/blog");
+    const businessDesc = getBusinessDescription(lang);
+    const ogAlt = getOgImageAlt(lang);
+    const ogLocale = getOgLocale(lang);
+    const htmlLang = LANG_META[lang].htmlLang;
+
+    const homeTitle = translate(lang, "pages.meta.home.title");
+
+    routes.push({
+      path: withLang(lang, "/"),
+      out: pageOut(lang, "index.html"),
+      title: homeTitle,
+      description: businessDesc,
+      canonical: homeCanonical,
       ogType: "website",
+      ogLocale,
+      htmlLang,
+      lang,
       image: OG_IMAGE,
-      imageAlt: OG_IMAGE_ALT,
+      imageAlt: ogAlt,
       robots: INDEXABLE,
       slugs: [],
       lastmod: null,
       published: null,
       sitemap: true,
-      jsonLd: homeGraph(),
-    },
-    {
-      path: "/blog",
-      out: "blog/index.html",
-      title: `${BLOG_NAME} | ${BRAND}`,
-      description: BLOG_DESCRIPTION,
-      canonical: `${SITE}/blog/`,
+      jsonLd: homeGraph(lang),
+      alternates: alternatesFor("/", lang, homeCanonical),
+    });
+
+    routes.push({
+      path: withLang(lang, "/blog"),
+      out: pageOut(lang, "blog/index.html"),
+      title: `${getBlogName(lang)} | ${BRAND}`,
+      description: getBlogDescription(lang),
+      canonical: blogCanonical,
       ogType: "website",
+      ogLocale,
+      htmlLang,
+      lang,
       image: OG_IMAGE,
-      imageAlt: OG_IMAGE_ALT,
+      imageAlt: ogAlt,
       robots: INDEXABLE,
       slugs: [],
-      lastmod: newestArticleDate || null,
+      lastmod: newest || null,
       published: null,
       sitemap: true,
-      jsonLd: blogGraph(),
-    },
-    ...ARTICLES.map((a) => ({
-      path: `/blog/${a.slug}`,
-      out: `blog/${a.slug}/index.html`,
-      title: withBrand(a.title),
-      description: clamp(a.excerpt),
-      canonical: `${SITE}/blog/${a.slug}/`,
-      ogType: "article",
-      image: `${SITE}/${a.cover}`,
-      imageAlt: a.title,
-      robots: INDEXABLE,
-      slugs: [a.slug],
-      lastmod: articleStamp(a),
-      published: a.date,
-      sitemap: true,
-      jsonLd: articleGraph(a),
-    })),
-    ...LEGAL_PAGES.map(([path, title, description]) => ({
-      path,
-      out: `${path.slice(1)}/index.html`,
-      title: withBrand(title),
-      description,
-      canonical: `${SITE}${path}/`,
-      ogType: "website",
-      image: OG_IMAGE,
-      imageAlt: OG_IMAGE_ALT,
-      robots: INDEXABLE,
-      slugs: [],
-      lastmod: null,
-      published: null,
-      sitemap: false,
-      jsonLd: null,
-    })),
-    {
-      path: "/pagina-que-no-existe",
-      out: "404.html",
-      title: `Página no encontrada | ${BRAND}`,
-      description: "La página que buscas no existe o se ha movido.",
-      canonical: null,
-      ogType: "website",
-      image: OG_IMAGE,
-      imageAlt: OG_IMAGE_ALT,
-      robots: "noindex, follow",
-      slugs: [],
-      lastmod: null,
-      published: null,
-      sitemap: false,
-      jsonLd: null,
-    },
-  ];
+      jsonLd: blogGraph(lang),
+      alternates: alternatesFor("/blog", lang, blogCanonical),
+    });
+
+    for (const a of articles) {
+      const articleCanonical = absoluteUrl(lang, `/blog/${a.slug}`);
+      routes.push({
+        path: withLang(lang, `/blog/${a.slug}`),
+        out: pageOut(lang, `blog/${a.slug}/index.html`),
+        title: withBrand(a.title),
+        description: clamp(a.excerpt),
+        canonical: articleCanonical,
+        ogType: "article",
+        ogLocale,
+        htmlLang,
+        lang,
+        image: `${SITE}/${a.cover}`,
+        imageAlt: a.title,
+        robots: INDEXABLE,
+        slugs: [a.slug],
+        lastmod: articleStamp(a),
+        published: a.date,
+        sitemap: true,
+        jsonLd: articleGraph(a, lang),
+        alternates: alternatesFor(`/blog/${a.slug}`, lang, articleCanonical),
+      });
+    }
+
+    for (const legal of LEGAL_PAGES) {
+      const canonical = absoluteUrl(lang, legal.path);
+      routes.push({
+        path: withLang(lang, legal.path),
+        out: pageOut(lang, `${legal.path.slice(1)}/index.html`),
+        title: withBrand(translate(lang, `pages.meta.legal.${legal.key}.title`)),
+        description: translate(lang, `pages.meta.legal.${legal.key}.description`),
+        canonical,
+        ogType: "website",
+        ogLocale,
+        htmlLang,
+        lang,
+        image: OG_IMAGE,
+        imageAlt: ogAlt,
+        robots: INDEXABLE,
+        slugs: [],
+        lastmod: null,
+        published: null,
+        sitemap: false,
+        jsonLd: null,
+        alternates: alternatesFor(legal.path, lang, canonical),
+      });
+    }
+  }
+
+  routes.push({
+    path: "/pagina-que-no-existe",
+    out: "404.html",
+    title: translate(DEFAULT_LANG, "pages.meta.notFound.title"),
+    description: translate(DEFAULT_LANG, "pages.meta.notFound.description"),
+    canonical: null,
+    ogType: "website",
+    ogLocale: getOgLocale(DEFAULT_LANG),
+    htmlLang: LANG_META[DEFAULT_LANG].htmlLang,
+    lang: DEFAULT_LANG,
+    image: OG_IMAGE,
+    imageAlt: getOgImageAlt(DEFAULT_LANG),
+    robots: "noindex, follow",
+    slugs: [],
+    lastmod: null,
+    published: null,
+    sitemap: false,
+    jsonLd: null,
+    alternates: [],
+  });
+
+  return routes;
 }
 
 export function render(

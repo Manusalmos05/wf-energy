@@ -44,7 +44,9 @@ function replaceOnce(html, pattern, replacement, label) {
   if (!pattern.test(html)) {
     fail(`no se encontró ${label} en docs/index.html: la plantilla ha cambiado y el head por ruta dejaría de aplicarse.`);
   }
-  return html.replace(pattern, () => replacement);
+  return typeof replacement === "function"
+    ? html.replace(pattern, replacement)
+    : html.replace(pattern, () => replacement);
 }
 
 if (!existsSync(shellPath)) {
@@ -72,7 +74,7 @@ for (const [name, fn] of [["getRoutes", getRoutes], ["getSiteMeta", getSiteMeta]
 
 const siteMeta = getSiteMeta();
 
-function buildHead(route, meta) {
+function buildHead(route) {
   const tags = [
     `<meta name="description" content="${escAttr(route.description)}" />`,
     `<meta name="robots" content="${escAttr(route.robots)}" />`,
@@ -82,11 +84,15 @@ function buildHead(route, meta) {
     tags.push(`<link rel="canonical" href="${escAttr(route.canonical)}" />`);
   }
 
+  for (const alt of route.alternates ?? []) {
+    tags.push(`<link rel="alternate" hreflang="${escAttr(alt.hreflang)}" href="${escAttr(alt.href)}" />`);
+  }
+
   tags.push(
     "",
     `<meta property="og:type" content="${escAttr(route.ogType)}" />`,
-    `<meta property="og:site_name" content="${escAttr(meta.siteName)}" />`,
-    `<meta property="og:locale" content="${escAttr(meta.ogLocale)}" />`,
+    `<meta property="og:site_name" content="${escAttr(siteMeta.siteName)}" />`,
+    `<meta property="og:locale" content="${escAttr(route.ogLocale ?? siteMeta.ogLocale)}" />`,
   );
 
   if (route.canonical) {
@@ -109,7 +115,7 @@ function buildHead(route, meta) {
 
   tags.push(
     "",
-    `<meta name="twitter:card" content="${escAttr(meta.twitterCard)}" />`,
+    `<meta name="twitter:card" content="${escAttr(siteMeta.twitterCard)}" />`,
     `<meta name="twitter:title" content="${escAttr(route.title)}" />`,
     `<meta name="twitter:description" content="${escAttr(route.description)}" />`,
     `<meta name="twitter:image" content="${escAttr(route.image)}" />`,
@@ -122,9 +128,15 @@ function buildHead(route, meta) {
   return tags.map((tag) => (tag === "" ? "" : `      ${tag}`)).join("\n");
 }
 
-function applyHead(html, route, meta) {
-  const withTitle = replaceOnce(
+function applyHead(html, route) {
+  const withLang = replaceOnce(
     html,
+    /<html\b([^>]*)\blang="[^"]*"([^>]*)>/,
+    (_m, before, after) => `<html${before}lang="${escAttr(route.htmlLang)}"${after}>`,
+    "<html lang>",
+  );
+  const withTitle = replaceOnce(
+    withLang,
     /<title>[\s\S]*?<\/title>/,
     `<title>${escText(route.title)}</title>`,
     "<title>",
@@ -132,9 +144,17 @@ function applyHead(html, route, meta) {
   return replaceOnce(
     withTitle,
     /[ \t]*\n?[ \t]*<\/head>/,
-    `\n\n${buildHead(route, meta)}\n\n    </head>`,
+    `\n\n${buildHead(route)}\n\n    </head>`,
     "</head>",
   );
+}
+
+function readArticleFile(lang, slug) {
+  const suffix = lang === "es" ? "" : `.${lang}`;
+  const filePath = join(articlesDir, `${slug}${suffix}.html`);
+  if (existsSync(filePath)) return readFileSync(filePath, "utf8");
+  const fallback = join(articlesDir, `${slug}.html`);
+  return existsSync(fallback) ? readFileSync(fallback, "utf8") : null;
 }
 
 const routes = getRoutes();
@@ -144,11 +164,12 @@ for (const route of routes) {
   const preloaded = {};
 
   for (const slug of route.slugs) {
-    const articlePath = join(articlesDir, `${slug}.html`);
-    if (!existsSync(articlePath)) {
-      fail(`la ruta ${route.path} declara el artículo "${slug}" pero no existe ${articlePath}.`);
+    const key = `${route.lang}:${slug}`;
+    const content = readArticleFile(route.lang, slug);
+    if (content === null) {
+      fail(`la ruta ${route.path} declara el artículo "${slug}" pero no existe html para el idioma ${route.lang}.`);
     }
-    preloaded[slug] = readFileSync(articlePath, "utf8");
+    preloaded[key] = content;
   }
 
   const appHtml = render(route.path, preloaded);
@@ -157,7 +178,7 @@ for (const route of routes) {
     fail(`el render de ${route.path} devolvió ${appHtml ? `${appHtml.length} bytes` : "nada"}.`);
   }
 
-  let out = applyHead(shell, route, siteMeta);
+  let out = applyHead(shell, route);
   out = out.replace(ROOT_MARKER, () => `<div id="root">${appHtml}</div>`);
 
   if (Object.keys(preloaded).length > 0) {
@@ -174,12 +195,15 @@ for (const route of routes) {
 const indexed = routes.filter((r) => r.sitemap);
 const sitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
   ...indexed.map((r) =>
     [
       "  <url>",
       `    <loc>${escText(r.canonical)}</loc>`,
       r.lastmod ? `    <lastmod>${escText(r.lastmod)}</lastmod>` : "",
+      ...(r.alternates ?? []).map(
+        (alt) => `    <xhtml:link rel="alternate" hreflang="${escAttr(alt.hreflang)}" href="${escAttr(alt.href)}" />`,
+      ),
       "  </url>",
     ]
       .filter(Boolean)

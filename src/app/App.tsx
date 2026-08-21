@@ -16,6 +16,50 @@ import CookiesPage from "../pages/legal/CookiesPage.tsx";
 import AccesibilidadPage from "../pages/legal/AccesibilidadPage.tsx";
 import { TEL_HREF, WHATSAPP } from "../lib/site.ts";
 import { getStoredConsent, storeConsent, loadClarity, type CookieConsent } from "../lib/consent.ts";
+import { LanguageProvider, useLanguage } from "../i18n/provider.tsx";
+import { LANGS, DEFAULT_LANG } from "../i18n/index.ts";
+
+function LocalizedRoutes() {
+  return (
+    <Routes>
+      {LANGS.map((lang) => {
+        const prefix = lang === DEFAULT_LANG ? "" : `/${lang}`;
+        return [
+          <Route key={`${lang}-home`} path={`${prefix}/`} element={<HomePage />} />,
+          <Route key={`${lang}-blog`} path={`${prefix}/blog`} element={<BlogPage />} />,
+          <Route key={`${lang}-article`} path={`${prefix}/blog/:slug`} element={<ArticlePage />} />,
+          <Route key={`${lang}-aviso`} path={`${prefix}/aviso-legal`} element={<AvisoLegalPage />} />,
+          <Route key={`${lang}-privacy`} path={`${prefix}/politica-de-privacidad`} element={<PrivacidadPage />} />,
+          <Route key={`${lang}-cookies`} path={`${prefix}/politica-de-cookies`} element={<CookiesPage />} />,
+          <Route key={`${lang}-a11y`} path={`${prefix}/accesibilidad`} element={<AccesibilidadPage />} />,
+        ];
+      })}
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
+function FloatingActions({ bannerVisible }: { bannerVisible: boolean }) {
+  const { t } = useLanguage();
+  return (
+    <div className="fixed bottom-6 right-4 z-50 flex flex-col gap-3" style={{ bottom: bannerVisible ? "5.5rem" : "1.5rem" }}>
+      <a
+        href={TEL_HREF}
+        className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        title={t("common.buttons.callNow")}
+      >
+        <Phone size={18} />
+      </a>
+      <a
+        href={WHATSAPP}
+        className="w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        title="WhatsApp"
+      >
+        <MessageCircle size={18} />
+      </a>
+    </div>
+  );
+}
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,44 +81,22 @@ export default function App() {
   const bannerVisible = consent === null;
 
   return (
-    <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <ScrollToTop />
+    <LanguageProvider>
+      <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <ScrollToTop />
 
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      {bannerVisible && (
-        <CookieBanner onAccept={() => decideConsent("accepted")} onReject={() => decideConsent("rejected")} />
-      )}
+        {bannerVisible && (
+          <CookieBanner onAccept={() => decideConsent("accepted")} onReject={() => decideConsent("rejected")} />
+        )}
 
-      <div className="fixed bottom-6 right-4 z-50 flex flex-col gap-3" style={{ bottom: bannerVisible ? "5.5rem" : "1.5rem" }}>
-        <a
-          href={TEL_HREF}
-          className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-          title="Llamar ahora"
-        >
-          <Phone size={18} />
-        </a>
-        <a
-          href={WHATSAPP}
-          className="w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-          title="WhatsApp"
-        >
-          <MessageCircle size={18} />
-        </a>
+        <FloatingActions bannerVisible={bannerVisible} />
+
+        <LocalizedRoutes />
+
+        <FooterSection onCookieSettings={() => setConsent(null)} />
       </div>
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<ArticlePage />} />
-        <Route path="/aviso-legal" element={<AvisoLegalPage />} />
-        <Route path="/politica-de-privacidad" element={<PrivacidadPage />} />
-        <Route path="/politica-de-cookies" element={<CookiesPage />} />
-        <Route path="/accesibilidad" element={<AccesibilidadPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-
-      <FooterSection onCookieSettings={() => setConsent(null)} />
-    </div>
+    </LanguageProvider>
   );
 }

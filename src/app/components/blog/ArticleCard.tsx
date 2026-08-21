@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { CalendarDays, Clock } from "lucide-react";
-import { BlogArticle, formatDate } from "../../../data/blog";
+import { BlogArticle, formatDate } from "../../../data/blog.ts";
+import { useLanguage } from "../../../i18n/provider.tsx";
 
 interface ArticleCardProps {
   article: BlogArticle;
@@ -8,11 +9,12 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ article, headingLevel = 3 }: ArticleCardProps) {
+  const { lang, path } = useLanguage();
   const Heading = `h${headingLevel}` as "h2" | "h3";
 
   return (
     <Link
-      to={`/blog/${article.slug}`}
+      to={path(`/blog/${article.slug}`)}
       className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-border shadow-sm hover:shadow-lg transition-shadow"
     >
       <div className="overflow-hidden h-48">
@@ -40,7 +42,7 @@ export default function ArticleCard({ article, headingLevel = 3 }: ArticleCardPr
 
         <div className="mt-auto flex items-center gap-4 text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5">
-            <CalendarDays size={13} /> {formatDate(article.date)}
+            <CalendarDays size={13} /> {formatDate(article.date, lang)}
           </span>
           <span className="flex items-center gap-1.5">
             <Clock size={13} /> {article.readingMinutes} min

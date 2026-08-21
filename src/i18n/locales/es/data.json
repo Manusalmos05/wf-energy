@@ -1,0 +1,79 @@
+{
+  "services": [
+    {
+      "title": "Placas Solares Fotovoltaicas",
+      "desc": "Instalamos sistemas de autoconsumo residencial. Máximo rendimiento, certificación oficial y tramitación incluida.",
+      "cta": "Ver más"
+    },
+    {
+      "title": "Baterías Solares",
+      "desc": "Almacena la energía que produces y úsala cuando más lo necesitas. Independencia de la red y ahorro máximo en horas punta.",
+      "cta": "Ver más"
+    },
+    {
+      "title": "Cargadores Vehículo Eléctrico",
+      "desc": "Puntos de recarga domésticos certificados. Carga tu coche con energía solar y reduce el coste a casi cero.",
+      "cta": "Ver más"
+    },
+    {
+      "title": "Domótica Inteligente",
+      "desc": "Automatiza y controla tu hogar. Termostatos, persianas, iluminación y seguridad integrados con tu sistema solar. Máximo provecho a tu electricidad.",
+      "cta": "Ver más"
+    },
+    {
+      "title": "Reforma Energética",
+      "desc": "Instalación eléctrica doméstica completa, con los mejores estándares, tramitación incluida.",
+      "cta": "Ver más"
+    },
+    {
+      "title": "Certificados Energéticos",
+      "desc": "Certifica tu hogar con el boletín de consumo energético obligatorio, valoriza tu propiedad y legaliza tus instalaciones.",
+      "cta": "Ver más"
+    }
+  ],
+  "benefits": [
+    "Ahorro hasta 90%",
+    "Instalación rápida",
+    "Subvenciones",
+    "Primeras marcas",
+    "Mantenimiento",
+    "Asesoramiento personalizado"
+  ],
+  "steps": [
+    { "title": "Auditoría gratuita", "body": "Visitamos tu propiedad sin compromiso y analizamos tu consumo eléctrico real." },
+    { "title": "Estudio energético", "body": "Diseñamos la instalación óptima para tu tejado, orientación y consumo." },
+    { "title": "Presupuesto", "body": "Recibes un presupuesto detallado, transparente y sin letra pequeña." },
+    { "title": "Instalación", "body": "Nuestro equipo propio instala con limpieza, precisión y en el plazo acordado." },
+    { "title": "Legalización", "body": "Gestionamos todos los trámites con distribuidora y administración por ti." },
+    { "title": "Puesta en marcha", "body": "Activamos tu sistema, verificamos rendimiento y te damos la garantía correspondiente de la instalación." }
+  ],
+  "faqs": [
+    { "q": "¿Qué subvenciones existen para placas solares en Alicante y Murcia?", "a": "Actualmente puedes acceder al programa MOVES III (hasta 1.300 €/punto de recarga), ayudas del IDAE para autoconsumo y subvenciones de la Generalitat Valenciana y la Región de Murcia. En muchos casos la deducción fiscal estatal llega al 20% en IRPF. Te asesoramos sin coste sobre todas las ayudas aplicables a tu caso." },
+    { "q": "¿Cuánto tiempo dura la instalación de placas solares?", "a": "Una instalación residencial estándar (6–10 paneles) se completa en 1–2 días laborables. Comunidades de propietarios o instalaciones industriales pueden requerir entre 3 y 5 días. La tramitación administrativa posterior tarda entre 4 y 8 semanas." },
+    { "q": "¿Necesito batería solar?", "a": "Depende de tu perfil de consumo. Si consumes mucho en horario nocturno o quieres independencia total de la red, la batería maximiza el ahorro. Si tu consumo es principalmente diurno, los paneles solos ya ofrecen un retorno excelente. Te lo analizamos gratis." },
+    { "q": "¿Cuánto puedo ahorrar con la energía solar?", "a": "Con una instalación bien dimensionada, el ahorro medio en Alicante y Murcia oscila entre el 60% y el 80% de la factura eléctrica anual. Con batería, puedes alcanzar el 90–95%. La amortización media es de 5–7 años." },
+    { "q": "¿Qué pasa si produzco más energía de la que consumo?", "a": "El excedente se vierte a la red y recibes una compensación económica en tu factura (autoconsumo con excedentes). También puedes almacenarlo en batería para usarlo por la noche." },
+    { "q": "¿Puedo instalar un cargador de coche eléctrico con energía solar?", "a": "Sí, es una de las combinaciones más rentables. Puedes cargar tu vehículo eléctrico directamente con la energía que producen tus paneles, reduciendo el coste de recarga prácticamente a cero en los meses de mayor irradiación." },
+    { "q": "¿Necesito permiso del ayuntamiento para instalar placas solares?", "a": "En viviendas unifamiliares generalmente basta con comunicación a la distribuidora. En edificios de protección histórica o comunidades pueden requerirse permisos adicionales. Nos encargamos de todos los trámites por ti." },
+    { "q": "¿Qué mantenimiento requieren los paneles solares?", "a": "Los paneles fotovoltaicos tienen un mantenimiento mínimo: una limpieza anual y revisión de conexiones. Ofrecemos planes de mantenimiento desde 79 €/año con garantía de rendimiento." },
+    { "q": "¿La domótica es compatible con cualquier instalación solar?", "a": "Nuestros sistemas domóticos se integran con cualquier instalación solar que instalemos. Controlamos iluminación, climatización, persianas, seguridad y consumos desde una sola app compatible con iOS y Android." }
+  ],
+  "projects": [
+    { "label": "Chalet — Torrevieja" },
+    { "label": "Casa — Murcia" },
+    { "label": "Cargador coche eléctrico" },
+    { "label": "Casa Inteligente — Torrevieja" }
+  ],
+  "kits": {
+    "3kw-hibrido": "Kit solar híbrido 3 kW",
+    "6kw": "Kit solar 6 kW",
+    "6kw-offgrid": "Kit solar off-grid 6 kW",
+    "8kw-hibrido": "Kit solar híbrido 8 kW",
+    "10kw-hibrido": "Kit solar híbrido 10 kW",
+    "cargador": "Cargador de coche eléctrico",
+    "domotico": "Kit domótico",
+    "domotico-s": "Kit domótico pequeño",
+    "aerotermo-110": "Aerotermo Ariston Nuos Plus S2 110L Wi-Fi",
+    "aerotermo-100": "Aerotermo Ariston Híbrido 100L Wi-Fi"
+  }
+}

@@ -1,0 +1,95 @@
+<p class="article-lead">
+  A battery turns your installation from "savings at midday" into "savings almost all the time". But
+  picking the capacity by eye is expensive: too small wastes surplus, too big adds years to payback.
+  Here's the method we use at White Fox Energy to size it.
+</p>
+
+
+
+
+<h2>Nominal kWh are not usable kWh</h2>
+<p>
+  The catalogue figure is the <strong>nominal</strong> capacity. The energy you can actually use depends
+  on the <strong>depth of discharge</strong> (\(DoD\)) the battery chemistry allows without degrading:
+</p>
+
+<div class="article-formula">
+  $$ C_{usable} = C_{nominal} \cdot DoD $$
+</div>
+
+<div class="article-callout">
+  <p><strong>Watch out with comparisons:</strong> a 5 kWh lithium battery (DoD 90%) delivers 4.5 kWh
+  usable. A 5 kWh lead-acid battery (DoD 50%) delivers only 2.5 kWh. Same "size", half the real energy.</p>
+</div>
+
+<h2>Lithium vs. lead-acid, plainly</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Criterion</th>
+      <th>Lithium (LiFePO₄)</th>
+      <th>Lead-acid (AGM/GEL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Depth of discharge</td>
+      <td>80–95%</td>
+      <td>40–50%</td>
+    </tr>
+    <tr>
+      <td>Cycle life</td>
+      <td>4,000–6,000</td>
+      <td>500–1,200</td>
+    </tr>
+    <tr>
+      <td>Cycle efficiency</td>
+      <td>~95%</td>
+      <td>~80%</td>
+    </tr>
+    <tr>
+      <td>Maintenance</td>
+      <td>None</td>
+      <td>Periodic</td>
+    </tr>
+    <tr>
+      <td>Price per usable kWh</td>
+      <td>Higher up-front, lower over 10 years</td>
+      <td>Lower up-front, higher over 10 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="/images/blog/baterias-solares-como-elegir-capacidad/art_01_01.webp" alt="Lithium battery installed next to the inverter" loading="lazy" />
+
+<h2>The capacity formula</h2>
+<p>
+  Estimate how much energy you consume when the sun is down (evening/night), \(E_{night}\), and how many
+  days of autonomy \(d\) you want to cover (grid-tied: 1 is enough; off-grid: 2–3):
+</p>
+
+<div class="article-formula">
+  $$ C_{nominal} = \frac{E_{night} \cdot d}{DoD \cdot \eta} $$
+</div>
+
+<p>
+  where \(\eta\) is the round-trip efficiency. Example: 4 kWh at night, 1 day of autonomy, lithium with
+  \(DoD = 0.9\) and \(\eta = 0.95\):
+</p>
+
+<div class="article-formula">
+  $$ C_{nominal} = \frac{4 \cdot 1}{0.9 \cdot 0.95} \approx 4.7 \text{ kWh} \;\Rightarrow\; \text{commercial } 5 \text{ kWh battery} $$
+</div>
+
+<h2>Battery yes or no?</h2>
+<ul>
+  <li><strong>Yes</strong>, if your night consumption exceeds 40% of the total, you have expensive peak-hour tariffs or frequent outages.</li>
+  <li><strong>Wait</strong>, if surplus compensation already brings your bill close to zero: add the battery when the per-kWh price keeps falling.</li>
+  <li><strong>Essential</strong> in off-grid installations, where the battery is the heart of the system.</li>
+</ul>
+
+<h2>Our advice</h2>
+<p>
+  Size the battery with real data: a month of hourly meter readings (your DSO's app exports it) is worth
+  more than any rule of thumb. If you like, we'll work it out with you in the free study.
+</p>

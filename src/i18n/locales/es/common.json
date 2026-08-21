@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "menu": {
+      "home": { "label": "Inicio", "anchor": "inicio" },
+      "services": { "label": "Servicios", "anchor": "servicios" },
+      "projects": { "label": "Proyectos", "anchor": "proyectos" },
+      "kits": { "label": "Kits solares & Más", "anchor": "kits" },
+      "blog": { "label": "Blog" },
+      "faq": { "label": "Preguntas", "anchor": "preguntas" },
+      "contact": { "label": "Contacto", "anchor": "contacto" }
+    },
+    "quote": "Presupuesto gratis",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "brandSubtitle": "Soluciones eléctricas",
+    "languageLabel": "Idioma"
+  },
+  "footer": {
+    "tagline": "Empresa de soluciones energéticas y domóticas en Alicante, Murcia y Vega Baja del Segura.",
+    "navigation": "Navegación",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "areaLine": "Alicante · Murcia · Vega Baja",
+    "cookieSettings": "Configuración de cookies",
+    "copyright": "© 2026 White Fox Energy Instalaciones Eléctricas S.L. · CIF B-00000000 · Todos los derechos reservados",
+    "secureLine": "Sitio seguro · RGPD · LOPDGDD · LSSI-CE",
+    "links": {
+      "privacy": "Política de privacidad",
+      "cookies": "Política de cookies",
+      "notice": "Aviso legal",
+      "accessibility": "Accesibilidad"
+    },
+    "menu": ["Inicio", "Servicios", "Proyectos", "Blog", "Contacto"]
+  },
+  "buttons": {
+    "seeMore": "Ver más",
+    "readMore": "Leer más",
+    "quoteFree": "Presupuesto gratuito",
+    "callNow": "Llámanos ahora",
+    "callShort": "Llamar"
+  },
+  "actions": {
+    "requestQuote": "Solicitar presupuesto gratuito",
+    "requestQuoteShort": "Solicitar presupuesto",
+    "requestStudy": "Solicitar estudio energético gratuito",
+    "backToBlog": "Volver al blog",
+    "seeAllArticles": "Ver todos los artículos",
+    "goHome": "Ir al inicio",
+    "seeBlog": "Ver el blog",
+    "clear": "Limpiar",
+    "cookieSettings": "Configuración de cookies"
+  },
+  "cookies": {
+    "title": "Usamos cookies",
+    "body": "Utilizamos únicamente Microsoft Clarity para entender de forma anónima cómo se usa la web. No hay marketing ni tracking cross-site.",
+    "accept": "Aceptar analítica",
+    "reject": "Rechazar",
+    "learnMore": "Más información"
+  }
+}

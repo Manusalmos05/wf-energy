@@ -1,0 +1,127 @@
+{
+  "shared": {
+    "updated": "7 August 2026",
+    "updatedLabel": "Last updated"
+  },
+  "notice": {
+    "title": "Legal notice",
+    "sections": {
+      "identification": {
+        "title": "1. Owner identification",
+        "intro": "In compliance with article 10 of Spanish Law 34/2002 of 11 July, on Information Society Services and Electronic Commerce (LSSI-CE), we hereby state that the owner of this website is:",
+        "items": [
+          "Owner: [LEGAL NAME]",
+          "Tax ID (NIF): [NIF]",
+          "Registered address: [ADDRESS FOR NOTIFICATIONS]",
+          "Trade name: {brand}",
+          "Email: {email}",
+          "Phone: {phone}",
+          "Website: {site}"
+        ]
+      },
+      "purpose": {
+        "title": "2. Purpose",
+        "body": "The purpose of this site is to present the photovoltaic solar, battery, EV charger and home-automation installation services that {brand} provides across Alicante, Murcia and Vega Baja del Segura, and to make it easy to request studies and quotes with no strings attached."
+      },
+      "terms": {
+        "title": "3. Terms of use",
+        "p1": "Access to this site is free and grants the visitor user status, which implies acceptance of these terms. The user agrees to make appropriate use of the content and not to use it for unlawful activities or activities contrary to good faith.",
+        "p2": "Prices and promotions shown are indicative and do not constitute a binding offer; the definitive quote is issued after the personalised study of each installation."
+      },
+      "ip": {
+        "title": "4. Intellectual and industrial property",
+        "body": "Unless otherwise indicated, the content of this site (text, images, logos, design and code) belongs to {brand} or its licensors, and is protected by intellectual and industrial property law. Third-party trademarks mentioned (panel, inverter, battery or other equipment manufacturers) belong to their respective owners and are used for descriptive purposes only."
+      },
+      "liability": {
+        "title": "5. Liability",
+        "body": "{brand} is not liable for damages arising from improper use of the site nor for the contents of third-party sites linked from these pages. We do our best to keep the information up to date but do not guarantee it is error-free; we appreciate any notice sent to {email}."
+      },
+      "law": {
+        "title": "6. Applicable law",
+        "body": "These terms are governed by Spanish law. For any dispute, the competent courts shall be those determined by the applicable consumer-protection regulations."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "sections": {
+      "controller": {
+        "title": "1. Data controller",
+        "body": "The controller of personal data collected on this site is [LEGAL NAME], tax ID [NIF], with registered office at [ADDRESS], operating under the trade name {brand}. Privacy contact: {email}."
+      },
+      "data": {
+        "title": "2. What data we collect",
+        "p1": "Through the contact form we collect: name, phone, email, locality and the message you send us.",
+        "p2Before": "If you accept analytics cookies, Microsoft Clarity collects pseudonymised website usage data (pages visited, interactions, device type). You can review the details in the ",
+        "p2Link": "cookie policy",
+        "p2After": "."
+      },
+      "purpose": {
+        "title": "3. Purpose and legal basis",
+        "p1": "We use your contact data solely to respond to your request and prepare the study or quote you ask for. The legal basis is your consent, granted by ticking the privacy box before submitting the form, and pre-contractual measures at your request.",
+        "p2": "We don't use your data for advertising and we don't build commercial profiles."
+      },
+      "recipients": {
+        "title": "4. Recipients",
+        "body": "Form submissions are processed via EmailJS, acting as a processor to deliver your message to our inbox. Analytics, only if you accept, are provided by Microsoft (Clarity). We do not share your data with third parties for commercial purposes."
+      },
+      "retention": {
+        "title": "5. Retention",
+        "body": "We keep contact data for the time needed to handle your request and, if an assignment is formalised, for the legal periods applicable to the contractual and tax relationship."
+      },
+      "rights": {
+        "title": "6. Your rights",
+        "body": "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to {email}, indicating the right you're exercising and attaching proof of identity. You also have the right to lodge a complaint with the Spanish Data Protection Agency (aepd.es)."
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookie policy",
+    "sections": {
+      "what": {
+        "title": "1. What cookies are",
+        "body": "Cookies and similar technologies (like your browser's local storage) are small files a website stores on your device to remember information about your visit."
+      },
+      "used": {
+        "title": "2. What we use on this site",
+        "intro": "{brand} uses only the following:",
+        "consent": {
+          "label": "Consent preference",
+          "body": " (first-party, technical): a local-storage entry called wfe-cookie-consent that remembers whether you accepted or rejected analytics. It doesn't require consent since it is strictly necessary."
+        },
+        "clarity": {
+          "label": "Microsoft Clarity",
+          "body": " (third-party, analytics, only if you accept): cookies such as _clck, _clsk, MUID, ANONCHK and SM that allow aggregated analysis of how the site is used, to improve it. See Microsoft Clarity's privacy policy for details."
+        },
+        "note": "If you reject analytics, Microsoft Clarity is not loaded and none of its cookies are installed."
+      },
+      "change": {
+        "title": "3. How to change your choice",
+        "body": "You can change your decision at any time via the «Cookie settings» link in the footer, which brings back the cookie banner. You can also delete already-installed cookies from your browser settings (Chrome, Firefox, Safari and Edge all provide help for this)."
+      }
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "sections": {
+      "commitment": {
+        "title": "Our commitment",
+        "body": "At {brand} we want this site to be usable by anyone, regardless of ability or device. We work to meet AA level of the Web Content Accessibility Guidelines (WCAG) 2.1."
+      },
+      "measures": {
+        "title": "Measures in place",
+        "items": [
+          "AA-level colour contrast on text and controls.",
+          "Full keyboard navigation, including the kits carousel.",
+          "Alt text on images and ARIA labels on interactive components.",
+          "Semantic heading structure and valid HTML on every page.",
+          "Legible, functional content on mobile, tablet and desktop."
+        ]
+      },
+      "barrier": {
+        "title": "Ran into a barrier?",
+        "body": "If anything on this site is hard to use or inaccessible, write to us at {email} describing the issue and the page where it occurs. We commit to reviewing and fixing it as soon as possible."
+      }
+    }
+  }
+}

@@ -1,18 +1,16 @@
-import {
-  TrendingDown,
-  Clock,
-  CreditCard,
-  Award,
-  Wrench,
-  HeadphonesIcon,
-} from "lucide-react";
+import { TrendingDown, Clock, CreditCard, Award, Wrench, HeadphonesIcon } from "lucide-react";
+import { translateList, type Lang } from "../i18n/index.ts";
 
+const ICONS = [TrendingDown, Clock, CreditCard, Award, Wrench, HeadphonesIcon];
 
-export const BENEFITS = [
-  { icon: TrendingDown, label: "Ahorro hasta 90%" },
-  { icon: Clock, label: "Instalación rápida" },
-  { icon: CreditCard, label: "Subvenciones" },
-  { icon: Award, label: "Primeras marcas" },
-  { icon: Wrench, label: "Mantenimiento" },
-  { icon: HeadphonesIcon, label: "Asesoramiento personalizado" },
-];
+export interface Benefit {
+  icon: (typeof ICONS)[number];
+  label: string;
+}
+
+export function getBenefits(lang: Lang): Benefit[] {
+  const labels = translateList<string>(lang, "data.benefits");
+  return labels.map((label, i) => ({ icon: ICONS[i], label }));
+}
+
+export const BENEFITS = getBenefits("es");

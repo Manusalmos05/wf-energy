@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "menu": {
+      "home": { "label": "Home", "anchor": "inicio" },
+      "services": { "label": "Services", "anchor": "servicios" },
+      "projects": { "label": "Projects", "anchor": "proyectos" },
+      "kits": { "label": "Solar Kits & More", "anchor": "kits" },
+      "blog": { "label": "Blog" },
+      "faq": { "label": "FAQ", "anchor": "preguntas" },
+      "contact": { "label": "Contact", "anchor": "contacto" }
+    },
+    "quote": "Free quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "brandSubtitle": "Electrical solutions",
+    "languageLabel": "Language"
+  },
+  "footer": {
+    "tagline": "Energy and home-automation solutions across Alicante, Murcia and Vega Baja del Segura.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "contact": "Contact",
+    "areaLine": "Alicante · Murcia · Vega Baja",
+    "cookieSettings": "Cookie settings",
+    "copyright": "© 2026 White Fox Energy Instalaciones Eléctricas S.L. · CIF B-00000000 · All rights reserved",
+    "secureLine": "Secure site · GDPR · Spanish data-protection law · LSSI-CE",
+    "links": {
+      "privacy": "Privacy policy",
+      "cookies": "Cookie policy",
+      "notice": "Legal notice",
+      "accessibility": "Accessibility"
+    },
+    "menu": ["Home", "Services", "Projects", "Blog", "Contact"]
+  },
+  "buttons": {
+    "seeMore": "Learn more",
+    "readMore": "Read more",
+    "quoteFree": "Free quote",
+    "callNow": "Call us now",
+    "callShort": "Call"
+  },
+  "actions": {
+    "requestQuote": "Request a free quote",
+    "requestQuoteShort": "Request quote",
+    "requestStudy": "Request a free energy study",
+    "backToBlog": "Back to the blog",
+    "seeAllArticles": "See all articles",
+    "goHome": "Back to home",
+    "seeBlog": "Go to the blog",
+    "clear": "Clear",
+    "cookieSettings": "Cookie settings"
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "body": "We only use Microsoft Clarity to understand anonymously how the site is used. No marketing, no cross-site tracking.",
+    "accept": "Accept analytics",
+    "reject": "Reject",
+    "learnMore": "Learn more"
+  }
+}

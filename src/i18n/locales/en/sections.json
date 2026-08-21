@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "Electrical Installations — Alicante · Murcia · Vega Baja",
+    "titlePrefix": "Solar Panel Installation & more in ",
+    "titleHighlight": "Alicante, Murcia and La Vega Baja",
+    "subtitleBefore": "Cut your electricity bill by up to ",
+    "subtitleHighlight": "90%",
+    "subtitleAfter": " with solar power, home automation and EV mobility. No strings attached."
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "Complete solar energy solutions",
+    "subtitle": "From solar panel installation and smart home automation to full electrical refurbishments. Everything handled by our own team across Alicante and Murcia."
+  },
+  "howWeWork": {
+    "eyebrow": "How we work",
+    "title": "From first call to system startup",
+    "subtitle": "A transparent process with zero paperwork on your side. We take care of everything."
+  },
+  "projects": {
+    "eyebrow": "Recent projects",
+    "title": "Projects in Alicante and Murcia",
+    "subtitle": "Residential PV installations and more."
+  },
+  "kits": {
+    "eyebrow": "PV and home-automation kits",
+    "title": "Save with our packs",
+    "subtitle": "Ask us for shipping and installation pricing."
+  },
+  "calculator": {
+    "eyebrow": "Savings calculator",
+    "title": "How much can you save with solar power?",
+    "bodyLead": "Enter your monthly electricity spend and your province. You'll get an instant estimate.",
+    "bodyStrong": "For an exact figure, request an on-site assessment.",
+    "keywords": ["solar panels Alicante", "self-consumption Murcia", "solar energy Vega Baja", "cut your bill"]
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Learn about solar energy",
+    "subtitle": "Practical guides, formulas and tips from our team to get the most out of your installation."
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Everything you need to know",
+    "subtitle": "About solar panels, grants, batteries, chargers, electrical certificates and home automation in Alicante and Murcia."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "titleBefore": "Request your ",
+    "titleHighlight": "free quote",
+    "subtitle": "No strings attached. We'll get back to you in under 24 hours with a study tailored to your home or community in Alicante, Murcia or Vega Baja.",
+    "areasTitle": "Service areas",
+    "areasBody": "Alicante province · Murcia province · Vega Baja del Segura · Orihuela · Torrevieja · Elche · Benidorm · Altea · Dénia · Cartagena · Lorca · Mazarrón",
+    "hoursLine": "Mon–Fri 8:30–18:30 · Sat 9:00–14:00",
+    "areaCommaLine": "Alicante · Murcia · Vega Baja del Segura",
+    "whatsappPrefix": "WhatsApp: ",
+    "form": {
+      "title": "Request quote",
+      "name": "Name",
+      "namePlaceholder": "Anna Garcia",
+      "phone": "Phone",
+      "phonePlaceholder": "600 000 000",
+      "email": "Email",
+      "emailPlaceholder": "anna@email.com",
+      "locality": "Locality",
+      "localityPlaceholder": "Torrevieja, Murcia...",
+      "message": "Message",
+      "messagePlaceholder": "Type of installation, roof area, approximate consumption...",
+      "privacyBefore": "I have read and accept the ",
+      "privacyLink": "Privacy Policy",
+      "privacyAfter": " and consent to my data being processed to handle my enquiry.",
+      "required": "*",
+      "sending": "Sending...",
+      "submit": "Request quote",
+      "trustLine": "No strings · Reply in under 24h · Secure HTTPS connection",
+      "successTitle": "Request received!",
+      "successBody": "We'll be in touch in under 24 hours with your personalised quote. Thanks for trusting White Fox Energy!",
+      "successAgain": "Send another enquiry",
+      "error": "We couldn't send your request. Try again or give us a call."
+    }
+  }
+}

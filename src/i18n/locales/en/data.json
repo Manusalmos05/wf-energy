@@ -1,0 +1,79 @@
+{
+  "services": [
+    {
+      "title": "Photovoltaic Solar Panels",
+      "desc": "We install residential self-consumption systems. Maximum yield, official certification and paperwork included.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Solar Batteries",
+      "desc": "Store the energy you produce and use it when it matters most. Grid independence and maximum savings during peak hours.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "EV Chargers",
+      "desc": "Certified home charging points. Charge your car with solar energy and cut the cost to almost zero.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Smart Home Automation",
+      "desc": "Automate and control your home. Thermostats, blinds, lighting and security integrated with your solar system. Get the most out of your electricity.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Electrical Refurbishment",
+      "desc": "Complete residential electrical installation, up to top standards, paperwork included.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Energy Performance Certificates",
+      "desc": "Certify your home with the mandatory energy performance certificate, add value to your property and legalise your installations.",
+      "cta": "Learn more"
+    }
+  ],
+  "benefits": [
+    "Save up to 90%",
+    "Fast installation",
+    "Grants available",
+    "Top-brand equipment",
+    "Maintenance plans",
+    "Personalised advice"
+  ],
+  "steps": [
+    { "title": "Free audit", "body": "We visit your property with no commitment and analyse your real electricity consumption." },
+    { "title": "Energy study", "body": "We design the optimal installation for your roof, orientation and consumption." },
+    { "title": "Quote", "body": "You get a detailed, transparent quote with no fine print." },
+    { "title": "Installation", "body": "Our own team installs cleanly, precisely and on the agreed date." },
+    { "title": "Legalisation", "body": "We handle all paperwork with the DSO and the administration for you." },
+    { "title": "Commissioning", "body": "We turn your system on, check performance and hand over the corresponding installation warranty." }
+  ],
+  "faqs": [
+    { "q": "What grants are there for solar panels in Alicante and Murcia?", "a": "Today you can access the MOVES III programme (up to €1,300 per charging point), IDAE self-consumption aid and grants from the Valencian Community and Murcia Region governments. In many cases the state tax deduction reaches 20% on income tax (IRPF). We advise you at no cost on every aid applicable to your case." },
+    { "q": "How long does a solar panel installation take?", "a": "A standard residential installation (6–10 panels) is completed in 1–2 working days. Housing communities or industrial installations can take 3 to 5 days. The subsequent administrative paperwork takes 4 to 8 weeks." },
+    { "q": "Do I need a solar battery?", "a": "It depends on your consumption profile. If you consume a lot at night or want full grid independence, a battery maximises savings. If your consumption is mostly during the day, panels alone already deliver an excellent return. We analyse it for free." },
+    { "q": "How much can I save with solar energy?", "a": "With a well-sized installation, the average saving in Alicante and Murcia ranges from 60% to 80% of the annual electricity bill. With a battery you can reach 90–95%. Typical payback is 5–7 years." },
+    { "q": "What happens if I produce more energy than I consume?", "a": "The surplus is fed into the grid and you get financial compensation on your bill (self-consumption with surplus). You can also store it in a battery to use it at night." },
+    { "q": "Can I install an EV charger together with solar power?", "a": "Yes, it's one of the most profitable combinations. You can charge your electric vehicle directly with the energy your panels produce, reducing charging cost to virtually zero during the sunniest months." },
+    { "q": "Do I need council permission to install solar panels?", "a": "For single-family homes, notifying the DSO is usually enough. Listed buildings or communities may require additional permits. We handle every paperwork step for you." },
+    { "q": "What maintenance do solar panels need?", "a": "Photovoltaic panels need minimal maintenance: an annual cleaning and a connection check. We offer maintenance plans starting at €79/year with performance guarantee." },
+    { "q": "Is home automation compatible with any solar installation?", "a": "Our home-automation systems integrate with any solar installation we build. We control lighting, climate, blinds, security and consumption from a single iOS and Android compatible app." }
+  ],
+  "projects": [
+    { "label": "Villa — Torrevieja" },
+    { "label": "House — Murcia" },
+    { "label": "EV charger" },
+    { "label": "Smart Home — Torrevieja" }
+  ],
+  "kits": {
+    "3kw-hibrido": "3 kW hybrid solar kit",
+    "6kw": "6 kW solar kit",
+    "6kw-offgrid": "6 kW off-grid solar kit",
+    "8kw-hibrido": "8 kW hybrid solar kit",
+    "10kw-hibrido": "10 kW hybrid solar kit",
+    "cargador": "EV charger",
+    "domotico": "Home-automation kit",
+    "domotico-s": "Small home-automation kit",
+    "aerotermo-110": "Ariston Nuos Plus S2 110L Wi-Fi heat pump",
+    "aerotermo-100": "Ariston Hybrid 100L Wi-Fi heat pump"
+  }
+}

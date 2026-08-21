@@ -1,8 +1,8 @@
-import { FAQS } from "../data/faqs.ts";
-import { SERVICES } from "../data/services.ts";
-import { KITS } from "../data/kits.ts";
+import { getFaqs } from "../data/faqs.ts";
+import { getServices } from "../data/services.ts";
+import { getKits } from "../data/kits.ts";
 import { KIT_SPECS } from "../data/kitSpecs.ts";
-import { ARTICLES, type BlogArticle } from "../data/blog.ts";
+import { getSortedArticles, type BlogArticle } from "../data/blog.ts";
 import {
   SITE,
   BRAND,
@@ -11,16 +11,17 @@ import {
   WHATSAPP,
   LOGO,
   OG_IMAGE,
-  LOCALE,
   AREAS,
-  BUSINESS_DESCRIPTION,
-  BLOG_NAME,
-  BLOG_DESCRIPTION,
   ORG_ID,
   SITE_ID,
   BLOG_ID,
   slugify,
+  getLocaleTag,
+  getBusinessDescription,
+  getBlogName,
+  getBlogDescription,
 } from "./site.ts";
+import { withLang, translate, type Lang } from "../i18n/index.ts";
 
 type Node = Record<string, unknown>;
 
@@ -32,39 +33,45 @@ function serviceId(title: string): string {
   return `${SITE}/#servicio-${slugify(title)}`;
 }
 
-function kitId(title: string, slug?: string): string {
-  return `${SITE}/#kit-${slug ?? slugify(title)}`;
+function kitId(_title: string, slug?: string): string {
+  return `${SITE}/#kit-${slug ?? "kit"}`;
 }
 
 export function articleId(slug: string): string {
   return `${SITE}/blog/${slug}/#articulo`;
 }
 
-function website(): Node {
+function absolute(lang: Lang, pathOrEmpty: string): string {
+  const p = withLang(lang, pathOrEmpty);
+  return `${SITE}${p}${p.endsWith("/") ? "" : "/"}`.replace(/\/{2,}$/, "/");
+}
+
+function website(lang: Lang): Node {
   return {
     "@type": "WebSite",
     "@id": SITE_ID,
-    url: `${SITE}/`,
+    url: absolute(lang, "/"),
     name: BRAND,
-    description: BUSINESS_DESCRIPTION,
-    inLanguage: LOCALE,
+    description: getBusinessDescription(lang),
+    inLanguage: getLocaleTag(lang),
     publisher: { "@id": ORG_ID },
   };
 }
 
-function organization(withCatalog = false): Node {
+function organization(lang: Lang, withCatalog = false): Node {
+  const services = getServices(lang);
   const node: Node = {
     "@type": "ProfessionalService",
     "@id": ORG_ID,
     name: BRAND,
-    url: `${SITE}/`,
-    description: BUSINESS_DESCRIPTION,
+    url: absolute(lang, "/"),
+    description: getBusinessDescription(lang),
     image: OG_IMAGE,
     logo: LOGO,
     telephone: PHONE,
     email: EMAIL,
     sameAs: [WHATSAPP],
-    knowsLanguage: LOCALE,
+    knowsLanguage: getLocaleTag(lang),
     currenciesAccepted: "EUR",
     areaServed: areaServed(),
   };
@@ -72,8 +79,8 @@ function organization(withCatalog = false): Node {
   if (withCatalog) {
     node.hasOfferCatalog = {
       "@type": "OfferCatalog",
-      name: "Servicios de instalación",
-      itemListElement: SERVICES.map((s) => ({
+      name: translate(lang, "sections.services.title"),
+      itemListElement: services.map((s) => ({
         "@type": "Offer",
         itemOffered: { "@id": serviceId(s.title) },
       })),
@@ -83,8 +90,8 @@ function organization(withCatalog = false): Node {
   return node;
 }
 
-function services(): Node[] {
-  return SERVICES.map((s) => ({
+function services(lang: Lang): Node[] {
+  return getServices(lang).map((s) => ({
     "@type": "Service",
     "@id": serviceId(s.title),
     name: s.title,
@@ -96,18 +103,18 @@ function services(): Node[] {
   }));
 }
 
-function products(): Node[] {
-  return KITS.map((k) => {
+function products(lang: Lang): Node[] {
+  return getKits(lang).map((k) => {
     const spec = KIT_SPECS[k.slug];
     const node: Node = {
       "@type": "Product",
       "@id": kitId(k.title, k.slug),
       name: k.title,
-      image: `${SITE}/${spec.productImage}`,
+      image: spec?.productImage ? `${SITE}/${spec.productImage}` : OG_IMAGE,
       brand: { "@type": "Brand", name: BRAND },
       offers: {
         "@type": "Offer",
-        url: `${SITE}/#kits`,
+        url: `${absolute(lang, "/")}#kits`,
         price: k.price,
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
@@ -127,12 +134,12 @@ function products(): Node[] {
   });
 }
 
-function faqPage(): Node {
+function faqPage(lang: Lang): Node {
   return {
     "@type": "FAQPage",
     "@id": `${SITE}/#faq`,
-    inLanguage: LOCALE,
-    mainEntity: FAQS.map((f) => ({
+    inLanguage: getLocaleTag(lang),
+    mainEntity: getFaqs(lang).map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -156,26 +163,26 @@ function graph(nodes: Node[]): Node {
   return { "@context": "https://schema.org", "@graph": nodes };
 }
 
-export function homeGraph(): Node {
-  return graph([website(), organization(true), faqPage(), ...services(), ...products()]);
+export function homeGraph(lang: Lang = "es"): Node {
+  return graph([website(lang), organization(lang, true), faqPage(lang), ...services(lang), ...products(lang)]);
 }
 
-export function blogGraph(): Node {
+export function blogGraph(lang: Lang = "es"): Node {
   return graph([
-    website(),
-    organization(),
+    website(lang),
+    organization(lang),
     {
       "@type": "Blog",
       "@id": BLOG_ID,
-      url: `${SITE}/blog/`,
-      name: BLOG_NAME,
-      description: BLOG_DESCRIPTION,
-      inLanguage: LOCALE,
+      url: absolute(lang, "/blog"),
+      name: getBlogName(lang),
+      description: getBlogDescription(lang),
+      inLanguage: getLocaleTag(lang),
       publisher: { "@id": ORG_ID },
-      blogPost: ARTICLES.map((a) => ({
+      blogPost: getSortedArticles(lang).map((a) => ({
         "@type": "BlogPosting",
         "@id": articleId(a.slug),
-        url: `${SITE}/blog/${a.slug}/`,
+        url: absolute(lang, `/blog/${a.slug}`),
         headline: a.title,
         description: a.excerpt,
         image: `${SITE}/${a.cover}`,
@@ -185,17 +192,17 @@ export function blogGraph(): Node {
       })),
     },
     breadcrumb([
-      ["Inicio", `${SITE}/`],
-      ["Blog", `${SITE}/blog/`],
+      [translate(lang, "common.nav.menu.home.label"), absolute(lang, "/")],
+      [translate(lang, "common.nav.menu.blog.label"), absolute(lang, "/blog")],
     ]),
   ]);
 }
 
-export function articleGraph(a: BlogArticle): Node {
-  const url = `${SITE}/blog/${a.slug}/`;
+export function articleGraph(a: BlogArticle, lang: Lang = "es"): Node {
+  const url = absolute(lang, `/blog/${a.slug}`);
   return graph([
-    website(),
-    organization(),
+    website(lang),
+    organization(lang),
     {
       "@type": "BlogPosting",
       "@id": articleId(a.slug),
@@ -205,7 +212,7 @@ export function articleGraph(a: BlogArticle): Node {
       image: `${SITE}/${a.cover}`,
       datePublished: a.date,
       dateModified: a.updated ?? a.date,
-      inLanguage: LOCALE,
+      inLanguage: getLocaleTag(lang),
       keywords: a.tags.join(", "),
       timeRequired: `PT${a.readingMinutes}M`,
       author: { "@id": ORG_ID },
@@ -214,8 +221,8 @@ export function articleGraph(a: BlogArticle): Node {
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
     },
     breadcrumb([
-      ["Inicio", `${SITE}/`],
-      ["Blog", `${SITE}/blog/`],
+      [translate(lang, "common.nav.menu.home.label"), absolute(lang, "/")],
+      [translate(lang, "common.nav.menu.blog.label"), absolute(lang, "/blog")],
       [a.title, url],
     ]),
   ]);
