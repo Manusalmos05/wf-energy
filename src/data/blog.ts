@@ -161,6 +161,71 @@ const ARTICLES_ES: BlogArticle[] = [
 interface Translation { title: string; excerpt: string; tags: string[] }
 
 const EN_TRANSLATIONS: Record<string, Translation> = {
+  "eficiencia-energetica-residencial-levante": {
+    title: "Residential Energy Efficiency in the Levante",
+    excerpt: "Technical analysis of residential energy efficiency in Alicante and Murcia: strategies, real costs, impact on the bill and payback.",
+    tags: ["energy efficiency", "self-consumption", "insulation"],
+  },
+  "climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo": {
+    title: "Climate control in Alicante and Murcia: why we waste money in summer and how to fix it",
+    excerpt: "Find out where energy is lost in your home's climate control and which investment option really helps you save in Alicante and Murcia.",
+    tags: ["climate control", "energy saving"],
+  },
+  "cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda": {
+    title: "What is the best way to produce hot water in a home?",
+    excerpt: "Comparison of electric tank, gas heater, hybrid heat pump water heater and heat pump water heater to save energy and improve comfort.",
+    tags: ["hot water", "heat pump", "energy saving"],
+  },
+  "como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente": {
+    title: "How to turn a photovoltaic installation into a smart home",
+    excerpt: "Discover how home automation syncs solar production with real consumption to save more, boost comfort and make the house safer.",
+    tags: ["home automation", "photovoltaic", "energy saving"],
+  },
+  "el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica": {
+    title: "The invisible hero of hot water: the thermostatic mixing valve",
+    excerpt: "Find out why a thermostatic mixing valve improves safety, extends tank autonomy and saves water and energy in your hot-water installation.",
+    tags: ["hot water", "energy saving", "plumbing"],
+  },
+  "coche-electrico-consumo-real-mantenimiento-ahorro": {
+    title: "Electric car: real consumption, maintenance and savings",
+    excerpt: "Technical and financial analysis of Total Cost of Ownership (TCO) of an electric car vs. a petrol one: real home-grid consumption, maintenance, taxes and Wallbox payback.",
+    tags: ["e-mobility"],
+  },
+  "cambio-ventanas-aislamiento-cajon-persianas": {
+    title: "Window replacement and roller-blind box insulation: technical solutions, prices and real savings",
+    excerpt: "Detailed analysis of how to optimise windows and the roller-blind box in Mediterranean climates like Murcia and Alicante. PVC vs. thermally broken aluminium, solar-control glass and payback calculation.",
+    tags: ["energy efficiency", "windows", "insulation"],
+  },
+  "aislamiento-térmico-de-tuberías-de-PPR": {
+    title: "Thermal insulation of PPR pipes: savings and efficiency",
+    excerpt: "Learn how a cheap material can save you money by preventing thermal losses: the pipe insulation sleeve.",
+    tags: ["plumbing", "hot water", "sleeve", "insulation"],
+  },
+  "soluciones-aislamiento-termico-tejados-cubiertas": {
+    title: "Insulating the roof: technical solutions and real savings",
+    excerpt: "The roof accounts for up to 30% of a home's thermal losses. We compare numerically the payback of blown-in, insufflated, dry-lining, inverted roof and external thermal insulation.",
+    tags: ["insulation", "roofs", "energy efficiency"],
+  },
+  "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante": {
+    title: "Charging your EV with photovoltaic vs. grid",
+    excerpt: "Real comparison between charging your electric vehicle from the grid alone vs. a WFEnergy photovoltaic system (9.7 kWp + 16 kWh + Virtual Battery). Discover real savings of ~€700/year.",
+    tags: ["e-mobility", "self-consumption"],
+  },
+  "uso-agua-estrategia-bioclimatica-fuentes-interior": {
+    title: "Using water as a bioclimatic strategy at home",
+    excerpt: "Use indoor water fountains and condensate water for passive climate control, humidity regulation and air quality in Alicante and Murcia.",
+    tags: ["energy efficiency", "energy saving"],
+  },
+  "fachadas-vegetales-aislamiento-natural-calor": {
+    title: "Green façades: natural insulation for your home",
+    excerpt: "Discover how green façades reduce outdoor temperature and air-conditioning costs in warm climates like Murcia and Alicante.",
+    tags: ["energy efficiency", "bioclimatic architecture", "insulation"],
+  },
+  "ventajas-aislar-vivienda-sate-insuflado-trasdosado": {
+    title: "Insulating a single-family home: SATE, insufflated or dry-lining",
+    excerpt: "Cut up to €450/year off your electricity bill by insulating your villa. We compare SATE, insufflated and dry-lining with real data in Alicante and Murcia.",
+    tags: ["energy efficiency", "insulation", "saving"],
+  },
   "el-mito-del-60-de-descuento-en-el-irpf": {
     title: 'The myth of the "60% income-tax discount"',
     excerpt: "We unpack an €11,500 turn-key installation in Alicante: what you actually get, how the state and regional tax deductions really work, who can use them and how it compares against a bank deposit.",

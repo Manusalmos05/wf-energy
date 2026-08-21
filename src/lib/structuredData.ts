@@ -1,7 +1,7 @@
 import { getFaqs } from "../data/faqs.ts";
 import { getServices } from "../data/services.ts";
 import { getKits } from "../data/kits.ts";
-import { KIT_SPECS } from "../data/kitSpecs.ts";
+import { getKitSpecs } from "../data/kitSpecs.ts";
 import { getSortedArticles, type BlogArticle } from "../data/blog.ts";
 import {
   SITE,
@@ -104,8 +104,9 @@ function services(lang: Lang): Node[] {
 }
 
 function products(lang: Lang): Node[] {
+  const specs = getKitSpecs(lang);
   return getKits(lang).map((k) => {
-    const spec = KIT_SPECS[k.slug];
+    const spec = specs[k.slug];
     const node: Node = {
       "@type": "Product",
       "@id": kitId(k.title, k.slug),

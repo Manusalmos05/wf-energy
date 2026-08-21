@@ -22,7 +22,7 @@ export default function ServicesSection() {
             >
               <div className="relative h-48 bg-secondary overflow-hidden">
                 <img
-                  src={s.img}
+                  src={`${import.meta.env.BASE_URL}${s.img}`}
                   alt={s.title}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -64,6 +64,301 @@
     { "label": "Cargador coche eléctrico" },
     { "label": "Casa Inteligente — Torrevieja" }
   ],
+  "kitSpec": {
+    "labels": {
+      "badgePromo": "Promoción",
+      "priceLabel": "Precio de venta",
+      "taxNote": "IVA incluido",
+      "includes": "Incluye",
+      "extras": "Extras opcionales",
+      "selfSufficiencyPrefix": "Hasta un",
+      "selfSufficiencySuffix": "de autosuficiencia energética"
+    },
+    "shared": {
+      "solarBenefits": [
+        { "title": "MÁXIMA EFICIENCIA", "body": "Ahorra más desde el primer día." },
+        { "title": "ENERGÍA SEGURA", "body": "Suministro garantizado incluso en cortes de luz." },
+        { "title": "ENERGÍA LIMPIA", "body": "Reduce tu huella de carbono." },
+        { "title": "AUMENTA EL VALOR", "body": "Revaloriza tu vivienda." }
+      ],
+      "adminIncludes": [
+        "Tasas y trámites ante la administración",
+        "Certificado de instalación eléctrica (Boletín)",
+        "2 Certificados de eficiencia energética",
+        "Trámite de ayudas y subvenciones"
+      ],
+      "solarExtras": [
+        "Batería desde:",
+        "Panel solar adicional desde:",
+        "Toma de tierra",
+        "Cargador coche eléctrico",
+        "Casa inteligente solar (domótica) desde:"
+      ],
+      "aerotermosExtras": [
+        "Filtro antical:",
+        "Válvula termostática",
+        "Trípode soporte de carga"
+      ],
+      "solarGuarantees": [
+        { "title": "Instalación profesional", "body": "Cumplimos con la normativa REBT y la normativa fotovoltaica vigente." },
+        { "title": "Gestión completa", "body": "Nos encargamos de todos los trámites y documentación." }
+      ],
+      "mediaVivienda": {
+        "scope": "Para una vivienda media",
+        "body": "Con este kit, una vivienda media del sureste español solo necesitará comprar entre un 2% y un 10% de la electricidad que consume durante el año."
+      },
+      "domoticoBase": {
+        "summary": "Controla tu hogar desde cualquier lugar con nuestro sistema inteligente y fácil de usar.",
+        "benefits": [
+          { "title": "CONTROL TOTAL", "body": "Gestiona luces, persianas, clima y más desde tu móvil." },
+          { "title": "SEGURIDAD INTELIGENTE", "body": "Cerradura inteligente y acceso remoto para tu tranquilidad." },
+          { "title": "AHORRO Y EFICIENCIA", "body": "Automatiza y reduce el consumo energético de tu hogar, con control de sistema solar." },
+          { "title": "ESCENARIOS PERSONALIZADOS", "body": "Crea ambientes únicos con un solo toque gracias a las escenas inteligentes." }
+        ],
+        "highlight": {
+          "title": "Home Assistant Green",
+          "body": "El hub inteligente y privado para hacer tu hogar más eficiente, seguro y conectado."
+        },
+        "guarantees": [
+          { "title": "Compatible y escalable", "body": "Sistema compatible con múltiples dispositivos y ampliable según tus necesidades." },
+          { "title": "Sin cuotas mensuales", "body": "Sin suscripciones ni costes ocultos. Tu sistema, siempre tuyo." },
+          { "title": "100% privado", "body": "Tu información y tu hogar siempre bajo tu control." }
+        ]
+      },
+      "aerotermoBase": {
+        "summary": "Solución integral de agua caliente sanitaria: eficiencia, confort y conectividad para tu hogar.",
+        "benefits": [
+          { "title": "GRAN CAPACIDAD", "body": "100 litros de agua." },
+          { "title": "TECNOLOGÍA HÍBRIDA i-Memory", "body": "Algoritmo inteligente que combina resistencia y bomba de calor para máxima eficiencia." },
+          { "title": "FUNCIÓN ANTI-LEGIONELA AUTOMÁTICA", "body": "Previene enfermedades, seguridad sanitaria periódica." },
+          { "title": "CONECTIVIDAD WIFI Y APP ARISTON NET", "body": "Control total. Programa y mide tu consumo." },
+          { "title": "MÚLTIPLES MODOS", "body": "Green, Boost, Program 1&2, i-Memory." },
+          { "title": "INSTALACIÓN FLEXIBLE", "body": "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
+        ],
+        "benefits100": [
+          { "title": "GRAN CAPACIDAD", "body": "100 litros de agua." },
+          { "title": "TECNOLOGÍA DE BOMBA DE CALOR", "body": "Aprovecha el aire para calentar el agua de forma eficiente." },
+          { "title": "FUNCIÓN ANTI-LEGIONELA AUTOMÁTICA", "body": "Previene enfermedades, seguridad sanitaria periódica." },
+          { "title": "CONECTIVIDAD WIFI Y APP ARISTON NET", "body": "Control total. Programa y mide tu consumo." },
+          { "title": "MÚLTIPLES MODOS", "body": "Green, Boost, Program 1&2, i-Memory." },
+          { "title": "INSTALACIÓN FLEXIBLE", "body": "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
+        ],
+        "highlight110": {
+          "title": "Eficiencia energética",
+          "body": "El aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: bomba de calor, gran capacidad y WiFi integrado."
+        },
+        "highlight100": {
+          "title": "Eficiencia energética",
+          "body": "El aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: bomba de calor, gran capacidad, WiFi integrado y mecanismo silencioso."
+        },
+        "guarantees": [
+          { "title": "Compatible", "body": "Perfectamente integrable a sistemas fotovoltaicos y/o domóticos." },
+          { "title": "Sin cuotas mensuales", "body": "Sin suscripciones." }
+        ]
+      }
+    },
+    "byKit": {
+      "3kw-hibrido": {
+        "titleMain": "Kit solar híbrido",
+        "titlePower": "3 kW",
+        "summary": "Inversor híbrido Hoymiles 3kW, 4,5 kWp en paneles y batería DEYE 5,12 kWh.",
+        "productImageAlt": "Paneles solares, inversor híbrido Hoymiles 3kW y batería DEYE 5,12 kWh",
+        "components": [
+          { "title": "4,5 kWp", "body": "8-10 paneles" },
+          { "title": "Inversor híbrido Hoymiles 3 kW", "body": "Potente, fiable y eficiente" },
+          { "title": "Batería DEYE 5,12 kWh", "body": "Almacenamiento seguro y escalable" }
+        ],
+        "selfSufficiency": {
+          "percent": "95%",
+          "scope": "Para una vivienda pequeña",
+          "body": "Con este kit, una vivienda pequeña de bajo consumo apenas necesitará comprar electricidad de la red, minimizando su dependencia energética durante todo el año."
+        },
+        "stats": [
+          { "label": "Producción anual estimada", "value": "8.120 kWh" },
+          { "label": "Cobertura del consumo anual", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Instalación",
+          "Inversor híbrido Hoymiles 3 kW",
+          "8-10 paneles",
+          "Batería DEYE 5,12 kWh",
+          "Full Back-Up",
+          "Tasas y trámites ante la administración",
+          "Certificado de instalación eléctrica (si aplica)",
+          "2 Certificados de eficiencia energética",
+          "Trámite de ayudas y subvenciones"
+        ],
+        "guarantees": [
+          { "title": "Instalación profesional", "body": "Contamos con la normativa REBT." },
+          { "title": "Gestión completa", "body": "Nos encargamos de todos los trámites y documentación." }
+        ]
+      },
+      "6kw": {
+        "titleMain": "Kit solar",
+        "titlePower": "6 kW",
+        "summary": "Inversor híbrido DEYE 6kW, 6 kWp en paneles y batería DEYE 5,12 kWh.",
+        "productImageAlt": "Paneles solares AIKO 610W, inversor híbrido DEYE 6 kW y batería DEYE 5,12 kWh",
+        "components": [
+          { "title": "6 kWp", "body": "10-12 paneles" },
+          { "title": "Inversor híbrido DEYE 6 kW", "body": "Potente, fiable y eficiente" },
+          { "title": "Batería DEYE 5,12 kWh", "body": "Almacenamiento seguro y escalable" }
+        ],
+        "stats": [
+          { "label": "Producción anual estimada", "value": "10.340 kWh" },
+          { "label": "Cobertura del consumo anual", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Instalación",
+          "Inversor híbrido DEYE 6 kW",
+          "10-12 paneles",
+          "Batería DEYE 5,12 kWh",
+          "Full Back-Up"
+        ]
+      },
+      "6kw-offgrid": {
+        "titleMain": "Kit solar",
+        "titlePower": "off-grid 6 kW",
+        "summary": "Inversor off-grid Felicity 6 kW, 6 kWp en paneles y batería Felicity 16 kWh.",
+        "productImageAlt": "Paneles solares AIKO 610W, inversor off-grid Felicity 6 kW y batería Felicity 16 kWh",
+        "components": [
+          { "title": "6 kWp", "body": "10-12 paneles" },
+          { "title": "Inversor off-grid Felicity 6 kW", "body": "Potente, fiable y eficiente" },
+          { "title": "Batería Felicity 16 kWh", "body": "Almacenamiento seguro y escalable" }
+        ],
+        "selfSufficiency": {
+          "percent": "100%",
+          "scope": "Para ubicaciones sin acceso a red",
+          "body": "Con este kit, la vivienda es completamente autónoma, proporcionando energía 100% limpia y sostenible, ideal para ubicaciones sin acceso a red."
+        },
+        "stats": [
+          { "label": "Producción anual estimada", "value": "10.340 kWh" }
+        ],
+        "includes": [
+          "Instalación",
+          "Inversor off-grid Felicity 6 kW",
+          "10-12 paneles",
+          "Batería Felicity 16 kWh",
+          "Full Back-Up"
+        ]
+      },
+      "8kw-hibrido": {
+        "titleMain": "Kit solar híbrido",
+        "titlePower": "8 kW",
+        "summary": "Inversor híbrido DEYE 8 kW, 9,7 kWp en paneles y batería Felicity 16 kWh.",
+        "productImageAlt": "Paneles solares AIKO 610W, inversor híbrido DEYE 8 kW y batería Felicity 16 kWh",
+        "components": [
+          { "title": "9,7 kWp", "body": "16-19 paneles" },
+          { "title": "Inversor híbrido DEYE 8 kW", "body": "Potente, fiable y eficiente" },
+          { "title": "Batería Felicity 16 kWh", "body": "Almacenamiento seguro y escalable" }
+        ],
+        "stats": [
+          { "label": "Producción anual estimada", "value": "14.720 kWh" },
+          { "label": "Cobertura del consumo anual", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Instalación",
+          "Inversor híbrido DEYE 8 kW",
+          "16-19 paneles",
+          "Batería Felicity 16 kWh",
+          "Full Back-Up"
+        ]
+      },
+      "10kw-hibrido": {
+        "titleMain": "Kit solar híbrido",
+        "titlePower": "10 kW",
+        "summary": "Inversor híbrido DEYE 10 kW, 12 kWp en paneles y batería Felicity 16 kWh.",
+        "productImageAlt": "Paneles solares AIKO 610W, inversor híbrido DEYE 10 kW y batería Felicity 16 kWh",
+        "components": [
+          { "title": "12 kWp", "body": "20-23 paneles" },
+          { "title": "Inversor híbrido DEYE 10 kW", "body": "Potente, fiable y eficiente" },
+          { "title": "Batería Felicity 16 kWh", "body": "Almacenamiento seguro y escalable" }
+        ],
+        "stats": [
+          { "label": "Producción anual estimada", "value": "18.400 kWh" },
+          { "label": "Cobertura del consumo anual", "value": "92% - 98%" }
+        ],
+        "includes": [
+          "Instalación",
+          "Inversor híbrido DEYE 10 kW",
+          "20-23 paneles",
+          "Batería Felicity 16 kWh",
+          "Full Back-Up"
+        ]
+      },
+      "cargador": {
+        "titleMain": "Cargador de",
+        "titlePower": "coche eléctrico",
+        "summary": "7,4 kW monofásico / 11 kW trifásico. Carga rápida, segura e inteligente.",
+        "productImageAlt": "Cargador de coche eléctrico AUTEL de pared con cable, conector Tipo 2 y app móvil de control",
+        "benefits": [
+          { "title": "Carga rápida y eficiente", "body": "Potencia ajustable para una carga más rápida y optimizada." },
+          { "title": "Seguridad avanzada", "body": "Protección contra sobrecargas, cortocircuitos, fugas y sobretemperatura." },
+          { "title": "Control inteligente", "body": "Monitoriza y gestiona la carga desde tu móvil en tiempo real." },
+          { "title": "Control dinámico de cargas", "body": "Ajusta automáticamente la potencia de carga según los consumos de tu casa." },
+          { "title": "Diseño resistente", "body": "Certificación IP65 para uso en exteriores e interiores." }
+        ],
+        "includes": [
+          "Instalación",
+          "Cargador monofásico 7,4 kW o trifásico 11 kW",
+          "Conector Tipo 2",
+          "Tasas y trámites ante la administración",
+          "Certificado de instalación eléctrica (Boletín)",
+          "Trámite de ayudas y subvenciones"
+        ],
+        "highlight": {
+          "title": "Incluye documentación y legalización del punto de carga",
+          "body": "Nos encargamos de todo, tú no te preocupas."
+        },
+        "guarantees": [
+          { "title": "Seguridad total", "body": "Protección contra sobrecargas, cortocircuitos, fugas y sobretemperatura." },
+          { "title": "Conectividad Wi-Fi / Bluetooth", "body": "Control y monitorización en tiempo real desde la app AUTEL." },
+          { "title": "Programación inteligente", "body": "Programa la carga en horarios valle y optimiza tu consumo." },
+          { "title": "Eficiencia y sostenibilidad", "body": "Aprovecha al máximo tu energía y reduce tu huella de carbono." }
+        ]
+      },
+      "domotico": {
+        "titleMain": "Kit",
+        "titlePower": "domótico",
+        "productImageAlt": "Hub Home Assistant Green con su caja, base del kit domótico",
+        "includes": [
+          "Instalación",
+          "7 módulos de iluminación",
+          "5 módulos de persianas",
+          "2 mandos de clima",
+          "1 cerradura inteligente",
+          "3 enchufes inteligentes",
+          "1 puerta garaje / piscina / aerotermo",
+          "5 escenas personalizadas"
+        ]
+      },
+      "domotico-s": {
+        "titleMain": "Kit domótico",
+        "titlePower": "pequeño",
+        "productImageAlt": "Hub Home Assistant Green con su caja, base del kit domótico pequeño",
+        "includes": [
+          "Instalación",
+          "5 módulos de iluminación",
+          "3 módulos de persianas",
+          "1 mando de clima",
+          "1 cerradura inteligente",
+          "2 enchufes inteligentes",
+          "3 escenas personalizadas"
+        ]
+      },
+      "aerotermo-110": {
+        "titleMain": "Aerotermo Ariston",
+        "titlePower": "Nuos Plus S2 110L Wi-Fi",
+        "productImageAlt": "Aerotermo Ariston Nuos Plus S2 110L Wi-Fi",
+        "includes": ["Instalación", "Puesta en marcha"]
+      },
+      "aerotermo-100": {
+        "titleMain": "Aerotermo Ariston",
+        "titlePower": "Lydos Hybrid Wi-Fi 100L",
+        "productImageAlt": "Aerotermo Ariston Lydos Hybrid Wi-Fi 100L",
+        "includes": ["Instalación", "Puesta en marcha"]
+      }
+    }
+  },
   "kits": {
     "3kw-hibrido": "Kit solar híbrido 3 kW",
     "6kw": "Kit solar 6 kW",

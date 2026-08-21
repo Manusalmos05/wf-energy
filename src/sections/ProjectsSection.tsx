@@ -17,7 +17,7 @@ export default function ProjectsSection() {
           {projects.map((p) => (
             <div key={p.label} className="relative group overflow-hidden rounded-2xl bg-secondary min-w-0">
               <img
-                src={p.img}
+                src={`${import.meta.env.BASE_URL}${p.img}`}
                 alt={p.label}
                 loading="lazy"
                 className="w-full h-[270px] object-cover group-hover:scale-105 transition-transform duration-500"

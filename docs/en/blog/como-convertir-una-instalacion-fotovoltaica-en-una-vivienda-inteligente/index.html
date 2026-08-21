@@ -1,0 +1,248 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>How to turn a photovoltaic installation into a smart home</title>
+      <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      />
+
+      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+
+      <script>window.__ARTICLE_HTML__={"en:como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente":"\u003cp class=\"article-lead\">More and more homes produce their own electricity thanks to a photovoltaic installation. Solar panels have proved to be one of the best investments to cut the electricity bill, increase energy independence and shield you from rising electricity prices. However, installing solar panels does not guarantee that we are taking advantage of all the energy they produce; in fact, in many homes exactly the opposite happens.\u003c/p>\n\n\u003cp>During the central hours of the day, when photovoltaic generation reaches its peak output, the dwelling is usually practically empty. The owners are at work, the children are at school and the main electrical loads remain off. As a result, a significant share of the energy generated ends up being exported to the grid. This is where home automation comes into play — not to produce more energy, but to make sure a greater portion of that energy stays inside the dwelling, where it really generates savings, comfort and safety.\u003c/p>\n\n\u003ch2>The cheapest energy is the energy you never have to buy\u003c/h2>\n\u003cp>This is probably the most important concept of the whole article. Many people think that the more surplus their solar panels generate, the better. In reality the opposite is true: every kilowatt-hour we export to the grid is no longer available to replace electricity that, later on, we will have to buy back.\u003c/p>\n\n\u003cp>The energy we use directly inside our home is worth much more than the energy we sell, and that difference is what makes home automation such an attractive investment.\u003c/p>\n\n\u003ch2>The problem is not the solar panels\u003c/h2>\n\u003cp>Let's picture any typical home.\u003c/p>\n\n\u003cp>At 13:00 midday the installation is producing much more energy than the house needs. Meanwhile:\u003c/p>\n\n\u003cul>\n  \u003cli>the electric water heater is off;\u003c/li>\n  \u003cli>the climate control has not switched on yet;\u003c/li>\n  \u003cli>the electric car will not start charging until night-time;\u003c/li>\n  \u003cli>the pool will run in the afternoon;\u003c/li>\n  \u003cli>the washing machine is still waiting.\u003c/li>\n\u003c/ul>\n\n\u003cp>All that energy ends up flowing out to the grid; hours later exactly the opposite happens: the solar generation disappears and we start buying electricity again. It is not a problem of the photovoltaic installation, it is a problem of synchronisation between generation and consumption.\u003c/p>\n\n\u003ch2>Home automation completely changes that picture\u003c/h2>\n\u003cp>A smart home does not wait for the user to make decisions. While the solar panels are producing electricity, the system can automatically decide to:\u003c/p>\n\n\u003cul>\n  \u003cli>heat the domestic hot water;\u003c/li>\n  \u003cli>run the climate control;\u003c/li>\n  \u003cli>charge the electric vehicle;\u003c/li>\n  \u003cli>switch on the pool pump;\u003c/li>\n  \u003cli>move the blinds to lower the energy demand;\u003c/li>\n  \u003cli>power certain appliances when the energy is free.\u003c/li>\n\u003c/ul>\n\n\u003cp>All of this without any user intervention. We are not talking about turning on lights from your mobile, but about automatically managing all of the home's energy.\u003c/p>\n\u003cimg src=\"/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_01.webp\" alt=\"un dia en una vivienda inteligente\" loading=\"lazy\">\n\n\n\u003ch2>The brain of the home: Home Assistant\u003c/h2>\n\u003cp>There is a belief that home automation consists of controlling the lights from your mobile phone; in reality, a smart home does something much more interesting: it is capable of taking automated decisions.\u003c/p>\n\n\u003cp>It continuously analyses:\u003c/p>\n\n\u003cul>\n  \u003cli>solar production;\u003c/li>\n  \u003cli>the home's consumption;\u003c/li>\n  \u003cli>the indoor temperature;\u003c/li>\n  \u003cli>the presence of people;\u003c/li>\n  \u003cli>and even the weather forecast.\u003c/li>\n\u003c/ul>\n\n\u003cp>And, based on that information, it decides when to switch certain devices on to make better use of the available energy.\u003c/p>\n\n\u003cp>Our kit uses Home Assistant Green as its home-automation hub.\u003c/p>\n\n\u003cp>It is a local platform, with no monthly fees and with huge integration capability, capable of coordinating every device in the home so they work together as a single system.\u003c/p>\n\n\u003ch2>A real example of how savings change\u003c/h2>\n\u003ch3>Example assumptions\u003c/h3>\n\u003cp>We consider a home fitted with a photovoltaic installation of approximately 6 kWp, capable of producing around 8,000 kWh a year — a figure very representative of current residential installations.\u003c/p>\n\n\u003cp>We also assume that the home's annual consumption is similar to that production. To simplify the calculations we use average residential market values:\u003c/p>\n\n\u003cp>Average purchase price: €0.20/kWh\u003c/p>\n\u003cp>Surplus compensation: €0.06/kWh\u003c/p>\n\n\u003cem>*These figures are indicative and may vary depending on the retailer and the tariff contracted.\u003c/em>\n\n\u003cimg src=\"/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_02.webp\" alt=\"El recorrido de kWh\" loading=\"lazy\">\n\n\n\u003ch3>Home with panels and no home automation\u003c/h3>\n\u003cul>\n  \u003cli>Approximate self-consumption: 50%\u003c/li>\n  \u003cli>Annual production: 8,000 kWh\u003c/l>\n  \u003cli>Self-consumption: 4,000 kWh\u003c/li>\n  \u003cli>Surplus: 4,000 kWh\u003c/l>\n\u003c/ul>\n\n\n\u003cp>The 4,000 kWh self-consumed avoid buying electricity worth \u003cb>€800.\u003c/b>\u003c/p>\n\n\u003cp>The 4,000 kWh exported generate a compensation of around \u003cb>€240.\u003c/b>\u003c/p>\n\n\u003cp>Annual monetary saving: \u003cb>€1,040.\u003c/b>\u003c/p>\n\n\u003cp>But here a very important detail appears.\u003c/p>\n\n\u003cp>Although we have delivered 4,000 kWh to the grid, that €240 compensation would only buy back roughly 1,200 kWh if at another time of year we needed electricity — in other words, selling energy is far less profitable than consuming it directly.\u003c/p>\n\n\u003ch3>Home with smart management\u003c/h3>\n\u003cp>Now let's imagine exactly the same home: the same panels, the same generation; the only difference is that the home automatically adapts its consumption to make use of the available energy.\u003c/p>\n\n\u003cp>Self-consumption rises to approximately 80%.\u003c/p>\n\n\u003cp>We now get:\u003c/p>\n\u003cul>\n  \u003cli>6,400 kWh self-consumed\u003c/li>\n  \u003cli>1,600 kWh exported\u003c/li>\n  \u003cli>Saving from self-consumption: €1,280\u003c/li>\n  \u003cli>Compensation: €96\u003c/li>\n  \u003cli>Annual monetary saving: €1,376.\u003c/li>\n\u003c/ul>\n\n\u003cp>A difference of \u003cb>€336\u003c/b> without adding a single extra panel.\u003c/p>\n\n\u003ch2>The next step: getting close to fully using the energy\u003c/h2>\n\u003cp>A photovoltaic installation evolves in distinct stages.\u003c/p>\n\n\u003ctable>\n  \u003cthead>\n    \u003ctr>\n      \u003cth>Configuration\u003c/th>\n      \u003cth>Approximate self-consumption\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n  \u003ctbody>\n    \u003ctr>\n      \u003ctd>Photovoltaic installation\u003c/td>\n      \u003ctd>40–60%\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>+ Home automation\u003c/td>\n      \u003ctd>Up to 80%\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>+ Battery\u003c/td>\n      \u003ctd>95–98%\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>+ Virtual battery\u003c/td>\n      \u003ctd>Annual balance close to 100%\u003c/td>\n    \u003c/tr>\n  \u003c/tbody>\n\u003c/table>\n\n\u003cp>Each element brings a different improvement: home automation increases self-consumption, the battery shifts the surplus energy to the night-time hours, and the virtual battery lets you offset the remaining surplus economically to get close to an almost complete annual energy balance.\u003c/p>\n\u003cimg src=\"/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_03.webp\" alt=\"La escalera del autoconsumo\" loading=\"lazy\">\n\n\n\u003ch2>But home automation is not just about saving money\u003c/h2>\n\u003cp>So far we have talked about numbers.\u003c/p>\n\n\u003cp>However, after fitting out a smart home, most owners discover that the biggest change does not show up on the electricity bill: it shows up in their day-to-day life.\u003c/p>\n\n\u003cp>The house starts working for them.\u003c/p>\n\n\u003cul>\n  \u003cli>The blinds adjust automatically to the position of the sun.\u003c/li>\n  \u003cli>The climate control prepares the ideal temperature before you get home.\u003c/li>\n  \u003cli>The water heater takes advantage of the solar surplus without needing to be programmed.\u003c/li>\n  \u003cli>Lights switch themselves off when a room is empty.\u003c/li>\n  \u003cli>The electric car only starts charging when there is enough energy.\u003c/li>\n  \u003cli>Smart plugs cut out unnecessary loads.\u003c/li>\n  \u003cli>It authorises entry for family, friends or tradespeople through their mobiles.\u003c/li>\n\u003c/ul>\n\n\u003cp>Everything happens automatically, with no apps to open, no buttons to press, no need to constantly worry about optimising consumption.\u003c/p>\n\n\u003ch2>A safer home too\u003c/h2>\n\u003cp>Peace of mind is also part of a smart home. There is no longer any need to hide a key under the mat or to travel to open the door to a relative — from anywhere in the world you can grant secure access to the people you choose, for the time you decide and with the confidence of knowing who has come in and when.\u003c/p>\n\n\u003cp>Thanks to the integration of sensors and automations, a smart home can:\u003c/p>\n\n\u003cul>\n  \u003cli>alert us if a door or window is left open;\u003c/li>\n  \u003cli>check the lock's status from anywhere;\u003c/li>\n  \u003cli>switch off forgotten equipment automatically;\u003c/li>\n  \u003cli>turn on the outdoor lighting when it detects movement;\u003c/li>\n  \u003cli>simulate presence during the holidays;\u003c/li>\n  \u003cli>detect anomalous electrical consumption or possible faults.\u003c/li>\n\u003c/ul>\n\n\u003cp>The dwelling stops being a collection of independent devices and becomes a system that looks after our home 24 hours a day.\u003c/p>\n\n\u003ch2>Conclusion\u003c/h2>\n\u003cp>Most people believe that a photovoltaic installation is finished once the solar panels are up; in reality, that is where it begins.\u003c/p>\n\n\u003cp>The real potential appears when the home is capable of automatically deciding when to consume, when to store and when to make the most of every kilowatt-hour produced.\u003c/p>\n\n\u003cp>Home automation does not make the panels generate more energy — it makes that energy work far better for us, and that change translates into three very clear benefits:\u003c/p>\n\n\u003cul>\n  \u003cli>More savings, because self-consumption goes up and electricity purchases go down.\u003c/li>\n  \u003cli>More comfort, because the home automates everyday tasks and adapts to our habits.\u003c/li>\n  \u003cli>More security, because it continuously monitors the state of the home and can act or alert us when something unexpected happens.\u003c/li>\n\u003c/ul>\n\n\u003cp>If we add a physical battery and a virtual battery to that smart management, we will be very close to using practically all the energy our solar panels produce. In the end, the most efficient home is not the one that produces the most energy, but the one that knows how to use it best.\u003c/p>\n"}</script>
+      <script type="module" crossorigin src="/assets/index-BXRpmTN0.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DLHj8rOW.css">
+
+      <meta name="description" content="Discover how home automation syncs solar production with real consumption to save more, boost comfort and make the house safer." />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+      <link rel="canonical" href="https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+      <link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+      <link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+      <link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+
+      <meta property="og:type" content="article" />
+      <meta property="og:site_name" content="White Fox Energy" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:url" content="https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+      <meta property="og:title" content="How to turn a photovoltaic installation into a smart home" />
+      <meta property="og:description" content="Discover how home automation syncs solar production with real consumption to save more, boost comfort and make the house safer." />
+      <meta property="og:image" content="https://www.wf-energy.com/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/portada.webp" />
+      <meta property="og:image:alt" content="How to turn a photovoltaic installation into a smart home" />
+      <meta property="article:published_time" content="2026-08-12" />
+      <meta property="article:modified_time" content="2026-08-12" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="How to turn a photovoltaic installation into a smart home" />
+      <meta name="twitter:description" content="Discover how home automation syncs solar production with real consumption to save more, boost comfort and make the house safer." />
+      <meta name="twitter:image" content="https://www.wf-energy.com/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/portada.webp" />
+
+      <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.wf-energy.com/#sitio","url":"https://www.wf-energy.com/en/","name":"White Fox Energy","description":"Solar panel, battery, EV charger and home-automation installation in Alicante, Murcia and Vega Baja. Free study and quote within 24 h.","inLanguage":"en-GB","publisher":{"@id":"https://www.wf-energy.com/#empresa"}},{"@type":"ProfessionalService","@id":"https://www.wf-energy.com/#empresa","name":"White Fox Energy","url":"https://www.wf-energy.com/en/","description":"Solar panel, battery, EV charger and home-automation installation in Alicante, Murcia and Vega Baja. Free study and quote within 24 h.","image":"https://www.wf-energy.com/images/og-image.jpg","logo":"https://www.wf-energy.com/icon.svg","telephone":"+34743098335","email":"info@wf-energy.com","sameAs":["https://wa.me/34743098335"],"knowsLanguage":"en-GB","currenciesAccepted":"EUR","areaServed":[{"@type":"AdministrativeArea","name":"Alicante"},{"@type":"AdministrativeArea","name":"Murcia"},{"@type":"AdministrativeArea","name":"Vega Baja del Segura"}]},{"@type":"BlogPosting","@id":"https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/#articulo","url":"https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/","headline":"How to turn a photovoltaic installation into a smart home","description":"Discover how home automation syncs solar production with real consumption to save more, boost comfort and make the house safer.","image":"https://www.wf-energy.com/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/portada.webp","datePublished":"2026-08-12","dateModified":"2026-08-12","inLanguage":"en-GB","keywords":"home automation, photovoltaic, energy saving","timeRequired":"PT8M","author":{"@id":"https://www.wf-energy.com/#empresa"},"publisher":{"@id":"https://www.wf-energy.com/#empresa"},"isPartOf":{"@id":"https://www.wf-energy.com/blog/#blog"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wf-energy.com/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wf-energy.com/en/blog/"},{"@type":"ListItem","position":3,"name":"How to turn a photovoltaic installation into a smart home","item":"https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/"}]}]}</script>
+
+    </head>
+
+    <body>
+
+      <div id="root"><div class="min-h-screen bg-background text-foreground" style="font-family:&#x27;Inter&#x27;, sans-serif"><nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border"><div class="w-full max-w-7xl mx-auto px-5 h-16 flex items-center justify-between min-[1420px]:gap-8"><a href="/en/#inicio" class="flex items-center gap-2 flex-shrink-0"><div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-white"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div><div class="whitespace-nowrap"><span class="font-bold text-primary text-base tracking-tight">White Fox Energy</span><span class="hidden sm:inline text-xs text-muted-foreground ml-1.5">Electrical solutions</span></div></a><div class="hidden min-[1420px]:flex items-center gap-7"><a href="/en/#inicio" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">Home</a><a href="/en/#servicios" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a><a href="/en/#proyectos" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">Projects</a><a href="/en/#kits" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">Solar Kits &amp; More</a><a class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors" href="/en/blog" data-discover="true">Blog</a><a href="/en/#preguntas" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a><a href="/en/#contacto" class="whitespace-nowrap text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a></div><div class="hidden min-[1420px]:flex items-center gap-4"><div class="flex items-center gap-2 mr-3" role="group" aria-label="Language"><a hrefLang="es" aria-label="Español" class="inline-flex items-center transition-opacity opacity-40 hover:opacity-100" href="/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente" data-discover="true"><img src="/flags/es.svg" alt="" aria-hidden="true" width="24" height="18" style="display:block;width:24px;height:18px;min-width:24px;max-width:24px;object-fit:fill" class="rounded-sm"/></a><span aria-hidden="true" class="text-muted-foreground/50 select-none">/</span><a hrefLang="en" aria-label="English" aria-current="true" class="inline-flex items-center transition-opacity opacity-100" href="/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente" data-discover="true"><img src="/flags/gb.svg" alt="" aria-hidden="true" width="24" height="18" style="display:block;width:24px;height:18px;min-width:24px;max-width:24px;object-fit:fill" class="rounded-sm"/></a></div><a href="tel:+34743098335" class="whitespace-nowrap flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-accent transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <!-- -->743098335</a><a href="/en/#contacto" class="whitespace-nowrap px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-semibold hover:opacity-90 transition-opacity flex items-center gap-1.5">Free quote<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div><button class="min-[1420px]:hidden text-foreground" aria-label="Open menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button></div></nav><div class="fixed bottom-6 right-4 z-50 flex flex-col gap-3" style="bottom:1.5rem"><a href="tel:+34743098335" class="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Call us now"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a><a href="https://wa.me/34743098335" class="w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></a></div><main class="pt-16"><article class="pb-16"><header class="bg-secondary border-b border-border"><div class="max-w-3xl mx-auto px-5 py-12"><a class="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-accent transition-colors mb-6" href="/en/blog" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> <!-- -->Back to the blog</a><div class="flex flex-wrap gap-1.5 mb-4"><span class="px-2 py-0.5 rounded-full bg-accent/10 text-accent text-xs font-semibold">home automation</span><span class="px-2 py-0.5 rounded-full bg-accent/10 text-accent text-xs font-semibold">photovoltaic</span><span class="px-2 py-0.5 rounded-full bg-accent/10 text-accent text-xs font-semibold">energy saving</span></div><h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">How to turn a photovoltaic installation into a smart home</h1><div class="flex items-center gap-5 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg> <!-- -->12 August 2026</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <!-- -->8 min read</span></div></div></header><div class="max-w-3xl mx-auto px-5"><img src="/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/portada.webp" alt="How to turn a photovoltaic installation into a smart home" class="w-full h-64 md:h-96 object-cover rounded-2xl my-10 shadow-sm"/><div class="article-content"><p class="article-lead">More and more homes produce their own electricity thanks to a photovoltaic installation. Solar panels have proved to be one of the best investments to cut the electricity bill, increase energy independence and shield you from rising electricity prices. However, installing solar panels does not guarantee that we are taking advantage of all the energy they produce; in fact, in many homes exactly the opposite happens.</p>
+
+<p>During the central hours of the day, when photovoltaic generation reaches its peak output, the dwelling is usually practically empty. The owners are at work, the children are at school and the main electrical loads remain off. As a result, a significant share of the energy generated ends up being exported to the grid. This is where home automation comes into play — not to produce more energy, but to make sure a greater portion of that energy stays inside the dwelling, where it really generates savings, comfort and safety.</p>
+
+<h2>The cheapest energy is the energy you never have to buy</h2>
+<p>This is probably the most important concept of the whole article. Many people think that the more surplus their solar panels generate, the better. In reality the opposite is true: every kilowatt-hour we export to the grid is no longer available to replace electricity that, later on, we will have to buy back.</p>
+
+<p>The energy we use directly inside our home is worth much more than the energy we sell, and that difference is what makes home automation such an attractive investment.</p>
+
+<h2>The problem is not the solar panels</h2>
+<p>Let's picture any typical home.</p>
+
+<p>At 13:00 midday the installation is producing much more energy than the house needs. Meanwhile:</p>
+
+<ul>
+  <li>the electric water heater is off;</li>
+  <li>the climate control has not switched on yet;</li>
+  <li>the electric car will not start charging until night-time;</li>
+  <li>the pool will run in the afternoon;</li>
+  <li>the washing machine is still waiting.</li>
+</ul>
+
+<p>All that energy ends up flowing out to the grid; hours later exactly the opposite happens: the solar generation disappears and we start buying electricity again. It is not a problem of the photovoltaic installation, it is a problem of synchronisation between generation and consumption.</p>
+
+<h2>Home automation completely changes that picture</h2>
+<p>A smart home does not wait for the user to make decisions. While the solar panels are producing electricity, the system can automatically decide to:</p>
+
+<ul>
+  <li>heat the domestic hot water;</li>
+  <li>run the climate control;</li>
+  <li>charge the electric vehicle;</li>
+  <li>switch on the pool pump;</li>
+  <li>move the blinds to lower the energy demand;</li>
+  <li>power certain appliances when the energy is free.</li>
+</ul>
+
+<p>All of this without any user intervention. We are not talking about turning on lights from your mobile, but about automatically managing all of the home's energy.</p>
+<img src="/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_01.webp" alt="un dia en una vivienda inteligente" loading="lazy">
+
+
+<h2>The brain of the home: Home Assistant</h2>
+<p>There is a belief that home automation consists of controlling the lights from your mobile phone; in reality, a smart home does something much more interesting: it is capable of taking automated decisions.</p>
+
+<p>It continuously analyses:</p>
+
+<ul>
+  <li>solar production;</li>
+  <li>the home's consumption;</li>
+  <li>the indoor temperature;</li>
+  <li>the presence of people;</li>
+  <li>and even the weather forecast.</li>
+</ul>
+
+<p>And, based on that information, it decides when to switch certain devices on to make better use of the available energy.</p>
+
+<p>Our kit uses Home Assistant Green as its home-automation hub.</p>
+
+<p>It is a local platform, with no monthly fees and with huge integration capability, capable of coordinating every device in the home so they work together as a single system.</p>
+
+<h2>A real example of how savings change</h2>
+<h3>Example assumptions</h3>
+<p>We consider a home fitted with a photovoltaic installation of approximately 6 kWp, capable of producing around 8,000 kWh a year — a figure very representative of current residential installations.</p>
+
+<p>We also assume that the home's annual consumption is similar to that production. To simplify the calculations we use average residential market values:</p>
+
+<p>Average purchase price: €0.20/kWh</p>
+<p>Surplus compensation: €0.06/kWh</p>
+
+<em>*These figures are indicative and may vary depending on the retailer and the tariff contracted.</em>
+
+<img src="/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_02.webp" alt="El recorrido de kWh" loading="lazy">
+
+
+<h3>Home with panels and no home automation</h3>
+<ul>
+  <li>Approximate self-consumption: 50%</li>
+  <li>Annual production: 8,000 kWh</l>
+  <li>Self-consumption: 4,000 kWh</li>
+  <li>Surplus: 4,000 kWh</l>
+</ul>
+
+
+<p>The 4,000 kWh self-consumed avoid buying electricity worth <b>€800.</b></p>
+
+<p>The 4,000 kWh exported generate a compensation of around <b>€240.</b></p>
+
+<p>Annual monetary saving: <b>€1,040.</b></p>
+
+<p>But here a very important detail appears.</p>
+
+<p>Although we have delivered 4,000 kWh to the grid, that €240 compensation would only buy back roughly 1,200 kWh if at another time of year we needed electricity — in other words, selling energy is far less profitable than consuming it directly.</p>
+
+<h3>Home with smart management</h3>
+<p>Now let's imagine exactly the same home: the same panels, the same generation; the only difference is that the home automatically adapts its consumption to make use of the available energy.</p>
+
+<p>Self-consumption rises to approximately 80%.</p>
+
+<p>We now get:</p>
+<ul>
+  <li>6,400 kWh self-consumed</li>
+  <li>1,600 kWh exported</li>
+  <li>Saving from self-consumption: €1,280</li>
+  <li>Compensation: €96</li>
+  <li>Annual monetary saving: €1,376.</li>
+</ul>
+
+<p>A difference of <b>€336</b> without adding a single extra panel.</p>
+
+<h2>The next step: getting close to fully using the energy</h2>
+<p>A photovoltaic installation evolves in distinct stages.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Configuration</th>
+      <th>Approximate self-consumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Photovoltaic installation</td>
+      <td>40–60%</td>
+    </tr>
+    <tr>
+      <td>+ Home automation</td>
+      <td>Up to 80%</td>
+    </tr>
+    <tr>
+      <td>+ Battery</td>
+      <td>95–98%</td>
+    </tr>
+    <tr>
+      <td>+ Virtual battery</td>
+      <td>Annual balance close to 100%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each element brings a different improvement: home automation increases self-consumption, the battery shifts the surplus energy to the night-time hours, and the virtual battery lets you offset the remaining surplus economically to get close to an almost complete annual energy balance.</p>
+<img src="/images/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/art_01_03.webp" alt="La escalera del autoconsumo" loading="lazy">
+
+
+<h2>But home automation is not just about saving money</h2>
+<p>So far we have talked about numbers.</p>
+
+<p>However, after fitting out a smart home, most owners discover that the biggest change does not show up on the electricity bill: it shows up in their day-to-day life.</p>
+
+<p>The house starts working for them.</p>
+
+<ul>
+  <li>The blinds adjust automatically to the position of the sun.</li>
+  <li>The climate control prepares the ideal temperature before you get home.</li>
+  <li>The water heater takes advantage of the solar surplus without needing to be programmed.</li>
+  <li>Lights switch themselves off when a room is empty.</li>
+  <li>The electric car only starts charging when there is enough energy.</li>
+  <li>Smart plugs cut out unnecessary loads.</li>
+  <li>It authorises entry for family, friends or tradespeople through their mobiles.</li>
+</ul>
+
+<p>Everything happens automatically, with no apps to open, no buttons to press, no need to constantly worry about optimising consumption.</p>
+
+<h2>A safer home too</h2>
+<p>Peace of mind is also part of a smart home. There is no longer any need to hide a key under the mat or to travel to open the door to a relative — from anywhere in the world you can grant secure access to the people you choose, for the time you decide and with the confidence of knowing who has come in and when.</p>
+
+<p>Thanks to the integration of sensors and automations, a smart home can:</p>
+
+<ul>
+  <li>alert us if a door or window is left open;</li>
+  <li>check the lock's status from anywhere;</li>
+  <li>switch off forgotten equipment automatically;</li>
+  <li>turn on the outdoor lighting when it detects movement;</li>
+  <li>simulate presence during the holidays;</li>
+  <li>detect anomalous electrical consumption or possible faults.</li>
+</ul>
+
+<p>The dwelling stops being a collection of independent devices and becomes a system that looks after our home 24 hours a day.</p>
+
+<h2>Conclusion</h2>
+<p>Most people believe that a photovoltaic installation is finished once the solar panels are up; in reality, that is where it begins.</p>
+
+<p>The real potential appears when the home is capable of automatically deciding when to consume, when to store and when to make the most of every kilowatt-hour produced.</p>
+
+<p>Home automation does not make the panels generate more energy — it makes that energy work far better for us, and that change translates into three very clear benefits:</p>
+
+<ul>
+  <li>More savings, because self-consumption goes up and electricity purchases go down.</li>
+  <li>More comfort, because the home automates everyday tasks and adapts to our habits.</li>
+  <li>More security, because it continuously monitors the state of the home and can act or alert us when something unexpected happens.</li>
+</ul>
+
+<p>If we add a physical battery and a virtual battery to that smart management, we will be very close to using practically all the energy our solar panels produce. In the end, the most efficient home is not the one that produces the most energy, but the one that knows how to use it best.</p>
+</div><div class="mt-16 p-8 rounded-2xl bg-primary text-primary-foreground text-center"><h2 class="text-xl font-extrabold mb-2">Ready to switch to self-consumption?</h2><p class="text-primary-foreground/70 text-sm mb-6">We&#x27;ll prepare a personalised study for free, no strings attached.</p><a href="/en/#contacto" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-accent text-accent-foreground text-sm font-semibold hover:opacity-90 transition-opacity">Free quote<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></article></main><footer class="bg-primary text-primary-foreground pt-14 pb-6"><div class="max-w-7xl mx-auto px-5"><div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10"><div class="col-span-2 md:col-span-1"><div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun text-white"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></div><span class="font-bold text-base">White Fox Energy</span></div><p class="text-white/60 text-xs leading-relaxed">Energy and home-automation solutions across Alicante, Murcia and Vega Baja del Segura.</p></div><div><p class="font-semibold text-sm mb-4">Navigation</p><ul class="space-y-2 text-xs text-white/60"><li><a href="/en/#inicio" class="hover:text-white transition-colors">Home</a></li><li><a href="/en/#servicios" class="hover:text-white transition-colors">Services</a></li><li><a href="/en/#proyectos" class="hover:text-white transition-colors">Projects</a></li><li><a class="hover:text-white transition-colors" href="/en/blog" data-discover="true">Blog</a></li><li><a href="/en/#contacto" class="hover:text-white transition-colors">Contact</a></li></ul></div><div><p class="font-semibold text-sm mb-4">Legal</p><ul class="space-y-2 text-xs text-white/60"><li><a class="hover:text-white transition-colors" href="/en/politica-de-privacidad" data-discover="true">Privacy policy</a></li><li><a class="hover:text-white transition-colors" href="/en/politica-de-cookies" data-discover="true">Cookie policy</a></li><li><a class="hover:text-white transition-colors" href="/en/aviso-legal" data-discover="true">Legal notice</a></li><li><a class="hover:text-white transition-colors" href="/en/accesibilidad" data-discover="true">Accessibility</a></li><li><button class="hover:text-white transition-colors">Cookie settings</button></li></ul></div><div><p class="font-semibold text-sm mb-4">Contact</p><ul class="space-y-2 text-xs text-white/60"><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <!-- -->743098335</li><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> <!-- -->info@wf-energy.com</li><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> <!-- -->Alicante · Murcia · Vega Baja</li></ul></div></div><div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3"><p class="text-xs text-white/60">© 2026 White Fox Energy Instalaciones Eléctricas S.L. · CIF B-00000000 · All rights reserved</p><div class="flex items-center gap-1.5 text-xs text-white/60"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock text-accent"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <!-- -->Secure site · GDPR · Spanish data-protection law · LSSI-CE</div></div></div></footer></div></div>
+
+    </body>
+  </html>

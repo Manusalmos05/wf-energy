@@ -1,7 +1,7 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
 import App from "./app/App.tsx";
-import { getArticles } from "./data/blog.ts";
+import { getArticles, hasTranslation } from "./data/blog.ts";
 import { seedArticleHtml } from "./lib/articleHtml.ts";
 import { articleGraph, blogGraph, homeGraph } from "./lib/structuredData.ts";
 import {
@@ -80,12 +80,12 @@ function pageOut(lang: Lang, tail: string): string {
   return `${prefix}${tail}`;
 }
 
-function alternatesFor(pathTemplate: string, activeLang: Lang, canonicalHref: string | null): HreflangAlternate[] {
-  const alts: HreflangAlternate[] = LANGS.map((l) => ({
+function alternatesFor(pathTemplate: string, availableLangs: Lang[], canonicalHref: string | null): HreflangAlternate[] {
+  const alts: HreflangAlternate[] = availableLangs.map((l) => ({
     hreflang: LANG_META[l].htmlLang,
     href: absoluteUrl(l, pathTemplate),
   }));
-  if (canonicalHref) {
+  if (canonicalHref && availableLangs.includes(DEFAULT_LANG)) {
     alts.push({ hreflang: "x-default", href: absoluteUrl(DEFAULT_LANG, pathTemplate) });
   }
   return alts.filter((a, i, arr) => arr.findIndex((b) => b.hreflang === a.hreflang && b.href === a.href) === i);
@@ -136,7 +136,7 @@ export function getRoutes(): PrerenderRoute[] {
       published: null,
       sitemap: true,
       jsonLd: homeGraph(lang),
-      alternates: alternatesFor("/", lang, homeCanonical),
+      alternates: alternatesFor("/", LANGS, homeCanonical),
     });
 
     routes.push({
@@ -157,7 +157,7 @@ export function getRoutes(): PrerenderRoute[] {
       published: null,
       sitemap: true,
       jsonLd: blogGraph(lang),
-      alternates: alternatesFor("/blog", lang, blogCanonical),
+      alternates: alternatesFor("/blog", LANGS, blogCanonical),
     });
 
     for (const a of articles) {
@@ -180,7 +180,7 @@ export function getRoutes(): PrerenderRoute[] {
         published: a.date,
         sitemap: true,
         jsonLd: articleGraph(a, lang),
-        alternates: alternatesFor(`/blog/${a.slug}`, lang, articleCanonical),
+        alternates: alternatesFor(`/blog/${a.slug}`, LANGS.filter((l) => hasTranslation(l, a.slug)), articleCanonical),
       });
     }
 
@@ -204,7 +204,7 @@ export function getRoutes(): PrerenderRoute[] {
         published: null,
         sitemap: false,
         jsonLd: null,
-        alternates: alternatesFor(legal.path, lang, canonical),
+        alternates: alternatesFor(legal.path, LANGS, canonical),
       });
     }
   }

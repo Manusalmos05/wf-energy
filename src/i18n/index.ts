@@ -20,9 +20,10 @@ export const LANG_META: Record<Lang, {
   intlLocale: string;
   label: string;
   altLabel: string;
+  flagCode: string;
 }> = {
-  es: { htmlLang: "es", ogLocale: "es_ES", intlLocale: "es-ES", label: "Español", altLabel: "ES" },
-  en: { htmlLang: "en", ogLocale: "en_US", intlLocale: "en-GB", label: "English", altLabel: "EN" },
+  es: { htmlLang: "es", ogLocale: "es_ES", intlLocale: "es-ES", label: "Español", altLabel: "ES", flagCode: "es" },
+  en: { htmlLang: "en", ogLocale: "en_US", intlLocale: "en-GB", label: "English", altLabel: "EN", flagCode: "gb" },
 };
 
 type Dict = Record<string, unknown>;

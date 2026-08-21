@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import type { IconName, KitSpec } from "../../data/kitSpecs.ts";
 import { formatPrice } from "../../data/kits.ts";
+import { useLanguage } from "../../i18n/provider.tsx";
 
 const ICONS: Record<IconName, typeof Zap> = {
   trending: TrendingUp,
@@ -73,6 +74,7 @@ function Panel({ title, children }: { title: string; children: React.ReactNode }
 }
 
 export default function KitInfographic({ spec, price }: { spec: KitSpec; price: number }) {
+  const { t } = useLanguage();
   return (
     <article className="overflow-hidden rounded-2xl bg-card text-left text-card-foreground shadow-xl">
       <div className="p-5 sm:p-7 lg:p-4 xl:p-7">
@@ -115,7 +117,7 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
             <div className="flex flex-col gap-4 md:col-span-2 md:grid md:grid-cols-2 lg:col-span-1 lg:flex lg:flex-col lg:gap-3">
 
             {spec.includes && spec.includes.length > 0 && (
-              <Panel title="Incluye">
+              <Panel title={t("data.kitSpec.labels.includes")}>
                 <ul className="grid gap-2 sm:grid-cols-2 md:grid-cols-1 lg:gap-1.5">
                   {spec.includes.map((item) => (
                     <li key={item} className="flex items-start gap-1.5">
@@ -137,7 +139,7 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
           <div className="flex flex-col gap-4 lg:gap-3">
 
             <img
-              src={spec.productImage}
+              src={`${import.meta.env.BASE_URL}${spec.productImage}`}
               alt={spec.productImageAlt}
               loading="lazy"
               decoding="async"
@@ -153,7 +155,9 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
                   <IconBubble icon="house" className="h-11 w-11 lg:h-9 lg:w-9" />
                   <div className="min-w-0">
                     <p className="text-base font-extrabold uppercase leading-tight tracking-tight">
-                      Hasta un <span className="text-accent-deep">{spec.selfSufficiency.percent}</span> de autosuficiencia energética
+                      {t("data.kitSpec.labels.selfSufficiencyPrefix")}{" "}
+                      <span className="text-accent-deep">{spec.selfSufficiency.percent}</span>{" "}
+                      {t("data.kitSpec.labels.selfSufficiencySuffix")}
                     </p>
                     <p className="text-xs font-bold text-primary/80">({spec.selfSufficiency.scope})</p>
                   </div>
@@ -227,7 +231,7 @@ export default function KitInfographic({ spec, price }: { spec: KitSpec; price: 
             {/*-----------Extras opcionales------------  */}
 
             {spec.extras && spec.extras.length > 0 && (
-              <Panel title="Extras opcionales">
+              <Panel title={t("data.kitSpec.labels.extras")}>
                 <ul className="space-y-2 lg:space-y-1.5">
                   {spec.extras.map((e) => (
                     <li key={e.label} className="flex items-baseline gap-2 text-sm lg:text-xs">

@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { useLanguage } from "../../i18n/provider.tsx";
+import { LANG_META } from "../../i18n/index.ts";
 
-// Catálogo de Equipos de Referencia reales de mercado
 const INVERSORES_REFERENCIA = [
   { maxKwp: 4.5, inversor: "Inversor Híbrido 3 kW / 3.6 kW", bateria5kw: "Batería Litio 5,12 kWh", bateria16kw: "Batería Litio 10 kWh" },
   { maxKwp: 7.5, inversor: "Inversor Híbrido 5 kW / 6 kW", bateria5kw: "Batería Litio 5,12 kWh", bateria16kw: "Batería Litio 10 kWh" },
@@ -29,19 +30,21 @@ interface ResultadoCalculo {
   numeroPanelesEstimado: number;
   amortizacionEstimadaAños: string;
   sistemaNombre: string;
-  bateriaInfo: any;
-  inversorInfo: any;
+  bateriaInfo: string;
+  inversorInfo: string;
   porcentajeAhorroPct: number;
 }
 
 export default function Calculator() {
+  const { t, lang, path } = useLanguage();
+  const numberLocale = LANG_META[lang].intlLocale;
   const [gasto, setGasto] = useState(100);
   const [provincia, setProvincia] = useState("Alicante");
   const [incluyeBateriaFisica, setIncluyeBateriaFisica] = useState(true);
   const [incluyeBateriaVirtual, setIncluyeBateriaVirtual] = useState(true);
   const [resultado, setResultado] = useState<ResultadoCalculo | null>(null);
-  const [vistaResultado, setVistaResultado] = useState(false); // false = formulario, true = resultado
-  
+  const [vistaResultado, setVistaResultado] = useState(false);
+
 
   function calcular() {
     const gastoValido = Math.max(0, Number(gasto) || 0);
@@ -82,11 +85,15 @@ export default function Calculator() {
     const inversorSugerido = equipoMatcheado.inversor;
     const bateriaSugerida = incluyeBateriaFisica
       ? (potenciaTotalKwp > 7.5 ? equipoMatcheado.bateria16kw : equipoMatcheado.bateria5kw)
-      : "Sin batería física";
+      : t("sections.calculator.form.noBattery");
 
     const produccionAnualKwh = Math.round(potenciaTotalKwp * rendimientoLocal);
-    const amortizacionEstimadaAños = incluyeBateriaFisica ? "4 - 6 años" : "3 - 5 años";
-    const sistemaNombre = `Instalación ${incluyeBateriaFisica ? "con Batería Física" : "Autoconsumo Directo"} (${potenciaTotalKwp} kWp)`;
+    const amortizacionEstimadaAños = incluyeBateriaFisica
+      ? t("sections.calculator.form.paybackWithBattery")
+      : t("sections.calculator.form.paybackNoBattery");
+    const sistemaNombre = incluyeBateriaFisica
+      ? t("sections.calculator.form.systemBattery", { kwp: potenciaTotalKwp })
+      : t("sections.calculator.form.systemDirect", { kwp: potenciaTotalKwp });
 
     setResultado({
       ahorroAnualEstimadoEuro,
@@ -101,17 +108,15 @@ export default function Calculator() {
       porcentajeAhorroPct
     });
 
-    setVistaResultado(true); // pasa automáticamente a la vista de resultado
+    setVistaResultado(true);
   }
 
   function modificarDatos() {
     setVistaResultado(false);
-    
   }
 
   return (
     <div className="bg-white rounded-2xl border border-border p-6 md:p-8 shadow-sm">
-      {/* ---------- VISTA FORMULARIO ---------- */}
       <div
         className={`grid transition-all duration-300 ease-in-out ${
           vistaResultado ? "grid-rows-[0fr] opacity-0" : "grid-rows-[1fr] opacity-100"
@@ -121,7 +126,7 @@ export default function Calculator() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
               <label htmlFor="calc-factura" className="block text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
-                Factura promedio mensual (€)
+                {t("sections.calculator.form.billLabel")}
               </label>
               <input
                 id="calc-factura"
@@ -135,7 +140,7 @@ export default function Calculator() {
             </div>
             <div>
               <label htmlFor="calc-provincia" className="block text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
-                Provincia
+                {t("sections.calculator.form.provinceLabel")}
               </label>
               <select
                 id="calc-provincia"
@@ -158,7 +163,7 @@ export default function Calculator() {
                 className="mt-0.5 w-4 h-4 accent-accent flex-shrink-0"
               />
               <span className="text-muted-foreground text-xs md:text-sm font-medium">
-                Incluir batería física de almacenamiento (acumula energía para la noche)
+                {t("sections.calculator.form.batteryPhysical")}
               </span>
             </label>
           </div>
@@ -172,14 +177,18 @@ export default function Calculator() {
                 className="mt-0.5 w-4 h-4 accent-accent flex-shrink-0"
               />
               <span className="text-muted-foreground text-xs md:text-sm font-medium">
-                Aprovechar Monedero / Batería Virtual (inyecta sobrantes a la red)
+                {t("sections.calculator.form.batteryVirtual")}
               </span>
             </label>
           </div>
 
           <p className="text-xs text-muted-foreground mb-6">
             <b>
-              * Con una factura de {gasto} €/mes, estimamos un consumo de {Math.round(gasto / obtenerPrecioReferenciaKwh(gasto))} kWh/mes (estimado a {obtenerPrecioReferenciaKwh(gasto)} €/kWh incluidos potencia, peajes e impuestos).
+              {t("sections.calculator.form.estimate", {
+                bill: gasto,
+                consumption: Math.round(gasto / obtenerPrecioReferenciaKwh(gasto)),
+                price: obtenerPrecioReferenciaKwh(gasto),
+              })}
             </b>
           </p>
 
@@ -187,13 +196,12 @@ export default function Calculator() {
             onClick={calcular}
             className="w-full py-3.5 rounded-xl bg-accent text-accent-foreground font-semibold text-sm hover:opacity-90 transition-opacity mb-6"
           >
-            Calcular producción y ahorro
+            {t("sections.calculator.form.calculate")}
           </button>
         </div>
       </div>
 
 
-      {/* ---------- VISTA RESULTADO ---------- */}
       {resultado && (
         <div
           className={`grid transition-all duration-300 ease-in-out ${
@@ -206,22 +214,24 @@ export default function Calculator() {
                 onClick={modificarDatos}
                 className="text-xs text-accent font-semibold flex items-center gap-1 hover:underline"
               >
-                ✏️ Modificar datos
+                {t("sections.calculator.form.edit")}
               </button>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-xl bg-accent/5 border border-accent/20">
                 <div className="text-center col-span-2 md:col-span-1">
                   <div className="text-2xl md:text-3xl font-bold text-accent mb-1">
-                    {resultado.ahorroAnualEstimadoEuro.toLocaleString("es-ES")} €
+                    {resultado.ahorroAnualEstimadoEuro.toLocaleString(numberLocale)} €
                   </div>
-                  <div className="text-xs text-muted-foreground">Ahorro estimado / año (~{resultado.porcentajeAhorroPct}%)</div>
+                  <div className="text-xs text-muted-foreground">
+                    {t("sections.calculator.form.annualSaving", { pct: resultado.porcentajeAhorroPct })}
+                  </div>
                 </div>
 
                 <div className="text-center md:border-l border-accent/20 pt-3 md:pt-0">
                   <div className="text-2xl md:text-3xl font-bold text-foreground mb-1">
-                    {resultado.produccionAnualKwh.toLocaleString("es-ES")} kWh
+                    {resultado.produccionAnualKwh.toLocaleString(numberLocale)} kWh
                   </div>
-                  <div className="text-xs text-muted-foreground">Producción estimada / año</div>
+                  <div className="text-xs text-muted-foreground">{t("sections.calculator.form.annualProduction")}</div>
                 </div>
 
                 <div className="text-center border-t md:border-t-0 md:border-l border-accent/20 pt-3 md:pt-0">
@@ -229,7 +239,7 @@ export default function Calculator() {
                     {resultado.potenciaTotalKwp} kWp
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    ~{resultado.numeroPanelesEstimado} paneles (540W)
+                    {t("sections.calculator.form.panels", { count: resultado.numeroPanelesEstimado })}
                   </div>
                 </div>
 
@@ -237,58 +247,51 @@ export default function Calculator() {
                   <div className="text-2xl md:text-3xl font-bold text-accent mb-1">
                     {resultado.amortizacionEstimadaAños}
                   </div>
-                  <div className="text-xs text-muted-foreground">Amortización media</div>
+                  <div className="text-xs text-muted-foreground">{t("sections.calculator.form.paybackLabel")}</div>
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-accent/10 border border-accent/30 text-center space-y-2">
-                <p className="text-xs text-foreground font-medium">
-                  Esta estimación es una guía inicial. Cada tejado y hábito de consumo es único.
-                </p>
-                
-                  <a href="#contacto"
+                <p className="text-xs text-foreground font-medium">{t("sections.calculator.form.guidance")}</p>
+
+                <a href={`${path("/")}#contacto`}
                   className="inline-block w-full md:w-auto px-6 py-2.5 rounded-lg bg-accent text-accent-foreground font-semibold text-xs transition-transform active:scale-95"
                 >
-                  Solicitar estudio técnico y presupuesto exacto gratuito
+                  {t("sections.calculator.form.requestExact")}
                 </a>
               </div>
 
-              {/* Ficha técnica: ahora siempre visible, sin botón ni animación de apertura */}
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-secondary/50 border border-border text-xs text-muted-foreground space-y-1.5">
                   <div className="flex justify-between font-semibold text-foreground pb-1 border-b border-border/50">
-                    <span>Configuración orientativa:</span>
+                    <span>{t("sections.calculator.form.specTitle")}</span>
                     <span>{resultado.sistemaNombre}</span>
                   </div>
                   <div className="flex justify-between pt-1">
-                    <span>Módulos fotovoltaicos:</span>
+                    <span>{t("sections.calculator.form.specPanels")}</span>
                     <span className="text-foreground font-medium">
-                      {resultado.numeroPanelesEstimado} módulos de ~540 Wp
+                      {t("sections.calculator.form.specPanelsValue", { count: resultado.numeroPanelesEstimado })}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Inversor recomendado:</span>
+                    <span>{t("sections.calculator.form.specInverter")}</span>
                     <span className="text-foreground font-medium">{resultado.inversorInfo}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Batería física:</span>
+                    <span>{t("sections.calculator.form.specBattery")}</span>
                     <span className="text-foreground font-medium">{resultado.bateriaInfo}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Batería virtual:</span>
+                    <span>{t("sections.calculator.form.specVirtual")}</span>
                     <span className="text-foreground font-medium">
-                      {incluyeBateriaVirtual ? "Activada (inyecta sobrantes a la red)" : "No configurada"}
+                      {incluyeBateriaVirtual ? t("sections.calculator.form.virtualOn") : t("sections.calculator.form.virtualOff")}
                     </span>
                   </div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-blue-50/50 border border-blue-200/60 text-xs text-slate-700 space-y-1">
-                  <p className="font-semibold text-slate-900">
-                    💡 Subvenciones y bonificaciones fiscales disponibles:
-                  </p>
-                  <p>
-                    El periodo de amortización puede reducirse significativamente gracias a las <strong>deducciones del IRPF (hasta un 40%-60%)</strong> y las bonificaciones en el <strong>IBI y ICIO</strong> según tu municipio.
-                  </p>
+                  <p className="font-semibold text-slate-900">{t("sections.calculator.form.grantsTitle")}</p>
+                  <p dangerouslySetInnerHTML={{ __html: t("sections.calculator.form.grantsBody") }} />
                 </div>
               </div>
             </div>
@@ -297,7 +300,7 @@ export default function Calculator() {
       )}
 
       <p className="text-[11px] text-muted-foreground text-center mt-3">
-        Cálculo orientativo basado en la irradiación promedio de {provincia}. Contacta con nuestro equipo para un análisis de sombras y orientación exacto.
+        {t("sections.calculator.form.disclaimer", { province: provincia })}
       </p>
     </div>
   );
