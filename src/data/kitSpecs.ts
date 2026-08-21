@@ -37,10 +37,10 @@ export type KitSpec = {
 };
 /*--------------constantes------------------ */
 const SOLAR_BENEFITS: KitSpec["benefits"] = [
-  { icon: "trending", title: "Máxima eficiencia", body: "Ahorra más desde el primer día." },
-  { icon: "shield", title: "Energía segura", body: "Suministro garantizado incluso en cortes de luz." },
-  { icon: "leaf", title: "Energía limpia", body: "Reduce tu huella de carbono." },
-  { icon: "house", title: "Aumenta el valor", body: "Revaloriza tu vivienda." },
+  { icon: "trending", title: "MÁXIMA EFICIENCIA", body: "Ahorra más desde el primer día." },
+  { icon: "shield", title: "ENERGÍA SEGURA", body: "Suministro garantizado incluso en cortes de luz." },
+  { icon: "leaf", title: "ENERGÍA LIMPIA", body: "Reduce tu huella de carbono." },
+  { icon: "house", title: "AUMENTA EL VALOR", body: "Revaloriza tu vivienda." },
 ];
 
 const SOLAR_ADMIN_INCLUDES = [
@@ -91,10 +91,10 @@ const DOMOTICO_BASE = {
   priceLabel: "Precio de venta",
   taxNote: "IVA incluido",
   benefits: [
-    { icon: "trending", title: "Control total", body: "Gestiona luces, persianas, clima y más desde tu móvil." },
-    { icon: "shield", title: "Seguridad inteligente", body: "Cerradura inteligente y acceso remoto para tu tranquilidad." },
-    { icon: "leaf", title: "Ahorro y eficiencia", body: "Automatiza y reduce el consumo energético de tu hogar, con control de sistema solar." },
-    { icon: "house", title: "Escenarios personalizados", body: "Crea ambientes únicos con un solo toque gracias a las escenas inteligentes." },
+    { icon: "trending", title: "CONTROL TOTAL", body: "Gestiona luces, persianas, clima y más desde tu móvil." },
+    { icon: "shield", title: "SEGURIDAD INTELIGENTE", body: "Cerradura inteligente y acceso remoto para tu tranquilidad." },
+    { icon: "leaf", title: "AHORRO Y EFICIENCIA", body: "Automatiza y reduce el consumo energético de tu hogar, con control de sistema solar." },
+    { icon: "house", title: "ESCENARIOS PERSONALIZADOS", body: "Crea ambientes únicos con un solo toque gracias a las escenas inteligentes." },
   ],
   highlight: {
     icon: "house",

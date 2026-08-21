@@ -7,7 +7,7 @@ export default function HeroSection() {
   
     <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&h=1100&fit=crop&auto=format)` }}
+        style={{ backgroundImage: `url(/images/blog/eficiencia-energetica-residencial-levante/portada.webp)` }}
     />
 
     <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/20" />
