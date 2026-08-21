@@ -5,3 +5,9 @@ node_modules/
 .ssr-tmp/
 wip/
 estructura.txt
+
+__pycache__/
+*.pyc
+seo-tracker/data/tracker.db
+seo-tracker/data/reports/
+.claude/scheduled_tasks.lock

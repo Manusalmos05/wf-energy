@@ -1,6 +1,8 @@
+import { useLanguage } from "../../i18n/provider.tsx";
+
 interface LegalPageProps {
   title: string;
-  updated: string;
+  updated?: string;
   children: React.ReactNode;
 }
 
@@ -14,10 +16,12 @@ export function LegalSection({ title, children }: { title: string; children: Rea
 }
 
 export default function LegalPage({ title, updated, children }: LegalPageProps) {
+  const { t } = useLanguage();
+  const stamp = updated ?? t("legal.shared.updated");
   return (
     <main className="mx-auto max-w-3xl px-5 pb-24 pt-28">
       <h1 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">{title}</h1>
-      <p className="mt-2 text-sm text-muted-foreground">Última actualización: {updated}</p>
+      <p className="mt-2 text-sm text-muted-foreground">{t("legal.shared.updatedLabel")}: {stamp}</p>
       <div className="mt-10 space-y-10">{children}</div>
     </main>
   );

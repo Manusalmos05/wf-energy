@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "site": {
+      "brand": "White Fox Energy",
+      "brandSuffix": " | White Fox Energy",
+      "businessDescription": "Instalación de placas solares, baterías, cargadores de coche eléctrico y domótica en Alicante, Murcia y la Vega Baja. Estudio y presupuesto gratis en 24 h.",
+      "blogName": "Blog de autoconsumo solar",
+      "blogDescription": "Guías prácticas sobre placas solares, baterías, cargadores y fiscalidad del autoconsumo en Alicante, Murcia y la Vega Baja, escritas por instaladores.",
+      "ogImageAlt": "Instalación de placas solares fotovoltaicas en una vivienda"
+    },
+    "home": {
+      "title": "Placas Solares en Alicante y Murcia | White Fox Energy"
+    },
+    "notFound": {
+      "title": "Página no encontrada | White Fox Energy",
+      "description": "La página que buscas no existe o se ha movido."
+    },
+    "legal": {
+      "notice": {
+        "title": "Aviso legal",
+        "description": "Identificación del titular y condiciones de uso del sitio web de White Fox Energy."
+      },
+      "privacy": {
+        "title": "Política de privacidad",
+        "description": "Cómo tratamos los datos personales del formulario de contacto y qué derechos tienes."
+      },
+      "cookies": {
+        "title": "Política de cookies",
+        "description": "Qué cookies usa este sitio, para qué sirven y cómo cambiar tu elección."
+      },
+      "accessibility": {
+        "title": "Accesibilidad",
+        "description": "Compromiso de accesibilidad WCAG 2.1 AA y cómo avisarnos de cualquier barrera."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Aprende sobre energía solar",
+      "subtitle": "Guías prácticas, fórmulas y consejos para dimensionar, entender y amortizar tu instalación."
+    },
+    "search": {
+      "placeholder": "Buscar artículos…",
+      "clear": "Limpiar",
+      "emptyTitle": "Sin resultados",
+      "emptyBody": "No hay artículos que coincidan con tu búsqueda. Prueba con otros términos o quita filtros."
+    }
+  },
+  "article": {
+    "backToBlog": "Volver al blog",
+    "readingMinutes": "{minutes} min de lectura",
+    "notFoundTitle": "Artículo no encontrado",
+    "notFoundBody": "El artículo que buscas no existe o ha sido movido.",
+    "ctaTitle": "¿Quieres dar el paso al autoconsumo?",
+    "ctaBody": "Te preparamos un estudio personalizado gratis, sin compromiso.",
+    "ctaButton": "Presupuesto gratis"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Esta página no existe",
+    "body": "El enlace que has seguido puede estar roto o la página se ha movido."
+  }
+}

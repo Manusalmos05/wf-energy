@@ -1,3 +1,5 @@
+import { translate, translateList, type Lang } from "../i18n/index.ts";
+
 export type IconName =
   | "trending"
   | "shield"
@@ -35,474 +37,291 @@ export type KitSpec = {
   extras?: { label: string; price: number }[];
   guarantees: { icon: IconName; title: string; body: string }[];
 };
-/*--------------constantes------------------ */
-const SOLAR_BENEFITS: KitSpec["benefits"] = [
-  { icon: "trending", title: "MÁXIMA EFICIENCIA", body: "Ahorra más desde el primer día." },
-  { icon: "shield", title: "ENERGÍA SEGURA", body: "Suministro garantizado incluso en cortes de luz." },
-  { icon: "leaf", title: "ENERGÍA LIMPIA", body: "Reduce tu huella de carbono." },
-  { icon: "house", title: "AUMENTA EL VALOR", body: "Revaloriza tu vivienda." },
-];
 
-const SOLAR_ADMIN_INCLUDES = [
-  "Tasas y trámites ante la administración",
-  "Certificado de instalación eléctrica (Boletín)",
-  "2 Certificados de eficiencia energética",
-  "Trámite de ayudas y subvenciones",
-];
+interface KitCopyItem { title: string; body: string }
+interface KitByCopy {
+  titleMain: string;
+  titlePower: string;
+  summary?: string;
+  productImageAlt: string;
+  components?: KitCopyItem[];
+  benefits?: KitCopyItem[];
+  selfSufficiency?: { percent: string; scope: string; body: string };
+  stats?: { label: string; value: string }[];
+  includes: string[];
+  highlight?: { title: string; body: string };
+  guarantees?: KitCopyItem[];
+}
 
-const SOLAR_EXTRAS: KitSpec["extras"] = [
-  { label: "Batería desde:", price: 900 },
-  { label: "Panel solar adicional desde:", price: 120 },
-  { label: "Toma de tierra", price: 250 },
-  { label: "Cargador coche eléctrico", price: 1000 },
-  { label: "Casa inteligente solar (domótica) desde:", price: 1500 },
-];
-
-const AEROTERMOS_EXTRAS: KitSpec["extras"] = [
-  { label: "Filtro antical:", price: 32 },
-  { label: "Válvula termostática", price: 50 },
-  { label: "Trípode soporte de carga", price: 70 }
-];
-
-const SOLAR_GUARANTEES: KitSpec["guarantees"] = [
-  {
-    icon: "shield",
-    title: "Instalación profesional",
-    body: "Cumplimos con la normativa REBT y la normativa fotovoltaica vigente.",
-  },
-  {
-    icon: "clipboard",
-    title: "Gestión completa",
-    body: "Nos encargamos de todos los trámites y documentación.",
-  },
-];
-
-const MEDIA_VIVIENDA = {
-  scope: "Para una vivienda media",
-  body: "Con este kit, una vivienda media del sureste español solo necesitará comprar entre un 2% y un 10% de la electricidad que consume durante el año.",
+const SOLAR_BENEFIT_ICONS: IconName[] = ["trending", "shield", "leaf", "house"];
+const SOLAR_GUARANTEE_ICONS: IconName[] = ["shield", "clipboard"];
+const SOLAR_EXTRAS_PRICES = [900, 120, 250, 1000, 1500];
+const AEROTERMOS_EXTRAS_PRICES = [32, 50, 70];
+const RING_BY_KIT: Record<string, number[]> = {
+  "3kw-hibrido": [94],
+  "6kw": [94],
+  "8kw-hibrido": [94],
+  "10kw-hibrido": [95],
 };
+const DEFAULT_SELF_SUFFICIENCY = new Set(["6kw", "8kw-hibrido", "10kw-hibrido"]);
 
-const DOMOTICO_BASE = {
-  badge: "Promoción",
-  summary:
-    "Controla tu hogar desde cualquier lugar con nuestro sistema inteligente y fácil de usar.",
-  productImageWidth: 550,
-  productImageHeight: 460,
-  priceLabel: "Precio de venta",
-  taxNote: "IVA incluido",
-  benefits: [
-    { icon: "trending", title: "CONTROL TOTAL", body: "Gestiona luces, persianas, clima y más desde tu móvil." },
-    { icon: "shield", title: "SEGURIDAD INTELIGENTE", body: "Cerradura inteligente y acceso remoto para tu tranquilidad." },
-    { icon: "leaf", title: "AHORRO Y EFICIENCIA", body: "Automatiza y reduce el consumo energético de tu hogar, con control de sistema solar." },
-    { icon: "house", title: "ESCENARIOS PERSONALIZADOS", body: "Crea ambientes únicos con un solo toque gracias a las escenas inteligentes." },
-  ],
-  highlight: {
-    icon: "house",
-    title: "Home Assistant Green",
-    body: "El hub inteligente y privado para hacer tu hogar más eficiente, seguro y conectado.",
-  },
-  guarantees: [
-    {
-      icon: "shield",
-      title: "Compatible y escalable",
-      body: "Sistema compatible con múltiples dispositivos y ampliable según tus necesidades.",
+const DOMOTICO_BENEFIT_ICONS: IconName[] = ["trending", "shield", "leaf", "house"];
+const DOMOTICO_GUARANTEE_ICONS: IconName[] = ["shield", "cloud", "lock"];
+const AEROTERMO_BENEFIT_ICONS: IconName[] = ["battery", "inverter", "shield", "wifi", "clipboard", "house"];
+const AEROTERMO_GUARANTEE_ICONS: IconName[] = ["shield", "cloud"];
+const CARGADOR_BENEFIT_ICONS: IconName[] = ["inverter", "shield", "phone", "trending", "droplet"];
+const CARGADOR_GUARANTEE_ICONS: IconName[] = ["shield", "wifi", "calendar", "leaf"];
+const COMPONENT_ICONS: IconName[] = ["panel", "inverter", "battery"];
+
+function labels(lang: Lang) {
+  return {
+    badge: translate(lang, "data.kitSpec.labels.badgePromo"),
+    priceLabel: translate(lang, "data.kitSpec.labels.priceLabel"),
+    taxNote: translate(lang, "data.kitSpec.labels.taxNote"),
+  };
+}
+
+function solarBenefits(lang: Lang): KitSpec["benefits"] {
+  return translateList<KitCopyItem>(lang, "data.kitSpec.shared.solarBenefits").map((c, i) => ({
+    icon: SOLAR_BENEFIT_ICONS[i],
+    title: c.title,
+    body: c.body,
+  }));
+}
+
+function solarAdminIncludes(lang: Lang): string[] {
+  return translateList<string>(lang, "data.kitSpec.shared.adminIncludes");
+}
+
+function solarExtras(lang: Lang): KitSpec["extras"] {
+  return translateList<string>(lang, "data.kitSpec.shared.solarExtras").map((label, i) => ({
+    label,
+    price: SOLAR_EXTRAS_PRICES[i],
+  }));
+}
+
+function aerotermosExtras(lang: Lang): KitSpec["extras"] {
+  return translateList<string>(lang, "data.kitSpec.shared.aerotermosExtras").map((label, i) => ({
+    label,
+    price: AEROTERMOS_EXTRAS_PRICES[i],
+  }));
+}
+
+function sharedSolarGuarantees(lang: Lang): KitSpec["guarantees"] {
+  return translateList<KitCopyItem>(lang, "data.kitSpec.shared.solarGuarantees").map((c, i) => ({
+    icon: SOLAR_GUARANTEE_ICONS[i],
+    title: c.title,
+    body: c.body,
+  }));
+}
+
+function readKit(lang: Lang, slug: string): KitByCopy {
+  const path = `data.kitSpec.byKit.${slug}`;
+  return {
+    titleMain: translate(lang, `${path}.titleMain`),
+    titlePower: translate(lang, `${path}.titlePower`),
+    summary: translate(lang, `${path}.summary`),
+    productImageAlt: translate(lang, `${path}.productImageAlt`),
+    components: translateList<KitCopyItem>(lang, `${path}.components`),
+    benefits: translateList<KitCopyItem>(lang, `${path}.benefits`),
+    stats: translateList<{ label: string; value: string }>(lang, `${path}.stats`),
+    includes: translateList<string>(lang, `${path}.includes`),
+    guarantees: translateList<KitCopyItem>(lang, `${path}.guarantees`),
+  };
+}
+
+function readSelfSufficiency(lang: Lang, slug: string): KitByCopy["selfSufficiency"] {
+  const percent = translate(lang, `data.kitSpec.byKit.${slug}.selfSufficiency.percent`);
+  if (percent === `data.kitSpec.byKit.${slug}.selfSufficiency.percent`) return undefined;
+  return {
+    percent,
+    scope: translate(lang, `data.kitSpec.byKit.${slug}.selfSufficiency.scope`),
+    body: translate(lang, `data.kitSpec.byKit.${slug}.selfSufficiency.body`),
+  };
+}
+
+function readHighlight(lang: Lang, slug: string, fallbackIcon: IconName): KitSpec["highlight"] | undefined {
+  const title = translate(lang, `data.kitSpec.byKit.${slug}.highlight.title`);
+  if (title === `data.kitSpec.byKit.${slug}.highlight.title`) return undefined;
+  return {
+    icon: fallbackIcon,
+    title,
+    body: translate(lang, `data.kitSpec.byKit.${slug}.highlight.body`),
+  };
+}
+
+function withRings(slug: string, statsCopy: { label: string; value: string }[]): KitSpec["stats"] {
+  const rings = RING_BY_KIT[slug] ?? [];
+  return statsCopy.map((s, i) => ({ label: s.label, value: s.value, ringPercent: rings[i] }));
+}
+
+function mediaVivienda(lang: Lang) {
+  return {
+    scope: translate(lang, "data.kitSpec.shared.mediaVivienda.scope"),
+    body: translate(lang, "data.kitSpec.shared.mediaVivienda.body"),
+  };
+}
+
+function buildSolarKit(lang: Lang, slug: string, opts: {
+  productImage: string;
+  productImageWidth: number;
+  productImageHeight: number;
+  guarantees?: KitSpec["guarantees"];
+  useMediaVivienda?: boolean;
+  selfSufficiencyPercent?: string;
+}): KitSpec {
+  const base = readKit(lang, slug);
+  const l = labels(lang);
+  let selfSuff = readSelfSufficiency(lang, slug);
+  if (!selfSuff && opts.useMediaVivienda && opts.selfSufficiencyPercent) {
+    selfSuff = { percent: opts.selfSufficiencyPercent, ...mediaVivienda(lang) };
+  }
+  const includes = [...base.includes];
+  if (DEFAULT_SELF_SUFFICIENCY.has(slug) || slug === "6kw-offgrid") {
+    includes.push(...solarAdminIncludes(lang));
+  }
+  return {
+    badge: l.badge,
+    titleMain: base.titleMain,
+    titlePower: base.titlePower,
+    summary: base.summary!,
+    productImage: opts.productImage,
+    productImageAlt: base.productImageAlt,
+    productImageWidth: opts.productImageWidth,
+    productImageHeight: opts.productImageHeight,
+    priceLabel: l.priceLabel,
+    taxNote: l.taxNote,
+    benefits: solarBenefits(lang),
+    components: (base.components ?? []).map((c, i) => ({ icon: COMPONENT_ICONS[i], title: c.title, body: c.body })),
+    selfSufficiency: selfSuff,
+    stats: withRings(slug, base.stats ?? []),
+    includes,
+    extras: solarExtras(lang),
+    guarantees: opts.guarantees ?? (base.guarantees && base.guarantees.length
+      ? base.guarantees.map((g, i) => ({ icon: SOLAR_GUARANTEE_ICONS[i], title: g.title, body: g.body }))
+      : sharedSolarGuarantees(lang)),
+  };
+}
+
+function buildDomotico(lang: Lang, slug: string, productImage: string): KitSpec {
+  const base = readKit(lang, slug);
+  const l = labels(lang);
+  return {
+    badge: l.badge,
+    titleMain: base.titleMain,
+    titlePower: base.titlePower,
+    summary: translate(lang, "data.kitSpec.shared.domoticoBase.summary"),
+    productImage,
+    productImageAlt: base.productImageAlt,
+    productImageWidth: 550,
+    productImageHeight: 460,
+    priceLabel: l.priceLabel,
+    taxNote: l.taxNote,
+    benefits: translateList<KitCopyItem>(lang, "data.kitSpec.shared.domoticoBase.benefits").map((c, i) => ({
+      icon: DOMOTICO_BENEFIT_ICONS[i], title: c.title, body: c.body,
+    })),
+    includes: base.includes,
+    highlight: {
+      icon: "house",
+      title: translate(lang, "data.kitSpec.shared.domoticoBase.highlight.title"),
+      body: translate(lang, "data.kitSpec.shared.domoticoBase.highlight.body"),
     },
-    {
-      icon: "cloud",
-      title: "Sin cuotas mensuales",
-      body: "Sin suscripciones ni costes ocultos. Tu sistema, siempre tuyo.",
+    guarantees: translateList<KitCopyItem>(lang, "data.kitSpec.shared.domoticoBase.guarantees").map((c, i) => ({
+      icon: DOMOTICO_GUARANTEE_ICONS[i], title: c.title, body: c.body,
+    })),
+  };
+}
+
+function buildAerotermo(lang: Lang, slug: string, productImage: string, benefitsKey: "benefits" | "benefits100", highlightKey: "highlight110" | "highlight100"): KitSpec {
+  const base = readKit(lang, slug);
+  const l = labels(lang);
+  return {
+    badge: l.badge,
+    titleMain: base.titleMain,
+    titlePower: base.titlePower,
+    summary: translate(lang, "data.kitSpec.shared.aerotermoBase.summary"),
+    productImage,
+    productImageAlt: base.productImageAlt,
+    productImageWidth: 550,
+    productImageHeight: 460,
+    priceLabel: l.priceLabel,
+    taxNote: l.taxNote,
+    benefits: translateList<KitCopyItem>(lang, `data.kitSpec.shared.aerotermoBase.${benefitsKey}`).map((c, i) => ({
+      icon: AEROTERMO_BENEFIT_ICONS[i], title: c.title, body: c.body,
+    })),
+    includes: base.includes,
+    extras: aerotermosExtras(lang),
+    highlight: {
+      icon: "house",
+      title: translate(lang, `data.kitSpec.shared.aerotermoBase.${highlightKey}.title`),
+      body: translate(lang, `data.kitSpec.shared.aerotermoBase.${highlightKey}.body`),
     },
-    {
-      icon: "lock",
-      title: "100% privado",
-      body: "Tu información y tu hogar siempre bajo tu control.",
-    },
-  ],
-} satisfies Partial<KitSpec>;
+    guarantees: translateList<KitCopyItem>(lang, "data.kitSpec.shared.aerotermoBase.guarantees").map((c, i) => ({
+      icon: AEROTERMO_GUARANTEE_ICONS[i], title: c.title, body: c.body,
+    })),
+  };
+}
 
-const AEROTERMO_110L = {
-  badge: "Promoción",
-  summary:
-    "Solucion Integral de agua caliente sanitaria- Eficiencia, confort y conectividad para tu hogar",
-  productImageWidth: 550,
-  productImageHeight: 460,
-  priceLabel: "Precio de venta",
-  taxNote: "IVA incluido",
-  benefits: [
-    { icon: "battery", title: "GRAN CAPACIDAD", body: "100 Litros de agua." },
-    { icon: "inverter", title: "TECNOLOGÍA HÍBRIDA i-Memory", body: "Algoritmo inteligente que combina resistencia y bomba de calor paramáxima eficiencia." },
-    { icon: "shield", title: "FUNCION ANTI-LEGIONELA AUTOMÁTICA", body: "Previene enfermedades, seguridad sanitaria periódica" },
-    { icon: "wifi", title: "CONECTIVIDAD WIFI Y APP ARISTON NET", body: "Control total. Programa y mide tu consumo" },
-    { icon: "clipboard", title: "MULTIPLES MODOS", body: "Green, Boost, Program 1&2, i-Memory" },
-    { icon: "house", title: "INSTALACIÓN FLEXIBLE", body: "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
-  ],
-  highlight: {
-    icon: "house",
-    title: "Eficiencia Energética",
-    body: "Aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: Bomba de calor, Gran capacidad y WiFi integrado",
-  },
-  guarantees: [
-    {
-      icon: "shield",
-      title: "Compatible",
-      body: "Perfectamente integrable a sistemas fotovoltaicos y/o domóticos",
-    },
-    {
-      icon: "cloud",
-      title: "Sin cuotas mensuales",
-      body: "Sin suscripciones",
-    }
-  ],
-} satisfies Partial<KitSpec>;
-
-const AEROTERMO_100L = {
-  badge: "Promoción",
-  summary:
-    "Solucion Integral de agua caliente sanitaria- Eficiencia, confort y conectividad para tu hogar",
-  productImageWidth: 550,
-  productImageHeight: 460,
-  priceLabel: "Precio de venta",
-  taxNote: "IVA incluido",
-  benefits: [
-    { icon: "battery", title: "GRAN CAPACIDAD", body: "100 Litros de agua." },
-    { icon: "inverter", title: "TECNOLOGÍA DE BOMBA DE CALOR", body: "Aprovecha el aire para calentar el agua de forma eficiente" },
-    { icon: "shield", title: "FUNCION ANTI-LEGIONELA AUTOMÁTICA", body: "Previene enfermedades, seguridad sanitaria periódica" },
-    { icon: "wifi", title: "CONECTIVIDAD WIFI Y APP ARISTON NET", body: "Control total. Programa y mide tu consumo" },
-    { icon: "clipboard", title: "MULTIPLES MODOS", body: "Green, Boost, Program 1&2, i-Memory" },
-    { icon: "house", title: "INSTALACIÓN FLEXIBLE", body: "Diseño compacto y versátil que se puede instalar en paredes o en el suelo." }
-  ],
-  highlight: {
-    icon: "house",
-    title: "Eficiencia Energética",
-    body: "Aerotermo Ariston te ofrece una eficiencia clase A con todos los beneficios: Bomba de calor, Gran capacidad, WiFi integrado y mecanismo silencioso",
-  },
-  guarantees: [
-    {
-      icon: "shield",
-      title: "Compatible",
-      body: "Perfectamente integrable a sistemas fotovoltaicos y/o domóticos",
-    },
-    {
-      icon: "cloud",
-      title: "Sin cuotas mensuales",
-      body: "Sin suscripciones",
-    }
-  ],
-} satisfies Partial<KitSpec>;
-
-export const KIT_SPECS: Record<string, KitSpec> = {
-
-/*--------------paneles------------------ */
-  "3kw-hibrido": {
-    badge: "Promoción",
-    titleMain: "Kit solar híbrido",
-    titlePower: "3 kW",
-    summary: "Inversor híbrido Hoymiles 3kW, 4.5kWp en paneles y batería DEYE 5,12 kWh",
-    productImage: "images/kits/3kw-producto.webp",
-    productImageAlt:
-      "Paneles solares, inversor híbrido Hoymiles 3kW y batería DEYE 5,12 kWh",
-    productImageWidth: 700,
-    productImageHeight: 500,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: SOLAR_BENEFITS,
-    components: [
-      { icon: "panel", title: "4.5kWp", body: "8-10 paneles" },
-      { icon: "inverter", title: "Inversor Híbrido Hoymiles 3kW", body: "Potencia, fiable y eficiente" },
-      { icon: "battery", title: "Batería DEYE 5,12 kWh", body: "Almacenamiento seguro y escalable" },
-    ],
-    selfSufficiency: {
-      percent: "95%",
-      scope: "Para una vivienda pequeña",
-      body: "Con este kit, una vivienda pequeña de bajo consumo apenas necesitará comprar electricidad de la red, minimizando su dependencia energética durante todo el año.",
-    },
-    stats: [
-      { label: "Producción anual estimada", value: "8.120 kWh" },
-      { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
-    ],
-    includes: [
-      "Instalación",
-      "Inversor híbrido Hoymiles 3kW",
-      "8-10 paneles",
-      "Batería DEYE 5,12 kWh",
-      "Full Back-Up",
-      "Tasas y trámites ante la administración",
-      "Certificado de instalación eléctrica (si aplica)",
-      "2 Certificados de eficiencia energética",
-      "Trámite de ayudas y subvenciones",
-    ],
-    extras: SOLAR_EXTRAS,
-    guarantees: [
-      {
-        icon: "shield",
-        title: "Instalación profesional",
-        body: "Contamos con la normativa REBT.",
-      },
-      {
-        icon: "clipboard",
-        title: "Gestión completa",
-        body: "Nos encargamos de todos los trámites y documentación.",
-      },
-    ],
-  },
-
-  "6kw": {
-    badge: "Promoción",
-    titleMain: "Kit solar",
-    titlePower: "6 kW",
-    summary: "Inversor híbrido DEYE 6kW, 6 kWp en paneles y batería DEYE 5,12 kWh",
-    productImage: "images/kits/6kw-producto.webp",
-    productImageAlt:
-      "Paneles solares AIKO 610W, inversor híbrido DEYE 6kW y batería DEYE 5,12 kWh",
-    productImageWidth: 700,
-    productImageHeight: 500,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: SOLAR_BENEFITS,
-    components: [
-      { icon: "panel", title: "6 kWp", body: "10-12 paneles" },
-      { icon: "inverter", title: "Inversor Híbrido DEYE 6kW", body: "Potente, fiable y eficiente" },
-      { icon: "battery", title: "Batería DEYE 5,12 kWh", body: "Almacenamiento seguro y escalable" },
-    ],
-    selfSufficiency: { percent: "98%", ...MEDIA_VIVIENDA },
-    stats: [
-      { label: "Producción anual estimada", value: "10.340 kWh" },
-      { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
-    ],
-    includes: [
-      "Instalación",
-      "Inversor híbrido DEYE 6kW",
-      "10-12 paneles",
-      "Batería DEYE 5,12 kWh",
-      "Full Back-Up",
-      ...SOLAR_ADMIN_INCLUDES,
-    ],
-    extras: SOLAR_EXTRAS,
-    guarantees: SOLAR_GUARANTEES,
-  },
-
-  "6kw-offgrid": {
-    badge: "Promoción",
-    titleMain: "Kit solar",
-    titlePower: "off-grid 6 kW",
-    summary: "Inversor Off-grid Felicity 6kW, 6kWp en paneles y batería Felicity 16 kWh",
-    productImage: "images/kits/6kw-offgrid-producto.webp",
-    productImageAlt:
-      "Paneles solares AIKO 610W, inversor off-grid Felicity 6kW y batería Felicity 16 kWh",
-    productImageWidth: 700,
-    productImageHeight: 500,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: SOLAR_BENEFITS,
-    components: [
-      { icon: "panel", title: "6kWp", body: "10-12 paneles" },
-      { icon: "inverter", title: "Inversor Off-grid Felicity 6kW", body: "Potente, fiable y eficiente" },
-      { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
-    ],
-    selfSufficiency: {
-      percent: "100%",
-      scope: "Para ubicaciones sin acceso a red",
-      body: "Con este kit, la vivienda es completamente autónoma, proporcionando energía 100% limpia y sostenible, ideal para ubicaciones sin acceso a red.",
-    },
-    stats: [{ label: "Producción anual estimada", value: "10.340 kWh" }],
-    includes: [
-      "Instalación",
-      "Inversor Off-grid Felicity 6kW",
-      "10-12 paneles ",
-      "Batería Felicity 16 kWh",
-      "Full Back-Up",
-      ...SOLAR_ADMIN_INCLUDES,
-    ],
-    extras: SOLAR_EXTRAS,
-    guarantees: SOLAR_GUARANTEES,
-  },
-
-  "8kw-hibrido": {
-    badge: "Promoción",
-    titleMain: "Kit solar híbrido",
-    titlePower: "8 kW",
-    summary: "Inversor híbrido DEYE 8kW, 9.7 kWp en paneles y batería Felicity 16 kWh",
-    productImage: "images/kits/8kw-producto.webp",
-    productImageAlt:
-      "Paneles solares AIKO 610W, inversor híbrido DEYE 8kW y batería Felicity 16 kWh",
-    productImageWidth: 700,
-    productImageHeight: 500,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: SOLAR_BENEFITS,
-    components: [
-      { icon: "panel", title: "9.7 kWp", body: "16-19 paneles" },
-      { icon: "inverter", title: "Inversor Híbrido DEYE 8kW", body: "Potente, fiable y eficiente" },
-      { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
-    ],
-    selfSufficiency: { percent: "98%", ...MEDIA_VIVIENDA },
-    stats: [
-      { label: "Producción anual estimada", value: "14.720 kWh" },
-      { label: "Cobertura del consumo anual", value: "90% - 98%", ringPercent: 94 },
-    ],
-    includes: [
-      "Instalación",
-      "Inversor híbrido DEYE 8kW",
-      "16-19 paneles",
-      "Batería Felicity 16 kWh",
-      "Full Back-Up",
-      ...SOLAR_ADMIN_INCLUDES,
-    ],
-    extras: SOLAR_EXTRAS,
-    guarantees: SOLAR_GUARANTEES,
-  },
-
-  "10kw-hibrido": {
-    badge: "Promoción",
-    titleMain: "Kit solar híbrido",
-    titlePower: "10 kW",
-    summary: "Inversor híbrido DEYE 10kW,12 kWp en paneles y batería Felicity 16 kWh",
-    productImage: "images/kits/10kw-producto.webp",
-    productImageAlt:
-      "Paneles solares AIKO 610W, inversor híbrido DEYE 10kW y batería Felicity 16 kWh",
-    productImageWidth: 700,
-    productImageHeight: 500,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: SOLAR_BENEFITS,
-    components: [
-      { icon: "panel", title: "12 kWp", body: "20-23 paneles" },
-      { icon: "inverter", title: "Inversor Híbrido DEYE 10kW", body: "Potente, fiable y eficiente" },
-      { icon: "battery", title: "Batería Felicity 16 kWh", body: "Almacenamiento seguro y escalable" },
-    ],
-    selfSufficiency: { percent: "98%", ...MEDIA_VIVIENDA },
-    stats: [
-      { label: "Producción anual estimada", value: "18.400 kWh" },
-      { label: "Cobertura del consumo anual", value: "92% - 98%", ringPercent: 95 },
-    ],
-    includes: [
-      "Instalación",
-      "Inversor híbrido DEYE 10kW",
-      "20-23 paneles",
-      "Batería Felicity 16 kWh",
-      "Full Back-Up",
-      ...SOLAR_ADMIN_INCLUDES,
-    ],
-    extras: SOLAR_EXTRAS,
-    guarantees: SOLAR_GUARANTEES,
-  },
-
-  cargador: {
-    badge: "Promoción",
-    titleMain: "Cargador de",
-    titlePower: "coche eléctrico",
-    summary: "7,4 kW monofásico / 11 kW trifásico. Carga rápida, segura e inteligente.",
+function buildCargador(lang: Lang): KitSpec {
+  const base = readKit(lang, "cargador");
+  const l = labels(lang);
+  return {
+    badge: l.badge,
+    titleMain: base.titleMain,
+    titlePower: base.titlePower,
+    summary: base.summary!,
     productImage: "images/kits/cargador-producto.webp",
-    productImageAlt:
-      "Cargador de coche eléctrico AUTEL de pared con cable, conector Tipo 2 y app móvil de control",
+    productImageAlt: base.productImageAlt,
     productImageWidth: 900,
     productImageHeight: 600,
-    priceLabel: "Precio de venta",
-    taxNote: "IVA incluido",
-    benefits: [
-      { icon: "inverter", title: "Carga rápida y eficiente", body: "Potencia ajustable para una carga más rápida y optimizada." },
-      { icon: "shield", title: "Seguridad avanzada", body: "Protección contra sobrecargas, cortocircuitos, fugas y sobretemperatura." },
-      { icon: "phone", title: "Control inteligente", body: "Monitoriza y gestiona la carga desde tu móvil en tiempo real." },
-      { icon: "trending", title: "Control dinámico de cargas", body: "Ajusta automáticamente la potencia de carga según los consumos de tu casa." },
-      { icon: "droplet", title: "Diseño resistente", body: "Certificación IP65 para uso en exteriores e interiores." },
-    ],
+    priceLabel: l.priceLabel,
+    taxNote: l.taxNote,
+    benefits: (base.benefits ?? []).map((c, i) => ({ icon: CARGADOR_BENEFIT_ICONS[i], title: c.title, body: c.body })),
+    includes: base.includes,
+    highlight: readHighlight(lang, "cargador", "clipboard"),
+    guarantees: (base.guarantees ?? []).map((c, i) => ({ icon: CARGADOR_GUARANTEE_ICONS[i], title: c.title, body: c.body })),
+  };
+}
 
-    includes: [
-      "Instalación",
-      "Cargador Monofasico 7,4 kW o Trifásico 11 kW",
-      "Conector Tipo 2",
-      "Tasas y trámites ante la administración",
-      "Certificado de instalación eléctrica (Boletín)",
-      "Trámite de ayudas y subvenciones",
-    ],
-  
-    highlight: {
-      icon: "clipboard",
-      title: "Incluye documentación y legalización del punto de carga",
-      body: "Nos encargamos de todo, tú no te preocupas.",
-    },
-    guarantees: [
-      {
-        icon: "shield",
-        title: "Seguridad total",
-        body: "Protección contra sobrecargas, cortocircuitos, fugas y sobretemperatura.",
-      },
-      {
-        icon: "wifi",
-        title: "Conectividad Wi-Fi / Bluetooth",
-        body: "Control y monitorización en tiempo real desde la app AUTEL.",
-      },
-      {
-        icon: "calendar",
-        title: "Programación inteligente",
-        body: "Programa la carga en horarios valle y optimiza tu consumo.",
-      },
-      {
-        icon: "leaf",
-        title: "Eficiencia y sostenibilidad",
-        body: "Aprovecha al máximo tu energía y reduce tu huella de carbono.",
-      },
-    ],
-  },
-/*--------------domotica------------------ */
-  domotico: {
-    ...DOMOTICO_BASE,
-    titleMain: "Kit",
-    titlePower: "domótico",
-    productImage: "images/kits/domotico-producto.webp",
-    productImageAlt: "Hub Home Assistant Green con su caja, base del kit domótico",
-    includes: [
-      "Instalación",
-      "7 módulos de iluminación",
-      "5 módulos de persianas",
-      "2 mandos de clima",
-      "1 cerradura inteligente",
-      "3 enchufes inteligentes",
-      "1 puerta garaje / piscina / aerotermo",
-      "5 escenas personalizadas",
-    ],
-  },
+export function getKitSpecs(lang: Lang): Record<string, KitSpec> {
+  return {
+    "3kw-hibrido": buildSolarKit(lang, "3kw-hibrido", {
+      productImage: "images/kits/3kw-producto.webp",
+      productImageWidth: 700,
+      productImageHeight: 500,
+    }),
+    "6kw": buildSolarKit(lang, "6kw", {
+      productImage: "images/kits/6kw-producto.webp",
+      productImageWidth: 700,
+      productImageHeight: 500,
+      useMediaVivienda: true,
+      selfSufficiencyPercent: "98%",
+    }),
+    "6kw-offgrid": buildSolarKit(lang, "6kw-offgrid", {
+      productImage: "images/kits/6kw-offgrid-producto.webp",
+      productImageWidth: 700,
+      productImageHeight: 500,
+    }),
+    "8kw-hibrido": buildSolarKit(lang, "8kw-hibrido", {
+      productImage: "images/kits/8kw-producto.webp",
+      productImageWidth: 700,
+      productImageHeight: 500,
+      useMediaVivienda: true,
+      selfSufficiencyPercent: "98%",
+    }),
+    "10kw-hibrido": buildSolarKit(lang, "10kw-hibrido", {
+      productImage: "images/kits/10kw-producto.webp",
+      productImageWidth: 700,
+      productImageHeight: 500,
+      useMediaVivienda: true,
+      selfSufficiencyPercent: "98%",
+    }),
+    cargador: buildCargador(lang),
+    domotico: buildDomotico(lang, "domotico", "images/kits/domotico-producto.webp"),
+    "domotico-s": buildDomotico(lang, "domotico-s", "images/kits/domotico-s-producto.webp"),
+    "aerotermo-110": buildAerotermo(lang, "aerotermo-110", "images/kits/aerotermo_110.webp", "benefits", "highlight110"),
+    "aerotermo-100": buildAerotermo(lang, "aerotermo-100", "images/kits/aerotermo_100.webp", "benefits100", "highlight100"),
+  };
+}
 
-  "domotico-s": {
-    ...DOMOTICO_BASE,
-    titleMain: "Kit domótico",
-    titlePower: "pequeño",
-    productImage: "images/kits/domotico-s-producto.webp",
-    productImageAlt: "Hub Home Assistant Green con su caja, base del kit domótico pequeño",
-    includes: [
-      "Instalación",
-      "5 módulos de iluminación",
-      "3 módulos de persianas",
-      "1 mando de clima",
-      "1 cerradura inteligente",
-      "2 enchufes inteligentes",
-      "3 escenas personalizadas",
-    ],
-  },
-/*--------------Aerotermos ---------------------*/
-  "aerotermo-110": {
-    ...AEROTERMO_110L,
-    titleMain: "Aerotermo Ariston",
-    titlePower: "Nuos Plus S2 110L Wi-Fi",
-    productImage: "images/kits/aerotermo_110.webp",
-    productImageAlt: "Aerotermo Ariston Nuos Plus S2 110L Wi-Fi",
-    includes: [
-      "Instalación",
-      "Puesta en marcha"
-    ],
-    extras: AEROTERMOS_EXTRAS
-  },
-  "aerotermo-100": {
-      ...AEROTERMO_100L,
-      titleMain: "Aerotermo Ariston",
-      titlePower: "Lydos Hybrid Wi-Fi 100L",
-      productImage: "images/kits/aerotermo_100.webp",
-      productImageAlt: "Aerotermo Ariston Lydos Hybrid Wi-Fi 100L",
-      includes: [
-        "Instalación",
-        "Puesta en marcha"
-      ],
-      extras: AEROTERMOS_EXTRAS
-    }
-
-};
+export const KIT_SPECS = getKitSpecs("es");

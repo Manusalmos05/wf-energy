@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "site": {
+      "brand": "White Fox Energy",
+      "brandSuffix": " | White Fox Energy",
+      "businessDescription": "Solar panel, battery, EV charger and home-automation installation in Alicante, Murcia and Vega Baja. Free study and quote within 24 h.",
+      "blogName": "Solar self-consumption blog",
+      "blogDescription": "Practical guides on solar panels, batteries, chargers and self-consumption tax breaks in Alicante, Murcia and Vega Baja, written by installers.",
+      "ogImageAlt": "Photovoltaic solar panel installation on a home"
+    },
+    "home": {
+      "title": "Solar Panels in Alicante and Murcia | White Fox Energy"
+    },
+    "notFound": {
+      "title": "Page not found | White Fox Energy",
+      "description": "The page you're looking for doesn't exist or has been moved."
+    },
+    "legal": {
+      "notice": {
+        "title": "Legal notice",
+        "description": "Owner identification and terms of use of the White Fox Energy website."
+      },
+      "privacy": {
+        "title": "Privacy policy",
+        "description": "How we handle personal data from the contact form and what rights you have."
+      },
+      "cookies": {
+        "title": "Cookie policy",
+        "description": "What cookies this site uses, what they do and how to change your choice."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Our WCAG 2.1 AA accessibility commitment and how to tell us about any barrier."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Learn about solar energy",
+      "subtitle": "Practical guides, formulas and tips to size, understand and amortise your installation."
+    },
+    "search": {
+      "placeholder": "Search articles…",
+      "clear": "Clear",
+      "emptyTitle": "No results",
+      "emptyBody": "No articles match your search. Try different terms or clear the filters."
+    }
+  },
+  "article": {
+    "backToBlog": "Back to the blog",
+    "readingMinutes": "{minutes} min read",
+    "notFoundTitle": "Article not found",
+    "notFoundBody": "The article you're looking for doesn't exist or has been moved.",
+    "ctaTitle": "Ready to switch to self-consumption?",
+    "ctaBody": "We'll prepare a personalised study for free, no strings attached.",
+    "ctaButton": "Free quote"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This page doesn't exist",
+    "body": "The link you followed may be broken or the page has been moved."
+  }
+}

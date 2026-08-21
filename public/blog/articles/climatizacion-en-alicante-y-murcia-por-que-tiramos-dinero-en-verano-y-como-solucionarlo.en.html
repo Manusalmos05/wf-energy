@@ -1,0 +1,348 @@
+
+<p class="article-lead">In most of Spain, the greatest enemy of the energy bill is winter heating. However, on the Spanish Levante — especially in the provinces of Alicante and Murcia — the real energy challenge falls between May and October.</p>
+
+<p>More than 80% of the residential stock in both provinces holds a low energy rating (E, F or G). Add to that the fact that around 80% of households on the Levante rely on air conditioning to get through the heatwaves, and we have a structural problem: we are wasting between 35% and 50% of the energy consumed by our climate control (HVAC) equipment.</p>
+
+<h2>The four "black holes" through which your air-conditioning money escapes</h2>
+
+<h3>1. The gap between ON/OFF compressors and Inverter units</h3>
+<p>Thousands of air-conditioning units installed before 2012 still survive on the Levante. These systems work with "all-or-nothing" (ON/OFF) technology: they start up at 100% power, switch off when the target temperature is reached and start up again at full power minutes later.</p>
+
+<p>Continuous start-up spikes push the electricity bill up by 30% to 40% compared with a modern Inverter unit with a high SEER (Seasonal Energy Efficiency Ratio).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Equipment generation</th>
+      <th>Rating</th>
+      <th>Average SEER</th>
+      <th>Estimated consumption (3,000 frig/h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Old / All-or-nothing (Pre-2012)</td>
+      <td>Class D / E / F</td>
+      <td>2.5 – 3.2</td>
+      <td>1.20 – 1.40 kW/h</td>
+    </tr>
+    <tr>
+      <td>Conventional Inverter (2012-2018)</td>
+      <td>Class A+ / A++</td>
+      <td>5.5 – 6.5</td>
+      <td>0.60 – 0.70 kW/h</td>
+    </tr>
+    <tr>
+      <td>High-Efficiency Inverter (current)</td>
+      <td>Class A+++</td>
+      <td>8.5 – 10.5</td>
+      <td>0.35 – 0.45 kW/h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2. Massive losses in suspended ceilings (ducted systems)</h3>
+<p>Ducted centralised climate control routed through the suspended ceilings of bathrooms and hallways is very common in Alicante and Murcia. During the summer months, a suspended ceiling beneath a slab or roof can reach 35 °C to 38 °C.</p>
+
+<img src="/images/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/art_01_01.webp" alt="Ducts" loading="lazy">
+<p>If the fibreglass ducts are not perfectly insulated or the joint sealing tape has degraded, the cold air (leaving the unit at around 12 °C) warms up before reaching the rooms, or escapes directly into the plenum, losing up to 20% of the airflow.</p>
+
+<h3>3. The impact of salinity and airborne dust</h3>
+<p>The sea breeze in coastal municipalities (such as Torrevieja, Benidorm or Águilas), combined with airborne dust and the frequent Saharan dust hazes (calima) inland in Murcia, creates an abrasive layer on outdoor units.</p>
+
+<ul>
+  <li>Rusted or dirty condensers: they reduce the ability to dissipate heat outdoors, forcing the compressor to work at higher pressure and pushing consumption up by as much as 25%.</li>
+  <li>Clogged indoor filters: they cause partial freezing of the evaporator and make the unit run without pause.</li>
+</ul>
+
+<img src="/images/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/art_01_02.webp" alt="Dirty filters" loading="lazy">
+
+<h3>4. The myth of the 18 °C thermostat</h3>
+<p>Setting the air conditioner to 18 °C won't cool the room any faster. The unit blows air out at the same temperature (around 10 °C–14 °C) regardless of the set point. All that setting extreme temperatures achieves is preventing the compressor from switching off.</p>
+
+<p><b>Key figure:</b> every degree you lower the thermostat below 24 °C pushes the electricity bill up by 7% to 8%.</p>
+
+<div class="clima-calculator" id="clima-calculator">
+  <style>
+    .clima-calculator {
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(14,116,144,0.06), rgba(255,255,255,0.8));
+      padding: 0.9rem 1rem 1rem;
+      margin: 1rem 0 1.25rem;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+    .clima-cost-compare {
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(15, 118, 110, 0.06), rgba(255,255,255,0.9));
+      padding: 1.1rem 1.1rem 0.9rem;
+      margin: 1rem 0 1.5rem;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+    }
+    .clima-cost-compare__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .clima-cost-compare__eyebrow {
+      margin: 0 0 0.25rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+    .clima-cost-compare__header h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      color: #0f172a;
+    }
+    .clima-cost-compare__header strong {
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #0f172a;
+    }
+    .clima-cost-compare__bar {
+      display: flex;
+      width: 100%;
+      height: 18px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(148, 163, 184, 0.18);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+    .clima-cost-compare__segment {
+      display: block;
+      height: 100%;
+    }
+    .clima-cost-compare__segment--waste {
+      background: linear-gradient(90deg, #f59e0b, #f97316);
+    }
+    .clima-cost-compare__segment--useful {
+      background: linear-gradient(90deg, #0ea5e9, #14b8a6);
+    }
+    .clima-cost-compare__legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: #334155;
+      font-weight: 600;
+    }
+    .clima-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 0.45rem;
+      vertical-align: middle;
+    }
+    .clima-dot--waste {
+      background: #f59e0b;
+    }
+    .clima-dot--useful {
+      background: #14b8a6;
+    }
+    .clima-calculator__title {
+      margin: 0 0 0.2rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .clima-calculator__subtitle {
+      margin: 0 0 0.75rem;
+      color: #475569;
+      font-size: 0.88rem;
+    }
+    .clima-calculator__grid {
+      display: grid;
+      gap: 0.9rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .clima-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .clima-field label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #475569;
+      font-weight: 700;
+    }
+    .clima-field input,
+    .clima-field select {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(255,255,255,0.95);
+      font: inherit;
+      color: #0f172a;
+    }
+    .clima-field input[type="range"] {
+      padding: 0;
+    }
+    .clima-results {
+      margin-top: 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+    }
+    .clima-result {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(148,163,184,0.45);
+      border-radius: 12px;
+      padding: 0.85rem 0.8rem;
+    }
+    .clima-result__label {
+      font-size: 0.68rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+    .clima-result__value {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #0f172a;
+    }
+    .clima-result__value.accent {
+      color: #0f766e;
+    }
+    .clima-result__value.warning {
+      color: #b45309;
+    }
+  </style>
+
+  <h3 class="clima-calculator__title">Energy inefficiency calculator</h3>
+  <p class="clima-calculator__subtitle">Quick estimate for Alicante and Murcia</p>
+
+  <div class="clima-cost-compare" aria-label="Monthly HVAC cost comparison">
+    <div class="clima-cost-compare__header">
+      <div>
+        <p class="clima-cost-compare__eyebrow">Estimated monthly spend</p>
+        <h3>Most of the money is lost to inefficiencies</h3>
+      </div>
+      <strong id="clima-total-gasto">€0.00</strong>
+    </div>
+
+    <div class="clima-cost-compare__bar" role="img" aria-label="Monthly spend split between waste and useful consumption">
+      <span id="clima-cost-waste" class="clima-cost-compare__segment clima-cost-compare__segment--waste" style="width: 0%;"></span>
+      <span id="clima-cost-useful" class="clima-cost-compare__segment clima-cost-compare__segment--useful" style="width: 100%;"></span>
+    </div>
+
+    <div class="clima-cost-compare__legend">
+      <span id="clima-cost-waste-label"><i class="clima-dot clima-dot--waste"></i> Waste: €0.00</span>
+      <span id="clima-cost-useful-label"><i class="clima-dot clima-dot--useful"></i> Useful use: €0.00</span>
+    </div>
+  </div>
+
+  <div class="clima-calculator__grid">
+    <div class="clima-field">
+      <label for="clima-equipo">Equipment type</label>
+      <select id="clima-equipo">
+        <option value="3">Old / All-or-nothing (SEER 3.0)</option>
+        <option value="6">Inverter A+ (SEER 6.0)</option>
+        <option value="9">Inverter A+++ (SEER 9.0)</option>
+      </select>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-horas">Daily hours</label>
+      <input id="clima-horas" type="number" min="2" max="16" value="8" />
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-temp">Target temperature</label>
+      <input id="clima-temp" type="range" min="18" max="26" value="21" />
+      <div id="clima-temp-label" style="font-size:0.78rem;color:#475569;">21 °C</div>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-aislamiento">Insulation</label>
+      <select id="clima-aislamiento">
+        <option value="1.35">Poor (no insulation)</option>
+        <option value="1">Medium (double glazing)</option>
+        <option value="0.8">High (SATE — external thermal insulation system)</option>
+      </select>
+    </div>
+
+    <div class="clima-field">
+      <label for="clima-precio">Price per kWh</label>
+      <input id="clima-precio" type="number" min="0.05" max="0.5" step="0.01" value="0.22" />
+    </div>
+  </div>
+
+  <div class="clima-results">
+    <div class="clima-result">
+      <span class="clima-result__label">Monthly consumption</span>
+      <span id="result-kwh" class="clima-result__value">0.0 kWh</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Estimated spend</span>
+      <span id="result-cost" class="clima-result__value warning">€0.00</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Saving with A+++</span>
+      <span id="result-savings" class="clima-result__value accent">€0.00</span>
+    </div>
+    <div class="clima-result">
+      <span class="clima-result__label">Waste</span>
+      <span id="result-waste" class="clima-result__value">0%</span>
+    </div>
+  </div>
+</div>
+
+<h2><strong>The big question: zoned ducted unit or several A+++ splits?</strong></h2>
+
+<p>If you're planning to refurbish or upgrade the climate control of your home on the Levante, this is the most common dilemma:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterion</th>
+      <th>Independent A+++ splits</th>
+      <th>Zoned ducted system (with Airzone)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial investment</td>
+      <td>Affordable: €2,200 – €3,800 (for 3-4 units)</td>
+      <td>High: €5,500 – €8,500 (unit + motorised grilles)</td>
+    </tr>
+    <tr>
+      <td>Building work needed</td>
+      <td>Minimal (occasional wall drilling).</td>
+      <td>Requires suspended ceilings and a fibre/aluminium duct network.</td>
+    </tr>
+    <tr>
+      <td>Pure efficiency (SEER)</td>
+      <td>Maximum (8.5 to 10.5): no duct losses.</td>
+      <td>High (6.1 to 7.5): some thermal losses in the plenum.</td>
+    </tr>
+    <tr>
+      <td>Consumption at low load</td>
+      <td>Minimal (~200 – 300 W/h if you only use one room).</td>
+      <td>Moderate (~600 – 900 W/h minimum for the central unit).</td>
+    </tr>
+    <tr>
+      <td>Aesthetics and comfort</td>
+      <td>Wall-mounted units in sight; direct airflow.</td>
+      <td>Fully hidden, quiet and with uniform diffusion.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Verdict: which option suits you in Alicante and Murcia?</h2>
+<p><strong>1. Quick savings and tight budget (A+++ split wins):</strong> if you don't have a suspended ceiling or want the fastest payback, the best decision is to install independent Class A+++ splits in the living room and main bedrooms. Because they lose no cooling on the way and offer the highest seasonal efficiency on the market, you'll get the lowest possible electricity bills.</p>
+
+<p><strong>2. Whole-home comfort and existing pre-installation (Ducted + Airzone wins):</strong> if your flat already has ceiling ductwork or you're carrying out a full refurbishment in a family home, the combination of a central unit with an intelligent zoning system (motorised grilles such as Airzone) is the better option. It will let you control the temperature room by room from your phone, saving up to 45% compared with a traditional non-zoned ducted unit.</p>

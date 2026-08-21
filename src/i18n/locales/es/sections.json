@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge": "Instalaciones Eléctricas — Alicante · Murcia · Vega Baja",
+    "titlePrefix": "Instalación de Placas Solares y más en ",
+    "titleHighlight": "Alicante, Murcia y La Vega Baja",
+    "subtitleBefore": "Reduce hasta un ",
+    "subtitleHighlight": "90%",
+    "subtitleAfter": " tu factura eléctrica con energía solar, domótica y movilidad eléctrica. Sin compromiso."
+  },
+  "services": {
+    "eyebrow": "Nuestros servicios",
+    "title": "Soluciones de energía solar completas",
+    "subtitle": "Desde la instalación de placas solares y la domótica inteligente hasta reformas eléctricas. Todo gestionado por nuestro equipo propio en Alicante y Murcia."
+  },
+  "howWeWork": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "De la consulta a la puesta en marcha",
+    "subtitle": "Proceso transparente y sin burocracia para ti. Nos ocupamos de todo."
+  },
+  "projects": {
+    "eyebrow": "Proyectos realizados",
+    "title": "Proyectos en Alicante y Murcia",
+    "subtitle": "Instalaciones fotovoltaicas residenciales y más."
+  },
+  "kits": {
+    "eyebrow": "Kits instalables fotovoltaicos y de domótica",
+    "title": "Ahorra con nuestros packs",
+    "subtitle": "Consulta el precio de envío e instalación.",
+    "carouselLabel": "Kits solares",
+    "prev": "Ver kit anterior",
+    "next": "Ver kit siguiente",
+    "pickerLabel": "Elegir kit",
+    "slideAria": "{index} de {total}: {title}",
+    "pickerAria": "Kit {index} de {total}: {title}",
+    "requestQuote": "Solicitar presupuesto"
+  },
+  "calculator": {
+    "eyebrow": "Calculadora de ahorro",
+    "title": "¿Cuánto puedes ahorrar con la energía solar?",
+    "bodyLead": "Introduce tu gasto mensual en electricidad y tu provincia. Te mostramos un estimado inmediato.",
+    "bodyStrong": "Para un cálculo exacto, solicita una cita de valoración.",
+    "keywords": ["placas solares Alicante", "autoconsumo Murcia", "energía solar Vega Baja", "ahorro en tu factura"],
+    "form": {
+      "billLabel": "Factura promedio mensual (€)",
+      "provinceLabel": "Provincia",
+      "batteryPhysical": "Incluir batería física de almacenamiento (acumula energía para la noche)",
+      "batteryVirtual": "Aprovechar Monedero / Batería Virtual (inyecta sobrantes a la red)",
+      "estimate": "* Con una factura de {bill} €/mes, estimamos un consumo de {consumption} kWh/mes (estimado a {price} €/kWh incluidos potencia, peajes e impuestos).",
+      "calculate": "Calcular producción y ahorro",
+      "edit": "✏️ Modificar datos",
+      "annualSaving": "Ahorro estimado / año (~{pct}%)",
+      "annualProduction": "Producción estimada / año",
+      "panels": "~{count} paneles (540W)",
+      "paybackLabel": "Amortización media",
+      "guidance": "Esta estimación es una guía inicial. Cada tejado y hábito de consumo es único.",
+      "requestExact": "Solicitar estudio técnico y presupuesto exacto gratuito",
+      "specTitle": "Configuración orientativa:",
+      "specPanels": "Módulos fotovoltaicos:",
+      "specPanelsValue": "{count} módulos de ~540 Wp",
+      "specInverter": "Inversor recomendado:",
+      "specBattery": "Batería física:",
+      "specVirtual": "Batería virtual:",
+      "virtualOn": "Activada (inyecta sobrantes a la red)",
+      "virtualOff": "No configurada",
+      "systemBattery": "Instalación con Batería Física ({kwp} kWp)",
+      "systemDirect": "Autoconsumo Directo ({kwp} kWp)",
+      "noBattery": "Sin batería física",
+      "paybackWithBattery": "4 - 6 años",
+      "paybackNoBattery": "3 - 5 años",
+      "grantsTitle": "💡 Subvenciones y bonificaciones fiscales disponibles:",
+      "grantsBody": "El periodo de amortización puede reducirse significativamente gracias a las <strong>deducciones del IRPF (hasta un 40%-60%)</strong> y las bonificaciones en el <strong>IBI y ICIO</strong> según tu municipio.",
+      "disclaimer": "Cálculo orientativo basado en la irradiación promedio de {province}. Contacta con nuestro equipo para un análisis de sombras y orientación exacto."
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Aprende sobre energía solar",
+    "subtitle": "Guías prácticas, fórmulas y consejos de nuestro equipo para sacar el máximo partido a tu instalación."
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Todo lo que necesitas saber",
+    "subtitle": "Sobre placas solares, subvenciones, baterías, cargadores, boletines eléctricos y domótica en Alicante y Murcia."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "titleBefore": "Solicita tu ",
+    "titleHighlight": "presupuesto gratuito",
+    "subtitle": "Sin compromiso. Te contactamos en menos de 24 horas con un estudio personalizado para tu vivienda o comunidad en Alicante, Murcia o la Vega Baja.",
+    "areasTitle": "Zonas de trabajo",
+    "areasBody": "Provincia de Alicante · Provincia de Murcia · Vega Baja del Segura · Orihuela · Torrevieja · Elche · Benidorm · Altea · Dénia · Cartagena · Lorca · Mazarrón",
+    "hoursLine": "Lun–Vie 8:30–18:30 · Sáb 9:00–14:00",
+    "areaCommaLine": "Alicante · Murcia · Vega Baja del Segura",
+    "whatsappPrefix": "WhatsApp: ",
+    "form": {
+      "title": "Solicitar presupuesto",
+      "name": "Nombre",
+      "namePlaceholder": "Ana García",
+      "phone": "Teléfono",
+      "phonePlaceholder": "600 000 000",
+      "email": "Email",
+      "emailPlaceholder": "ana@email.com",
+      "locality": "Localidad",
+      "localityPlaceholder": "Torrevieja, Murcia...",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tipo de instalación, superficie del tejado, consumo aproximado...",
+      "privacyBefore": "He leído y acepto la ",
+      "privacyLink": "Política de Privacidad",
+      "privacyAfter": " y consiento el tratamiento de mis datos para atender mi consulta.",
+      "required": "*",
+      "sending": "Enviando...",
+      "submit": "Solicitar presupuesto",
+      "trustLine": "Sin compromiso · Respuesta en menos de 24h · Conexión segura HTTPS",
+      "successTitle": "¡Solicitud recibida!",
+      "successBody": "Te contactaremos en menos de 24 horas con tu presupuesto personalizado. ¡Gracias por confiar en White Fox Energy!",
+      "successAgain": "Enviar otra consulta",
+      "error": "No se pudo enviar tu solicitud. Inténtalo de nuevo o llámanos por teléfono."
+    }
+  }
+}

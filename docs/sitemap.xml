@@ -1,74 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.wf-energy.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/</loc>
     <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/eficiencia-energetica-residencial-levante/</loc>
     <lastmod>2026-06-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/eficiencia-energetica-residencial-levante/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/eficiencia-energetica-residencial-levante/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/eficiencia-energetica-residencial-levante/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/coche-electrico-consumo-real-mantenimiento-ahorro/</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/cambio-ventanas-aislamiento-cajon-persianas/</loc>
     <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/aislamiento-térmico-de-tuberías-de-PPR/</loc>
     <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/soluciones-aislamiento-termico-tejados-cubiertas/</loc>
     <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/</loc>
     <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/</loc>
     <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/fachadas-vegetales-aislamiento-natural-calor/</loc>
     <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/fachadas-vegetales-aislamiento-natural-calor/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/fachadas-vegetales-aislamiento-natural-calor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/fachadas-vegetales-aislamiento-natural-calor/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/</loc>
     <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/el-mito-del-60-de-descuento-en-el-irpf/</loc>
     <lastmod>2026-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/cuantas-placas-solares-necesita-tu-casa/</loc>
     <lastmod>2026-07-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cuantas-placas-solares-necesita-tu-casa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cuantas-placas-solares-necesita-tu-casa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cuantas-placas-solares-necesita-tu-casa/" />
   </url>
   <url>
     <loc>https://www.wf-energy.com/blog/baterias-solares-como-elegir-capacidad/</loc>
     <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/baterias-solares-como-elegir-capacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/baterias-solares-como-elegir-capacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/baterias-solares-como-elegir-capacidad/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/eficiencia-energetica-residencial-levante/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/eficiencia-energetica-residencial-levante/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/eficiencia-energetica-residencial-levante/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/eficiencia-energetica-residencial-levante/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/coche-electrico-consumo-real-mantenimiento-ahorro/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/coche-electrico-consumo-real-mantenimiento-ahorro/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/cambio-ventanas-aislamiento-cajon-persianas/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cambio-ventanas-aislamiento-cajon-persianas/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/aislamiento-térmico-de-tuberías-de-PPR/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/aislamiento-térmico-de-tuberías-de-PPR/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/soluciones-aislamiento-termico-tejados-cubiertas/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/soluciones-aislamiento-termico-tejados-cubiertas/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/fachadas-vegetales-aislamiento-natural-calor/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/fachadas-vegetales-aislamiento-natural-calor/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/fachadas-vegetales-aislamiento-natural-calor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/fachadas-vegetales-aislamiento-natural-calor/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/el-mito-del-60-de-descuento-en-el-irpf/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/el-mito-del-60-de-descuento-en-el-irpf/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/cuantas-placas-solares-necesita-tu-casa/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/cuantas-placas-solares-necesita-tu-casa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/cuantas-placas-solares-necesita-tu-casa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/cuantas-placas-solares-necesita-tu-casa/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/blog/baterias-solares-como-elegir-capacidad/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/baterias-solares-como-elegir-capacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/baterias-solares-como-elegir-capacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/baterias-solares-como-elegir-capacidad/" />
   </url>
 </urlset>

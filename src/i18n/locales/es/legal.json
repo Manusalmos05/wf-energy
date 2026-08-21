@@ -1,0 +1,127 @@
+{
+  "shared": {
+    "updated": "7 de agosto de 2026",
+    "updatedLabel": "Última actualización"
+  },
+  "notice": {
+    "title": "Aviso legal",
+    "sections": {
+      "identification": {
+        "title": "1. Identificación del titular",
+        "intro": "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el titular de este sitio web es:",
+        "items": [
+          "Titular: [RAZÓN SOCIAL O NOMBRE DEL TITULAR]",
+          "NIF: [NIF]",
+          "Domicilio: [DOMICILIO A EFECTOS DE NOTIFICACIONES]",
+          "Nombre comercial: {brand}",
+          "Correo electrónico: {email}",
+          "Teléfono: {phone}",
+          "Sitio web: {site}"
+        ]
+      },
+      "purpose": {
+        "title": "2. Objeto",
+        "body": "Este sitio web tiene por objeto dar a conocer los servicios de instalación de energía solar fotovoltaica, baterías, cargadores de vehículo eléctrico y domótica que {brand} presta en Alicante, Murcia y la Vega Baja del Segura, así como facilitar la solicitud de estudios y presupuestos sin compromiso."
+      },
+      "terms": {
+        "title": "3. Condiciones de uso",
+        "p1": "El acceso a este sitio web es gratuito y atribuye la condición de usuario, que implica la aceptación de las presentes condiciones. El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas o contrarias a la buena fe.",
+        "p2": "Los precios y promociones mostrados tienen carácter orientativo y no constituyen oferta contractual; el presupuesto definitivo se formaliza tras el estudio personalizado de cada instalación."
+      },
+      "ip": {
+        "title": "4. Propiedad intelectual e industrial",
+        "body": "Salvo indicación expresa, los contenidos de este sitio (textos, imágenes, logotipos, diseño y código) son titularidad de {brand} o de sus licenciantes, y están protegidos por la normativa de propiedad intelectual e industrial. Las marcas de terceros citadas (fabricantes de paneles, inversores, baterías u otros equipos) pertenecen a sus respectivos titulares y se usan con finalidad meramente descriptiva."
+      },
+      "liability": {
+        "title": "5. Responsabilidad",
+        "body": "{brand} no se hace responsable de los daños derivados del uso incorrecto del sitio web ni de los contenidos de sitios de terceros enlazados desde estas páginas. Se procura que la información esté actualizada, pero no se garantiza la ausencia de errores; agradecemos cualquier aviso a {email}."
+      },
+      "law": {
+        "title": "6. Legislación aplicable",
+        "body": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia serán competentes los juzgados y tribunales que correspondan conforme a la normativa de consumidores y usuarios."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "sections": {
+      "controller": {
+        "title": "1. Responsable del tratamiento",
+        "body": "El responsable del tratamiento de los datos personales recogidos en este sitio web es [RAZÓN SOCIAL O NOMBRE DEL TITULAR], NIF [NIF], con domicilio en [DOMICILIO], operando bajo el nombre comercial {brand}. Contacto para cuestiones de privacidad: {email}."
+      },
+      "data": {
+        "title": "2. Qué datos recogemos",
+        "p1": "A través del formulario de contacto recogemos: nombre, teléfono, correo electrónico, localidad y el mensaje que nos envías.",
+        "p2Before": "Si aceptas las cookies de analítica, Microsoft Clarity recoge datos de uso de la web (páginas visitadas, interacciones, tipo de dispositivo) de forma pseudonimizada. Puedes consultar el detalle en la ",
+        "p2Link": "política de cookies",
+        "p2After": "."
+      },
+      "purpose": {
+        "title": "3. Finalidad y base jurídica",
+        "p1": "Usamos tus datos de contacto exclusivamente para responder a tu solicitud y elaborar el estudio o presupuesto que nos pidas. La base jurídica es tu consentimiento, que otorgas al marcar la casilla de privacidad antes de enviar el formulario, y la aplicación de medidas precontractuales a petición tuya.",
+        "p2": "No usamos tus datos para publicidad ni elaboramos perfiles comerciales."
+      },
+      "recipients": {
+        "title": "4. Destinatarios",
+        "body": "El envío del formulario se procesa a través de EmailJS, que actúa como encargado del tratamiento para hacer llegar tu mensaje a nuestro buzón. La analítica, solo si la aceptas, la presta Microsoft (Clarity). No cedemos tus datos a terceros con fines comerciales."
+      },
+      "retention": {
+        "title": "5. Conservación",
+        "body": "Conservamos los datos de contacto el tiempo necesario para atender tu solicitud y, si se formaliza un encargo, durante los plazos legales aplicables a la relación contractual y fiscal."
+      },
+      "rights": {
+        "title": "6. Tus derechos",
+        "body": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a {email}, indicando el derecho que ejerces y adjuntando un medio de verificar tu identidad. También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (aepd.es)."
+      }
+    }
+  },
+  "cookies": {
+    "title": "Política de cookies",
+    "sections": {
+      "what": {
+        "title": "1. Qué son las cookies",
+        "body": "Las cookies y tecnologías similares (como el almacenamiento local del navegador) son pequeños ficheros que un sitio web guarda en tu dispositivo para recordar información sobre tu visita."
+      },
+      "used": {
+        "title": "2. Qué usamos en este sitio",
+        "intro": "{brand} utiliza únicamente lo siguiente:",
+        "consent": {
+          "label": "Preferencia de consentimiento",
+          "body": " (propia, técnica): una entrada de almacenamiento local llamada wfe-cookie-consent que recuerda si aceptaste o rechazaste la analítica. No requiere consentimiento por ser estrictamente necesaria."
+        },
+        "clarity": {
+          "label": "Microsoft Clarity",
+          "body": " (de terceros, analítica, solo si la aceptas): cookies como _clck, _clsk, MUID, ANONCHK y SM, que permiten analizar de forma agregada cómo se navega por la web para mejorarla. Más información en la política de privacidad de Microsoft Clarity."
+        },
+        "note": "Si rechazas la analítica, Microsoft Clarity no se carga y no se instala ninguna de sus cookies."
+      },
+      "change": {
+        "title": "3. Cómo cambiar tu elección",
+        "body": "Puedes cambiar tu decisión en cualquier momento desde el enlace «Configuración de cookies» del pie de página, que vuelve a mostrar el aviso de cookies. También puedes borrar las cookies ya instaladas desde la configuración de tu navegador (Chrome, Firefox, Safari o Edge disponen de ayuda específica para ello)."
+      }
+    }
+  },
+  "accessibility": {
+    "title": "Accesibilidad",
+    "sections": {
+      "commitment": {
+        "title": "Nuestro compromiso",
+        "body": "En {brand} queremos que cualquier persona pueda usar esta web, independientemente de sus capacidades o del dispositivo que utilice. Trabajamos para cumplir el nivel AA de las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1."
+      },
+      "measures": {
+        "title": "Medidas aplicadas",
+        "items": [
+          "Contraste de color de nivel AA en textos y controles.",
+          "Navegación completa por teclado, incluido el carrusel de kits.",
+          "Textos alternativos en las imágenes y etiquetas ARIA en los componentes interactivos.",
+          "Estructura semántica de encabezados y HTML válido en todas las páginas.",
+          "Contenido legible y funcional en móvil, tablet y escritorio."
+        ]
+      },
+      "barrier": {
+        "title": "¿Has encontrado una barrera?",
+        "body": "Si algo de esta web te resulta difícil de usar o inaccesible, escríbenos a {email} describiendo el problema y la página en la que ocurre. Nos comprometemos a estudiarlo y corregirlo lo antes posible."
+      }
+    }
+  }
+}

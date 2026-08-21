@@ -1,0 +1,374 @@
+{
+  "services": [
+    {
+      "title": "Photovoltaic Solar Panels",
+      "desc": "We install residential self-consumption systems. Maximum yield, official certification and paperwork included.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Solar Batteries",
+      "desc": "Store the energy you produce and use it when it matters most. Grid independence and maximum savings during peak hours.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "EV Chargers",
+      "desc": "Certified home charging points. Charge your car with solar energy and cut the cost to almost zero.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Smart Home Automation",
+      "desc": "Automate and control your home. Thermostats, blinds, lighting and security integrated with your solar system. Get the most out of your electricity.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Electrical Refurbishment",
+      "desc": "Complete residential electrical installation, up to top standards, paperwork included.",
+      "cta": "Learn more"
+    },
+    {
+      "title": "Energy Performance Certificates",
+      "desc": "Certify your home with the mandatory energy performance certificate, add value to your property and legalise your installations.",
+      "cta": "Learn more"
+    }
+  ],
+  "benefits": [
+    "Save up to 90%",
+    "Fast installation",
+    "Grants available",
+    "Top-brand equipment",
+    "Maintenance plans",
+    "Personalised advice"
+  ],
+  "steps": [
+    { "title": "Free audit", "body": "We visit your property with no commitment and analyse your real electricity consumption." },
+    { "title": "Energy study", "body": "We design the optimal installation for your roof, orientation and consumption." },
+    { "title": "Quote", "body": "You get a detailed, transparent quote with no fine print." },
+    { "title": "Installation", "body": "Our own team installs cleanly, precisely and on the agreed date." },
+    { "title": "Legalisation", "body": "We handle all paperwork with the DSO and the administration for you." },
+    { "title": "Commissioning", "body": "We turn your system on, check performance and hand over the corresponding installation warranty." }
+  ],
+  "faqs": [
+    { "q": "What grants are there for solar panels in Alicante and Murcia?", "a": "Today you can access the MOVES III programme (up to €1,300 per charging point), IDAE self-consumption aid and grants from the Valencian Community and Murcia Region governments. In many cases the state tax deduction reaches 20% on income tax (IRPF). We advise you at no cost on every aid applicable to your case." },
+    { "q": "How long does a solar panel installation take?", "a": "A standard residential installation (6–10 panels) is completed in 1–2 working days. Housing communities or industrial installations can take 3 to 5 days. The subsequent administrative paperwork takes 4 to 8 weeks." },
+    { "q": "Do I need a solar battery?", "a": "It depends on your consumption profile. If you consume a lot at night or want full grid independence, a battery maximises savings. If your consumption is mostly during the day, panels alone already deliver an excellent return. We analyse it for free." },
+    { "q": "How much can I save with solar energy?", "a": "With a well-sized installation, the average saving in Alicante and Murcia ranges from 60% to 80% of the annual electricity bill. With a battery you can reach 90–95%. Typical payback is 5–7 years." },
+    { "q": "What happens if I produce more energy than I consume?", "a": "The surplus is fed into the grid and you get financial compensation on your bill (self-consumption with surplus). You can also store it in a battery to use it at night." },
+    { "q": "Can I install an EV charger together with solar power?", "a": "Yes, it's one of the most profitable combinations. You can charge your electric vehicle directly with the energy your panels produce, reducing charging cost to virtually zero during the sunniest months." },
+    { "q": "Do I need council permission to install solar panels?", "a": "For single-family homes, notifying the DSO is usually enough. Listed buildings or communities may require additional permits. We handle every paperwork step for you." },
+    { "q": "What maintenance do solar panels need?", "a": "Photovoltaic panels need minimal maintenance: an annual cleaning and a connection check. We offer maintenance plans starting at €79/year with performance guarantee." },
+    { "q": "Is home automation compatible with any solar installation?", "a": "Our home-automation systems integrate with any solar installation we build. We control lighting, climate, blinds, security and consumption from a single iOS and Android compatible app." }
+  ],
+  "projects": [
+    { "label": "Villa — Torrevieja" },
+    { "label": "House — Murcia" },
+    { "label": "EV charger" },
+    { "label": "Smart Home — Torrevieja" }
+  ],
+  "kitSpec": {
+    "labels": {
+      "badgePromo": "Promo",
+      "priceLabel": "Sale price",
+      "taxNote": "VAT included",
+      "includes": "Included",
+      "extras": "Optional extras",
+      "selfSufficiencyPrefix": "Up to",
+      "selfSufficiencySuffix": "energy self-sufficiency"
+    },
+    "shared": {
+      "solarBenefits": [
+        { "title": "MAXIMUM EFFICIENCY", "body": "Save more from day one." },
+        { "title": "RELIABLE POWER", "body": "Guaranteed supply even during blackouts." },
+        { "title": "CLEAN ENERGY", "body": "Reduce your carbon footprint." },
+        { "title": "BOOSTS PROPERTY VALUE", "body": "Increases the value of your home." }
+      ],
+      "adminIncludes": [
+        "Fees and paperwork with the administration",
+        "Electrical installation certificate",
+        "2 energy performance certificates",
+        "Grant and subsidy applications"
+      ],
+      "solarExtras": [
+        "Battery from:",
+        "Extra solar panel from:",
+        "Grounding",
+        "EV charger",
+        "Smart solar home (automation) from:"
+      ],
+      "aerotermosExtras": [
+        "Anti-lime filter:",
+        "Thermostatic valve",
+        "Load-support tripod"
+      ],
+      "solarGuarantees": [
+        { "title": "Professional installation", "body": "We meet REBT and current photovoltaic regulations." },
+        { "title": "Full paperwork", "body": "We handle all administrative steps and documentation." }
+      ],
+      "mediaVivienda": {
+        "scope": "For an average home",
+        "body": "With this kit, an average home in south-eastern Spain only needs to buy between 2% and 10% of the electricity it uses through the year."
+      },
+      "domoticoBase": {
+        "summary": "Control your home from anywhere with our smart, easy-to-use system.",
+        "benefits": [
+          { "title": "FULL CONTROL", "body": "Manage lighting, blinds, climate and more from your phone." },
+          { "title": "SMART SECURITY", "body": "Smart lock and remote access for peace of mind." },
+          { "title": "SAVINGS AND EFFICIENCY", "body": "Automate and cut your home's energy use, integrated with your solar system." },
+          { "title": "CUSTOM SCENES", "body": "Create unique atmospheres with a single tap thanks to smart scenes." }
+        ],
+        "highlight": {
+          "title": "Home Assistant Green",
+          "body": "The smart, private hub that makes your home more efficient, safer and better connected."
+        },
+        "guarantees": [
+          { "title": "Compatible and scalable", "body": "Works with many devices and grows with your needs." },
+          { "title": "No monthly fees", "body": "No subscriptions, no hidden costs. Your system, always yours." },
+          { "title": "100% private", "body": "Your data and your home always under your control." }
+        ]
+      },
+      "aerotermoBase": {
+        "summary": "Complete hot water solution: efficiency, comfort and connectivity for your home.",
+        "benefits": [
+          { "title": "LARGE CAPACITY", "body": "100 litres of water." },
+          { "title": "i-Memory HYBRID TECHNOLOGY", "body": "Smart algorithm combining resistance heating and heat pump for maximum efficiency." },
+          { "title": "AUTOMATIC ANTI-LEGIONELLA", "body": "Prevents disease, scheduled sanitary safety." },
+          { "title": "Wi-Fi AND ARISTON NET APP", "body": "Full control. Schedule and measure your consumption." },
+          { "title": "MULTIPLE MODES", "body": "Green, Boost, Program 1&2, i-Memory." },
+          { "title": "FLEXIBLE INSTALLATION", "body": "Compact and versatile design, wall- or floor-mounted." }
+        ],
+        "benefits100": [
+          { "title": "LARGE CAPACITY", "body": "100 litres of water." },
+          { "title": "HEAT-PUMP TECHNOLOGY", "body": "Uses ambient air to heat water efficiently." },
+          { "title": "AUTOMATIC ANTI-LEGIONELLA", "body": "Prevents disease, scheduled sanitary safety." },
+          { "title": "Wi-Fi AND ARISTON NET APP", "body": "Full control. Schedule and measure your consumption." },
+          { "title": "MULTIPLE MODES", "body": "Green, Boost, Program 1&2, i-Memory." },
+          { "title": "FLEXIBLE INSTALLATION", "body": "Compact and versatile design, wall- or floor-mounted." }
+        ],
+        "highlight110": {
+          "title": "Energy efficiency",
+          "body": "The Ariston heat pump water heater offers class A efficiency with every benefit: heat pump, large capacity and integrated Wi-Fi."
+        },
+        "highlight100": {
+          "title": "Energy efficiency",
+          "body": "The Ariston heat pump water heater offers class A efficiency with every benefit: heat pump, large capacity, integrated Wi-Fi and quiet operation."
+        },
+        "guarantees": [
+          { "title": "Compatible", "body": "Seamlessly integrated with photovoltaic and/or home-automation systems." },
+          { "title": "No monthly fees", "body": "No subscriptions." }
+        ]
+      }
+    },
+    "byKit": {
+      "3kw-hibrido": {
+        "titleMain": "Hybrid solar kit",
+        "titlePower": "3 kW",
+        "summary": "Hoymiles 3 kW hybrid inverter, 4.5 kWp of panels and a DEYE 5.12 kWh battery.",
+        "productImageAlt": "Solar panels, Hoymiles 3 kW hybrid inverter and DEYE 5.12 kWh battery",
+        "components": [
+          { "title": "4.5 kWp", "body": "8-10 panels" },
+          { "title": "Hoymiles 3 kW hybrid inverter", "body": "Powerful, reliable and efficient" },
+          { "title": "DEYE 5.12 kWh battery", "body": "Safe, scalable storage" }
+        ],
+        "selfSufficiency": {
+          "percent": "95%",
+          "scope": "For a small home",
+          "body": "With this kit, a small low-consumption home barely needs to buy electricity from the grid, minimising its energy dependency all year."
+        },
+        "stats": [
+          { "label": "Estimated annual production", "value": "8,120 kWh" },
+          { "label": "Annual consumption coverage", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Installation",
+          "Hoymiles 3 kW hybrid inverter",
+          "8-10 panels",
+          "DEYE 5.12 kWh battery",
+          "Full Back-Up",
+          "Fees and paperwork with the administration",
+          "Electrical installation certificate (if applicable)",
+          "2 energy performance certificates",
+          "Grant and subsidy applications"
+        ],
+        "guarantees": [
+          { "title": "Professional installation", "body": "REBT-compliant." },
+          { "title": "Full paperwork", "body": "We handle every administrative step and document." }
+        ]
+      },
+      "6kw": {
+        "titleMain": "Solar kit",
+        "titlePower": "6 kW",
+        "summary": "DEYE 6 kW hybrid inverter, 6 kWp of panels and a DEYE 5.12 kWh battery.",
+        "productImageAlt": "AIKO 610W solar panels, DEYE 6 kW hybrid inverter and DEYE 5.12 kWh battery",
+        "components": [
+          { "title": "6 kWp", "body": "10-12 panels" },
+          { "title": "DEYE 6 kW hybrid inverter", "body": "Powerful, reliable and efficient" },
+          { "title": "DEYE 5.12 kWh battery", "body": "Safe, scalable storage" }
+        ],
+        "stats": [
+          { "label": "Estimated annual production", "value": "10,340 kWh" },
+          { "label": "Annual consumption coverage", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Installation",
+          "DEYE 6 kW hybrid inverter",
+          "10-12 panels",
+          "DEYE 5.12 kWh battery",
+          "Full Back-Up"
+        ]
+      },
+      "6kw-offgrid": {
+        "titleMain": "Solar kit",
+        "titlePower": "off-grid 6 kW",
+        "summary": "Felicity 6 kW off-grid inverter, 6 kWp of panels and a Felicity 16 kWh battery.",
+        "productImageAlt": "AIKO 610W solar panels, Felicity 6 kW off-grid inverter and Felicity 16 kWh battery",
+        "components": [
+          { "title": "6 kWp", "body": "10-12 panels" },
+          { "title": "Felicity 6 kW off-grid inverter", "body": "Powerful, reliable and efficient" },
+          { "title": "Felicity 16 kWh battery", "body": "Safe, scalable storage" }
+        ],
+        "selfSufficiency": {
+          "percent": "100%",
+          "scope": "For sites with no grid access",
+          "body": "With this kit the home is fully autonomous, delivering 100% clean, sustainable energy — ideal for locations without grid access."
+        },
+        "stats": [
+          { "label": "Estimated annual production", "value": "10,340 kWh" }
+        ],
+        "includes": [
+          "Installation",
+          "Felicity 6 kW off-grid inverter",
+          "10-12 panels",
+          "Felicity 16 kWh battery",
+          "Full Back-Up"
+        ]
+      },
+      "8kw-hibrido": {
+        "titleMain": "Hybrid solar kit",
+        "titlePower": "8 kW",
+        "summary": "DEYE 8 kW hybrid inverter, 9.7 kWp of panels and a Felicity 16 kWh battery.",
+        "productImageAlt": "AIKO 610W solar panels, DEYE 8 kW hybrid inverter and Felicity 16 kWh battery",
+        "components": [
+          { "title": "9.7 kWp", "body": "16-19 panels" },
+          { "title": "DEYE 8 kW hybrid inverter", "body": "Powerful, reliable and efficient" },
+          { "title": "Felicity 16 kWh battery", "body": "Safe, scalable storage" }
+        ],
+        "stats": [
+          { "label": "Estimated annual production", "value": "14,720 kWh" },
+          { "label": "Annual consumption coverage", "value": "90% - 98%" }
+        ],
+        "includes": [
+          "Installation",
+          "DEYE 8 kW hybrid inverter",
+          "16-19 panels",
+          "Felicity 16 kWh battery",
+          "Full Back-Up"
+        ]
+      },
+      "10kw-hibrido": {
+        "titleMain": "Hybrid solar kit",
+        "titlePower": "10 kW",
+        "summary": "DEYE 10 kW hybrid inverter, 12 kWp of panels and a Felicity 16 kWh battery.",
+        "productImageAlt": "AIKO 610W solar panels, DEYE 10 kW hybrid inverter and Felicity 16 kWh battery",
+        "components": [
+          { "title": "12 kWp", "body": "20-23 panels" },
+          { "title": "DEYE 10 kW hybrid inverter", "body": "Powerful, reliable and efficient" },
+          { "title": "Felicity 16 kWh battery", "body": "Safe, scalable storage" }
+        ],
+        "stats": [
+          { "label": "Estimated annual production", "value": "18,400 kWh" },
+          { "label": "Annual consumption coverage", "value": "92% - 98%" }
+        ],
+        "includes": [
+          "Installation",
+          "DEYE 10 kW hybrid inverter",
+          "20-23 panels",
+          "Felicity 16 kWh battery",
+          "Full Back-Up"
+        ]
+      },
+      "cargador": {
+        "titleMain": "EV",
+        "titlePower": "charger",
+        "summary": "7.4 kW single-phase / 11 kW three-phase. Fast, safe and smart charging.",
+        "productImageAlt": "AUTEL wall-mounted EV charger with cable, Type 2 connector and mobile app",
+        "benefits": [
+          { "title": "Fast, efficient charging", "body": "Adjustable power for faster, optimised charging." },
+          { "title": "Advanced safety", "body": "Protection against overload, short-circuit, leakage and overheating." },
+          { "title": "Smart control", "body": "Monitor and manage charging from your phone in real time." },
+          { "title": "Dynamic load control", "body": "Automatically adjusts charging power to your household consumption." },
+          { "title": "Rugged design", "body": "IP65-rated for indoor and outdoor use." }
+        ],
+        "includes": [
+          "Installation",
+          "Single-phase 7.4 kW or three-phase 11 kW charger",
+          "Type 2 connector",
+          "Fees and paperwork with the administration",
+          "Electrical installation certificate",
+          "Grant and subsidy applications"
+        ],
+        "highlight": {
+          "title": "Includes documentation and legalisation of the charging point",
+          "body": "We handle everything — you don't have to worry."
+        },
+        "guarantees": [
+          { "title": "Total safety", "body": "Protection against overload, short-circuit, leakage and overheating." },
+          { "title": "Wi-Fi / Bluetooth connectivity", "body": "Real-time control and monitoring from the AUTEL app." },
+          { "title": "Smart scheduling", "body": "Schedule charging during off-peak hours and optimise consumption." },
+          { "title": "Efficiency and sustainability", "body": "Make the most of your energy and cut your carbon footprint." }
+        ]
+      },
+      "domotico": {
+        "titleMain": "Home-automation",
+        "titlePower": "kit",
+        "productImageAlt": "Home Assistant Green hub in its box — the base of the home-automation kit",
+        "includes": [
+          "Installation",
+          "7 lighting modules",
+          "5 blind modules",
+          "2 climate controls",
+          "1 smart lock",
+          "3 smart plugs",
+          "1 garage door / pool / heat-pump control",
+          "5 custom scenes"
+        ]
+      },
+      "domotico-s": {
+        "titleMain": "Small",
+        "titlePower": "home-automation kit",
+        "productImageAlt": "Home Assistant Green hub in its box — the base of the small home-automation kit",
+        "includes": [
+          "Installation",
+          "5 lighting modules",
+          "3 blind modules",
+          "1 climate control",
+          "1 smart lock",
+          "2 smart plugs",
+          "3 custom scenes"
+        ]
+      },
+      "aerotermo-110": {
+        "titleMain": "Ariston heat pump",
+        "titlePower": "Nuos Plus S2 110L Wi-Fi",
+        "productImageAlt": "Ariston Nuos Plus S2 110L Wi-Fi heat pump water heater",
+        "includes": ["Installation", "Commissioning"]
+      },
+      "aerotermo-100": {
+        "titleMain": "Ariston heat pump",
+        "titlePower": "Lydos Hybrid Wi-Fi 100L",
+        "productImageAlt": "Ariston Lydos Hybrid Wi-Fi 100L heat pump water heater",
+        "includes": ["Installation", "Commissioning"]
+      }
+    }
+  },
+  "kits": {
+    "3kw-hibrido": "3 kW hybrid solar kit",
+    "6kw": "6 kW solar kit",
+    "6kw-offgrid": "6 kW off-grid solar kit",
+    "8kw-hibrido": "8 kW hybrid solar kit",
+    "10kw-hibrido": "10 kW hybrid solar kit",
+    "cargador": "EV charger",
+    "domotico": "Home-automation kit",
+    "domotico-s": "Small home-automation kit",
+    "aerotermo-110": "Ariston Nuos Plus S2 110L Wi-Fi heat pump",
+    "aerotermo-100": "Ariston Hybrid 100L Wi-Fi heat pump"
+  }
+}
