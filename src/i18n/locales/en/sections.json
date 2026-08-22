@@ -80,13 +80,16 @@
   "faq": {
     "eyebrow": "Frequently asked questions",
     "title": "Everything you need to know",
-    "subtitle": "About solar panels, grants, batteries, chargers, electrical certificates and home automation in Alicante and Murcia."
+    "subtitle": "About solar panels, grants, batteries, chargers, electrical certificates and home automation in Alicante and Murcia.",
+    "spanStart": "*If you want to learn much more about this topic, we invite you to visit our ",
+    "blogLink": "blog",
+    "spanEnd": " section, where you will find plenty of material to read and better understand energy efficiency and self-consumption."
   },
   "contact": {
     "eyebrow": "Contact",
     "titleBefore": "Request your ",
     "titleHighlight": "free quote",
-    "subtitle": "No strings attached. We'll get back to you in under 24 hours with a study tailored to your home or community in Alicante, Murcia or Vega Baja.",
+    "subtitle": "No strings attached. We'll get back to you for a study tailored to your home or community in Alicante, Murcia or Vega Baja.",
     "areasTitle": "Service areas",
     "areasBody": "Alicante province · Murcia province · Vega Baja del Segura · Orihuela · Torrevieja · Elche · Benidorm · Altea · Dénia · Cartagena · Lorca · Mazarrón",
     "hoursLine": "Mon–Fri 8:30–18:30 · Sat 9:00–14:00",

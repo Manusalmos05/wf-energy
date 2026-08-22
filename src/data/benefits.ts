@@ -1,7 +1,7 @@
 import { TrendingDown, Clock, CreditCard, Award, Wrench, HeadphonesIcon } from "lucide-react";
 import { translateList, type Lang } from "../i18n/index.ts";
 
-const ICONS = [TrendingDown, Clock, CreditCard, Award, Wrench, HeadphonesIcon];
+const ICONS = [TrendingDown, Clock, CreditCard, Award, HeadphonesIcon];
 
 export interface Benefit {
   icon: (typeof ICONS)[number];

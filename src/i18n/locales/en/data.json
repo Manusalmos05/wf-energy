@@ -36,7 +36,6 @@
     "Fast installation",
     "Grants available",
     "Top-brand equipment",
-    "Maintenance plans",
     "Personalised advice"
   ],
   "steps": [
@@ -48,15 +47,30 @@
     { "title": "Commissioning", "body": "We turn your system on, check performance and hand over the corresponding installation warranty." }
   ],
   "faqs": [
-    { "q": "What grants are there for solar panels in Alicante and Murcia?", "a": "Today you can access the MOVES III programme (up to €1,300 per charging point), IDAE self-consumption aid and grants from the Valencian Community and Murcia Region governments. In many cases the state tax deduction reaches 20% on income tax (IRPF). We advise you at no cost on every aid applicable to your case." },
-    { "q": "How long does a solar panel installation take?", "a": "A standard residential installation (6–10 panels) is completed in 1–2 working days. Housing communities or industrial installations can take 3 to 5 days. The subsequent administrative paperwork takes 4 to 8 weeks." },
+    { "q": "What grants are there for solar panels in Alicante and Murcia?", "a": "In Alicante and Murcia, there are two main tax incentives: Personal Income Tax (IRPF) deduction: You can deduct between 40% and 60% of the installation cost from your tax bill by demonstrating an improvement in the property's energy efficiency. -Property Tax (IBI) relief: Discounts of up to 50% on Property Tax for a period of 1 to 5 years, depending on the local by-law. (The final rates for Property Tax and Construction Tax vary depending on the municipality of residence)." },
+
+    { "q": "How long does a solar panel installation take?", "a": "The physical installation in a detached house takes just 1 or 2 days. However, the entire process usually takes between 1 and 4 months due to administrative procedures: -Preliminary procedures (2 to 6 weeks): Technical assessment, project design and licences or declarations of compliance with the local council. -Technical installation (1 to 2 days): Fitting of the structure, panels, inverter and electrical connections. -Legalisation and feed-in of surplus energy (1 to 4 weeks): Once the work is complete and the Installation Certificate (CIE) has been registered with the Autonomous Community, the distribution company is notified. Following this notification, it takes the distribution and supply companies between 2 and 6 weeks to validate the details and incorporate the surplus energy compensation into your contract." },
+
     { "q": "Do I need a solar battery?", "a": "It depends on your consumption profile. If you consume a lot at night or want full grid independence, a battery maximises savings. If your consumption is mostly during the day, panels alone already deliver an excellent return. We analyse it for free." },
-    { "q": "How much can I save with solar energy?", "a": "With a well-sized installation, the average saving in Alicante and Murcia ranges from 60% to 80% of the annual electricity bill. With a battery you can reach 90–95%. Typical payback is 5–7 years." },
+
+    { "q": "How much can I save with solar energy?", "a": "With a well-sized installation, the average saving in Alicante and Murcia ranges from 60% to 80% of the annual electricity bill. With a battery you can reach 90–95%. Typical payback is 5–7 years. But if we take tax benefits into account, we can reduce this to 2–4 years" },
+
     { "q": "What happens if I produce more energy than I consume?", "a": "The surplus is fed into the grid and you get financial compensation on your bill (self-consumption with surplus). You can also store it in a battery to use it at night." },
     { "q": "Can I install an EV charger together with solar power?", "a": "Yes, it's one of the most profitable combinations. You can charge your electric vehicle directly with the energy your panels produce, reducing charging cost to virtually zero during the sunniest months." },
-    { "q": "Do I need council permission to install solar panels?", "a": "For single-family homes, notifying the DSO is usually enough. Listed buildings or communities may require additional permits. We handle every paperwork step for you." },
-    { "q": "What maintenance do solar panels need?", "a": "Photovoltaic panels need minimal maintenance: an annual cleaning and a connection check. We offer maintenance plans starting at €79/year with performance guarantee." },
-    { "q": "Is home automation compatible with any solar installation?", "a": "Our home-automation systems integrate with any solar installation we build. We control lighting, climate, blinds, security and consumption from a single iOS and Android compatible app." }
+
+    { "q": "Do I need council permission to install solar panels?", "a": "Yes, but in most local authorities a prior building permit is no longer required; instead, a Declaration of Responsibility is needed: -Declaration of Responsibility (95 per cent of cases): The technical report is submitted and the fees paid at the town hall. Once registered, installation can begin immediately without waiting for approval. -Traditional building permit: This is required only for listed buildings (BIC), historic centres or special non-developable land, where a municipal decision must be awaited." },
+
+    { "q": "What maintenance do solar panels need?", "a": "Photovoltaic panels need minimal maintenance: an annual cleaning and a connection check." },
+
+    { "q": "Is home automation compatible with any solar installation?", "a": "Our home-automation systems integrate with any solar installation we build. We control lighting, climate, blinds, security and consumption from a single iOS and Android compatible app." },
+
+    {"q":"Can I install solar panels on rural land?", "a":"Yes, it is possible, but the procedure varies depending on where they are installed and the intended use of the energy: - On the roof of a legally built house or industrial building: If it is for self-consumption and on an existing roof, the process is quick and very similar to that for urban land. - On the land itself (ground): You will need to check local planning regulations. If the land is subject to special protection (environmental or forestry), it is usually restricted. - Large solar farms: These require more complex projects and specific regional authorisations (such as a Declaration of Community Interest or environmental impact reports)."},
+    
+    {"q":"Do I need permission from the residents association to install a charging point?", "a":"No. Article 17.5 of the Horizontal Property Act states that you only need to give written notice to the chairperson or the administrator in advance. The residents association does not need to vote on or approve the work at a meeting, provided that you bear the cost and the installation complies with the regulations"},
+    
+    {"q":"Will the fuses in my home blow if I charge my car whilst using electrical appliances?", "a":"No, provided the installation has dynamic power control (load balancing). This sensor measures your home's energy consumption in real time and automatically adjusts the power supplied to the vehicle, reducing the charge when you switch on the oven or the air conditioning and increasing it at night"},
+    
+    {"q":"What grants and tax reliefs are available for installing an electric car charger?", "a":"Income tax deduction: You can claim a deduction of 15 per cent of the total cost of the installation on your tax return (up to a maximum annual amount of €4,000)"}
   ],
   "projects": [
     { "label": "Villa — Torrevieja" },

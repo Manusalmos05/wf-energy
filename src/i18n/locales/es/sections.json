@@ -80,13 +80,17 @@
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "title": "Todo lo que necesitas saber",
-    "subtitle": "Sobre placas solares, subvenciones, baterías, cargadores, boletines eléctricos y domótica en Alicante y Murcia."
+    "subtitle": "Sobre placas solares, subvenciones, baterías, cargadores, boletines eléctricos y domótica en Alicante y Murcia.",
+    "spanStart": "*Si quieres conocer mucho más sobre este mundillo, te invitamos a ir a nuestra sección de ",
+    "blogLink": "blogs",
+    "spanEnd": ", allí encontrarás mucho material para leer y entender mejor el por qué de la eficiencia energética y autoconsumo."
+    
   },
   "contact": {
     "eyebrow": "Contacto",
     "titleBefore": "Solicita tu ",
     "titleHighlight": "presupuesto gratuito",
-    "subtitle": "Sin compromiso. Te contactamos en menos de 24 horas con un estudio personalizado para tu vivienda o comunidad en Alicante, Murcia o la Vega Baja.",
+    "subtitle": "Sin compromiso. Te contactamos para un estudio personalizado para tu vivienda o comunidad en Alicante, Murcia o la Vega Baja.",
     "areasTitle": "Zonas de trabajo",
     "areasBody": "Provincia de Alicante · Provincia de Murcia · Vega Baja del Segura · Orihuela · Torrevieja · Elche · Benidorm · Altea · Dénia · Cartagena · Lorca · Mazarrón",
     "hoursLine": "Lun–Vie 8:30–18:30 · Sáb 9:00–14:00",

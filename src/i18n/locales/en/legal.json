@@ -10,18 +10,18 @@
         "title": "1. Owner identification",
         "intro": "In compliance with article 10 of Spanish Law 34/2002 of 11 July, on Information Society Services and Electronic Commerce (LSSI-CE), we hereby state that the owner of this website is:",
         "items": [
-          "Owner: [LEGAL NAME]",
+          "Owner: Mateo Sánchez Alzate",
           "Tax ID (NIF): [NIF]",
-          "Registered address: [ADDRESS FOR NOTIFICATIONS]",
-          "Trade name: {brand}",
-          "Email: {email}",
-          "Phone: {phone}",
-          "Website: {site}"
+          "Registered address: Bigastro",
+          "Trade name: White Fox Energy",
+          "Email: info@wf-energy.com",
+          "Phone: 743098335",
+          "Website: wf-energy.com"
         ]
       },
       "purpose": {
         "title": "2. Purpose",
-        "body": "The purpose of this site is to present the photovoltaic solar, battery, EV charger and home-automation installation services that {brand} provides across Alicante, Murcia and Vega Baja del Segura, and to make it easy to request studies and quotes with no strings attached."
+        "body": "The purpose of this site is to present the photovoltaic solar, battery, EV charger and home-automation installation services that White Fox Energy provides across Alicante, Murcia and Vega Baja del Segura, and to make it easy to request studies and quotes with no strings attached."
       },
       "terms": {
         "title": "3. Terms of use",
@@ -30,11 +30,11 @@
       },
       "ip": {
         "title": "4. Intellectual and industrial property",
-        "body": "Unless otherwise indicated, the content of this site (text, images, logos, design and code) belongs to {brand} or its licensors, and is protected by intellectual and industrial property law. Third-party trademarks mentioned (panel, inverter, battery or other equipment manufacturers) belong to their respective owners and are used for descriptive purposes only."
+        "body": "Unless otherwise indicated, the content of this site (text, images, logos, design and code) belongs to White Fox Energy or its licensors, and is protected by intellectual and industrial property law. Third-party trademarks mentioned (panel, inverter, battery or other equipment manufacturers) belong to their respective owners and are used for descriptive purposes only."
       },
       "liability": {
         "title": "5. Liability",
-        "body": "{brand} is not liable for damages arising from improper use of the site nor for the contents of third-party sites linked from these pages. We do our best to keep the information up to date but do not guarantee it is error-free; we appreciate any notice sent to {email}."
+        "body": "{brand} is not liable for damages arising from improper use of the site nor for the contents of third-party sites linked from these pages. We do our best to keep the information up to date but do not guarantee it is error-free; we appreciate any notice sent to info@wf-energy.com."
       },
       "law": {
         "title": "6. Applicable law",
@@ -47,7 +47,7 @@
     "sections": {
       "controller": {
         "title": "1. Data controller",
-        "body": "The controller of personal data collected on this site is [LEGAL NAME], tax ID [NIF], with registered office at [ADDRESS], operating under the trade name {brand}. Privacy contact: {email}."
+        "body": "The controller of personal data collected on this site is  White Fox Energy, tax ID [NIF], with registered office at Bigastro, operating under the trade name {brand}. Privacy contact: info@wf-energy.com."
       },
       "data": {
         "title": "2. What data we collect",
@@ -71,7 +71,7 @@
       },
       "rights": {
         "title": "6. Your rights",
-        "body": "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to {email}, indicating the right you're exercising and attaching proof of identity. You also have the right to lodge a complaint with the Spanish Data Protection Agency (aepd.es)."
+        "body": "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to info@wf-energy.com, indicating the right you're exercising and attaching proof of identity. You also have the right to lodge a complaint with the Spanish Data Protection Agency (aepd.es)."
       }
     }
   },
@@ -120,7 +120,7 @@
       },
       "barrier": {
         "title": "Ran into a barrier?",
-        "body": "If anything on this site is hard to use or inaccessible, write to us at {email} describing the issue and the page where it occurs. We commit to reviewing and fixing it as soon as possible."
+        "body": "If anything on this site is hard to use or inaccessible, write to us at info@wf-energy.com describing the issue and the page where it occurs. We commit to reviewing and fixing it as soon as possible."
       }
     }
   }

@@ -10,18 +10,18 @@
         "title": "1. Identificación del titular",
         "intro": "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el titular de este sitio web es:",
         "items": [
-          "Titular: [RAZÓN SOCIAL O NOMBRE DEL TITULAR]",
+          "Titular: Mateo Sánchez Alzate",
           "NIF: [NIF]",
-          "Domicilio: [DOMICILIO A EFECTOS DE NOTIFICACIONES]",
-          "Nombre comercial: {brand}",
-          "Correo electrónico: {email}",
-          "Teléfono: {phone}",
-          "Sitio web: {site}"
+          "Domicilio: Bigastro",
+          "Nombre comercial: White Fox Energy",
+          "Correo electrónico: info@wf-energy.com",
+          "Teléfono: 743098335",
+          "Sitio web: wf-energy.com"
         ]
       },
       "purpose": {
         "title": "2. Objeto",
-        "body": "Este sitio web tiene por objeto dar a conocer los servicios de instalación de energía solar fotovoltaica, baterías, cargadores de vehículo eléctrico y domótica que {brand} presta en Alicante, Murcia y la Vega Baja del Segura, así como facilitar la solicitud de estudios y presupuestos sin compromiso."
+        "body": "Este sitio web tiene por objeto dar a conocer los servicios de instalación de energía solar fotovoltaica, baterías, cargadores de vehículo eléctrico y domótica que White Fox Energy presta en Alicante, Murcia y la Vega Baja del Segura, así como facilitar la solicitud de estudios y presupuestos sin compromiso."
       },
       "terms": {
         "title": "3. Condiciones de uso",
@@ -34,7 +34,7 @@
       },
       "liability": {
         "title": "5. Responsabilidad",
-        "body": "{brand} no se hace responsable de los daños derivados del uso incorrecto del sitio web ni de los contenidos de sitios de terceros enlazados desde estas páginas. Se procura que la información esté actualizada, pero no se garantiza la ausencia de errores; agradecemos cualquier aviso a {email}."
+        "body": "{brand} no se hace responsable de los daños derivados del uso incorrecto del sitio web ni de los contenidos de sitios de terceros enlazados desde estas páginas. Se procura que la información esté actualizada, pero no se garantiza la ausencia de errores; agradecemos cualquier aviso a info@wf-energy.com."
       },
       "law": {
         "title": "6. Legislación aplicable",
@@ -47,7 +47,7 @@
     "sections": {
       "controller": {
         "title": "1. Responsable del tratamiento",
-        "body": "El responsable del tratamiento de los datos personales recogidos en este sitio web es [RAZÓN SOCIAL O NOMBRE DEL TITULAR], NIF [NIF], con domicilio en [DOMICILIO], operando bajo el nombre comercial {brand}. Contacto para cuestiones de privacidad: {email}."
+        "body": "El responsable del tratamiento de los datos personales recogidos en este sitio web es White Fox Energy, NIF [NIF], con domicilio en Bigastro, operando bajo el nombre comercial White Fox Energy. Contacto para cuestiones de privacidad: info@wf-energy.com."
       },
       "data": {
         "title": "2. Qué datos recogemos",

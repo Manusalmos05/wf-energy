@@ -1,8 +1,13 @@
 import { getFaqs } from "../data/faqs.ts";
 import FaqItem from "../app/components/FaqItem.tsx";
 import { useLanguage } from "../i18n/provider.tsx";
+import { useState } from "react";
+
 
 export default function FaqSection() {
+  const [openIndex, setOpenIndex]= useState<number | null>(null);
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index)};
   const { t, lang } = useLanguage();
   const faqs = getFaqs(lang);
   return (
@@ -15,11 +20,28 @@ export default function FaqSection() {
         </div>
 
         <div className="bg-white rounded-2xl border border-border px-6 divide-y divide-border">
-          {faqs.map((faq) => (
-            <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+          {faqs.map((faq,index) => (
+            <FaqItem key={index} q={faq.q} a={faq.a} 
+            isOpen={openIndex === index}
+            onToggle={() => handleToggle(index)}
+
+            />
           ))}
         </div>
+        <div id="promo_blog" className="py-7 bg-secondary">
+          <em>
+            {t("sections.faq.spanStart")}
+            <a
+              href="/blog"
+              className="underline font-semibold text-accent">
+              {t("sections.faq.blogLink")}
+            </a>
+            {t("sections.faq.spanEnd")}
+          </em>
+        </div>
       </div>
+      
     </section>
   );
 }
+
