@@ -131,7 +131,7 @@ const ARTICLES_ES: BlogArticle[] = [
   },
   {
     slug: "el-mito-del-60-de-descuento-en-el-irpf",
-    title: 'El mito del "60% de descuento" en el IRPF',
+    title: 'El mito del "60% de descuento" en el IRPF con placas solares',
     excerpt: "Destripamos una instalación de 11.500 € llave en mano en Alicante: qué te llevas, cómo funcionan de verdad las deducciones estatal y autonómica, quién puede aprovecharlas y cómo se compara con un depósito bancario.",
     date: "2026-07-31",
     tags: ["fiscalidad", "autoconsumo"],
@@ -227,7 +227,7 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
     tags: ["energy efficiency", "insulation", "saving"],
   },
   "el-mito-del-60-de-descuento-en-el-irpf": {
-    title: 'The myth of the "60% income-tax discount"',
+    title: 'The myth of the "60% income-tax discount whit solar panels"',
     excerpt: "We unpack an €11,500 turn-key installation in Alicante: what you actually get, how the state and regional tax deductions really work, who can use them and how it compares against a bank deposit.",
     tags: ["taxation", "self-consumption"],
   },
