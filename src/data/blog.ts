@@ -15,7 +15,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "eficiencia-energetica-residencial-levante",
     title: "Eficiencia Energética Residencial en el Levante",
-    excerpt: "Análisis técnico de eficiencia energética en Alicante y Murcia: estrategias, costes reales, impacto en factura y amortización.",
+    excerpt: "Te ayudamos a entender con cifras las estrategias, costes reales y amortización de las estrategias más importantes de eficiencia energética. ",
     date: "2026-06-15",
     tags: ["eficiencia energética", "autoconsumo", "aislamiento"],
     cover: "images/blog/eficiencia-energetica-residencial-levante/portada.webp",
@@ -24,7 +24,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo",
     title: "Climatización en Alicante y Murcia: por qué tiramos dinero en verano y cómo solucionarlo",
-    excerpt: "Descubre dónde se pierde la energía en la climatización de tu vivienda y qué opción de inversión te ayuda a ahorrar real en Alicante y Murcia.",
+    excerpt: "Descubre dónde se pierde la energía en la climatización de tu vivienda y cuándo realmente se justifica un cambio de equipo.",
     date: "2026-08-12",
     tags: ["climatización", "ahorro energético"],
     cover: "images/blog/climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo/portada.webp",
@@ -33,7 +33,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda",
     title: "¿Cuál es la mejor forma de producir agua caliente en una vivienda?",
-    excerpt: "Comparativa entre termo eléctrico, calentador de butano, aerotermo híbrido y aerotermo de bomba de calor para ahorrar energía y mejorar el confort.",
+    excerpt: "Comparativa entre las tecnologías más usadas para generar el agua caliente de los hogares, conoce cómo ahorrar energía y mejorar el confort.",
     date: "2026-08-12",
     tags: ["acs", "aerotermia", "ahorro energético"],
     cover: "images/blog/cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda/portada.webp",
@@ -51,7 +51,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica",
     title: "El héroe invisible del ACS: la válvula mezcladora termostática",
-    excerpt: "Descubre por qué una válvula mezcladora termostática mejora la seguridad, aumenta la autonomía del acumulador y ahorra agua y energía en tu instalación de ACS.",
+    excerpt: "Descubre por qué una válvula mezcladora termostática mejora el sistema de ACS, ahorrando agua y energía en tu instalación.",
     date: "2026-08-12",
     tags: ["acs", "ahorro energético", "fontanería"],
     cover: "images/blog/el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica/portada.webp",
@@ -60,7 +60,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "coche-electrico-consumo-real-mantenimiento-ahorro",
     title: "Coche Eléctrico: Consumo Real, Mantenimiento y Ahorro",
-    excerpt: "Análisis técnico y financiero del Coste Total de Propiedad (TCO) de un coche eléctrico frente a uno de gasolina: consumo real en red doméstica, mantenimiento, impuestos y amortización del Wallbox.",
+    excerpt: "Análisis técnico y financiero de un coche eléctrico frente a uno de combustión: consumo real, mantenimiento, impuestos y mucho más.",
     date: "2026-08-12",
     tags: ["movilidad eléctrica"],
     cover: "images/blog/coche-electrico-consumo-real-mantenimiento-ahorro/portada.webp",
@@ -69,7 +69,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cambio-ventanas-aislamiento-cajon-persianas",
     title: "Cambio de Ventanas y Aislamiento de Persianas: Soluciones Técnicas, Precios y Ahorro Real",
-    excerpt: "Análisis detallado sobre cómo optimizar las ventanas y el cajón de persiana en climas mediterráneos como Murcia y Alicante. Comparativa PVC vs. Aluminio RPT, vidrios de Control Solar y cálculo de retorno de inversión.",
+    excerpt: "Análisis de eficiencia para ventanas y persianas en el Mediterráneo: comparativa técnica y retorno económico.",
     date: "2026-08-13",
     tags: ["eficiencia energética", "ventanas", "aislamiento"],
     cover: "images/blog/cambio-ventanas-aislamiento-cajon-persianas/portada.webp",
@@ -87,7 +87,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "soluciones-aislamiento-termico-tejados-cubiertas",
     title: "Aislar el Tejado o Cubierta: Soluciones Técnicas y Ahorro Real",
-    excerpt: "El tejado concentra hasta el 30% de las pérdidas térmicas de una vivienda. Comparamos numéricamente el retorno de inversión (payback) de soplado, insuflado, trasdosado, cubierta invertida y SATE.",
+    excerpt: "El tejado puede concentrar hasta el 30% de las pérdidas térmicas de una vivienda. Comparamos diferentes alternativas  para solucionar este problema.",
     date: "2026-08-17",
     tags: ["aislamiento", "tejados", "eficiencia energética"],
     cover: "images/blog/soluciones-aislamiento-termico-tejados-cubiertas/portada.webp",
@@ -96,7 +96,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante",
     title: "Cargar tu Coche Eléctrico con Fotovoltaica vs Red",
-    excerpt: "Análisis comparativo real entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico WFEnergy (9,7 kWp + 16 kWh + Batería Virtual). Descubre el ahorro real de ~700 €/año",
+    excerpt: "AAnálisis comparativo entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico. Descubriendo el ahorro real.",
     date: "2026-08-14",
     tags: ["movilidad eléctrica", "autoconsumo"],
     cover: "images/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/portada.webp",
@@ -105,7 +105,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "uso-agua-estrategia-bioclimatica-fuentes-interior",
     title: "Uso del agua como estrategia bioclimática en el hogar",
-    excerpt: "Usa fuentes de agua interiores y agua de condensados para climatización pasiva, regulación de humedad y calidad del aire en Alicante y Murcia.",
+    excerpt: "Uso de agua de condensados en fuentes interiores para climatización pasiva, regulación de humedad y calidad del aire. ¡Acierto bioclimático!.",
     date: "2026-08-14",
     tags: ["eficiencia energética", "ahorro energético"],
     cover: "images/blog/uso-agua-estrategia-bioclimatica-fuentes-interior/portada.webp",
@@ -114,7 +114,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "fachadas-vegetales-aislamiento-natural-calor",
     title: "Fachadas Vegetales: Aislamiento Natural para tu Vivienda",
-    excerpt: "Descubre cómo las fachadas vegetales reducen la temperatura exterior y el gasto en aire acondicionado en climas cálidos como Murcia y Alicante.",
+    excerpt: "Descubre cómo las fachadas vegetales reducen la temperatura exterior y el gasto eléctrico en climas cálidos de levante y convierte tu hogar en uno de película.",
     date: "2026-08-14",
     tags: ["eficiencia energética", "arquitectura bioclimática", "aislamiento"],
     cover: "images/blog/fachadas-vegetales-aislamiento-natural-calor/portada.webp",
@@ -123,7 +123,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "ventajas-aislar-vivienda-sate-insuflado-trasdosado",
     title: "Aislar una Vivienda Unifamiliar: SATE, Insuflado o Trasdosado",
-    excerpt: "Reduce hasta 450 €/año en el recibo de la luz aislando tu chalet. Comparamos SATE, insuflado y trasdosado con datos reales en Alicante y Murcia.",
+    excerpt: "Reduce hasta 450 €/año en el recibo de la luz aislando tu hogar. Comparamos las diferentes alternativas con datos reales para que tomes la mejor decisión.",
     date: "2026-08-13",
     tags: ["eficiencia energética", "aislamiento", "ahorro"],
     cover: "images/blog/ventajas-aislar-vivienda-sate-insuflado-trasdosado/portada.webp",
@@ -132,7 +132,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "el-mito-del-60-de-descuento-en-el-irpf",
     title: 'El mito del "60% de descuento" en el IRPF con placas solares',
-    excerpt: "Destripamos una instalación de 11.500 € llave en mano en Alicante: qué te llevas, cómo funcionan de verdad las deducciones estatal y autonómica, quién puede aprovecharlas y cómo se compara con un depósito bancario.",
+    excerpt: "Hablemos un poco de las subvenciones por ahorro energético, “un hueso duro de roer” que se le atraganta a muchos profesionales del sector.",
     date: "2026-07-31",
     tags: ["fiscalidad", "autoconsumo"],
     cover: "images/blog/el-mito-del-60-de-descuento-en-el-irpf/portada.webp",
@@ -141,7 +141,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cuantas-placas-solares-necesita-tu-casa",
     title: "¿Cuántas placas solares necesita tu casa? La fórmula, paso a paso",
-    excerpt: "Aprende a dimensionar tu instalación fotovoltaica a partir de tu factura: consumo diario, horas de sol pico y una fórmula sencilla con ejemplo real en Murcia.",
+    excerpt: "AAprende a dimensionar tu instalación fotovoltaica a partir de tu factura, horas de sol pico y una fórmula sencilla con un ejemplo real en Murcia.",
     date: "2026-07-28",
     tags: ["placas solares", "autoconsumo", "guías"],
     cover: "images/blog/cuantas-placas-solares-necesitas/portada.webp",
@@ -150,7 +150,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "baterias-solares-como-elegir-capacidad",
     title: "Baterías solares: cómo elegir la capacidad correcta",
-    excerpt: "kWh nominales vs. útiles, profundidad de descarga, litio frente a plomo-ácido y la fórmula para calcular cuánta batería necesitas de verdad.",
+    excerpt: "kWh nominales vs. útiles, profundidad de descarga, litio y la fórmula para calcular cuánta batería necesitas de verdad.",
     date: "2026-07-21",
     tags: ["autoconsumo", "guías"],
     cover: "images/blog/baterias-solares-como-elegir-capacidad/portada.webp",
@@ -163,17 +163,17 @@ interface Translation { title: string; excerpt: string; tags: string[] }
 const EN_TRANSLATIONS: Record<string, Translation> = {
   "eficiencia-energetica-residencial-levante": {
     title: "Residential Energy Efficiency in the Levante",
-    excerpt: "Technical analysis of residential energy efficiency in Alicante and Murcia: strategies, real costs, impact on the bill and payback.",
+    excerpt: "We help you understand, through figures, the strategies, actual costs and payback periods of the most important energy efficiency measures.",
     tags: ["energy efficiency", "self-consumption", "insulation"],
   },
   "climatizacion-en-alicante-y-murcia-por-que-tiramos-dinero-en-verano-y-como-solucionarlo": {
     title: "Climate control in Alicante and Murcia: why we waste money in summer and how to fix it",
-    excerpt: "Find out where energy is lost in your home's climate control and which investment option really helps you save in Alicante and Murcia.",
+    excerpt: "Find out where energy is being wasted in your home’s heating and cooling system, and when it really is worth replacing your equipment.",
     tags: ["climate control", "energy saving"],
   },
   "cual-es-la-mejor-forma-de-producir-agua-caliente-en-una-vivienda": {
     title: "What is the best way to produce hot water in a home?",
-    excerpt: "Comparison of electric tank, gas heater, hybrid heat pump water heater and heat pump water heater to save energy and improve comfort.",
+    excerpt: "A comparison of the most commonly used technologies for domestic hot water; find out how to save energy and improve comfort.",
     tags: ["hot water", "heat pump", "energy saving"],
   },
   "como-convertir-una-instalacion-fotovoltaica-en-una-vivienda-inteligente": {
@@ -183,17 +183,17 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
   },
   "el-heroe-invisible-del-acs-la-valvula-mezcladora-termostatica": {
     title: "The invisible hero of hot water: the thermostatic mixing valve",
-    excerpt: "Find out why a thermostatic mixing valve improves safety, extends tank autonomy and saves water and energy in your hot-water installation.",
+    excerpt: "Find out why a thermostatic mixing valve improves your DHW system, saving water and energy in your installation.",
     tags: ["hot water", "energy saving", "plumbing"],
   },
   "coche-electrico-consumo-real-mantenimiento-ahorro": {
-    title: "Electric car: real consumption, maintenance and savings",
+    title: "A technical and financial comparison of an electric car versus a petrol car: real-world fuel consumption, maintenance, taxes and much more.",
     excerpt: "Technical and financial analysis of Total Cost of Ownership (TCO) of an electric car vs. a petrol one: real home-grid consumption, maintenance, taxes and Wallbox payback.",
     tags: ["e-mobility"],
   },
   "cambio-ventanas-aislamiento-cajon-persianas": {
     title: "Window replacement and roller-blind box insulation: technical solutions, prices and real savings",
-    excerpt: "Detailed analysis of how to optimise windows and the roller-blind box in Mediterranean climates like Murcia and Alicante. PVC vs. thermally broken aluminium, solar-control glass and payback calculation.",
+    excerpt: "Efficiency analysis of windows and shutters in the Mediterranean: technical comparison and economic return.",
     tags: ["energy efficiency", "windows", "insulation"],
   },
   "aislamiento-térmico-de-tuberías-de-PPR": {
@@ -203,42 +203,42 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
   },
   "soluciones-aislamiento-termico-tejados-cubiertas": {
     title: "Insulating the roof: technical solutions and real savings",
-    excerpt: "The roof accounts for up to 30% of a home's thermal losses. We compare numerically the payback of blown-in, insufflated, dry-lining, inverted roof and external thermal insulation.",
+    excerpt: "The roof can account for up to 30 per cent of a home’s heat loss. We compare different options for tackling this problem.",
     tags: ["insulation", "roofs", "energy efficiency"],
   },
   "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante": {
     title: "Charging your EV with photovoltaic vs. grid",
-    excerpt: "Real comparison between charging your electric vehicle from the grid alone vs. a WFEnergy photovoltaic system (9.7 kWp + 16 kWh + Virtual Battery). Discover real savings of ~€700/year.",
+    excerpt: "A comparative analysis of charging your electric vehicle solely from the mains or via a solar power system. Discovering the real savings.",
     tags: ["e-mobility", "self-consumption"],
   },
   "uso-agua-estrategia-bioclimatica-fuentes-interior": {
     title: "Using water as a bioclimatic strategy at home",
-    excerpt: "Use indoor water fountains and condensate water for passive climate control, humidity regulation and air quality in Alicante and Murcia.",
+    excerpt: "Using condensate water in indoor fountains for passive climate control, humidity regulation and air quality. A bioclimatic success!",
     tags: ["energy efficiency", "energy saving"],
   },
   "fachadas-vegetales-aislamiento-natural-calor": {
-    title: "Green façades: natural insulation for your home",
+    title: "Discover how green facades reduce the outside temperature and electricity consumption in hot, sunny climates, and turn your home into something straight out of a film.",
     excerpt: "Discover how green façades reduce outdoor temperature and air-conditioning costs in warm climates like Murcia and Alicante.",
     tags: ["energy efficiency", "bioclimatic architecture", "insulation"],
   },
   "ventajas-aislar-vivienda-sate-insuflado-trasdosado": {
     title: "Insulating a single-family home: SATE, insufflated or dry-lining",
-    excerpt: "Cut up to €450/year off your electricity bill by insulating your villa. We compare SATE, insufflated and dry-lining with real data in Alicante and Murcia.",
+    excerpt: "Save up to €450 a year on your electricity bill by insulating your home. We compare the different options using real data to help you make the best decision.",
     tags: ["energy efficiency", "insulation", "saving"],
   },
   "el-mito-del-60-de-descuento-en-el-irpf": {
     title: 'The myth of the "60% income-tax discount whit solar panels"',
-    excerpt: "We unpack an €11,500 turn-key installation in Alicante: what you actually get, how the state and regional tax deductions really work, who can use them and how it compares against a bank deposit.",
+    excerpt: "Let’s talk a little about energy-saving grants – ‘a tough nut to crack’ that many professionals in the sector find difficult to get to grips with.",
     tags: ["taxation", "self-consumption"],
   },
   "cuantas-placas-solares-necesita-tu-casa": {
     title: "How many solar panels does your home need? The step-by-step formula",
-    excerpt: "Learn how to size your PV installation from your bill: daily consumption, peak sun hours and a simple formula with a real example in Murcia.",
+    excerpt: "Learn how to work out the size of your solar panel system based on your electricity bill, peak sunshine hours and a simple formula, using a real-life example from Murcia.",
     tags: ["solar panels", "self-consumption", "guides"],
   },
   "baterias-solares-como-elegir-capacidad": {
     title: "Solar batteries: how to pick the right capacity",
-    excerpt: "Nominal vs. useful kWh, depth of discharge, lithium vs. lead-acid and the formula to work out how much battery you really need.",
+    excerpt: "Nominal vs. usable kWh, depth of discharge, lithium and the formula for calculating how much battery capacity you actually need.",
     tags: ["self-consumption", "guides"],
   },
 };
