@@ -3,12 +3,12 @@ import { translateList, type Lang } from "../i18n/index.ts";
 
 const ICONS = [Sun, Battery, Car, Wifi, BarChart3, Wrench];
 const IMAGES = [
-  "images/services/placas.webp",
-  "images/services/bateria.webp",
-  "images/services/cargador.webp",
-  "images/services/domotica.webp",
-  "images/services/reforma.webp",
-  "images/services/certificado.webp",
+  "images/services/instalacion-placas-solares-chalet-torrevieja.webp",
+  "images/services/baterias-solares-almacenamiento-hibrido-benidorm.webp",
+  "images/services/instalacion-cargador-coche-electrico-alicante.webp",
+  "images/services/sistema-domotico-gestion-energetica-solar-murcia.webp",
+  "images/services/reforma-instalacion-electrica-cuadro-alicante.webp",
+  "images/services/certificado-energetico-elche.webp",
 ];
 
 export interface Service {

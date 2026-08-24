@@ -3,10 +3,10 @@ import { translateList, type Lang } from "../i18n/index.ts";
 export interface Project { img: string; label: string; kw: string }
 
 const IMAGES = [
-  "images/proyects/placas.webp",
-  "images/proyects/instalacion_murcia.webp",
-  "images/proyects/cargador_chalet.webp",
-  "images/proyects/domotica_proyecto.webp",
+  "images/proyects/instalacion-placas-solares-chalet-torrevieja.webp",
+  "images/proyects/autoconsumo-fotovoltaico-residencial-murcia.webp",
+  "images/proyects/cargador-wallbox-garaje-particular-vega-baja..webp",
+  "images/proyects/domotica-para-ahorro-energetico-vivienda.webp",
 ];
 const KWS = ["8 kWp", "6 kWp", "7.4 Kw", "Domótica"];
 

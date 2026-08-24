@@ -270,7 +270,7 @@ function buildCargador(lang: Lang): KitSpec {
     titleMain: base.titleMain,
     titlePower: base.titlePower,
     summary: base.summary!,
-    productImage: "images/kits/cargador-producto.webp",
+    productImage: "images/kits/instalacion-cargador-coche-electrico-autel-benidorm.webp",
     productImageAlt: base.productImageAlt,
     productImageWidth: 900,
     productImageHeight: 600,
@@ -286,41 +286,41 @@ function buildCargador(lang: Lang): KitSpec {
 export function getKitSpecs(lang: Lang): Record<string, KitSpec> {
   return {
     "3kw-hibrido": buildSolarKit(lang, "3kw-hibrido", {
-      productImage: "images/kits/3kw-producto.webp",
+      productImage: "images/kits/kit-solar-fotovoltaico-autoconsumo-3kw-alcantarilla.webp",
       productImageWidth: 700,
       productImageHeight: 500,
     }),
     "6kw": buildSolarKit(lang, "6kw", {
-      productImage: "images/kits/6kw-producto.webp",
+      productImage: "images/kits/kit-solar-fotovoltaico-autoconsumo-6kw-cartagena.webp",
       productImageWidth: 700,
       productImageHeight: 500,
       useMediaVivienda: true,
       selfSufficiencyPercent: "98%",
     }),
     "6kw-offgrid": buildSolarKit(lang, "6kw-offgrid", {
-      productImage: "images/kits/6kw-offgrid-producto.webp",
+      productImage: "images/kits/kit-solar-aislado-off-grid-6kw-vega-baja.webp",
       productImageWidth: 700,
       productImageHeight: 500,
     }),
     "8kw-hibrido": buildSolarKit(lang, "8kw-hibrido", {
-      productImage: "images/kits/8kw-producto.webp",
+      productImage: "images/kits/kit-solar-autoconsumo-8kw-inversor-deye-denia.webp",
       productImageWidth: 700,
       productImageHeight: 500,
       useMediaVivienda: true,
       selfSufficiencyPercent: "98%",
     }),
     "10kw-hibrido": buildSolarKit(lang, "10kw-hibrido", {
-      productImage: "images/kits/10kw-producto.webp",
+      productImage: "images/kits/kit-solar-hibrido-10kw-bateria-deye-santa-pola.webp",
       productImageWidth: 700,
       productImageHeight: 500,
       useMediaVivienda: true,
       selfSufficiencyPercent: "98%",
     }),
     cargador: buildCargador(lang),
-    domotico: buildDomotico(lang, "domotico", "images/kits/domotico-producto.webp"),
-    "domotico-s": buildDomotico(lang, "domotico-s", "images/kits/domotico-s-producto.webp"),
-    "aerotermo-110": buildAerotermo(lang, "aerotermo-110", "images/kits/aerotermo_110.webp", "benefits", "highlight110"),
-    "aerotermo-100": buildAerotermo(lang, "aerotermo-100", "images/kits/aerotermo_100.webp", "benefits100", "highlight100"),
+    domotico: buildDomotico(lang, "domotico", "images/kits/instalacion-kit-casa-inteligente-home-assistant-vega-baja.webp"),
+    "domotico-s": buildDomotico(lang, "domotico-s", "images/kits/instalacion-kit-casa-inteligente-home-assistant-vega-baja.webp"),
+    "aerotermo-110": buildAerotermo(lang, "aerotermo-110", "images/kits/aerotermo-ariston-agua-caliente-clase-a-mazarron.webp", "benefits", "highlight110"),
+    "aerotermo-100": buildAerotermo(lang, "aerotermo-100", "images/kits/instalacion-aerotermo-nuos-acs-eficiencia-ariston-guarda-mar.webp", "benefits100", "highlight100"),
   };
 }
 
