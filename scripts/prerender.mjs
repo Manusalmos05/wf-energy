@@ -192,6 +192,35 @@ for (const route of routes) {
   written.push({ out: route.out, bytes: out.length, rendered: appHtml.length });
 }
 
+const REDIRECTS = {
+  "blog/aislamiento-térmico-de-tuberías-de-PPR": "/blog/aislamiento-termico-de-tuberias-de-ppr/",
+  "en/blog/aislamiento-térmico-de-tuberías-de-PPR": "/en/blog/aislamiento-termico-de-tuberias-de-ppr/",
+};
+
+const origin = new URL(routes[0].canonical).origin;
+
+for (const [from, to] of Object.entries(REDIRECTS)) {
+  const target = `${origin}${to}`;
+  const stub = [
+    "<!DOCTYPE html>",
+    '<html lang="es">',
+    "<head>",
+    '<meta charset="UTF-8" />',
+    `<meta http-equiv="refresh" content="0; url=${escAttr(target)}" />`,
+    `<link rel="canonical" href="${escAttr(target)}" />`,
+    '<meta name="robots" content="noindex" />',
+    "<title>Redirigiendo…</title>",
+    "</head>",
+    `<body><a href="${escAttr(target)}">${escText(target)}</a></body>`,
+    "</html>",
+    "",
+  ].join("\n");
+  const stubPath = resolve(docsDir, from, "index.html");
+  mkdirSync(dirname(stubPath), { recursive: true });
+  writeFileSync(stubPath, stub, "utf8");
+  console.log(`[prerender]   redirect ${from} -> ${to}`);
+}
+
 const indexed = routes.filter((r) => r.sitemap);
 const sitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',

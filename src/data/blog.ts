@@ -76,12 +76,12 @@ const ARTICLES_ES: BlogArticle[] = [
     readingMinutes: 8,
   },
   {
-    slug: "aislamiento-térmico-de-tuberías-de-PPR",
+    slug: "aislamiento-termico-de-tuberias-de-ppr",
     title: "Aislamiento Térmico de Tuberías de PPR: Ahorro y eficiencia",
     excerpt: "Conoce como un material barato puede ahorrate dinero evitando las perdidas térmicas: La coquilla.",
     date: "2026-08-17",
     tags: [ "acs", "aislamiento"],
-    cover: "images/blog/aislamiento-térmico-de-tuberías-de-PPR/aislamiento-tuberia-eficiencia-energetica.webp",
+    cover: "images/blog/aislamiento-termico-de-tuberias-de-ppr/aislamiento-tuberia-eficiencia-energetica.webp",
     readingMinutes: 6,
   },
   {
@@ -196,7 +196,7 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
     excerpt: "Efficiency analysis of windows and shutters in the Mediterranean: technical comparison and economic return.",
     tags: ["energy efficiency", "building envelope", "insulation"],
   },
-  "aislamiento-térmico-de-tuberías-de-PPR": {
+  "aislamiento-termico-de-tuberias-de-ppr": {
     title: "Thermal insulation of PPR pipes: savings and efficiency",
     excerpt: "Learn how a cheap material can save you money by preventing thermal losses: the pipe insulation sleeve.",
     tags: ["hot water", "insulation"],
