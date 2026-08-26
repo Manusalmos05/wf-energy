@@ -9,14 +9,28 @@
       <title>¿Cuántas placas solares necesita tu casa? La fórmula, paso a paso</title>
       <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
-      />
+      <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400 800;
+          font-display: swap;
+          src: url("/fonts/inter-latin.woff2") format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400 800;
+          font-display: swap;
+          src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        html, body { height: 100%; margin: 0; }
+        #root { height: 100%; }
+      </style>
 
       <script>window.__ARTICLE_HTML__={"es:cuantas-placas-solares-necesita-tu-casa":"\u003cp class=\"article-lead\">\n  Es la primera pregunta que se hace todo el mundo: «¿cuántas placas necesito?». La respuesta no es un\n  número mágico — depende de tu consumo, de dónde vives y de la calidad de la instalación. La buena noticia:\n  se calcula con una fórmula sencilla que puedes aplicar tú mismo con tu factura de la luz delante.\n\u003c/p>\n\n\u003ch2>Empieza por tu consumo\u003c/h2>\n\u003cp>\n  Coge tu última factura y busca el consumo anual en kWh (la mayoría de comercializadoras lo muestran en una\n  gráfica de los últimos 12 meses). Divide entre 365 y tendrás tu \u003cstrong>consumo diario medio\u003c/strong>,\n  \\(E_{dia}\\). Para una vivienda española típica ronda los 8–10 kWh al día.\n\u003c/p>\n\n\u003cdiv class=\"article-callout\">\n  \u003cp>\u003cstrong>Consejo:\u003c/strong> si tienes tarifa con discriminación horaria, fíjate también en \u003cem>cuándo\u003c/em>\n  consumes. El autoconsumo compensa más cuanto más consumo diurno tengas: la lavadora al mediodía vale más\n  que a medianoche.\u003c/p>\n\u003c/div>\n\n\u003ch2>La fórmula de dimensionado\u003c/h2>\n\u003cp>El número de paneles \\(N\\) sale de tres factores:\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ N = \\frac{E_{dia}}{P_{panel} \\cdot HSP \\cdot PR} $$\n\u003c/div>\n\n\u003cul>\n  \u003cli>\u003cstrong>\\(P_{panel}\\)\u003c/strong> — potencia de cada panel en kW. Los módulos actuales rondan los 0,45 kW (450 W).\u003c/li>\n  \u003cli>\u003cstrong>\\(HSP\\)\u003c/strong> — horas de sol pico: la irradiación diaria equivalente de tu zona. En el sureste peninsular es de las más altas de Europa.\u003c/li>\n  \u003cli>\u003cstrong>\\(PR\\)\u003c/strong> — \u003cem>performance ratio\u003c/em>: las pérdidas reales del sistema (temperatura, cableado, inversor, suciedad). Un valor honesto es 0,8.\u003c/li>\n\u003c/ul>\n\n\u003ch2>Un ejemplo real en Murcia\u003c/h2>\n\u003cp>\n  Vivienda con consumo de 9 kWh/día, paneles de 450 W y las 5,2 HSP de media anual de la Región de Murcia:\n\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ N = \\frac{9}{0{,}45 \\cdot 5{,}2 \\cdot 0{,}8} = \\frac{9}{1{,}872} \\approx 4{,}8 \\;\\Rightarrow\\; 5 \\text{ paneles} $$\n\u003c/div>\n\n\u003cp>\n  Cinco paneles, unos 2,25 kWp instalados. En la práctica solemos recomendar redondear un punto al alza si el\n  tejado lo permite: la degradación anual de los módulos (~0,4 %) y futuros consumos.\n\u003c/p>\n\n\u003cimg src=\"/images/blog/cuantas-placas-solares-necesitas/sistemas-solares-pequeña-industria-huerta-de-murcia.webp\" alt=\"Instalación fotovoltaica sobre tejado\" loading=\"lazy\" width=\"800\" height=\"600\" title=\"Casa con paneles solares en el tejado\"/>\n\n\n\u003ch2>¿Y cuándo se amortiza?\u003c/h2>\n\u003cp>La cuenta es directa una vez conoces tu ahorro anual estimado:\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ \\text{Amortización (años)} = \\frac{\\text{Inversión} - \\text{Subvenciones}}{\\text{Ahorro anual}} $$\n\u003c/div>\n\n\u003cp>\n  Con los precios actuales y la compensación de excedentes, una instalación bien dimensionada en el Levante\n  se amortiza típicamente en \u003cstrong>5 a 7 años\u003c/strong>, con una vida útil de más de 25.\n\u003c/p>\n\n\n\u003ch2>El siguiente paso\u003c/h2>\n\u003cp>\n  Esta fórmula te da un orden de magnitud, pero cada tejado tiene su orientación, sus sombras y su inclinación.\n  Te invitamos a que pruebes nuestra  \u003ca href=\"/#calculadora\" title=\"Prueba nuestra calculadora eléctrica\">calculadora\u003c/a> para que te des una idea de cuamtp puedes ahorrar,y conctactes con nuestro equipo para un estudio personalizado \u003cstrong> gratis y sin compromiso\u003c/strong>.\n\u003c/p>\n"}</script>
       <script type="module" crossorigin src="/assets/index-CvB4t9WK.js"></script>

@@ -9,14 +9,28 @@
       <title>Solar batteries: how to pick the right capacity</title>
       <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
-      />
+      <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400 800;
+          font-display: swap;
+          src: url("/fonts/inter-latin.woff2") format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400 800;
+          font-display: swap;
+          src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        html, body { height: 100%; margin: 0; }
+        #root { height: 100%; }
+      </style>
 
       <script>window.__ARTICLE_HTML__={"en:baterias-solares-como-elegir-capacidad":"\u003cp class=\"article-lead\">\n  A battery turns your installation from \"savings at midday\" into \"savings almost all the time\". But\n  picking the capacity by eye is expensive: too small wastes surplus, too big adds years to payback.\n  Here's the method we use at White Fox Energy to size it.\n\u003c/p>\n\n\n\n\n\u003ch2>Nominal kWh are not usable kWh\u003c/h2>\n\u003cp>\n  The catalogue figure is the \u003cstrong>nominal\u003c/strong> capacity. The energy you can actually use depends\n  on the \u003cstrong>depth of discharge\u003c/strong> (\\(DoD\\)) the battery chemistry allows without degrading:\n\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ C_{usable} = C_{nominal} \\cdot DoD $$\n\u003c/div>\n\n\u003cdiv class=\"article-callout\">\n  \u003cp>\u003cstrong>Watch out with comparisons:\u003c/strong> a 5 kWh lithium battery (DoD 90%) delivers 4.5 kWh\n  usable. A 5 kWh lead-acid battery (DoD 50%) delivers only 2.5 kWh. Same \"size\", half the real energy.\u003c/p>\n\u003c/div>\n\n\u003ch2>Lithium vs. lead-acid, plainly\u003c/h2>\n\u003ctable>\n  \u003cthead>\n    \u003ctr>\n      \u003cth>Criterion\u003c/th>\n      \u003cth>Lithium (LiFePO₄)\u003c/th>\n      \u003cth>Lead-acid (AGM/GEL)\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n  \u003ctbody>\n    \u003ctr>\n      \u003ctd>Depth of discharge\u003c/td>\n      \u003ctd>80–95%\u003c/td>\n      \u003ctd>40–50%\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>Cycle life\u003c/td>\n      \u003ctd>4,000–6,000\u003c/td>\n      \u003ctd>500–1,200\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>Cycle efficiency\u003c/td>\n      \u003ctd>~95%\u003c/td>\n      \u003ctd>~80%\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>Maintenance\u003c/td>\n      \u003ctd>None\u003c/td>\n      \u003ctd>Periodic\u003c/td>\n    \u003c/tr>\n    \u003ctr>\n      \u003ctd>Price per usable kWh\u003c/td>\n      \u003ctd>Higher up-front, lower over 10 years\u003c/td>\n      \u003ctd>Lower up-front, higher over 10 years\u003c/td>\n    \u003c/tr>\n  \u003c/tbody>\n\u003c/table>\n\n\u003cimg src=\"/images/blog/baterias-solares-como-elegir-capacidad/banco-de-baterias-litio-solares.webp\" alt=\"Lithium battery installed next to the inverter\" title=\"Battery-connected photovoltaic system\" width=\"800\" height=\"600\" loading=\"lazy\" />\n\n\u003ch2>The capacity formula\u003c/h2>\n\u003cp>\n  Estimate how much energy you consume when the sun is down (evening/night), \\(E_{night}\\), and how many\n  days of autonomy \\(d\\) you want to cover (grid-tied: 1 is enough; off-grid: 2–3):\n\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ C_{nominal} = \\frac{E_{night} \\cdot d}{DoD \\cdot \\eta} $$\n\u003c/div>\n\n\u003cp>\n  where \\(\\eta\\) is the round-trip efficiency. Example: 4 kWh at night, 1 day of autonomy, lithium with\n  \\(DoD = 0.9\\) and \\(\\eta = 0.95\\):\n\u003c/p>\n\n\u003cdiv class=\"article-formula\">\n  $$ C_{nominal} = \\frac{4 \\cdot 1}{0.9 \\cdot 0.95} \\approx 4.7 \\text{ kWh} \\;\\Rightarrow\\; \\text{commercial } 5 \\text{ kWh battery} $$\n\u003c/div>\n\n\u003ch2>Battery yes or no?\u003c/h2>\n\u003cul>\n  \u003cli>\u003cstrong>Yes\u003c/strong>, if your night consumption exceeds 40% of the total, you have expensive peak-hour tariffs or frequent outages.\u003c/li>\n  \u003cli>\u003cstrong>Wait\u003c/strong>, if surplus compensation already brings your bill close to zero: add the battery when the per-kWh price keeps falling.\u003c/li>\n  \u003cli>\u003cstrong>Essential\u003c/strong> in off-grid installations, where the battery is the heart of the system.\u003c/li>\n\u003c/ul>\n\n\u003ch2>Our advice\u003c/h2>\n\u003cp>\n  Size the battery with real data: a month of hourly meter readings (your DSO's app exports it) is worth\n  more than any rule of thumb. If you like, we'll work it out with you in the free study.\n\u003c/p>\n"}</script>
       <script type="module" crossorigin src="/assets/index-CvB4t9WK.js"></script>
