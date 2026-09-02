@@ -7,6 +7,10 @@ import { articleGraph, blogGraph, homeGraph } from "./lib/structuredData.ts";
 import {
   SITE,
   BRAND,
+  PHONE,
+  EMAIL,
+  WHATSAPP,
+  AREAS,
   OG_IMAGE,
   TWITTER_CARD,
   INDEXABLE,
@@ -22,10 +26,24 @@ export interface SiteMeta {
   siteName: string;
   ogLocale: string;
   twitterCard: string;
+  site: string;
+  phone: string;
+  email: string;
+  whatsapp: string;
+  areas: string[];
 }
 
 export function getSiteMeta(): SiteMeta {
-  return { siteName: BRAND, ogLocale: getOgLocale(DEFAULT_LANG), twitterCard: TWITTER_CARD };
+  return {
+    siteName: BRAND,
+    ogLocale: getOgLocale(DEFAULT_LANG),
+    twitterCard: TWITTER_CARD,
+    site: SITE,
+    phone: PHONE,
+    email: EMAIL,
+    whatsapp: WHATSAPP,
+    areas: AREAS,
+  };
 }
 
 const BRAND_SUFFIX_LIMIT = 45;
