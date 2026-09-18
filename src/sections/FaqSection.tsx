@@ -32,7 +32,7 @@ export default function FaqSection() {
           <em>
             {t("sections.faq.spanStart")}
             <a
-              href="/blog"
+              href="/blog" title="Lee nuestros artículos relacionados para conocer más"
               className="underline font-semibold text-accent">
               {t("sections.faq.blogLink")}
             </a>

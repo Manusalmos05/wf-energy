@@ -96,7 +96,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante",
     title: "Cargar tu Coche Eléctrico con Fotovoltaica vs Red",
-    excerpt: "AAnálisis comparativo entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico. Descubriendo el ahorro real.",
+    excerpt: "Análisis comparativo entre alimentar tu vehículo eléctrico solo desde la red o mediante un sistema fotovoltaico. Descubriendo el ahorro real.",
     date: "2026-08-14",
     tags: ["movilidad eléctrica", "autoconsumo"],
     cover: "images/blog/cargar-coche-electrico-sin-vs-con-fotovoltaica-murcia-alicante/kit-solar-autoconsumo-más-cargador-coche-electrico.webp",

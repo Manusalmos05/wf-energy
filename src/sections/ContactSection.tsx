@@ -1,20 +1,25 @@
 import emailjs from "@emailjs/browser";
-import { useState, type FormEvent } from "react";
+import { lazy, Suspense, useState, type FormEvent } from "react";
 import {
   Phone, Mail, MapPin, Clock, ArrowRight, MessageCircle, Check, Lock, Loader2,
 } from "lucide-react";
 import { EMAIL, MAILTO_HREF, PHONE_DISPLAY, TEL_HREF, WHATSAPP } from "../lib/site.ts";
 import { useLanguage } from "../i18n/provider.tsx";
+//import ReCAPTCHA from "react-google-recaptcha";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+const ReCAPTCHA = lazy(() => import("react-google-recaptcha"));
+
 
 export default function ContactSection() {
   const { t, path } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     nombre: "", telefono: "", email: "", localidad: "", mensaje: "", privacidad: false,
   });
@@ -22,6 +27,10 @@ export default function ContactSection() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!formData.privacidad) return;
+    if (!captchaToken) {
+    setError("Por favor, confirma que no eres un robot.");
+    return;
+  }
     setSending(true);
     setError(null);
     try {
@@ -34,8 +43,13 @@ export default function ContactSection() {
           email: formData.email,
           localidad: formData.localidad,
           mensaje: formData.mensaje,
+          "g-recaptcha-response": captchaToken,
         },
-        { publicKey: PUBLIC_KEY },
+        { publicKey: PUBLIC_KEY, 
+          blockHeadless: true, //bloquemos navegadores sin cabeceras
+          limitRate: {
+             id: "white-fox-contact", 
+             throttle: 30000, }, }, //limite de 30 seg para enviar otro correo
       );
       setSubmitted(true);
     } catch (err) {
@@ -47,6 +61,7 @@ export default function ContactSection() {
   }
 
   const req = t("sections.contact.form.required");
+  const isBrowser = typeof window !== "undefined";
   return (
     <section id="contacto" className="py-24">
       <div className="max-w-7xl mx-auto px-5">
@@ -186,6 +201,19 @@ export default function ContactSection() {
                 {error && (
                   <p className="text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">{error}</p>
                 )}
+
+                {isBrowser && (
+                    <Suspense fallback={null}>
+                      <div className="flex justify-center">
+                        <ReCAPTCHA
+                          sitekey={RECAPTCHA_SITE_KEY}
+                          onChange={(token) => setCaptchaToken(token)}
+                          onExpired={() => setCaptchaToken(null)}
+                          onErrored={() => setCaptchaToken(null)}
+                        />
+                      </div>
+                    </Suspense>
+                  )}
 
                 <button
                   type="submit"
