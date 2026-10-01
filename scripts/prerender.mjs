@@ -157,8 +157,104 @@ function readArticleFile(lang, slug) {
   return existsSync(fallback) ? readFileSync(fallback, "utf8") : null;
 }
 
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<\/(p|h[1-6]|li|tr|blockquote|figcaption)>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .split("\n")
+    .map((line) => line.replace(/\s+/g, " ").trim())
+    .filter(Boolean)
+    .join("\n");
+}
+
+function cleanTitle(route) {
+  const suffix = ` | ${siteMeta.siteName}`;
+  return route.title.endsWith(suffix) ? route.title.slice(0, -suffix.length) : route.title;
+}
+
+function llmsEntry(route, extra = "") {
+  return `- [${cleanTitle(route)}](${route.canonical}): ${route.description}${extra}`;
+}
+
+function llmsLangGroup(allRoutes, lang) {
+  const indexable = allRoutes.filter((r) => r.sitemap && r.canonical && r.lang === lang);
+  const blog = indexable.find((r) => r.ogType === "website" && /\/blog\/?$/.test(r.canonical));
+  const home = indexable.find((r) => r.ogType === "website" && r !== blog);
+  const articles = indexable
+    .filter((r) => r.ogType === "article")
+    .sort((a, b) => (b.lastmod ?? "").localeCompare(a.lastmod ?? ""));
+  return { home, blog, articles };
+}
+
+function buildLlms(allRoutes) {
+  const es = llmsLangGroup(allRoutes, "es");
+  const en = llmsLangGroup(allRoutes, "en");
+  const stampEs = (r) => (r.lastmod ? ` (actualizado ${r.lastmod})` : "");
+  const stampEn = (r) => (r.lastmod ? ` (updated ${r.lastmod})` : "");
+  return [
+    `# ${siteMeta.siteName}`,
+    "",
+    `> Empresa instaladora de placas solares fotovoltaicas, baterías, cargadores de coche eléctrico y domótica para viviendas y empresas en ${siteMeta.areas.join(", ")} (España). Estudio energético y presupuesto gratuitos en 24 horas, sin compromiso.`,
+    "",
+    `- Zonas de servicio: ${siteMeta.areas.join(", ")}`,
+    `- Teléfono y WhatsApp: ${siteMeta.phone} (${siteMeta.whatsapp})`,
+    `- Email: ${siteMeta.email}`,
+    `- Idiomas: español (por defecto) e inglés (rutas bajo ${siteMeta.site}/en/)`,
+    `- Texto íntegro de las guías del blog: ${siteMeta.site}/llms-full.txt`,
+    "",
+    "## Páginas principales",
+    "",
+    llmsEntry(es.home),
+    llmsEntry(es.blog),
+    "",
+    "## Guías del blog",
+    "",
+    ...es.articles.map((r) => llmsEntry(r, stampEs(r))),
+    "",
+    "## English",
+    "",
+    llmsEntry(en.home),
+    llmsEntry(en.blog),
+    ...en.articles.map((r) => llmsEntry(r, stampEn(r))),
+    "",
+  ].join("\n");
+}
+
+function buildLlmsFull(docs) {
+  const sections = docs.map(({ route, text }) =>
+    [
+      `## ${cleanTitle(route)}`,
+      "",
+      `URL: ${route.canonical}`,
+      route.published ? `Publicado: ${route.published}` : "",
+      route.lastmod ? `Actualizado: ${route.lastmod}` : "",
+      "",
+      text,
+    ]
+      .filter((line) => line !== "")
+      .join("\n"),
+  );
+  return [
+    `# ${siteMeta.siteName} — guías completas del blog`,
+    "",
+    `> Texto íntegro de las guías sobre autoconsumo solar publicadas en ${siteMeta.site}/blog. Índice resumido en ${siteMeta.site}/llms.txt.`,
+    "",
+    ...sections,
+    "",
+  ].join("\n\n");
+}
+
 const routes = getRoutes();
 const written = [];
+const articleDocs = [];
 
 for (const route of routes) {
   const preloaded = {};
@@ -190,6 +286,10 @@ for (const route of routes) {
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, out, "utf8");
   written.push({ out: route.out, bytes: out.length, rendered: appHtml.length });
+
+  if (route.ogType === "article" && route.sitemap && route.slugs.length > 0) {
+    articleDocs.push({ route, text: stripHtml(preloaded[`${route.lang}:${route.slugs[0]}`]) });
+  }
 }
 
 const REDIRECTS = {
@@ -243,6 +343,12 @@ const sitemap = [
 ].join("\n");
 
 writeFileSync(resolve(docsDir, "sitemap.xml"), sitemap, "utf8");
+
+const llms = buildLlms(routes);
+const llmsFull = buildLlmsFull(articleDocs);
+writeFileSync(resolve(docsDir, "llms.txt"), llms, "utf8");
+writeFileSync(resolve(docsDir, "llms-full.txt"), llmsFull, "utf8");
+
 rmSync(ssrDir, { recursive: true, force: true });
 
 const kb = (bytes) => `${(bytes / 1024).toFixed(1)} kB`;
@@ -252,4 +358,5 @@ console.log(`\n[prerender] plantilla ${kb(shell.length)}`);
 for (const w of written) {
   console.log(`[prerender]   ${w.out.padEnd(pad)}  ${kb(w.bytes).padStart(9)}  (+${kb(w.rendered)} renderizados)`);
 }
-console.log(`[prerender] sitemap.xml con ${indexed.length} URL(s)\n`);
+console.log(`[prerender] sitemap.xml con ${indexed.length} URL(s)`);
+console.log(`[prerender] llms.txt ${kb(llms.length)} · llms-full.txt ${kb(llmsFull.length)} (${articleDocs.length} guías)\n`);
