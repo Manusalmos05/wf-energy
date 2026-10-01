@@ -63,7 +63,7 @@ export default function ArticlePage() {
           <img
             src={`${import.meta.env.BASE_URL}${article.cover}`}
             alt={article.title}
-            className="w-full h-64 md:h-96 object-cover rounded-2xl my-10 shadow-sm"
+            className="w-full h-64 md:h-92 object-cover rounded-2xl my-10 shadow-sm"
           />
 
           <ArticleContent slug={article.slug} />

@@ -156,6 +156,15 @@ const ARTICLES_ES: BlogArticle[] = [
     cover: "images/blog/baterias-solares-como-elegir-capacidad/instalacion-baterias-autoconsumo-elche.webp",
     readingMinutes: 7,
   },
+   {
+    slug: "sistema-CAE",
+    title: "Cómo financiar la reforma de tu vivienda con el Sistema CAE",
+    excerpt: "Los CAEs monetizan tus actuaciones de eficiencia energética: un nuevo mercado que convierte cada kilovatio ahorrado en dinero.",
+    date: "2026-10-01",
+    tags: ["fiscalidad", "eficiencia energética"],
+    cover: "images/blog/sistema-CAE/Como-obtener-un-Certificado-de-Ahorro-Energetico.webp",
+    readingMinutes: 7,
+  },
 ];
 
 interface Translation { title: string; excerpt: string; tags: string[] }
@@ -240,6 +249,12 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
     title: "Solar batteries: how to pick the right capacity",
     excerpt: "Nominal vs. usable kWh, depth of discharge, lithium and the formula for calculating how much battery capacity you actually need.",
     tags: ["self-consumption", "guides"],
+  },
+
+  "sistema-CAE": {
+    title: "How to Finance Your Home Renovation with the CAE System",
+    excerpt: "CAEs monetize your energy-efficiency efforts: a new market that turns every kilowatt saved into money.",
+    tags: ["taxation", "energy efficiency"],
   },
 };
 
