@@ -141,7 +141,7 @@ const ARTICLES_ES: BlogArticle[] = [
   {
     slug: "cuantas-placas-solares-necesita-tu-casa",
     title: "¿Cuántas placas solares necesita tu casa? La fórmula, paso a paso",
-    excerpt: "AAprende a dimensionar tu instalación fotovoltaica a partir de tu factura, horas de sol pico y una fórmula sencilla con un ejemplo real en Murcia.",
+    excerpt: "Aprende a dimensionar tu instalación fotovoltaica a partir de tu factura, horas de sol pico y una fórmula sencilla con un ejemplo real en Murcia.",
     date: "2026-07-28",
     tags: ["autoconsumo", "guías"],
     cover: "images/blog/cuantas-placas-solares-necesitas/placas-solares-residenciales-elche.webp",
