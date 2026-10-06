@@ -758,7 +758,7 @@ Actualizado: 2026-08-13
 La ventana es el punto más vulnerable y activo de la envolvente térmica de un edificio: representando apenas entre el 10% y el 15% de la superficie de la fachada, es responsable de hasta un 35% de las pérdidas de calefacción en invierno y de más del 40% del calor que entra en verano. En zonas como Murcia o Alicante, donde la radiación solar estival es extrema y los inviernos requieren un uso moderado pero continuado de climatización, intervenir en los huecos de fachada es la medida de mayor impacto en el confort. Analizamos exhaustivamente las tecnologías de marcos (PVC vs. Aluminio RPT), los secretos del acristalamiento (Bajo Emisivo, Gas Argón y Control Solar), el impacto del cajón de persiana y los costes reales de cada alternativa.
 1. La Física del Hueco Térmico: Por qué la ventana es el punto crítico
 A diferencia de los muros de fachada o el tejado —que son elementos opacos—, la ventana es un hueco térmico activo expuesto a tres mecanismos simultáneos de transferencia de energía:
-Conducción térmica: La transmitancia térmica indica cuánto calor atraviesa una ventana desde el lado más caliente hacia el lado más frío. Cuanto menor sea este valor, mejor será el aislamiento. Por ejemplo, una ventana de aluminio antigua y sin aislamiento puede alcanzar una transmitancia de aproximadamente 5,7 W/(m²·K) , un valor muy superior al de un muro de ladrillo sin aislamiento.
+Conducción térmica: El flujo de calor atraviesa el marco y el cristal desde el lado caliente al lado frío. Una ventana de aluminio antiguo sin aislamiento tiene una transmitancia térmica global elevada ( U w &approx; 5,7 W/(m 2 &middot;K) ), cuatro veces superior a la de un muro de ladrillo sin aislar.
 Infiltración de Aire (Permeabilidad): Las rendijas de las ventanas correderas tradicionales y el mecanismo del cajón de persiana permiten la entrada directa de aire exterior. Hasta un 15% del gasto energético se pierde simplemente por el aire que se cuela por el pasacintas de la persiana.
 Radiación Solar Directa (Efecto Invernadero): En los meses de verano en el levante (Murcia y Alicante), la radiación sobre fachadas Este, Sur y Oeste es intensa. Los rayos solares atraviesan el vidrio transparente y calientan las superficies interiores. Este calor infrarrojo queda atrapado dentro de la estancia, disparando el consumo del aire acondicionado.
 Sustituir una ventana deficiente elimina el denominado "efecto de pared fría" en invierno y el "efecto invernadero" en verano, anulando además la condensación de agua en los cristales por las mañanas.
@@ -771,29 +771,28 @@ Cajón Monobloc Aislado: Al renovar la ventana, se instala un cajón compacto de
 Motorización de la persiana: Al sustituir la cinta manual por un motor eléctrico integrado, se elimina el pasacintas y se sella herméticamente el 100% de las infiltraciones de aire.
 Aislamiento en cajón existente (Aislamiento de bajo coste): Si no se cambia la ventana, se pueden instalar paneles termoacústicos flexibles de polietileno/poliestireno dentro de la cavidad del cajón, reduciendo sensiblemente el flujo de aire y el ruido exterior.
 3. Marcos: PVC vs. Aluminio con Rotura de Puente Térmico (RPT)
-El marco es la estructura que sostiene el vidrio y representa aproximadamente entre el 20% y el 30% de la superficie total de una ventana . Por ello, el material del marco también influye considerablemente en el aislamiento térmico.
-Para medir su capacidad de aislamiento se utiliza el valor U f . Cuanto menor sea este valor, menos calor atraviesa el marco y, por tanto, mejor es su capacidad aislante.
-PVC: una buena relación entre precio y aislamiento
-Buen aislamiento térmico: El PVC es un material que conduce muy poco el calor. Los perfiles modernos de entre 70 y 76 mm de profundidad , con 5 o 6 cámaras de aire en su interior, pueden alcanzar valores de transmitancia térmica de aproximadamente 1,1 a 1,3 W/(m²·K) .
-Buena relación calidad-precio: Además de ofrecer un buen aislamiento, los perfiles de PVC suelen ser entre un 25% y un 35% más económicos que los perfiles de aluminio con prestaciones térmicas equivalentes.
+El marco sostiene el vidrio y representa entre el 20% y el 30% de la superficie total de la ventana. Su capacidad aislante intrínseca se mide mediante el valor U f ( frame ):
+PVC (El estándar en coste-beneficio)
+Comportamiento físico: El PVC es un material plástico no conductor (aislante natural). Un perfil moderno de 70–76 mm de profundidad con 5 o 6 cámaras de aire internas alcanza un U f &approx; 1,1 - 1,3 W/(m 2 &middot;K).
+Rentabilidad: Es entre un 25% y un 35% más económico que un perfil de aluminio con prestaciones térmicas equivalentes.
 Aluminio con Rotura de Puente Térmico (RPT)
 Comportamiento físico: El aluminio es un metal altamente conductor. Para aislarlo, es necesario cortar el perfil metálico e insertar pletinas plásticas de poliamida en su interior.
-Prestaciones: Para igualar el aislamiento del PVC, requiere pletinas de RPT muy anchas (30 a 34 mm), alcanzando un U f approx 1,3 - 1,5 W/(m²·K).
-Aplicación: Su mayor coste se justifica únicamente por motivos estéticos (perfiles más estrechos) o para ventanales de grandes dimensiones que requieran alta resistencia estructural.
+Prestaciones: Para igualar el aislamiento del PVC, requiere pletinas de RPT muy anchas (30 a 34 mm), logrando un U f &approx; 1,3 - 1,5 W/(m 2 &middot;K).
+Aplicación: Su mayor coste se justifica únicamente por motivos estéticos (perfiles más esbeltos y minimalistas) o para ventanales de grandes dimensiones que requieran alta inercia estructural.
 Sistema de Apertura: Practicable/Oscilobatiente vs. Corredera
 Las ventanas correderas tradicionales cierran mediante cepillos de pelo que permiten el paso del viento ( Clase 2 de permeabilidad ). Para garantizar un aislamiento óptimo, es imprescindible instalar sistemas oscilobatientes con juntas de goma a presión , clasificados como Clase 4 (máxima estanqueidad al aire según norma UNE-EN 12207).
 4. Tecnologías de Acristalamiento: El secreto del Bajo Emisivo, el Argón y el Control Solar
 El vidrio abarca el 70–80% de la ventana. Su rendimiento (U g ) determina la mayor parte de la eficiencia energética del conjunto.
 1. Tratamiento Bajo Emisivo ( Low-E )
-Consiste en una capa microscópica de plata y óxidos metálicos depositada en la cara interior del cristal. Funciona como un "espejo térmico" que refleja el calor de la calefacción devolviéndolo al interior de la vivienda en invierno. Reduce las pérdidas del cristal en casi un 50% por un sobrecoste de apenas 15 € a 25 € por ventana.
+Consiste en una capa microscópica de plata y óxidos metálicos depositada en la cara interior del cristal. Funciona como un "espejo térmico" que refleja el calor de la calefacción devolviéndolo al interior de la vivienda en invierno. Reduce las pérdidas del cristal en casi un 50% por un sobrecoste moderado de 20 € a 35 € por ventana.
 2. Inyección de Gas Argón
-En lugar de dejar aire seco convencional en la cámara intermedia del doble cristal, se inyecta gas Argón (un gas inerte más denso que el aire). Esto frena la convección interna dentro de la cámara, bajando la transmitancia de 1,4 a 1,1 W/(m²·K) . Su coste adicional es mínimo (10 € – 18 € por ventana).
+En lugar de dejar aire seco convencional en la cámara intermedia del doble cristal, se inyecta gas Argón (un gas inerte más denso que el aire). Esto frena la convección interna dentro de la cámara, mejorando el aislamiento térmico. Su coste adicional se sitúa entre 15 € y 25 € por ventana.
 3. Control Solar (Marcas comerciales: Guardian Sun , Climalit Planitherm 4S )
 En regiones con alta radiación solar como Murcia y Alicante , el tratamiento bajo emisivo simple no basta: en verano deja pasar la radiación solar creando un fuerte efecto invernadero. La tecnología de Control Solar es fundamental en el clima mediterráneo, ya que frena hasta un 60% de la radiación solar directa (factor solar g \approx 0,38), manteniendo las estancias entre 3 °C y 5 °C más frescas en los meses estivales y reduciendo radicalmente el uso del aire acondicionado.
 5. Análisis Comparativo de Modelos y Costes en el Mercado
 Para analizar el mercado de forma realista, evaluamos 4 configuraciones tipo sobre una ventana estándar de dormitorio de 1,20 m × 1,20 m (1,44 m²) , incluyendo marco, vidrio, cajón monobloc aislado de persiana, persiana de aluminio con poliuretano e instalación completa (retirada de la antigua y sellado):
 Configuración de Ventana
-Transmitancia
+Transmitancia (U w )
 Estanqueidad Aire
 Coste Aprox. Ventana (1,44 m²)
 Coste / m²
@@ -801,43 +800,43 @@ Valoración Coste-Beneficio
 1. Aluminio Corredera Básico (Sin RPT + Cristal simple 4/12/4)
 3,8 - 4,5W/(m²·K)
 Mala (Clase 2)
-280 €
-194 €/m²
+380 €
+264 €/m²
 Muy Mala: Inversión no amortizable; persisten pérdidas de aire y entrada de calor masivo.
 2. PVC Oscilobatiente "Sweet Spot" (PVC 70mm + Doble 4/16/4 + Bajo Emisivo + Argón + Control Solar)
 1,1 - 1,3 W/(m²·K)
 Excelente (Clase 4)
-490 €
-340 €/m²
+660 €
+458 €/m²
 LA MEJOR (ÓPTIMA): Equilibrio perfecto para Murcia y Alicante (aislamiento + freno al sol estival).
-3. Aluminio RPT Gama Alta (RPT 65mm + Doble 4/16/4 + Bajo Emisivo + Argón + Control Solar)
-1,3 - 1,5 W/(m²·K)
-Excelente (Clase 4)
-820 €
-569 €/m²
-Media: Mismo rendimiento energético que el PVC, pero un 65% más caro por motivos estéticos.
-4. PVC Triple Vidrio Passivhaus (PVC 82mm + Triple 4/14/4/14/4 + 2x Bajo Emisivo + Argón)
+3. PVC Triple Vidrio Passivhaus (PVC 82mm + Triple 4/14/4/14/4 + 2x Bajo Emisivo + Argón)
 0,8 - 0,9 W/(m²·K)
 Excelente (Clase 4)
-670 €
-465 €/m²
-Buena (Solo zonas muy frías): Amortización excesivamente lenta en climas suaves como Murcia o Alicante.
+890 €
+618 €/m²
+Buena (Zonas frías): Excesivo para climas templados como la costa levantina por su mayor coste.
+4. Aluminio RPT Gama Alta (Diseño) (RPT de altas prestaciones + Doble acristalamiento con Control Solar)
+1,3 - 1,5 W/(m²·K)
+Excelente (Clase 4)
+1.150 €
+798 €/m²
+Exclusiva: Estética minimalista y gran robustez, pero precio elevado por metro cuadrado.
 6. Retorno de Inversión ( Payback ) para un Piso Completo (5 Ventanas) en Murcia / Alicante
-Evaluamos la sustitución de 5 ventanas (7,2 m² de superficie marco/cristal) en un piso ubicado en la zona climática mediterránea de Murcia o Alicante (zona B3/C3), donde la demanda combina la calefacción invernal moderada y un elevado consumo de aire acondicionado estival. Consideramos un consumo anual base en climatización de 5.200 kWh/año y una tarifa eléctrica media de 0,22 €/kWh .
-Inversión en Opción A (Ventana "A secas" - PVC + Cristal Doble Básico sin tratamientos):
-Coste total instalación: 2.200 €
+Evaluamos la sustitución de 5 ventanas (7,2 m² de superficie marco/cristal) en un piso ubicado en la zona climática mediterránea de Murcia o Alicante (zona B3/C3), donde la demanda combina calefacción invernal moderada y un elevado consumo de aire acondicionado estival. Consideramos un consumo anual base en climatización de 5.200 kWh/año y una tarifa eléctrica media realista de 0,22 €/kWh .
+Inversión en Opción A (Ventana Estándar Básica - PVC comercial estándar sin extras avanzados y cajón convencional):
+Coste total instalación: 2.600 € (520 € por unidad)
 Ahorro energético estimado: 1.040 kWh/año (20%)
 Ahorro económico anual: 228,80 € / año
-Retorno de inversión ( Payback ): 9,6 años
-Inversión en Opción B (Ventana "Optimizada" - PVC + Bajo Emisivo + Gas Argón + Control Solar + Cajón Aislado):
-Coste total instalación: 2.420 € (Solo 220 € más en el total de la obra)
+Retorno de inversión global ( Payback ): 11,4 años
+Inversión en Opción B (Ventana "Optimizada Sweet Spot" - PVC + Bajo Emisivo + Gas Argón + Control Solar + Cajón Monobloc Aislado):
+Coste total instalación: 3.300 € (660 € por unidad; un incremento de 700 € en el total de la obra frente a la Opción A)
 Ahorro energético estimado: 1.820 kWh/año (35%)
 Ahorro económico anual: 400,40 € / año
-Retorno de inversión ( Payback ): 6,0 años
-La paradoja del pequeño sobrecoste en el clima levantino: Invertir apenas 220 € extra en añadir el tratamiento de Control Solar ( Guardian Sun / Climalit 4S ), la capa Bajo Emisiva y el Gas Argón en todo el piso genera un ahorro adicional de 171,60 € cada año (especialmente en la factura estival de aire acondicionado). Esta mejora del cristal se amortiza en tan solo 15 meses .
+Retorno de inversión global ( Payback ): 8,2 años
+La rentabilidad real de los extras climáticos: Invertir 700 € adicionales en el total del piso (+140 € por ventana) para incorporar los tratamientos de Control Solar ( Guardian Sun / Climalit 4S ), la capa Bajo Emisiva, el Gas Argón y el Cajón Aislado genera un ahorro adicional de 171,60 € cada año en la factura eléctrica. Esto significa que el sobrecoste de los extras se amortiza por completo en apenas 4 años , garantizando un confort térmico absoluto y protegiendo la vivienda frente a futuros incrementos del coste de la energía.
 7. Deducciones en el IRPF y Ayudas a la Rehabilitación
 La sustitución de ventanas es una de las actuaciones más sencillas para acogerse a las deducciones estatales en el IRPF por obras de mejora de la eficiencia energética en la vivienda habitual :
-Deducción del 20% (hasta 1.000 € anuales): Para obras que reduzcan un mínimo del 7% la demanda de calefacción y refrigeración de la vivienda (cumplido fácilmente en Murcia o Alicante al instalar ventanas de PVC con Control Solar y Bajo Emisivo).
+Deducción del 20% (hasta 1.000 € anuales): Para obras que reduzcan un mínimo del 7% la demanda de calefacción y refrigeración de la vivienda (cumplido con holgura en Murcia o Alicante al instalar ventanas de PVC con Control Solar y Bajo Emisivo).
 Deducción del 40% (hasta 3.000 € anuales): Para actuaciones que reduzcan en un 30% el consumo de energía primaria no renovable o mejoren la calificación energética de la vivienda a clase "A" o "B".
 
 ## Aislamiento Térmico de Tuberías de PPR: Ahorro y eficiencia
@@ -2432,90 +2431,89 @@ For homes with a photovoltaic installation, integrating charging with solar surp
 URL: https://www.wf-energy.com/en/blog/cambio-ventanas-aislamiento-cajon-persianas/
 Publicado: 2026-08-13
 Actualizado: 2026-08-13
-The window is the most vulnerable and active point of a building's thermal envelope: representing barely 10% to 15% of the facade area, it is responsible for up to 35% of heating losses in winter and more than 40% of the heat gains in summer. In areas such as Murcia or Alicante, where summer solar radiation is extreme and winters demand a moderate but continuous use of climate control, intervening on the facade openings is the single measure with the greatest impact on comfort. We look in detail at frame technologies (PVC vs. thermally broken aluminium), the secrets of the glazing (low-emissivity, argon gas and solar-control glass), the impact of the roller-blind box and the real costs of each alternative.
-1. The physics of the thermal opening: why the window is the critical point
-Unlike facade walls or the roof — which are opaque elements — the window is an active thermal opening exposed to three simultaneous mechanisms of energy transfer:
-Thermal conduction: Thermal transmittance indicates how much heat passes through a window from the warmer side to the cooler side. The lower this value, the better the insulation. For example, an old, uninsulated aluminium window can reach a transmittance of approximately 5.7 W/(m²·K) , a value far higher than that of an uninsulated brick wall.
-Air infiltration (permeability): The gaps in traditional sliding windows and the roller-blind box mechanism allow outside air to enter directly. Up to 15% of energy expenditure is lost simply through air seeping in through the blind's strap slot.
-Direct solar radiation (greenhouse effect): In summer months in the Levante (Murcia and Alicante), radiation on east, south and west facades is intense. Solar rays cross the transparent glass and heat up interior surfaces. This infrared heat is trapped inside the room, driving up air-conditioning consumption.
-Replacing a poor window eliminates the so-called "cold wall effect" in winter and the "greenhouse effect" in summer, and also removes the morning water condensation on the panes.
-2. The roller-blind box: the window's "silent enemy"
-Fitting the best window on the market is pointless if you keep an old, uninsulated roller-blind box. The traditional box is responsible for up to 30% of the thermal and acoustic losses of the opening, for two reasons:
-Thermal bridge in the access cover: Old inspection covers (of wood or thin plastic) offer no thermal resistance, overheating or cooling the room by direct contact.
-Air leak in the strap slot: The hole through which the blind's strap runs connects the interior of the dwelling directly with the outside.
-Technical sealing solutions
-Insulated monobloc box: When the window is renewed, a compact extruded-PVC box is installed, filled internally with a high-density expanded polystyrene (EPS) block.
-Motorising the blind: Replacing the manual strap with an integrated electric motor removes the strap slot and hermetically seals 100% of the air infiltration.
-Insulating an existing box (low-cost insulation): If the window is not being replaced, flexible thermo-acoustic polyethylene/polystyrene panels can be installed inside the box cavity, appreciably reducing air flow and outside noise.
-3. Frames: PVC vs. aluminium with thermal break (RPT)
-The frame is the structure that supports the glass and represents roughly 20% to 30% of the total surface of a window . For that reason, the frame material also has a considerable influence on thermal insulation.
-Its insulating capacity is measured by the value U f . The lower this value, the less heat crosses the frame and therefore the better its insulating performance.
-PVC: a good balance between price and insulation
-Good thermal insulation: PVC is a material that conducts very little heat. Modern profiles of between 70 and 76 mm in depth , with 5 or 6 air chambers inside, can reach thermal transmittance values of approximately 1.1 to 1.3 W/(m²·K) .
-Good value for money: Beyond offering good insulation, PVC profiles are typically between 25% and 35% cheaper than aluminium profiles with equivalent thermal performance.
-Aluminium with thermal break (RPT)
-Physical behaviour: Aluminium is a highly conductive metal. To insulate it, the metal profile has to be cut and polyamide plastic strips inserted inside.
-Performance: To match PVC insulation, it requires very wide RPT strips (30 to 34 mm), reaching a U f \(\approx\) 1.3 – 1.5 W/(m²·K).
-Application: Its higher cost is only justified for aesthetic reasons (slimmer profiles) or for large windows requiring high structural resistance.
-Opening system: side-hung/tilt-and-turn vs. sliding
-Traditional sliding windows close by means of brush seals which let the wind through ( class 2 permeability ). To guarantee optimal insulation, it is essential to fit tilt-and-turn systems with compression rubber gaskets , classified as class 4 (maximum air-tightness under the UNE-EN 12207 standard).
-4. Glazing technologies: the secret of low-E, argon and solar-control glass
-The glass covers 70–80% of the window. Its performance (U g ) determines most of the energy efficiency of the whole unit.
-1. Low-emissivity treatment ( Low-E )
-It consists of a microscopic layer of silver and metal oxides deposited on the inner face of the pane. It works as a "thermal mirror" that reflects the heat from the heating system back into the interior of the dwelling in winter. It reduces the glass's losses by almost 50% for an extra cost of just €15 to €25 per window.
-2. Argon gas injection
-Instead of leaving conventional dry air in the intermediate cavity of the double glazing, argon gas (an inert gas denser than air) is injected. This slows internal convection inside the cavity, dropping transmittance from 1.4 to 1.1 W/(m²·K) . Its additional cost is minimal (€10 – €18 per window).
-3. Solar-control glass (commercial brands: Guardian Sun , Climalit Planitherm 4S )
-In regions with high solar radiation such as Murcia and Alicante , simple low-emissivity treatment is not enough: in summer it still lets solar radiation through, creating a strong greenhouse effect. Solar-control glass technology is fundamental in the Mediterranean climate, since it blocks up to 60% of direct solar radiation (solar factor g \(\approx\) 0.38), keeping rooms between 3 °C and 5 °C cooler in the summer months and drastically reducing air-conditioning use.
-5. Comparative analysis of models and market costs
-To analyse the market realistically, we evaluate 4 typical configurations on a standard bedroom window of 1.20 m × 1.20 m (1.44 m²) , including frame, glass, insulated monobloc blind box, aluminium blind with polyurethane and full installation (removing the old one and sealing):
-Window configuration
-Transmittance
-Air-tightness
-Approx. window cost (1.44 m²)
-Cost / m²
-Cost-benefit rating
-1. Basic aluminium sliding (No RPT + single glass 4/12/4)
-3.8 - 4.5 W/(m²·K)
-Poor (class 2)
-€280
-€194/m²
-Very poor: Investment that will not pay back; air losses and massive heat gain persist.
-2. PVC tilt-and-turn "sweet spot" (PVC 70mm + double 4/16/4 + low-E + argon + solar-control)
-1.1 - 1.3 W/(m²·K)
-Excellent (class 4)
-€490
-€340/m²
-THE BEST (OPTIMAL): Perfect balance for Murcia and Alicante (insulation + summer solar block).
-3. High-end aluminium RPT (RPT 65mm + double 4/16/4 + low-E + argon + solar-control)
-1.3 - 1.5 W/(m²·K)
-Excellent (class 4)
-€820
-€569/m²
-Medium: Same energy performance as PVC, but 65% more expensive for aesthetic reasons.
-4. PVC Passivhaus triple glazing (PVC 82mm + triple 4/14/4/14/4 + 2x low-E + argon)
-0.8 - 0.9 W/(m²·K)
-Excellent (class 4)
-€670
-€465/m²
-Good (only for very cold zones): Excessively slow payback in mild climates such as Murcia or Alicante.
-6. Return on investment ( payback ) for a whole flat (5 windows) in Murcia / Alicante
-We evaluate replacing 5 windows (7.2 m² of frame/glass area) in a flat located in the Mediterranean climate zone of Murcia or Alicante (zone B3/C3), where demand combines moderate winter heating and high summer air-conditioning consumption. We assume a baseline annual climate-control consumption of 5,200 kWh/year and an average electricity tariff of €0.22/kWh .
-Investment in Option A (plain window — PVC + basic double glazing, no treatments):
-Total installation cost: €2,200
-Estimated energy saving: 1,040 kWh/year (20%)
-Annual monetary saving: €228.80 / year
-Return on investment ( payback ): 9.6 years
-Investment in Option B (optimised window — PVC + low-E + argon gas + solar-control + insulated box):
-Total installation cost: €2,420 (only €220 more on the whole job)
-Estimated energy saving: 1,820 kWh/year (35%)
-Annual monetary saving: €400.40 / year
-Return on investment ( payback ): 6.0 years
-The small-extra-cost paradox in the Levante climate: Investing just €220 extra to add solar-control treatment ( Guardian Sun / Climalit 4S ), the low-E coating and argon gas across the entire flat generates an additional saving of €171.60 every year (especially on the summer air-conditioning bill). This glazing upgrade pays back in just 15 months .
-7. IRPF deductions and refurbishment grants
-Replacing windows is one of the simplest actions eligible for the state IRPF (Spanish income tax) deductions for energy-efficiency improvement works in the main dwelling :
-20% deduction (up to €1,000 per year): For works that reduce the dwelling's heating and cooling demand by at least 7% (easily met in Murcia or Alicante when fitting PVC windows with solar-control and low-E).
-40% deduction (up to €3,000 per year): For actions that reduce non-renewable primary energy consumption by 30% or upgrade the dwelling's energy rating to class "A" or "B".
+The window is the most vulnerable and active point of a building's thermal envelope: representing only between 10% and 15% of the façade area, it is responsible for up to 35% of heating losses in winter and more than 40% of the heat entering in summer. In areas such as Murcia or Alicante, where summer solar radiation is extreme and winters require moderate but continuous use of climate control, addressing façade openings is the measure with the greatest impact on comfort. We comprehensively analyze frame technologies (PVC vs. Thermal Break Aluminum), the secrets of glazing (Low-E, Argon Gas and Solar Control), the impact of the roller shutter box and the actual costs of each alternative.
+1. The Physics of the Thermal Opening: Why the Window Is the Critical Point
+Unlike façade walls or the roof —which are opaque elements—, the window is an active thermal opening exposed to three simultaneous mechanisms of energy transfer:
+Thermal conduction: Heat flows through the frame and glass from the warm side to the cold side. An old uninsulated aluminum window has a high overall thermal transmittance ( U w &approx; 5,7 W/(m 2 &middot;K) ), four times higher than that of an uninsulated brick wall.
+Air Infiltration (Permeability): Gaps in traditional sliding windows and the roller shutter box mechanism allow outside air to enter directly. Up to 15% of energy expenditure is lost simply through air entering via the roller shutter strap opening.
+Direct Solar Radiation (Greenhouse Effect): During the summer months in the Levante region (Murcia and Alicante), radiation on East-, South- and West-facing façades is intense. Sunlight passes through transparent glass and heats interior surfaces. This infrared heat becomes trapped inside the room, driving up air-conditioning consumption.
+Replacing an inefficient window eliminates the so-called "cold wall effect" in winter and the "greenhouse effect" in summer, while also eliminating water condensation on the glass in the mornings.
+2. The Roller Shutter Box: The Window's "Silent Enemy"
+Installing the best window on the market is of no use if an old, uninsulated roller shutter box is kept. The traditional box is responsible for up to 30% of the thermal and acoustic losses of the opening for two reasons:
+Thermal bridge in the cover: Old access covers (made of wood or thin plastic) offer no thermal resistance, overheating or cooling the room through contact.
+Air leakage through the strap opening: The opening through which the roller shutter strap passes directly connects the inside of the home with the outside.
+Technical Sealing Solutions
+Insulated Monobloc Box: When the window is replaced, a compact extruded PVC box is installed, internally filled with a high-density Expanded Polystyrene (EPS) block.
+Roller Shutter Motorization: By replacing the manual strap with an integrated electric motor, the strap opening is eliminated and 100% of air infiltration is hermetically sealed.
+Insulation in Existing Box (Low-Cost Insulation): If the window is not replaced, flexible thermo-acoustic polyethylene/polystyrene panels can be installed inside the box cavity, significantly reducing airflow and outside noise.
+3. Frames: PVC vs. Aluminum with Thermal Break (RPT)
+The frame supports the glass and represents between 20% and 30% of the total window area. Its intrinsic insulating capacity is measured by the U f ( frame ) value:
+PVC (The Cost-Benefit Standard)
+Physical behavior: PVC is a non-conductive plastic material (a natural insulator). A modern 70–76 mm deep profile with 5 or 6 internal air chambers reaches a U f &approx; 1,1 - 1,3 W/(m 2 &middot;K).
+Cost-effectiveness: It is between 25% and 35% less expensive than an aluminum profile with equivalent thermal performance.
+Aluminum with Thermal Break (RPT)
+Physical behavior: Aluminum is a highly conductive metal. To insulate it, the metal profile must be interrupted and polyamide plastic strips inserted inside it.
+Performance: To match the insulation of PVC, it requires very wide thermal-break strips (30 to 34 mm), achieving a U f &approx; 1,3 - 1,5 W/(m 2 &middot;K).
+Application: Its higher cost is justified only for aesthetic reasons (slimmer and more minimalist profiles) or for large windows requiring high structural inertia.
+Opening System: Casement/Tilt-and-Turn vs. Sliding
+Traditional sliding windows close with brush seals that allow wind to pass through ( Class 2 of permeability ). To ensure optimal insulation, it is essential to install tilt-and-turn systems with pressure rubber seals , classified as Class 4 (maximum air tightness according to UNE-EN 12207).
+4. Glazing Technologies: The Secret of Low-E, Argon and Solar Control
+Glass accounts for 70–80% of the window. Its performance (U g ) determines most of the overall energy efficiency.
+1. Low-E Treatment ( Low-E )
+It consists of a microscopic layer of silver and metal oxides deposited on the inner surface of the glass. It acts as a "thermal mirror" that reflects heating heat back into the home in winter. It reduces heat loss through the glass by almost 50% for a moderate additional cost of €20 to €35 per window.
+2. Argon Gas Injection
+Instead of leaving conventional dry air in the intermediate cavity of the double glazing, Argon gas is injected (an inert gas denser than air). This slows internal convection within the cavity, improving thermal insulation. Its additional cost ranges from €15 to €25 per window.
+3. Solar Control (Commercial brands: Guardian Sun , Climalit Planitherm 4S )
+In regions with high solar radiation such as Murcia and Alicante , simple Low-E treatment is not enough: in summer it allows solar radiation to pass through, creating a strong greenhouse effect. Solar Control technology is essential in the Mediterranean climate, as it blocks up to 60% of direct solar radiation (solar factor g \approx 0,38), keeping rooms between 3 °C and 5 °C cooler during the summer months and radically reducing air-conditioning use.
+5. Comparative Analysis of Models and Market Costs
+To analyze the market realistically, we evaluate 4 typical configurations for a standard bedroom window measuring 1,20 m × 1,20 m (1,44 m²) , including frame, glass, insulated roller shutter monobloc box, aluminum roller shutter with polyurethane and complete installation (removal of the old unit and sealing):
+Window Configuration
+Transmitancia (U w )
+Air Tightness
+Approx. Window Cost (1,44 m²)
+Coste / m²
+Cost-Benefit Assessment
+1. Basic Sliding Aluminum (No RPT + Single Glass 4/12/4)
+3,8 - 4,5W/(m²·K)
+Poor (Class 2)
+380 €
+264 €/m²
+Very Poor: Investment does not pay off; air losses and massive heat gain persist.
+2. PVC Tilt-and-Turn "Sweet Spot" (70mm PVC + Double 4/16/4 + Low-E + Argon + Solar Control)
+1,1 - 1,3 W/(m²·K)
+Excellent (Class 4)
+660 €
+458 €/m²
+THE BEST (OPTIMAL): Perfect balance for Murcia and Alicante (insulation + summer solar protection).
+3. Passivhaus Triple-Glazed PVC (82mm PVC + Triple 4/14/4/14/4 + 2x Low-E + Argon)
+0,8 - 0,9 W/(m²·K)
+Excellent (Class 4)
+890 €
+618 €/m²
+Good (Cold areas): Excessive for mild climates such as the Levante coast due to its higher cost.
+4. High-End RPT Aluminum (Design) (High-performance RPT + Double glazing with Solar Control)
+1,3 - 1,5 W/(m²·K)
+Excellent (Class 4)
+1.150 €
+798 €/m²
+Exclusive: Minimalist aesthetics and great robustness, but a high price per square meter.
+6. Return on Investment ( Payback ) for a Complete Apartment (5 Windows) in Murcia / Alicante
+We evaluate the replacement of 5 windows (7,2 m² of frame/glass area) in an apartment located in the Mediterranean climate zone of Murcia or Alicante (zone B3/C3), where demand combines moderate winter heating and high summer air-conditioning consumption. We consider a base annual climate-control consumption of 5.200 kWh/year and a realistic average electricity tariff of 0,22 €/kWh .
+Investment in Option A (Basic Standard Window - standard commercial PVC without advanced extras and conventional box):
+Total installation cost: 2.600 € (520 € por unidad)
+Estimated energy savings: 1.040 kWh/año (20%)
+Annual financial savings: 228,80 € / año
+Overall return on investment ( Payback ): 11,4 años
+Investment in Option B ("Optimized Sweet Spot" Window - PVC + Low-E + Argon Gas + Solar Control + Insulated Monobloc Box):
+Total installation cost: 3.300 € (660 € por unidad; un incremento de 700 € en el total de la obra frente a la Opción A)
+Estimated energy savings: 1.820 kWh/año (35%)
+Annual financial savings: 400,40 € / año
+Overall return on investment ( Payback ): 8,2 años
+The real profitability of the climate-control extras: Investing 700 € additional for the entire apartment (+140 € per window) to incorporate Solar Control treatments ( Guardian Sun / Climalit 4S ), the Low-E coating, Argon Gas and the Insulated Box generates an additional saving of 171,60 € each year on the electricity bill. This means that the additional cost of the extras is fully recovered in just 4 years , guaranteeing absolute thermal comfort and protecting the home against future increases in energy costs.
+7. Personal Income Tax Deductions and Renovation Grants
+Window replacement is one of the simplest measures for qualifying for national personal income tax deductions for energy-efficiency improvement works in the primary residence :
+20% deduction (up to €1,000 annually): For works that reduce the home's heating and cooling demand by at least 7% (comfortably achieved in Murcia or Alicante when installing PVC windows with Solar Control and Low-E).
+40% deduction (up to €3,000 annually): For measures that reduce non-renewable primary energy consumption by 30% or improve the home's energy rating to class "A" or "B".
 
 ## Thermal insulation of PPR pipes: savings and efficiency
 URL: https://www.wf-energy.com/en/blog/aislamiento-termico-de-tuberias-de-ppr/
