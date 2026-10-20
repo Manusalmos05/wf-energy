@@ -220,7 +220,7 @@ export function getRoutes(): PrerenderRoute[] {
         slugs: [],
         lastmod: null,
         published: null,
-        sitemap: false,
+        sitemap: true,
         jsonLd: null,
         alternates: alternatesFor(legal.path, LANGS, canonical),
       });

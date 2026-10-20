@@ -8,7 +8,7 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex]= useState<number | null>(null);
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)};
-  const { t, lang } = useLanguage();
+  const { t, lang, path } = useLanguage();
   const faqs = getFaqs(lang);
   return (
     <section id="preguntas" className="py-24 bg-secondary">
@@ -32,7 +32,7 @@ export default function FaqSection() {
           <em>
             {t("sections.faq.spanStart")}
             <a
-              href="/blog" title="Lee nuestros artículos relacionados para conocer más"
+              href={path("/blog")} title="Lee nuestros artículos relacionados para conocer más"
               className="underline font-semibold text-accent">
               {t("sections.faq.blogLink")}
             </a>
@@ -44,4 +44,3 @@ export default function FaqSection() {
     </section>
   );
 }
-

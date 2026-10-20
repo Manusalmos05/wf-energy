@@ -72,9 +72,11 @@ export function langPrefix(lang: Lang): string {
 export function withLang(lang: Lang, path: string): string {
   const clean = path.startsWith("/") ? path : `/${path}`;
   const prefix = langPrefix(lang);
-  if (clean === "/" && prefix === "") return "/";
-  if (clean === "/") return `${prefix}/`;
-  return `${prefix}${clean}`;
+  const suffixIndex = clean.search(/[?#]/);
+  const pathname = suffixIndex === -1 ? clean : clean.slice(0, suffixIndex);
+  const suffix = suffixIndex === -1 ? "" : clean.slice(suffixIndex);
+  const normalizedPath = pathname === "/" || pathname.endsWith("/") ? pathname : `${pathname}/`;
+  return `${prefix}${normalizedPath}${suffix}`;
 }
 
 export function stripLangPrefix(pathname: string): { lang: Lang; rest: string } {

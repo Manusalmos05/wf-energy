@@ -133,6 +133,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/sistema-CAE/" />
   </url>
   <url>
+    <loc>https://www.wf-energy.com/aviso-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/aviso-legal/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/politica-de-privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/politica-de-privacidad/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/politica-de-cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/politica-de-cookies/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/politica-de-cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/politica-de-cookies/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/accesibilidad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/accesibilidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/accesibilidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/accesibilidad/" />
+  </url>
+  <url>
     <loc>https://www.wf-energy.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/" />
@@ -263,5 +287,29 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/blog/sistema-CAE/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/blog/sistema-CAE/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/blog/sistema-CAE/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/aviso-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/aviso-legal/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/politica-de-privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/politica-de-privacidad/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/politica-de-cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/politica-de-cookies/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/politica-de-cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/politica-de-cookies/" />
+  </url>
+  <url>
+    <loc>https://www.wf-energy.com/en/accesibilidad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wf-energy.com/accesibilidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wf-energy.com/en/accesibilidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wf-energy.com/accesibilidad/" />
   </url>
 </urlset>
