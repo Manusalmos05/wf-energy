@@ -1686,6 +1686,81 @@ Entre 1.200 € y 3.500 € de cobro/descuento directo.
 Conclusión: Transforma tu reforma en un activo rentable
 El sistema CAE ha cambiado las reglas del juego en la rehabilitación energética en España. Ya no hay que esperar años por subvenciones inciertas: si la reforma se planifica correctamente desde el inicio con un Certificado de Eficiencia Energética PRE, una empresa instaladora cualificada y un CEE POST de cierre, el ahorro energético generado se traduce inmediatamente en dinero en tu bolsillo.
 
+## ¿Problemas con la distribuidora?... Por qué instalar placas solares es más rentable que pagar a la distribuidora
+URL: https://www.wf-energy.com/blog/las-placas-solares-son-mas-baratas-que-pagarle-a-la-distribuidora/
+Publicado: 2026-10-27
+Actualizado: 2026-10-27
+Ya sea porque has comprado una vivienda para reformar, te saltan los plomos cada vez que pones el aire acondicionado en pleno verano, o estás construyendo una casa nueva, tarde o temprano te tocará resolver tu conexión a la red eléctrica.
+Pero el verdadero quebradero de cabeza empieza cuando recibes la carta de la distribuidora (i-DE, del Grupo Iberdrola, en Alicante y Murcia) y te encuentras con la negativa a darte servicio o con un pliego de requisitos casi imposibles: mover el contador a la linde de la propiedad, modificar la LGA/derivación individual o rehacer la instalación por completo.
+El presupuesto de estas actuaciones suele oscilar entre los 1.500 € y los 5.000 € . Un dinero abonado a fondo perdido a la distribuidora, al ayuntamiento y a la empresa de reformas, que no te va a ahorrar ni un solo céntimo en el recibo de la luz.
+Antes de regalar ese capital en obras de red, existe una alternativa de ingeniería: utilizar ese dinero para instalar un kit fotovoltaico híbrido con batería . Analizamos cómo funciona la amplificación virtual de potencia y calculamos el punto exacto en el que instalar fotovoltaica es mucho más rentable que hacerle la obra a la distribuidora.
+1. El coste a fondo perdido de las reformas de red
+Cuando solicitas subir la potencia contratada para que no salten los plomos, o tras una inspección de oficio donde el contador o la caja resultan antiguos, la distribuidora exige adaptar la instalación a la normativa actual de distribución.
+Estas exigencias conllevan gastos directos que no aportan ningún valor comercial a la vivienda:
+Zanjas y canalizaciones: Tramitación de licencias municipales de obra, apertura de zanjas y reasfaltado o reparación de pavimentos para enterrar mangueras de potencia.
+Módulo de contador en fachada exterior (CPM): Adaptar la valla o muro de la parcela para empotrar la caja de medidor normalizada.
+Boletín Eléctrico (CIE) y adecuación interior: Cambiar toda la instalación interior de la vivienda y emitir un nuevo boletín.
+Peajes de potencia más caros: Al conseguir subir la potencia contratada por cable, la distribuidora y la comercializadora te cobrarán un término fijo más elevado todos los meses.
+Un presupuesto habitual para estos trabajos se sitúa fácilmente en 2.500 € - 3.500 € . Al terminar la obra, la vivienda tiene la potencia aprobada, pero has gastado miles de euros en una infraestructura que no genera retorno alguno.
+2. Ampliación Virtual de Potencia (Peak Shaving): Más potencia sin pedir permiso a i-DE
+Para evitar la obra de la acometida y la subida de potencia contratada, la tecnología fotovoltaica actual utiliza una técnica de ingeniería llamada Peak Shaving (aplanamiento de picos de demanda).
+Mediante un inversor híbrido de 3 kW respaldado por una batería de litio de 5,12 kWh, la vivienda deja de depender únicamente de la red eléctrica para cubrir los picos de consumo:
+PotenciaContratadaRed(2,3kW)+InyecciónBatería/Placas(3,0kW)=5,3 kWDisponibles
+¿Cómo evita el salto del contador sin tocar la calle?
+Gestión Dinámica: Si en tu vivienda tienes contratados 2,3 kW e intentas encender la vitrocerámica, el horno y el aire acondicionado (sumando 4,5 kW), el contador inteligente cortaría el suministro al instante.
+Inyección en Milisegundos: El inversor híbrido detecta la demanda e inyecta los 2,2 kW restantes desde la batería o los paneles de 4,5 kWp.
+Resultado: Para la distribuidora solo estás consumiendo los 2,3 kW contratados. Los plomos no saltan, la casa opera con más de 5 kW de potencia útil y te ahorras la obra.
+3. La realidad sobre el Boletín (CIE): Adaptar la seguridad no siempre exige rehacer la propiedad
+Existe un matiz técnico y legal clave que conviene aclarar: cumplir con la normativa de seguridad para emitir el Certificado de Instalación Eléctrica (CIE) no implica necesariamente asumir las reformas más complejas que plantea la distribuidora.
+.
+El elevado coste que afrontan muchos propietarios surge del alcance de las exigencias según el trámite:
+Exigencias asociadas al aumento de potencia: Si al solicitar más kilovatios la distribuidora te exige trasladar la CGP o el contador al linde de la parcela, modificar la LGA/derivación individual o adecuar toda la acometida a la normativa actual, los presupuestos pueden dispararse rápidamente entre los 1.500 € y los 5.000 €, según las características de la vivienda y la infraestructura existente.
+Adecuación para la legalización de autoconsumo: Para emitir el boletín de las placas solares, el instalador autorizado debe certificar que la instalación y su punto de conexión son totalmente seguros. Si la caja de entrada o los fusibles presentan deficiencias, en la mayoría de ocasiones no es necesario abordar reformas integrales en el exterior, sino realizar una subsanación puntual de protecciones o adaptar la CGP existente, con un coste sensiblemente inferior (habitualmente entre 300 € y 600 €).
+Al cubrir los picos de consumo mediante el sistema fotovoltaico y la batería, se evita depender de un aumento de potencia contratada por la red. La instalación solar se tramita directamente como planta generadora ante la Consejería de Industria (Generalitat Valenciana o Región de Murcia) bajo el Real Decreto 244/2019 , marco legal que simplifica el proceso para potencias de hasta 15 kW.
+Comparativa económica: Reforma con i-DE vs. Kit Solar Híbrido
+Analizamos el impacto de regalar el dinero a la distribuidora frente a aplicarlo en un Kit Solar Híbrido (Inversor 3 kW + 4,5 kWp en paneles + Batería 5,12 kWh), valorado en 6.500 € llave en mano.
+Concepto de Análisis
+Opción A: Reforma de Acometida i-DE
+Opción B: Kit Solar Híbrido (4,5 kWp + Batería 5,12 kWh)
+Inversión Inicial Bruta
+~2.500 € (Obra civil, zanja y armario)
+6.500 € (Instalación solar completa llave en mano)
+Deducción Fiscal (40% IRPF)
+0 €
+-2.600 €
+Inversión Real Neta
+2.500 € (Dinero a fondo perdido)
+3.900 €
+Sobrecoste Real Marginal
+-
+1.400 € de diferencia (3.900 € − 2.500 €)
+Impacto en Factura Anual
+Aumenta la factura (mayor término fijo)
+Ahorro de ~900 € a 1.080 €/año
+Amortización del Sobrecoste
+Nunca (0% de retorno)
+En solo 15 a 18 meses se liquida la diferencia
+5. Matriz de decisión: ¿Cuándo te conviene poner placas?
+Esta regla te permite identificar la acción óptima según el presupuesto que te hayan presentado para la reforma y el consumo habitual de tu hogar:
+Presupuesto Exigido para la Reforma
+Factura Mensual Orientativa
+Acción Recomendada
+Justificación Financiera
+40 € – 50 €/mes
+Realizar la reforma puntual
+El sobrecoste del kit tardaría más tiempo en compensarse con un consumo tan bajo.
+1.000 € – 2.000 €
+70 € – 100 €/mes
+Instalar Kit Solar Híbrido
+Aplicando la deducción del IRPF, el sobrecoste se amortiza en menos de 1,5 años. Te ahorras la obra y anulas la factura.
+> 2.500 €
+Indiferente
+Instalar Kit Solar Híbrido
+A partir de 2.500 €, pagar la obra a la distribuidora es ineficiente; ese dinero cubre la mayor parte del coste neto del kit solar.
+Conclusión
+Pagar 2.000 €, 3.000 € o 5.000 € por mover un contador o modificar la LGA/derivación individual solo para seguir dependiendo al 100% de la red eléctrica es un gasto sin retorno.
+En WhiteFox resolvemos estos bloqueos desde la ingeniería: un Kit Solar Híbrido con batería utiliza electrónica de potencia en el interior de tu hogar para darte los kilovatios que necesitas sin pedir permiso a la distribuidora. Conviertes una exigencia administrativa en un activo que genera cerca de 1.000 € al año en ahorro directo.
+
 ## Residential Energy Efficiency in the Levante
 URL: https://www.wf-energy.com/en/blog/eficiencia-energetica-residencial-levante/
 Publicado: 2026-06-15
@@ -3361,4 +3436,79 @@ Elimination of fossil fuels and CO₂ emissions
 Between 1,200 € and 3,500 € of direct charge/credit.
 Conclusion: Turn Your Renovation Into a Profitable Asset
 The CAE system has changed the rules of the game in energy-efficient building retrofitting in Spain. There is no longer a need to wait years for uncertain subsidies: if the renovation is planned correctly from the start with a PRE Energy Efficiency Certificate, a qualified installation company, and a POST CEE closing certificate, the generated energy savings are immediately translated into money in your pocket.
+
+## Problems with the distributor? Why installing solar panels is more profitable than paying the distributor
+URL: https://www.wf-energy.com/en/blog/las-placas-solares-son-mas-baratas-que-pagarle-a-la-distribuidora/
+Publicado: 2026-10-27
+Actualizado: 2026-10-27
+Whether you’ve bought a property to renovate, your fuses blow every time you switch on the air conditioning in the height of summer, or you’re building a new house, sooner or later you’ll have to sort out your connection to the electricity grid.
+But the real headache starts when you receive the letter from the distribution company (i-DE, from Iberdrola Group, in Alicante and Murcia) and you find yourself facing a refusal to provide service or a set of requirements that are almost impossible to meet: move the meter to the edge of the property, modify the individual LGA/derivation or redo the installation completely.
+The budget for these works usually ranges between 1.500 € and 5.000 € . Money paid for a lost cause to the distribution company, the municipality and the renovation company, which won't save you a single cent on your electricity bill.
+Before giving that capital to grid works, there's an engineering alternative: use that money to install a hybrid solar kit with battery . We analyze how virtual power amplification works and calculate the exact point at which installing solar panels is much more profitable than giving the work to the distribution company.
+1. The non-repayable cost of network upgrades
+When you request an increase in your contracted power supply to prevent the fuses from blowing, or following an ex officio inspection where the meter or connection box is found to be outdated, the distribution company requires you to bring the installation into line with current distribution regulations
+These requirements involve direct costs that do not add any commercial value to the property:
+Ditches and conduits: Processing of municipal permits for construction, opening of ditches and resurfacing or repair of pavements to bury power cables.
+External meter module (CPM): Adapting the fence or wall of the plot to embed the standardized meter box.
+Electrical Certificate (CIE) and interior adaptation: Replacing the entire interior installation of the house and issuing a new certificate.
+Higher power fees: When you increase the contracted power through cable, the distribution company and the electricity supplier will charge you a higher fixed term every month.
+A typical budget for these works is easily placed in the range of 2.500 € - 3.500 € . Once the work is completed, the house has the approved power, but you have spent thousands of euros on an infrastructure that does not generate any return.
+2. Virtual Power Expansion (Peak Shaving): More power without having to ask i-DE for permission
+To avoid the need for connection works and an increase in contracted power, modern photovoltaic technology uses an engineering technique known as ‘peak shaving’.
+Thanks to a 3 kW hybrid inverter backed up by a 5.12 kWh lithium battery, the home is no longer solely reliant on the electricity grid to meet peak demand:
+Contracted Grid Power (2.3 kW) + Battery/Solar Panel Feed-in (3.0 kW) = 5.3 kW available
+How does it avoid the fuse from tripping without touching the street?
+Dynamic Management: If in your home you have contracted 2.3 kW and try to turn on the ceramic hob, the oven and the air conditioning (adding up to 4.5 kW), the smart meter would cut off the supply instantly.
+Injection in Milliseconds: The hybrid inverter detects the demand and injects the remaining 2.2 kW from the battery or the 4.5 kWp panels.
+Result: For the distribution company, you are only consuming the contracted 2.3 kW. The fuses don't trip, the house operates with more than 5 kW of useful power and you save on construction costs.
+3. The truth about the Bulletin (CIE): Adapting security measures does not always require rebuilding the property
+There is a key technical and legal point that needs to be clarified: complying with safety regulations in order to issue the Electrical Installation Certificate (CIE) does not necessarily mean undertaking the more complex alterations proposed by the distribution company.
+.
+The high cost that many owners face stems from the scope of the requirements according to the process:
+Requirements associated with the increase of power: If when requesting more kilovolt-amperes the distribution company requires you to move the main distribution panel or the meter to the edge of the plot, modify the individual distribution line or adapt the entire connection to the current regulations, budgets can quickly escalate between 1.500 € and 5.000 €, depending on the characteristics of the house and the existing infrastructure.
+Adaptation for the legalization of self-consumption: To issue the bulletin for solar panels, the authorized installer must certify that the installation and its connection point are fully safe. If the entry box or fuses have deficiencies, in most cases it is not necessary to address comprehensive renovations on the exterior, but rather perform a targeted remediation of protections or adapt the existing main distribution panel, with a significantly lower cost (usually between 300 € and 600 €).
+By covering consumption peaks through the photovoltaic system and battery, dependency on an increase of contracted power from the grid is avoided. The solar installation is processed directly as a power generation plant before the Industry Council (Valencian Community or Region of Murcia) under the Real Decreto 244/2019 , a legal framework that simplifies the process for capacities up to 15 kW.
+Economic Comparison: Reform with i-DE vs. Hybrid Solar Kit
+We analyze the impact of giving money to the distribution company versus investing it in a Hybrid Solar Kit (3 kW inverter + 4.5 kWp panels + 5.12 kWh battery), valued at 6.500 € turnkey.
+Analysis Concept
+OOption A: Renovation of the i-DE service connection
+Option B: Hybrid Solar Kit (4.5 kWp + 5.12 kWh battery)
+Initial Gross Investment
+~2.500 € (Civil works, trench and cabinet)
+6.500 € (Complete solar installation turnkey)
+Tax deduction (40% IRPF)
+0 €
+-2.600 €
+Net Real Investment
+2,500 € (non-repayable grant)
+3.900 €
+Marginal actual cost overrun
+-
+A difference of € 1,400 (3.900 € − 2.500 €)
+Impact on Annual Bill
+Increases the bill (higher fixed term)
+Saving of ~900 € to 1.080 €/year
+Amortisation of Cost Overruns
+Never (0% return)
+The difference is settled in just 15 to 18 months
+5. Decision Matrix: When Does It Pay to Install Solar Panels?
+This rule helps you identify the optimal action based on the budget presented for the renovation and your household's typical consumption:
+Budget Required for the Renovation
+Estimated Monthly Bill
+Recommended Action
+Financial Justification
+40 € – 50 €/month
+Perform the targeted renovation
+The additional cost of the kit would take longer to offset with such low consumption.
+1.000 € – 2.000 €
+70 € – 100 €/month
+Install a Hybrid Solar Kit
+When you take the income tax deduction into account (IRPF), the additional cost pays for itself in less than 1.5 years. You avoid the building work and the bill is written off.
+> 2.500 €
+Indifferent
+Install a Hybrid Solar Kit
+From 2.500 € onwards, paying for the work with the distribution company is inefficient; that money covers most of the net cost of the solar kit.
+Conclusion
+Paying 2.000 €, 3.000 € or 5.000 € to move a meter or modify the individual LGA/derivation is a cost without return.
+At WhiteFox we solve these bottlenecks from the engineering side: a Hybrid Solar Kit with battery uses power electronics inside your home to provide the kilowatt-hours you need without asking permission from the distribution company. You turn an administrative requirement into an asset that generates around 1.000 € per year in direct savings.
 

@@ -165,6 +165,15 @@ const ARTICLES_ES: BlogArticle[] = [
     cover: "images/blog/sistema-CAE/Como-obtener-un-Certificado-de-Ahorro-Energetico.webp",
     readingMinutes: 7,
   },
+  {
+    slug: "las-placas-solares-son-mas-baratas-que-pagarle-a-la-distribuidora",
+    title: "¿Problemas con la distribuidora?... Por qué instalar placas solares es más rentable que pagar a la distribuidora",
+    excerpt: "¿i-DE te exige miles por subir potencia? Evita obras caras: instala solar con batería, revaloriza tu vivienda y ahorra en tu factura.",
+    date: "2026-10-27",
+    tags: ["fiscalidad", "autoconsumo"],
+    cover: "images/blog/las-placas-solares-son-mas-baratas-que-pagarle-a-la-distribuidora/cambio-de-contador-murcia.webp",
+    readingMinutes: 6,
+  }
 ];
 
 interface Translation { title: string; excerpt: string; tags: string[] }
@@ -255,6 +264,11 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
     title: "How to Finance Your Home Renovation with the CAE System",
     excerpt: "CAEs monetize your energy-efficiency efforts: a new market that turns every kilowatt saved into money.",
     tags: ["taxation", "energy efficiency"],
+  },
+  "las-placas-solares-son-mas-baratas-que-pagarle-a-la-distribuidora": {
+    title: "Problems with the distributor? Why installing solar panels is more profitable than paying the distributor",
+    excerpt: "Does i-DE demand thousands to increase your power? Avoid expensive works: install solar with battery, increase the value of your home and save on your bill.",
+    tags: ["taxation", "autoconsumption"],
   },
 };
 
