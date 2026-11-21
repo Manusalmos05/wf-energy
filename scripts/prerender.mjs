@@ -308,7 +308,6 @@ for (const [from, to] of Object.entries(REDIRECTS)) {
     '<meta charset="UTF-8" />',
     `<meta http-equiv="refresh" content="0; url=${escAttr(target)}" />`,
     `<link rel="canonical" href="${escAttr(target)}" />`,
-    '<meta name="robots" content="noindex" />',
     "<title>Redirigiendo…</title>",
     "</head>",
     `<body><a href="${escAttr(target)}">${escText(target)}</a></body>`,
