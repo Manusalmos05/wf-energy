@@ -245,8 +245,8 @@ const EN_TRANSLATIONS: Record<string, Translation> = {
     tags: ["energy efficiency", "insulation", "building envelope"],
   },
   "el-mito-del-60-de-descuento-en-el-irpf": {
-    title: 'The myth of the "60% income-tax discount whit solar panels"',
-    excerpt: "Let’s talk a little about energy-saving grants – ‘a tough nut to crack’ that many professionals in the sector find difficult to get to grips with.",
+    title: "Spain's 60% Solar Tax Deduction (IRPF): The Real Numbers",
+    excerpt: "Living in Murcia or Alicante? We explain how Spain's IRPF deduction for solar panels actually works, who qualifies and why it's rarely 60%.",
     tags: ["taxation", "photovoltaic"],
   },
   "cuantas-placas-solares-necesita-tu-casa": {

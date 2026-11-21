@@ -3126,7 +3126,7 @@ With an estimated budget of around €2,400 for insufflating the facades, the in
 Tax deductions and public incentives
 Bear in mind that insulation works on the envelope of primary residences that achieve a minimum reduction of 7% in heating and cooling demand may qualify for the IRPF (Spanish income tax) deduction for energy-efficiency improvement works . There are also public grant schemes managed by IDAE (the Spanish energy agency) and the regional government; to find out the current terms and subsidy percentages, check the active call in your municipality.
 
-## The myth of the "60% income-tax discount whit solar panels"
+## Spain's 60% Solar Tax Deduction (IRPF): The Real Numbers
 URL: https://www.wf-energy.com/en/blog/el-mito-del-60-de-descuento-en-el-irpf/
 Publicado: 2026-07-31
 Actualizado: 2026-07-31
@@ -3325,6 +3325,8 @@ The maths is straightforward once you know your estimated annual saving:
 $$ \text{Payback (years)} = \frac{\text{Investment} - \text{Grants}}{\text{Annual saving}} $$
 With today's prices and surplus compensation, a well-sized installation in the Levante typically pays
 back in 5 to 7 years , with a service life above 25.
+Tax incentives can shorten that further, but not by as much as is often claimed: read
+how Spain's 60% solar tax deduction really works .
 The next step
 This formula gives you an order of magnitude, but every roof has its own orientation, shading and tilt.
 Try our calculator to get an idea of how much you can save, and contact our
@@ -3509,6 +3511,6 @@ Indifferent
 Install a Hybrid Solar Kit
 From 2.500 € onwards, paying for the work with the distribution company is inefficient; that money covers most of the net cost of the solar kit.
 Conclusion
-Paying 2.000 €, 3.000 € or 5.000 € to move a meter or modify the individual LGA/derivation is a cost without return.
+Paying 2.000 €, 3.000 € or 5.000 € to move a meter or modify the individual LGA/derivation is a cost without return. A solar installation, on the other hand, can also qualify for income-tax relief; before counting on it, check what Spain's IRPF solar deduction really covers .
 At WhiteFox we solve these bottlenecks from the engineering side: a Hybrid Solar Kit with battery uses power electronics inside your home to provide the kilowatt-hours you need without asking permission from the distribution company. You turn an administrative requirement into an asset that generates around 1.000 € per year in direct savings.
 

@@ -1,6 +1,6 @@
 # Crear artículos nuevos con IA e incorporarlos a la página
 
-Complementa a `blog-design.md`, que define el diseño y los componentes. Este documento es el procedimiento operativo y está escrito para dárselo tal cual a una IA con acceso al repositorio: la IA deja el artículo completamente incorporado al codebase **sin ejecutar el build**; después un dev corre `npm run build`, revisa y commitea.
+Este documento es el procedimiento operativo y está escrito para dárselo tal cual a una IA con acceso al repositorio: la IA deja el artículo completamente incorporado al codebase **sin ejecutar el build**; después un dev corre `npm run build`, revisa y commitea.
 
 **Reparto de trabajo:**
 
@@ -19,6 +19,10 @@ Un artículo son **dos piezas**:
 |---|---|---|
 | Contenido | `public/blog/articles/<slug>.html` | Fragmento HTML: **sin** `<html>`, `<head>`, `<body>` ni `<h1>` |
 | Metadatos | entrada en `ARTICLES` de `src/data/blog.ts` | slug, título, extracto, fecha, tags, portada, minutos |
+| Contenido en inglés | `public/blog/articles/<slug>.en.html` | Mismo contrato que el fragmento en español |
+| Metadatos en inglés | entrada en `EN_TRANSLATIONS` de `src/data/blog.ts` | título, extracto y tags en inglés |
+
+Todo artículo se publica en los dos idiomas: `/blog/<slug>/` y `/en/blog/<slug>/`. El slug es el mismo en ambos.
 
 El fragmento no es una página: `ArticlePage` pinta el `<h1>`, la portada, los tags y la fecha desde el manifiesto, y `ArticleContent` inserta el fragmento debajo.
 
@@ -34,13 +38,13 @@ Reglas duras. Si se incumple una, el artículo se rompe o sale duplicado:
 2. **Sin la imagen de portada.** También la pone la página desde `cover`.
 3. **Sin `<head>`, `<body>` ni `<!DOCTYPE>`.** Es un fragmento que se inyecta.
 4. **Jerarquía sin saltos:** `<h2>` → `<h3>`. Nunca un `<h3>` sin `<h2>` antes.
-5. **URLs internas absolutas empezando por `/`**: `/images/placas.webp`, `/#contacto`, `/blog/<otro-slug>`. El `base` de Vite es `/`, y el fragmento se inserta como HTML crudo sin pasar por React.
+5. **URLs internas absolutas empezando por `/`**: `/images/placas.webp`, `/#contacto`, `/blog/<otro-slug>/` (siempre con barra final). El `base` de Vite es `/`, y el fragmento se inserta como HTML crudo sin pasar por React.
 6. **Toda `<img>` con `alt` descriptivo y `loading="lazy"`.**
 7. **La marca es «White Fox Energy».** No «SolPure» (nombre antiguo que aún aparece en artículos viejos).
 
 ### Componentes disponibles
 
-Referencia rápida; el detalle está en `blog-design.md`.
+Referencia rápida de los componentes que estilan `src/styles/blog.css`.
 
 | Patrón | HTML |
 |---|---|
@@ -80,8 +84,9 @@ Datos de entrada que debe dar quien encarga el artículo: **tema**, **intención
 
    Si en lugar de crear un artículo se está **editando uno ya publicado**, no cambiar `date`: añadir o actualizar el campo opcional `updated: "<AAAA-MM-DD>"`. Ese campo alimenta `dateModified`, `article:modified_time` y el `lastmod` del sitemap.
 
-6. **No tocar nada más.** Ni `docs/` (es salida de build commiteada), ni `entry-server.tsx`, ni `scripts/prerender.mjs`, ni `robots.txt`, ni el sitemap. No ejecutar `npm run build`.
-7. **Ejecutar las verificaciones de §5** y corregir lo que falle antes de dar el trabajo por terminado.
+6. **Crear la versión en inglés** siguiendo §4.1: `public/blog/articles/<slug>.en.html` y su entrada en `EN_TRANSLATIONS`.
+7. **No tocar nada más.** Ni `docs/` (es salida de build commiteada), ni `entry-server.tsx`, ni `scripts/prerender.mjs`, ni `robots.txt`, ni el sitemap. No ejecutar `npm run build`.
+8. **Ejecutar las verificaciones de §5** y corregir lo que falle antes de dar el trabajo por terminado.
 
 ---
 
@@ -93,6 +98,16 @@ Datos de entrada que debe dar quien encarga el artículo: **tema**, **intención
 - Citar normativa y ayudas por su nombre solo con seguridad: MOVES III, IDAE, REBT, deducción en IRPF. Ante la duda sobre una cifra, no inventarla: escribir «consulta la convocatoria vigente».
 - Cerrar con un párrafo que invite a solicitar un estudio gratuito, enlazando a `/#contacto`.
 - La empresa se llama White Fox Energy. Nunca SolPure.
+
+### 4.1 Título, extracto y versión en inglés
+
+El título y el extracto son lo que Google muestra en el resultado: el extracto se convierte en la meta description. Un artículo con buen contenido pero con un título o extracto vagos puede quedar «Rastreada: actualmente sin indexar», como le pasó a la versión inglesa del post del IRPF.
+
+- **Título:** máximo 60 caracteres, con la palabra clave principal y el lugar o el dato concreto. Nada de metáforas ni juegos de palabras.
+- **Extracto:** 120–160 caracteres que respondan a la intención de búsqueda: qué aprende el lector y para quién es. Prohibido empezar con «Hablemos de…», «Descubre…» o frases hechas.
+- **Versión inglesa:** no es una traducción literal. Su lector es un residente extranjero en Murcia, Alicante o la Costa Blanca. Título y extracto deben nombrar España y la zona, y explicar los términos locales (IRPF, IBI, i-DE) la primera vez que aparecen.
+- **Ortografía:** revisar título, extracto y atributos `title`/`alt` en ambos idiomas; las erratas en el título son lo primero que ve Google.
+- **Enlazado interno:** todo artículo nuevo debe recibir al menos 2 enlaces desde artículos existentes del mismo idioma y del mismo tema, y enlazar a su vez a 1–2 relacionados. En los fragmentos ingleses los enlaces internos llevan el prefijo `/en/` y barra final: `/en/blog/<slug>/`. Un artículo sin enlaces entrantes, aparte del listado, es candidato a no indexarse.
 
 ---
 
@@ -122,6 +137,21 @@ grep -n "SolPure" public/blog/articles/$SLUG.html && echo "✗ marca incorrecta"
 # URLs internas con el prefijo antiguo del repo (ya no se usa)
 grep -n "Solar-Installation-Company-Website" public/blog/articles/$SLUG.html && echo "✗ base path antiguo"
 
+# Existe la versión en inglés y su traducción
+ls public/blog/articles/$SLUG.en.html || echo "✗ falta el fragmento en inglés"
+grep -n "^  \"$SLUG\": {" src/data/blog.ts | wc -l | grep -q 2 || echo "✗ falta la entrada en EN_TRANSLATIONS"
+
+# Longitud de títulos (≤ 60) y extractos (120-160) en ambos idiomas
+grep -A3 "\"$SLUG\"" src/data/blog.ts | grep -E "title:|excerpt:" | awk '{print length($0)-14, $0}'
+
+# Enlaces internos sin barra final o, en inglés, sin el prefijo /en/
+grep -oE 'href="/blog/[^"#]*[^/"]"' public/blog/articles/$SLUG*.html && echo "✗ enlace sin barra final"
+grep -oE 'href="/blog/' public/blog/articles/$SLUG.en.html && echo "✗ enlace en inglés sin /en/"
+
+# Enlaces entrantes desde otros artículos (mínimo 2 por idioma)
+grep -l "/blog/$SLUG/" public/blog/articles/*.html | grep -v "/$SLUG" | grep -vc '\.en\.html'
+grep -l "/en/blog/$SLUG/" public/blog/articles/*.en.html | grep -vc "/$SLUG"
+
 # El slug del fichero coincide con el del manifiesto
 grep -n "\"$SLUG\"" src/data/blog.ts || echo "✗ falta en el manifiesto"
 
@@ -133,7 +163,7 @@ grep -oE 'src="/images/[^"]*"' public/blog/articles/$SLUG.html \
   | sed 's|src="/|public/|;s/"$//' | xargs -r ls -1 2>&1 | grep -i "no such" && echo "✗ imagen inexistente"
 
 # Solo deben haber cambiado estas dos rutas
-git status --short   # esperado: public/blog/articles/$SLUG.html y src/data/blog.ts
+git status --short   # esperado: los dos fragmentos, src/data/blog.ts y los artículos que ahora enlazan al nuevo
 ```
 
 ---
