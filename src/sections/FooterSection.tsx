@@ -1,4 +1,5 @@
-import { Sun, Phone, Mail, MapPin, Lock } from "lucide-react";
+import { Phone, Mail, MapPin, Lock } from "lucide-react";
+import BrandLogo from "../app/components/BrandLogo.tsx";
 import { Link } from "react-router";
 import { EMAIL, PHONE_DISPLAY } from "../lib/site.ts";
 import { useLanguage } from "../i18n/provider.tsx";
@@ -21,9 +22,7 @@ export default function FooterSection({ onCookieSettings }: { onCookieSettings?:
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-                <Sun size={15} className="text-white" />
-              </div>
+              <BrandLogo className="h-10 w-auto flex-shrink-0 text-white" />
               <span className="font-bold text-base">White Fox Energy</span>
             </div>
             <p className="text-white/60 text-xs leading-relaxed">{t("common.footer.tagline")}</p>
