@@ -55,7 +55,7 @@ export default function BlogPage() {
               />
             </div>
 
-            <div className="display flex-wrap items-center gap-2 p-5">
+            <div className="flex flex-wrap items-center gap-2 p-5">
               {tags.map((tag) => {
                 const active = activeTags.includes(tag);
                 return (
