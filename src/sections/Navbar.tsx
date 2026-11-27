@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import { Zap, Phone, ArrowRight, Menu, X } from "lucide-react";
+import { Phone, ArrowRight, Menu, X } from "lucide-react";
+import BrandLogo from "../app/components/BrandLogo.tsx";
 import { getNav } from "../data/navigation.ts";
 import { PHONE_DISPLAY, TEL_HREF } from "../lib/site.ts";
 import { useLanguage } from "../i18n/provider.tsx";
@@ -53,9 +54,7 @@ export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
       <div className="w-full max-w-7xl mx-auto px-5 h-16 flex items-center justify-between min-[1420px]:gap-8">
         <a href={homeAnchor("inicio")} className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-            <Zap size={15} className="text-white" />
-          </div>
+          <BrandLogo className="h-9 w-auto flex-shrink-0 text-[#0E7C5A]" />
           <div className="whitespace-nowrap">
             <span className="font-bold text-primary text-base tracking-tight">White Fox Energy</span>
             <span className="hidden sm:inline text-xs text-muted-foreground ml-1.5">{t("common.nav.brandSubtitle")}</span>
